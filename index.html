@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+		<script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+		<script src="https://leaflet.github.io/Leaflet.label/leaflet.label.js"></script> <!-- files necessary for labels in leaflet -->
+		<script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js"></script> <!--Include Stamen JavaScript to get basemap tiles-->
+		
+		
+		<style>
+		
+		/* adds style the html body and map div objects */
+		html, body {width:100%; height:100%; padding: 0; margin: 0;}
+		#WaterMap { width: 100%; height:100%; background: teal;}
+		
+		/* CSS style formatting for the labels bound to each marker*/
+		.ourLabel {
+			position: absolute;
+			display: inline-block;
+			font-size: 13px;
+			font-color: #666666;
+			background-color: #FCFCFC;
+			padding-left: 2px;
+			padding-right: 2px;
+			box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);
+			border: 0px solid;
+			border-radius: 3px;
+			text-indent: -4px;
+		}
+		
+		/* CSS formatting for the popup box that appears when markers are clicked */
+		.leaflet-popup-content-wrapper {
+			background-color: #F6F6F6;
+			text-align: left;
+			width: 203px;
+		}
+		
+		/* CSS formatting for the tip of the popup box */
+		.leaflet-popup-tip {
+			background: #F6F6F6;
+			box-shadow: 0 0 0 rgba(0,0,0,0.4);
+		}
+		
+	
+		.leaflet-popup-tip-container {
+			position: relative;
+			right: 43%;
+			bottom: 6px;
+		}
+		
+		/* The next bunch of CSS definitions are for the dropdown menu that 
+		allows the user to select the relevant contaminant. */
+		.dropbtn {
+			background-color: #FFFFFF;
+			color: #000000;
+			padding: 12px;
+			font-size: 14px;
+			cursor: pointer; 	
+			box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.3);
+			border: 0px solid;
+			border-radius: 6px;
+		}
+		
+		.dropbtn:hover, .dropbtn:focus {
+			background-color: #EEEEEE;
+			color: #000000;
+		}
+		
+		.dropdown {
+			position: relative;
+			display: inline-block;
+			top: 14px;
+			left: 50px;
+			z-index: 99;
+		}
+		
+		.dropdown-content {
+			display: none;
+			position: center;
+			background-color: #FFFFFF;
+			min-width: 100px;
+			overflow: auto;
+			box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.3);
+			border: 0px solid;
+			border-radius: 10px;
+		}
+		
+		.dropdown-content a {
+			color: #000000;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			font-size: 14px;
+		}
+		
+		.dropdown a:hover {
+			background-color: #EEEEEE;
+		}
+		
+		.show {
+			display: block;
+		}
+		
+		/* CSS formatting for the Caminos de Agua logo in the corner */
+		img.caminos_logo {
+			display: inline-block;
+			z-index: 3;
+			position: absolute;
+			left: 15px;
+			bottom: 15px;
+			width: 120px;
+			height: 120px;
+			opacity: 1;
+		}
+		</style>
+	</head>
+	
+	<body onload="init();"> 	<!-- what to do when the page loads -->
+		<div id='WaterMap'> 	<!-- creates the div element that holds the map -->
+			<a href="http://www.caminosdeagua.org" target="_blank"> <!-- Link the caminos logo to the caminos website -->
+				<img class="caminos_logo" src="https://dl.dropboxusercontent.com/s/fd8qh4kdfg2olfb/caminos_logo_circle.png" ></img> <!-- creates the caminos de agua logo -->
+			</a>
+			<div class="dropdown"> <!-- this next block of code creates the dropdown menu --> 
+				<button id="DDHeader" onclick="toggleDD();" class="dropbtn">Loading map...</button> <!-- what to do when dropdown button is pressed -->
+				<div id="mapSelector" class="dropdown-content">
+					<a onclick="loadAndPlotData(FLUORIDE);">Fluoride</a> <!-- what to do when a contaminant/map layer is selected -->
+					<a onclick="loadAndPlotData(ARSENIC);">Arsenic</a>        
+					<a onclick="loadAndPlotData(TOTAL_RISK);">Total Risk</a>
+				</div>
+			</div>
+			<!-- The next few chunks of code create the specific map legends. They're directly
+			copy/pasted from carto.com. To add a new one, make your legend in carto, then, in
+			the 'legend' tab of the map-view, view the html source code for your legend. Copy
+			and paste it below.
+				Alternately, you can copy and paste one of the legend div elements from below
+			and reformat it to suit the needs of the contaminant you want to display. -->
+			
+			<!-- The legend for fluoride -->
+			<div class='cartodb-legend density' id='fluoride_legend' style='display: none'>  
+				<ul>
+					<li class="min">
+						Fluoride (ppm): Mexican Limit = 1.5; WHO Limit = 1.5
+					</li>
+					<li class="graph leg" style="border-radius: 0; border:none">
+						<div class="colors">
+							<div class="quartile" style="background-color:#909090"></div>
+							<div class="quartile" style="background-color:#229A00"></div>
+							<div class="quartile" style="background-color:#FF9900"></div>
+							<div class="quartile" style="background-color:#F11810"></div>
+							<div class="quartile" style="background-color:#000000"></div>
+						</div>
+						<div class="colors" style="font-weight:normal; text-align: center">
+							<div class="quartile" style="padding-top: 5px" ><b>No data</b></div>
+							<div class="quartile" style="padding-top: 5px" ><b>0-1.5</b></div>
+							<div class="quartile" style="padding-top: 5px" ><b>1.5-4</b></div>
+							<div class="quartile" style="padding-top: 5px" ><b>4-10</b></div>
+							<div class="quartile" style="padding-top: 5px" ><b>10+</b></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- The legend for arsenic -->
+			<div class='cartodb-legend density' id='arsenic_legend' style='display: none'>  
+				<ul>
+					<li class="min">
+						Arsenic (ppb): Mexican Limit = 25; WHO Limit = 10
+					</li>
+					<li class="graph leg" style="border-radius: 0; border:none">
+						<div class="colors">
+							<div class="quartile" style="background-color:#909090"></div>
+							<div class="quartile" style="background-color:#229A00"></div>
+							<div class="quartile" style="background-color:#FF9900"></div>
+							<div class="quartile" style="background-color:#F11810"></div>
+						</div>
+						<div class="colors" style="font-weight:normal; text-align: center">
+							<div class="quartile" style="padding-top: 5px" ><b>No data</b></div>
+							<div class="quartile" style="padding-top: 5px" ><b>0-10</b></div>
+							<div class="quartile" style="padding-top: 5px" ><b>10-25</b></div>
+							<div class="quartile" style="padding-top: 5px" ><b>25+</b></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- The legend for the Total Risk map -->
+			<div class='cartodb-legend custom' id='risk_legend' style="display: none">	
+				<div class="legend-title">Water Risk Level</div>
+				<ul>
+					<li>
+						<div class="bullet" style="background:#229A00"></div>
+						Meets all standards
+					</li>
+					<li>
+						<div class="bullet" style="background:#FFA300"></div>
+						Exceeds at least one standard - not safe for children
+					</li>
+					<li>
+						<div class="bullet" style="background:#F11810"></div>
+						Dangerous if consumed regularly
+					</li>
+					<li>
+						<div class="bullet" style="background:#000000"></div>
+						Potentially acutely toxic!
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<!-- This upcoming script tag holds all of the functions and scripts that
+		will run. If something isn't in a function, it runs automatically on load.
+		Those are mostly global variable and CONSTANT definitions. If a variable's 
+		value is constant, it is declared in BLOCK_LETTERS (with underscores between
+		words). This is just a personal convention I use to avoid getting confused. 
+		if a variable's value can change, its written with the first
+		word beginning in lowercase, and the rest beginning upper, as in: helloThereYou. 
+		Sometimes i depart from this convention for various reasons. For this, I appologize. =)
+			The functions only run when they're called, either by the html code above,
+		by another function, or by a user event like a click or zoom. -->
+		<script>
+		
+			////////////////////////////////////////////////////////////////////////////////
+			////					 DEFINE GLOBAL VARIABLES 						  	////
+			////																		////
+			////	IF YOU'RE TRYING TO CHANGE THE FORMATTING / COLORS / STYLES /		////
+			////		DATASET IN THE EXISTING MAP, YOU SHOULD ONLY NEED TO CHANGE 	////
+			////		STUFF IN THIS SECTION. DON'T CHANGE ANYTHING ELSE IF YOU'RE		////
+			////		NOT SURE WHAT IT DOES!!!										////
+			////																		////
+			////	IF YOU WANT TO CHANGE SOMETHING FUNDAMENTAL, LIKE WHICH VARIABLES 	////
+			////		CAN BE PLOTTED WITH THR DROPDOWN MENU, PLEASE REFFER TO THE 	////
+			////		TUTORIAL VIDEO POSTED ON TRELLO BEFORE PROCEEDING. 				////
+			////																		////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			var USER = 'cameron-catis';				// User for carto SQL querries 
+			var map;								// initialize the variable to hold the map
+			
+			var DATASHEET_NAME = 'ask_test_dataset_1'; // Datasheet name from carto.com for retrieving data
+			var DATA_NAMES = {						// And store the titles of the columns 
+				date: "date",						//	(get from carto.com once you import the dataset.)
+				name: "community_name",	
+				f: "fluoride",
+				as: "arsenic",
+				lat: "latitude",
+				lng: "longitude",
+				docs: "documents"
+			};
+			
+			var MONTHS = ["Jan", "Feb", "Mar", 		// Array of names of months for displaying
+						"Apr", "May", "Jun", 		//	the date in an accessible, clear format,
+						"Jul", "Aug", "Sep", 		// 	even for silly US people who choose to put 
+						"Oct", "Nov", "Dec"];		//	the month first. Ugh. 
+			
+			var FLUORIDE = 0; 						// Initialize constants for each contaminant to use as 
+			var ARSENIC = 1;						// 	an index to call contaminant-specific information, like
+			var TOTAL_RISK = 2; 					//  how to bin markers and draw legends and labels. 
+			
+			var F_BINS = [1.5, 4, 10];				// Store the contamination bins. For fluoride, for example, the
+			var AS_BINS = [10, 25]					//	bins are 0-1.5 mg/L, 1.5-4 mg/L, 4-10 mg/L, and >10 mg/L. 
+			var TOTAL_RISK_BINS = ["combined", FLUORIDE, ARSENIC]; 
+													// If we're combining contaminants, use the 
+													//	form ["combined", contam_1, contam_2, ... , contam_n]
+			var BINS = [F_BINS, AS_BINS, TOTAL_RISK_BINS]; 
+													// Store them all in BINS. 
+			
+			var NOT_PRESENT = -1;					// The default value of an index if an element doesn't exist in an array
+			var EPS = 0.0001; 						// This epsilon is the acceptable difference in lat or lng 										
+													//	between 2 points to classify them as occupying the same location.
+			var activeContaminant = -1; 			// A value that indicates the current contaminant being mapped								
+			var CONTAMINANTS = ["Fluoride", "Arsenic", "Total Risk"];
+													// Array with list of contaminants
+			var base;	 							// Store all info relevant to base points		
+			var dup_indices;						// An array of arrays of the data indices of duplicate points.
+													// 	Each internal array holds points with the same latLng. 
+			var AllData;							// Global var to hold all data.
+			var spiderFeatures; 					// a global var to store all of the data that's being spidered
+			var spiderOpen = false; 				// Records whether any spidered points are visible.
+			var spiderOpenIndex = -1; 				// stores the data index of the currently open (or last opened, if none) spider
+			
+			var POPUP_OFFSET = [88, 6]; 			// offset of the popup from the point
+			var SPIDER_Z_OFFSET = 100; 				// define the z-axes for the various layers, spidered points			
+			var BASE_Z_OFFSET = 10; 				//	and base points. 
+			var SPIDER_LABEL_OFFSET = [-50, -8];	// offset for spider date labels 
+			var X_OFFSET = 999999;					// The x-index-offset for the x-out button
+			
+			var MAP_CENTER = [21.15,-100.75];		// Set all map starting parameters
+			var MAP_MIN_ZOOM = 2;
+			var MAP_MAX_ZOOM = 18;
+			var MAP_INIT_ZOOM = 10;
+			
+			var X_STRETCH = 12;						// Constants used to setup the spider
+			var Y_STRETCH = 30;						//	geometry.
+			
+			var POLY_WEIGHT = 5;					// weight of the spidered polylines
+			var POLY_OPACITY = 1;					// opacity of the spidered polylines
+			var POLY_COLOR = '#2027f9';				// color of the spidered polylines
+			
+			var STAMEN_MAP_TYPE = "terrain";		// Set which type of stamen map we want as a base layer.
+													// 	options include: "terrain", "watercolor", and "toner"	
+													
+			var X_URL = "https://dl.dropboxusercontent.com/s/df3pabfdc7tzr4r/xButton_blue.png";		// URL for x-button used to close the spider
+			var NO_DATA_URL = "https://dl.dropboxusercontent.com/s/ccyv61ivd67pxdb/greyPoint.png";	// URL for point to display when the data isn't available										
+			var BASE_URLS = [NO_DATA_URL,				// Store array of all images to use as marker icons. 
+				'https://dl.dropboxusercontent.com/s/upslir85r88fc3p/greenPoint.png',	// 	[0]: no data, [1]: green, [2]: orange, [3]: red, [4] black
+				'https://dl.dropboxusercontent.com/s/3g1i5c3qixa3qhy/yellowPoint.png',
+				'https://dl.dropboxusercontent.com/s/zmwchxhnj1nz78i/redPoint.png',
+				'https://dl.dropboxusercontent.com/s/nnb56bylptpz9pk/blackPoint.png'		
+			];
+			var SPIDER_URLS = [NO_DATA_URL,			// URLs for points to be spidered
+				'https://dl.dropboxusercontent.com/s/axih95stjnic2wm/greenSpider.png',
+				"https://dl.dropboxusercontent.com/s/a9gnay7tdrx05b4/yellowSpider.png",
+				"https://dl.dropboxusercontent.com/s/68ed3b3k9u55scv/redSpider.png",
+				"https://dl.dropboxusercontent.com/s/vng9d6gccmy18tr/blackSpider.png"
+			];
+			
+			var SMALL_ICON_SIZE = [16,16]; 			// The pixel x and y that the final marker icon image is scaled to. 
+			var LARGE_ICON_SIZE = [24,24];			// A larger marker for the base of the spider 
+			var BASE_ICONS = [0,0,0,0];				// Initialize an array to hold all the icons, so the images 
+			var SPIDER_ICONS = [0,0,0,0];			//	only need to be grabbed once. 
+			var BASE_SPIDER_ICONS = [0,0,0,0];
+			
+			for (k=0; k<BASE_URLS.length; k++) {  	// Grab all the icons with correct size. 
+				BASE_ICONS[k] = L.icon({ 			// 	to be used when displaying the base markers
+					iconUrl: BASE_URLS[k],
+					iconSize: SMALL_ICON_SIZE
+				});
+				SPIDER_ICONS[k] = L.icon({ 			//	and the spidered markers
+					iconUrl: SPIDER_URLS[k],
+					iconSize: SMALL_ICON_SIZE
+				});
+				BASE_SPIDER_ICONS[k] = L.icon({		// 	and the markers at the base of the spider. 
+					iconUrl: SPIDER_URLS[k],
+					iconSize: LARGE_ICON_SIZE
+				});
+			};
+	
+			var X_ICON = L.icon({ 					// define an icon that can be clicked to close the spider
+				iconUrl: X_URL,
+				iconSize: SMALL_ICON_SIZE
+			});
+			
+			var CARTO_ATTRIBUTION = 'Data hosting, legends by <a href="http://www.carto.com" target="_blank">CartoDB</a>';
+			
+			var NO_DATA_MSG = "No data";
+			
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 INITIALIZATION FUNCTION 						  	////
+			//////////////////////////////////////////////////////////////////////////////// 
+
+			function init() {
+				
+				initMap(); 					// Initialize and display the map object
+				applyBaseMap(); 			// Apply the base tiles to the map
+				loadAndPlotData(TOTAL_RISK); 	// Load the data for Fluoride (the default contaminant) 
+			}								// 	then plot the base markers on the map.	
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					  	initMap FUNCTION	 						  	////
+			//// 			This function initializes the global map object.			////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function initMap() {
+				map = new L.map('WaterMap', { //First, initialize the map
+					center: MAP_CENTER,
+					zoom: MAP_INIT_ZOOM,
+					minZoom: MAP_MIN_ZOOM,
+					maxZoom: MAP_MAX_ZOOM,
+					attributionControl: true
+				});	
+				map.attributionControl.setPrefix(CARTO_ATTRIBUTION);
+				map.on('zoomstart', function() { 	// When the map zooms,
+					if (spiderOpen) {				//	if some points are spidered open,
+						closeSpider();				//	close them,
+						spiderOpen = true;			//	but save the status that they were open.
+					};
+				});
+				
+				map.on('zoomend', function() {	 	// Then when the map finishes zooming,
+					if (spiderOpen) {				// 	if there were previously spidered points open,
+						openSpider(AllData, spiderOpenIndex, activeContaminant);
+					};								// 	re-open the same points at the current zoom level. 
+				});
+				
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					  	applyBaseMap FUNCTION 						  	////
+			//// 	This function grabs a set of Stamen base tiles and applies 		  	////
+			//// 	them to the map. 													////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			
+			function applyBaseMap() {
+				map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {
+					attribution: 'hahahaa'
+				});
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	loadAndPlotData FUNCTION 					  	////
+			//// 	This function grabs data from carto.com and stores it in a local 	////
+			//// 	variable array. It also stores a copy of the data in the global 	////
+			////	array AllData for other functions to access. After storing the 		////
+			////	data, it calls functions to plot them. 								////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function loadAndPlotData(contaminantToShow) {
+				base = { 							// reinitialize the global variable base.
+					Markers: [],
+					Popups: [],
+					Bins: []
+				};
+				if (spiderOpen) {					// if there's a spider open, 
+					closeSpider(); 					//	close the spider,
+					spiderOpen = true;				//	but store that the spider is still open. 
+				};									// (we'll open it back up later...)
+				dup_indices = []; 					// reinitialize global dup_indices as an array
+				if (activeContaminant == contaminantToShow) {
+				} else { 							// if the currently-displayed contaminant is
+													//	selected again, don't do anything! Otherwise:
+					if (activeContaminant != NOT_PRESENT) { 	// if there's already a layer being displayed
+					
+						for (l=1; l<base.Markers.length; l++) {
+							if (base.Markers[l]){ 	// if a marker exists,
+								map.removeLayer(base.Markers[l]);
+							};						// clear it, to wipe the map clean. 
+						};
+						hideLegend();				// and then hide the legend, too. 
+					};
+					activeContaminant = contaminantToShow;  // Store the contaminant as a global
+					adjustDDText(contaminantToShow); 		// Adjust the text in the drop down menu to display the current contaminant
+					showLegend(contaminantToShow);			// And display the appropriate legend
+					
+					sql = new cartodb.SQL({user: USER }); 	// Define a new SQL querry to a carto.com public dataset
+					sql.execute("SELECT * FROM "+DATASHEET_NAME+" ORDER BY "+DATA_NAMES.date+" DESC") 
+															// Grab all the data, organized in descending order
+															// 	by date, so the newest data comes first. 
+														
+					.done(function(data) { 					// Once the data has arrived:
+						AllData = data;						// store it in the global variable
+						// Uncomment the next line to see the full dataset in the console, super useful for debugging!
+						//console.log("Data acquired! "+JSON.stringify(data)); // log the data in the console for debugging
+						for (i=0; i<data.total_rows; i++) { // Loop through all the rows of the data
+							if (data.rows[i][DATA_NAMES.date] == null |	// if there's no date or latLng info, 
+							data.rows[i][DATA_NAMES.lat] == null |	//	ignore the point!
+							data.rows[i][DATA_NAMES.lng] == null ) {	
+							} else { 						// Otherwise, check for duplicate latLngs, then plot the base markers
+								if (!presentIn2dArray(dup_indices, i)[0]) {
+									var matches = 0;		// If the current marker is known to be a duplicate, skip it. 
+									var j = i;				// 	otherwise, check to see if it has any duplicates. This works
+															//	because we loaded the data in chronological order, so the 1st
+															//	element in each row of the duplicate array will be the most recent.  	
+									while (matches == 0 & j<data.total_rows-1) {
+										j++;				// Increment (j) to check out the next data point. 							// while there are no matches, and we're still in the data array 
+															// Check to see if the current element (i) has the same latLngs
+															//	as each susequent datapoint (j).
+										if (Math.abs(data.rows[i][DATA_NAMES.lat]-data.rows[j][DATA_NAMES.lat])<EPS 
+										& Math.abs(data.rows[i][DATA_NAMES.lng]-data.rows[j][DATA_NAMES.lng])<EPS ){
+											matches++; 		// If so, increment matches to break out of the while-loop
+											dup_indices.push([i,j]); 
+										};					// And save the current index (i) and the 1st duplicate, (j). 			
+									};
+									if (matches == 1) { // If there's at least one duplicate, there may be more! 
+										for (var k=j+1; k<data.total_rows; k++) {
+														// Loop through the rest of the data points, if there's a match,
+														// 	at index (k), save it after (i) and (j) as [i,j,k1,k2,k3,...]
+											if (Math.abs(data.rows[i][DATA_NAMES.lat]-data.rows[k][DATA_NAMES.lat])<EPS 
+											& Math.abs(data.rows[i][DATA_NAMES.lng]-data.rows[k][DATA_NAMES.lng])<EPS ){
+												dup_indices[dup_indices.length-1].push(k);
+											};
+										};
+									};
+								};
+								
+								if (!presentIn2dArray(dup_indices, i)[0]) {					// plot the base data with no history
+									plotMarker("base", data, contaminantToShow, i);
+								} else if (presentIn2dArray(dup_indices, i)[1][1] == 0) {	// plot the base data with historical data
+									plotMarker("preSpider", data, contaminantToShow, i);
+								} else {
+									// Do stuff to the historic points, if you'd like, here. 
+								};
+							
+							};
+						};
+						if (spiderOpen) { 											// If the spider was open already and closed,
+							openSpider(AllData, spiderOpenIndex, contaminantToShow);// 	reopen it here, now colored by the new contaminant
+						};
+					});				
+				};
+				
+			};
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	plotMarker FUNCTION 						  	////
+			//// 	Takes in a four arguments, "type", "data", "contam" and "data_index"////
+			////	and plots  															////
+			//// 	the appropriate point to the map. It also stores the marker info 	////
+			//// 	(latLng, labels, popups, etc.) in a global array that can be closed ////
+			//// 	by another function later. 
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function plotMarker(type, data, contam, data_index) {
+				if (type == "base" | type == "preSpider") {					// If the point to plot is a base point with no historical data:
+					base.Bins.push(getBin(data.rows[i], BINS[contam])); 	// Grab the bin of the point
+					var latLng = L.latLng([data.rows[i][DATA_NAMES.lat], data.rows[i][DATA_NAMES.lng]]); // Grab the latLng of the point
+					base.Markers.push( 										// Save the appropriate marker
+						L.marker(latLng, {
+						icon: BASE_ICONS[base.Bins[base.Bins.length-1]],
+						riseOnHover: true,
+						zIndexOffset: BASE_Z_OFFSET
+						})
+						.on('click', function(event) { 						// When the marker is clicked	
+							click_lat = event.latlng.lat; 					// Grab the latLng of the cliked point 
+																			// 	(returns value of marker's center, regardless of where is clicked...)
+							var j = base.Popups.map(function(a) {return a._latlng.lat}).indexOf(click_lat);
+																			// this confusing line gets the index in base.Popups
+																			//	of the point with the same latitude as the clicked point
+																			// 	we'll use that index to access the marker, popup, and label soon. 
+							if (type == "base"){ 				// if the marker is a base point without spidered points
+								if(spiderOpen) {				// 	and if another spider is open
+									closeSpider();				//	close that other spider.
+								};
+								map.openPopup(base.Popups[j]); 	// then open the popup for the clicked point.
+							} else if (type == "preSpider" & !spiderOpen) { // if the point has spidered points, and there's no spider open
+								openSpider(data, data_index, contam);		// 	open the spider for the clicked point!
+							} else if (type == "preSpider") {				// if the point has spidered points, but there IS a spider open
+								if (spiderOpenIndex == data_index) { 		// if the open spider is the clicekd point,
+									map.openPopup(base.Popups[j]); 			//	show that point's popup
+								} else {									// if not,
+									closeSpider();							//	close the current spider
+									openSpider(data, data_index, contam); 	// 	and open the clicked point's spider!
+								}
+							}
+							
+						})
+					);
+					base.Markers[base.Markers.length-1].bindLabel(getLabel("community", i), {
+						noHide: false,										// attach labels to all the base points 
+						className: "ourLabel"								//	that activate during mouseover
+					});
+					var popupText = getBasePopup(i);// Grab the text for the popup at data index i
+					base.Popups.push(L.popup({		// Define the popup for each marker
+						offset: POPUP_OFFSET})
+						.setLatLng(latLng)
+						.setContent(popupText)
+					);
+					base.Markers[base.Markers.length-1].addTo(map); // And finally, actually add the markers to the map!
+				} else {						// If the point isn't being displayed, push
+					base.Markers.push(false); 	// 	falses into the array, so that the indexes
+					base.Popups.push(false); 	// 	are the same as in the SQL querried data. 
+					base.Bins.push(false);
+				}
+			}		
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	getBin FUNCTION 							  	////
+			//// 	Takes in a single line of a data dictionary and an array called 	////
+			////	"bins". If bins begins with a 										////
+			//// 	number, we'll figure out in which bin the value falls. If bins 		////
+			//// 	begins with a non-number, we need to do something more complex. 	////
+			//// 	Either way, getBin() returns the correct bin in which value falls.  ////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function getBin(data, bins) {
+
+				var values = []; 								// initialize the local array, values
+				if (activeContaminant == FLUORIDE) {			// 	and push the relevant values into it,
+					values.push(data[DATA_NAMES.f]);			//	depending on the contaminant to deal 
+				} else if (activeContaminant == ARSENIC) { 		// 	with, which is accessed from the global,
+					values.push(data[DATA_NAMES.as]);				//	"activeContaminant".
+				} else if (activeContaminant == TOTAL_RISK) {
+					values.push(data[DATA_NAMES.f]);
+					values.push(data[DATA_NAMES.as]);
+				}
+
+				var nullCounter = 0;					// initialize a counter
+				for (var i=0; i<values.length; i++) {	// count the number of nulls in the values array
+					if (!values[i]) {
+						nullCounter++
+					}
+				}
+				if (nullCounter == values.length) {		// if it's full of nulls, 
+					return 0;							//	return 0, the code for no data
+				}
+					
+				
+				var realBin = 1;					// Initialize the bin holder to 0. If we don't find
+													// a bin >0, the bin must be 0 anyways. 
+				if (typeof(bins[0]) == "number"){  	// This section deals with the case where there's
+													// 	a single relevant contaminant
+					for (var j=0; j<bins.length; j++) { // Loop through the bins array. If the value is
+						if (values[0] >= bins[j]) {	//	greater than the threshold, set the bin!
+							realBin = j+2;
+						};							// If the bin number hasn't been set, it means
+					};								//	that the marker belongs in bin 0, the default value of realBin.
+				} else if (bins[0] == "combined") { // This section deals with the case where we're 
+													// 	aggregating multiple contaminants into a "risk scale."
+					for(var j=1; j<bins.length; j++) {	// Loop through all the relevant contaminants (setting the bin
+													//	if the value exceeds the threshold each time).
+						if (realBin-1 < BINS[bins[j]].length) { // If the current bin value is less than the number of bins
+							for (m=realBin-1; m<BINS[bins[j]].length; m++) { 
+													// Loop through all bins in each contaminant, 
+													// 	but only those above the risk level of the 
+													// 	previous contaminants.
+								if (values[j-1]) { 	// Quick check to make sure the value actually exists...
+									if (values[j-1] >= BINS[bins[j]][m]) {
+													// If the value exceeds the threshold, set the bin. 
+										realBin = m+2;
+									};
+								};
+							};
+						};							
+					};
+				} else {
+					// if you have any other types of layers you'd like to include,
+					//	they should go in the "else" here or in an "else if" where
+					// 	you can parse the bin. Good luck!
+				};
+				return realBin;	
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	openSpider FUNCTION 						  	////
+			//// 	Is passed the complete JSON dataset from the SQL querry and the 	////
+			//// 	index of the base point that has historical duplicates and the 		////
+			//// 	active contaminant. The function									////
+			////	searches through the dup_indices array to find the correct row, 	////
+			//// 	then plots all the points whose indices live in that row spidered.  ////
+			////	dup_indices is already in reverse chronological order, so they'll 	////
+			////	be plotted sequentially. When a spidered point is clicked, it's 	////
+			////	popup appears. 														////
+			////////////////////////////////////////////////////////////////////////////////
+				
+			function openSpider(data, i, contam) {
+				var features = [];										// initialize a local array to store the features
+				row = presentIn2dArray(dup_indices, i)[1][0];			// get the row of dup_indices where the index exists
+				for (var j=0; j<dup_indices[row].length; j++) {			// loop through that row of dup_indices. I.e., loop 
+																		//	through all the data-indices of points to spider
+					z = dup_indices[row][j]; 							// set z to each index in turn
+					var spiderBin = getBin(data.rows[z], BINS[contam]); // set the latLng, then modify it 
+					var shiftedLatLng = adjustLatLng(data.rows[z][DATA_NAMES.lat], data.rows[z][DATA_NAMES.lng], dup_indices[row].length, j);
+					var prevShiftedLatLng = adjustLatLng(data.rows[z][DATA_NAMES.lat], data.rows[z][DATA_NAMES.lng], dup_indices[row].length, j-1);
+																		// get the shifted latlng value of the marker
+																		// then define the popup format. 
+					var popupText = getBasePopup(z);					// grab the text for the popup		
+					if (j==0) {											// if we're dealing with the base point of the spider
+						features.push(L.marker(shiftedLatLng, {			// push the marker onto the features array
+							icon: BASE_SPIDER_ICONS[spiderBin],
+							zIndexOffset: SPIDER_Z_OFFSET
+						}));	
+					} else {
+						features.push(L.marker(shiftedLatLng, {			// if we're not dealing with the base
+							icon: SPIDER_ICONS[spiderBin],				// also push the marker onto the features array.
+							zIndexOffset: SPIDER_Z_OFFSET
+						}));		
+						var popupText = getLabel("hist", 0)+popupText;	// adjust the popup text to note "historical data"
+						features.push(L.polyline([shiftedLatLng, prevShiftedLatLng],{
+							color: POLY_COLOR,							// push a polyline connecting the current
+							weight: POLY_WEIGHT,									// 	point and the previous one onto the 
+							opacity: POLY_OPACITY									// 	featurs array
+						}));
+					};
+					if (j==0) {						// if we're dealing with the base point
+						var marker_index = 0;		// 	set the marker index to 0
+					} else {						// otherwise, the markers are odd and 
+						var marker_index = 2*j-1;	// 	their polylines are the following evens
+						var polyline_index = 2*j;
+					};	
+					features[marker_index].bindLabel(getLabel("year", z), {
+						noHide: true,				// bind labels displaying the date
+						className: "ourLabel",		// 	permanently next to each spidered point
+						offset: SPIDER_LABEL_OFFSET						
+					});
+					features[marker_index].bindPopup(popupText, {
+						offset: POPUP_OFFSET 		// bind the appropriate popup to each marker
+					});
+					if (polyline_index) {			// if there is a polyline (i.e. not the 0th point)
+						features[polyline_index].bindLabel(getLabel("community", z),{
+							className: "ourLabel"	// bind a label to the polylines as well, displaying community name
+						});
+					};
+				}
+				
+				var shiftedLatLng = adjustLatLng(data.rows[z][DATA_NAMES.lat], data.rows[z][DATA_NAMES.lng], dup_indices[row].length, j);
+				var prevShiftedLatLng = adjustLatLng(data.rows[z][DATA_NAMES.lat], data.rows[z][DATA_NAMES.lng], dup_indices[row].length, j-1);
+				features.push(L.marker(shiftedLatLng, {	// get the newest shifted point values
+					icon: X_ICON,						// 	to plot the x-out icon at the top
+					zIndexOffset: X_OFFSET				// 	of the spider stack. 
+				}).on('click', function() {				// When the x-out is clicked,
+					closeSpider();						//	close the spider. 
+				}));
+				
+				features.push(L.polyline([shiftedLatLng, prevShiftedLatLng],{
+					color: POLY_COLOR,					// push a polyline connecting the x-out
+					weight: POLY_WEIGHT,							//	button and the oldest spidered point.
+					opacity: POLY_OPACITY
+				}).bindLabel(getLabel("community", z),{	// attach the community label to the polyline
+					className: "ourLabel"
+				}));
+														// Finally, add the whole spider featureGroup to the map!
+				spiderFeatures = L.featureGroup(features).addTo(map);
+				spiderOpenIndex = i;					// set the gloabl spider index 
+				spiderOpen = true;						//	and status. Wooohooo! Spider plotted!
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	window.onclik FUNCTION 						  	////
+			//// 	When the user clicks in the window, this function executes. It is  	////
+			//// 	used to toggle the state (show/hide) of the dropdown menu. You 		////
+			////	almost definitely don't need to mess with this, unless you want 	////
+			////	something new to happen anytime the user clicks in the window...	////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			window.onclick = function(event) {
+				if (!event.target.matches('.dropbtn')) { 				// if the user's clikced the dropdown button
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					for (var i=0; i<dropdowns.length; i++) { 		// loop through dropdown menu
+						var openDropdown = dropdowns[i]; 				// if the dropdown menu is showing
+						if (openDropdown.classList.contains('show')) { 	// remove show (so that it hides)
+							openDropdown.classList.remove('show');
+						};
+					};
+				};
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	adjustDDText FUNCTION 						  	////
+			//// 	Takes in a contaminant and adjusts the display text in the dropdown ////
+			////	menu to that contaminant with a downwards pointing triangle. 		////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function adjustDDText(contam) {
+				var pointDown = '\xa0\xa0\xa0\u25BC'; 	// The value of a downwards pointing arrow
+														// 	preceeded by 3 spaces. 
+				document.getElementById('DDHeader').textContent = CONTAMINANTS[contam	]+pointDown;
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	toggleDD FUNCTION 							  	////
+			//// 	changes the classList property to show on the drop down menu 	    ////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function toggleDD(){
+				document.getElementById("mapSelector").classList.toggle("show");
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	getBasePopup FUNCTION 					  		////
+			//// 	Takes in an index and returns the base popup text format used.		////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function getBasePopup(i) {
+				var date = String(AllData.rows[i][DATA_NAMES.date].split("T", 1)).split("-", 3);
+				//var date = date.split("-", 3);
+				var day = String(date[2]);
+				var month = MONTHS[Number(date[1])];
+				var year = String(date[0]);
+
+				var docPath = AllData.rows[i][DATA_NAMES.docs];
+				var docLink;
+				if(docPath) {
+					docLink = '<a href='+ docPath +' target="_blank">Complete test results</a>';
+				} else {
+					docLink = ""
+				}
+				var as = AllData.rows[i][DATA_NAMES.as] 			// Get the arsenic value
+				if (!as) {											// If it's null, return the no data message
+					as = NO_DATA_MSG;
+				}
+				var pop = "<dl><h2>" + AllData.rows[i][DATA_NAMES.name] + "</h2>"	// This text will be displayed
+					+ "<b>Date</b>"												//	in the popup for this point.
+					+ "<dt>" + day + "-" + month + "-" + year + "</dd>"
+					+ "<br><br>"
+					+ "<b>Fluoride (mg/L)</b>"
+					+ "<dt>" + AllData.rows[i][DATA_NAMES.f] + "</dd>"
+					+ "<br><br>"
+					+ "<b>Arsenic (ug/L)</b>"
+					+ "<dt>" + as + "</dd>"
+					+ "<br><br>"
+					+ docLink
+				return pop;
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	adjustLatLng FUNCTION 						  	////
+			//// 	Takes in a lat, lng, total number of points to spider, and the index////
+			////	of this particular point. Returns an L.latLng object with the 		////
+			////	location at which to plot the marker. 								////
+			////																		////
+			////	Algorithm: 	x -> x - (X_STRETCH/total_pts)*i^2						////
+			////				y -> y - Y_STRETCH*i									////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function adjustLatLng(lat, lng, total_pts, i) { 				
+				var latLng = L.latLng([lat, lng]);					// build a latLng object
+				var ll_point = map.latLngToContainerPoint(latLng);	// convert to container point with [x, y] coords, then shift
+				var x = ll_point.x - (X_STRETCH/total_pts)*i*i; 	// get the shifted x
+				var y = ll_point.y - Y_STRETCH*i;					//	 and y.
+				var shiftedLatLng = map.containerPointToLatLng(L.point([x, y])); // Turn the shifted components back to a L.latLng object.
+				return shiftedLatLng;
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	presentIn2dArray FUNCTION 					  	////
+			//// 	Takes in a 2D array and a value, and returns an array of the form 	////
+			//// 	[exists?, [index0, index1]] where "exists?" is a boolean, true if 	////
+			//// 	the value exists in the array, at the coordinates [index0][index1].	//// 
+			////																		////
+			////	THIS FUNCTION ONLY WORKS IF THERE ARE NO REPEATS. OTHERWISE IT WILL	////
+			////	RETURN THE 1ST INSTANCE OF value IN array.							////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function presentIn2dArray(array, value) {
+				var exists = false; 					// if we don't find value in array, we'll return false. 
+				var index = [NOT_PRESENT, NOT_PRESENT];					// if we don't find value in array, we'll return [-1,-1] as it's coordinates.
+				for (var a=0; a<array.length; a++) {		// loop through each subArray
+					if (array[a].indexOf(value) > NOT_PRESENT) { // if the value exists in that subArray
+						exists = true; 					// set exists
+						index = [a, array[a].indexOf(value)]; 	// and set the indices
+					};
+				};
+				return [exists, index]; 			
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	getLabel FUNCTION 							  	////
+			//// 	Takes in the type of label to plot (string) and the index of the 	////
+			////	marker's data in the global data array, AllData. Returns the string ////
+			////	that will be contained in the label. 								////
+			////////////////////////////////////////////////////////////////////////////////
+	
+			function getLabel(type, i) {
+				if (type == "year") {
+					return "\xa0"+String(AllData.rows[i][DATA_NAMES.date].split('-',1));		
+				} else if (type == "community") {
+					return "\xa0"+String(AllData.rows[i][DATA_NAMES.name]);
+				} else if (type == 'hist') {
+					return "<em>\xa0\xa0\xa0\xa0\xa0\xa0\xa0HISTORICAL DATA</em><br>";
+				};
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					  	hideLegend FUNCTION	 						  	////
+			//// 			This function hides any div legends that may be open.		////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function hideLegend() {
+				document.getElementById('fluoride_legend').style.display = 'none';
+				document.getElementById('arsenic_legend').style.display = 'none';
+				document.getElementById('risk_legend').style.display = 'none';
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					  	showLegend FUNCTION	 						  	////
+			//// 	This function shows the div legend for the relevant contaminant.	////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function showLegend(contam) { 
+				if (contam == FLUORIDE) {
+					document.getElementById('fluoride_legend').style.display = 'block';
+				} else if (contam == ARSENIC) {
+					document.getElementById('arsenic_legend').style.display = 'block';
+				} else if (contam == TOTAL_RISK) {
+					document.getElementById('risk_legend').style.display = 'block';
+				};
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	closeSpider FUNCTION 						  	////
+			//// 	Closes all points stored in the global var spiderFeatures.			////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function closeSpider() { 				
+				if (spiderFeatures) {				// if spiderFeatures exists (if a spider is open)
+					map.removeLayer(spiderFeatures)	// 	then remove it!		
+				};						
+				spiderOpen = false;					// reset the global flag that the spider is closed
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	removePoint FUNCTION 						  	////
+			//// 			Removes the point stored at the index i.					////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function removePoint(i) {
+				map.removeLayer(base.Markers[i]); 
+			}
+	
+			
+		</script>
+		
+	</body>
+</html>
+			
