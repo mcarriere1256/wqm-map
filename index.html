@@ -301,7 +301,7 @@
 			var STAMEN_MAP_TYPE = "terrain";		// Set which type of stamen map we want as a base layer.
 													// 	options include: "terrain", "watercolor", and "toner"	
 													
-			var X_URL = "https://dl.dropboxusercontent.com/s/df3pabfdc7tzr4r/xButton_blue.png";		// URL for x-button used to close the spider
+			var X_URL = "https://dl.dropboxusercontent.com/s/osrwp3rb1b11vyo/markRutte.PNG";//"https://dl.dropboxusercontent.com/s/df3pabfdc7tzr4r/xButton_blue.png";		// URL for x-button used to close the spider
 			var NO_DATA_URL = "https://dl.dropboxusercontent.com/s/ccyv61ivd67pxdb/greyPoint.png";	// URL for point to display when the data isn't available										
 			var BASE_URLS = [NO_DATA_URL,				// Store array of all images to use as marker icons. 
 				'https://dl.dropboxusercontent.com/s/upslir85r88fc3p/greenPoint.png',	// 	[0]: no data, [1]: green, [2]: orange, [3]: red, [4] black
@@ -339,7 +339,7 @@
 	
 			var X_ICON = L.icon({ 					// define an icon that can be clicked to close the spider
 				iconUrl: X_URL,
-				iconSize: SMALL_ICON_SIZE
+				iconSize: [45,60]
 			});
 			
 			var CARTO_ATTRIBUTION = 'Data hosting, legends by <a href="http://www.carto.com" target="_blank">CartoDB</a>';
