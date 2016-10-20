@@ -3,8 +3,8 @@
   Point-Map-English. */ 
 
   /* adds style the html body and map div objects */
-		html, body {width:100%; height:100%; padding: 0; margin: 0;}
-		#WaterMap { width: 100%; height:100%; background: teal;}
+		html, body {width:100%; height:100%; padding:0; margin:0;}
+		#WaterMap {width:100%; height:100%; background:teal;}
 		
 		/* CSS style formatting for the labels bound to each marker*/
 		.ourLabel {
