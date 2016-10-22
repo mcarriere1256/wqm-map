@@ -10,11 +10,11 @@
 		
 		
 		<style>
-		  /* This CSS stylesheet dictaes the styles used in the leaflet
-  mapping project index.html in this repo, Independence-Watershed-
-  Point-Map-English. */ 
-
-  /* adds style the html body and map div objects */
+		/* This CSS stylesheet dictaes the styles used in the leaflet
+		mapping project index.html in this repo, Independence-Watershed-
+		Point-Map-English. */ 
+		
+		/* adds style the html body and map div objects */
 		html, body {width:100%; height:100%; padding:0; margin:0;}
 		#WaterMap {width:100%; height:100%; background:teal;}
 		
@@ -166,7 +166,7 @@
 							<div class="quartile" style="background-color:#000000"></div>
 						</div>
 						<div class="colors" style="font-weight:normal; text-align: center">
-							<div class="quartile" style="padding-top: 5px" ><b>No data</b></div>
+							<div class="quartile" style="padding-top: 5px" name = "no_data"><b></b></div>
 							<div class="quartile" style="padding-top: 5px" ><b>0-1.5</b></div>
 							<div class="quartile" style="padding-top: 5px" ><b>1.5-4</b></div>
 							<div class="quartile" style="padding-top: 5px" ><b>4-10</b></div>
@@ -190,7 +190,7 @@
 							<div class="quartile" style="background-color:#F11810"></div>
 						</div>
 						<div class="colors" style="font-weight:normal; text-align: center">
-							<div class="quartile" style="padding-top: 5px" ><b>No data</b></div>
+							<div class="quartile" style="padding-top: 5px" name = "no_data"><b></b></div>
 							<div class="quartile" style="padding-top: 5px" ><b>0-10</b></div>
 							<div class="quartile" style="padding-top: 5px" ><b>10-25</b></div>
 							<div class="quartile" style="padding-top: 5px" ><b>25+</b></div>
@@ -360,6 +360,11 @@
 			
 			var NO_DATA_MSG = "No data";
 			
+			for (var i=0; i<document.getElementsByName("no_data").length; i++) {
+				document.getElementsByName("no_data")[i].innerHTML = "<b>"+NO_DATA_MSG+"</b>";
+			}
+			
+			var PAST_DATA_TEXT = "<em>\xa0\xa0\xa0\xa0\xa0\xa0\xa0HISTORICAL DATA</em><br>"			
 			
 			////////////////////////////////////////////////////////////////////////////////
 			////					 INITIALIZATION FUNCTION 						  	////
@@ -852,7 +857,7 @@
 				} else if (type == "community") {
 					return "\xa0"+String(AllData.rows[i][DATA_NAMES.name]);
 				} else if (type == 'hist') {
-					return "<em>\xa0\xa0\xa0\xa0\xa0\xa0\xa0HISTORICAL DATA</em><br>";
+					return PAST_DATA_TEXT;
 				};
 			}
 			
