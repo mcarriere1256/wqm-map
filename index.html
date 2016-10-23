@@ -3,145 +3,31 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-		<link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+		<link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css"></link>
 		<script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
 		<script src="https://leaflet.github.io/Leaflet.label/leaflet.label.js"></script> <!-- files necessary for labels in leaflet -->
-		<script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js"></script> <!--Include Stamen JavaScript to get basemap tiles-->
+		<script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js"></script><!--Include Stamen JavaScript to get basemap tiles-->
 		
+		<!-- Include the include files: global vars and display text -->
+		<script src="global.js" type="text/javascript" /></script>
+		<script src="display_English.js" type="text/javascript"></script>
 		
-		<style>
-		/* This CSS stylesheet dictaes the styles used in the leaflet
-		mapping project index.html in this repo, Independence-Watershed-
-		Point-Map-English. */ 
+		<!-- Include the CSS styling -->
+		<link rel="stylesheet" type="text/css" href="map_styles.css"></link>
 		
-		/* adds style the html body and map div objects */
-		html, body {width:100%; height:100%; padding:0; margin:0;}
-		#WaterMap {width:100%; height:100%; background:teal;}
-		
-		/* CSS style formatting for the labels bound to each marker*/
-		.ourLabel {
-			position: absolute;
-			display: inline-block;
-			font-size: 13px;
-			font-color: #666666;
-			background-color: #FCFCFC;
-			padding-left: 2px;
-			padding-right: 2px;
-			box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);
-			border: 0px solid;
-			border-radius: 3px;
-			text-indent: -4px;
-		}
-		
-		/* CSS formatting for the popup box that appears when markers are clicked */
-		.leaflet-popup-content-wrapper {
-			background-color: #F6F6F6;
-			text-align: left;
-			width: 203px;
-		}
-		
-		/* CSS formatting for the tip of the popup box */
-		.leaflet-popup-tip {
-			background: #F6F6F6;
-			box-shadow: 0 0 0 rgba(0,0,0,0.4);
-		}
-		
-	
-		.leaflet-popup-tip-container {
-			position: relative;
-			right: 43%;
-			bottom: 6px;
-		}
-		
-		/* The next bunch of CSS definitions are for the dropdown menu that 
-		allows the user to select the relevant contaminant. */
-		.dropbtn {
-			background-color: #FFFFFF;
-			color: #000000;
-			padding: 12px;
-			font-size: 14px;
-			cursor: pointer; 	
-			box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.3);
-			border: 0px solid;
-			border-radius: 6px;
-		}
-		
-		.dropbtn:hover, .dropbtn:focus {
-			background-color: #EEEEEE;
-			color: #000000;
-		}
-		
-		.dropdown {
-			position: relative;
-			display: inline-block;
-			top: 14px;
-			left: 50px;
-			z-index: 99;
-		}
-		
-		.dropdown-content {
-			display: none;
-			position: center;
-			background-color: #FFFFFF;
-			min-width: 100px;
-			overflow: auto;
-			box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.3);
-			border: 0px solid;
-			border-radius: 10px;
-		}
-		
-		.dropdown-content a {
-			color: #000000;
-			padding: 12px 16px;
-			text-decoration: none;
-			display: block;
-			font-size: 14px;
-		}
-		
-		.dropdown a:hover {
-			background-color: #EEEEEE;
-		}
-		
-		.show {
-			display: block;
-		}
-		
-		/* CSS formatting for the Caminos de Agua logo in the corner */
-		img.caminos_logo {
-			display: inline-block;
-			z-index: 3;
-			position: absolute;
-			left: 15px;
-			bottom: 15px;
-			width: 120px;
-			height: 120px;
-			opacity: 1;
-		}
-		
-		/* CSS formatting for individual contaminant legend text */
-		div.cartodb-legend ul li {
-			font-size: 10px;
-			color: #666;
-			font-weight: 700;
-			font-family: Helvetica,Arial;
-			text-transform: none;
-			line-height: normal;
-		}
-	
-		</style>
 	</head>
 	
 	<body onload="init();"> 	<!-- what to do when the page loads -->
 		<div id='WaterMap'> 	<!-- creates the div element that holds the map -->
-			<a href="http://www.caminosdeagua.org" target="_blank"> <!-- Link the caminos logo to the caminos website -->
-				<img class="caminos_logo" src="https://dl.dropboxusercontent.com/s/fd8qh4kdfg2olfb/caminos_logo_circle.png" ></img> <!-- creates the caminos de agua logo -->
+			<a href="http://www.caminosdeagua.org"> <!-- Link the caminos logo to the caminos website -->
+				<img class="caminos_logo" src="https://dl.dropboxusercontent.com/s/thxoaq7fo9ilfue/caminos_logo_circle.png" ></img> <!-- creates the caminos de agua logo -->
 			</a>
 			<div class="dropdown"> <!-- this next block of code creates the dropdown menu --> 
-				<button id="DDHeader" onclick="toggleDD();" class="dropbtn">Loading map...</button> <!-- what to do when dropdown button is pressed -->
+				<button id="DDHeader" onclick="toggleDD();" class="dropbtn", id="loading_indicator"></button> <!-- what to do when dropdown button is pressed -->
 				<div id="mapSelector" class="dropdown-content">
-					<a onclick="loadAndPlotData(FLUORIDE);">Fluoride</a> <!-- what to do when a contaminant/map layer is selected -->
-					<a onclick="loadAndPlotData(ARSENIC);">Arsenic</a>        
-					<a onclick="loadAndPlotData(TOTAL_RISK);">Total Risk</a>
+					<a onclick="loadAndPlotData(FLUORIDE);" name="contam_button"></a> <!-- what to do when a contaminant/map layer is selected -->
+					<a onclick="loadAndPlotData(ARSENIC);" name="contam_button"></a>        
+					<a onclick="loadAndPlotData(TOTAL_RISK);" name="contam_button"></a>
 				</div>
 			</div>
 			<!-- The next few chunks of code create the specific map legends. They're directly
@@ -154,9 +40,7 @@
 			<!-- The legend for fluoride -->
 			<div class='cartodb-legend density' id='fluoride_legend' style='display: none'>  
 				<ul>
-					<li class="min">
-						Fluoride (ppm): Mexican Limit = 1.5; WHO Limit = 1.5
-					</li>
+					<li class="min" id="f_title"></li>
 					<li class="graph leg" style="border-radius: 0; border:none">
 						<div class="colors">
 							<div class="quartile" style="background-color:#909090"></div>
@@ -166,11 +50,11 @@
 							<div class="quartile" style="background-color:#000000"></div>
 						</div>
 						<div class="colors" style="font-weight:normal; text-align: center">
-							<div class="quartile" style="padding-top: 5px" name = "no_data"><b></b></div>
-							<div class="quartile" style="padding-top: 5px" ><b>0-1.5</b></div>
-							<div class="quartile" style="padding-top: 5px" ><b>1.5-4</b></div>
-							<div class="quartile" style="padding-top: 5px" ><b>4-10</b></div>
-							<div class="quartile" style="padding-top: 5px" ><b>10+</b></div>
+							<div class="quartile" style="padding-top: 5px" name="no_data"></div>
+							<div class="quartile" style="padding-top: 5px" name="f"></div>
+							<div class="quartile" style="padding-top: 5px" name="f"></div>
+							<div class="quartile" style="padding-top: 5px" name="f"></div>
+							<div class="quartile" style="padding-top: 5px" name="f"></div>
 						</div>
 					</li>
 				</ul>
@@ -179,8 +63,7 @@
 			<!-- The legend for arsenic -->
 			<div class='cartodb-legend density' id='arsenic_legend' style='display: none'>  
 				<ul>
-					<li class="min">
-						Arsenic (ppb): Mexican Limit = 25; WHO Limit = 10
+					<li class="min" id="as_title">
 					</li>
 					<li class="graph leg" style="border-radius: 0; border:none">
 						<div class="colors">
@@ -190,10 +73,10 @@
 							<div class="quartile" style="background-color:#F11810"></div>
 						</div>
 						<div class="colors" style="font-weight:normal; text-align: center">
-							<div class="quartile" style="padding-top: 5px" name = "no_data"><b></b></div>
-							<div class="quartile" style="padding-top: 5px" ><b>0-10</b></div>
-							<div class="quartile" style="padding-top: 5px" ><b>10-25</b></div>
-							<div class="quartile" style="padding-top: 5px" ><b>25+</b></div>
+							<div class="quartile" style="padding-top: 5px" name="no_data"><b></b></div>
+							<div class="quartile" style="padding-top: 5px" name="as"></div>
+							<div class="quartile" style="padding-top: 5px" name="as"></div>
+							<div class="quartile" style="padding-top: 5px" name="as"></div>
 						</div>
 					</li>
 				</ul>
@@ -201,23 +84,19 @@
 			
 			<!-- The legend for the Total Risk map -->
 			<div class='cartodb-legend custom' id='risk_legend' style="display: none">	
-				<div class="legend-title">Water Risk Level</div>
+				<div class="legend-title", id="risk_title"></div>
 				<ul>
 					<li>
-						<div class="bullet" style="background:#229A00"></div>
-						Meets all standards
+						<div class="bullet" style="background:#229A00" name="risk"></div> 
 					</li>
 					<li>
-						<div class="bullet" style="background:#FFA300"></div>
-						Exceeds at least one standard - not safe for children
+						<div class="bullet" style="background:#FFA300" name="risk"></div>
 					</li>
 					<li>
-						<div class="bullet" style="background:#F11810"></div>
-						Dangerous if consumed regularly
+						<div class="bullet" style="background:#F11810" name="risk"></div>
 					</li>
 					<li>
-						<div class="bullet" style="background:#000000"></div>
-						Potentially acutely toxic!
+						<div class="bullet" style="background:#000000" name="risk"></div>
 					</li>
 				</ul>
 			</div>
@@ -249,93 +128,6 @@
 			////																		////
 			////////////////////////////////////////////////////////////////////////////////
 			
-			var USER = 'cameron-catis';				// User for carto SQL querries 
-			var map;								// initialize the variable to hold the map
-			
-			var DATASHEET_NAME = 'ask_test_dataset'; // Datasheet name from carto.com for retrieving data
-			var DATA_NAMES = {						// And store the titles of the columns 
-				date: "date",						//	(get from carto.com once you import the dataset.)
-				name: "community_name",	
-				f: "fluoride",
-				as: "arsenic",
-				lat: "latitude",
-				lng: "longitude",
-				docs: "documents"
-			};
-			
-			var MONTHS = ["Jan", "Feb", "Mar", 		// Array of names of months for displaying
-						"Apr", "May", "Jun", 		//	the date in an accessible, clear format,
-						"Jul", "Aug", "Sep", 		// 	even for silly US people who choose to put 
-						"Oct", "Nov", "Dec"];		//	the month first. Ugh. 
-			
-			var FLUORIDE = 0; 						// Initialize constants for each contaminant to use as 
-			var ARSENIC = 1;						// 	an index to call contaminant-specific information, like
-			var TOTAL_RISK = 2; 					//  how to bin markers and draw legends and labels. 
-			
-			var F_BINS = [1.5, 4, 10];				// Store the contamination bins. For fluoride, for example, the
-			var AS_BINS = [10, 25]					//	bins are 0-1.5 mg/L, 1.5-4 mg/L, 4-10 mg/L, and >10 mg/L. 
-			var TOTAL_RISK_BINS = ["combined", FLUORIDE, ARSENIC]; 
-													// If we're combining contaminants, use the 
-													//	form ["combined", contam_1, contam_2, ... , contam_n]
-			var BINS = [F_BINS, AS_BINS, TOTAL_RISK_BINS]; 
-													// Store them all in BINS. 
-			
-			var NOT_PRESENT = -1;					// The default value of an index if an element doesn't exist in an array
-			var EPS = 0.0001; 						// This epsilon is the acceptable difference in lat or lng 										
-													//	between 2 points to classify them as occupying the same location.
-			var activeContaminant = -1; 			// A value that indicates the current contaminant being mapped								
-			var CONTAMINANTS = ["Fluoride", "Arsenic", "Total Risk"];
-													// Array with list of contaminants
-			var base;	 							// Store all info relevant to base points		
-			var dup_indices;						// An array of arrays of the data indices of duplicate points.
-													// 	Each internal array holds points with the same latLng. 
-			var AllData;							// Global var to hold all data.
-			var spiderFeatures; 					// a global var to store all of the data that's being spidered
-			var spiderOpen = false; 				// Records whether any spidered points are visible.
-			var spiderOpenIndex = -1; 				// stores the data index of the currently open (or last opened, if none) spider
-			
-			var POPUP_OFFSET = [88, 6]; 			// offset of the popup from the point
-			var SPIDER_Z_OFFSET = 100; 				// define the z-axes for the various layers, spidered points			
-			var BASE_Z_OFFSET = 10; 				//	and base points. 
-			var SPIDER_LABEL_OFFSET = [-50, -8];	// offset for spider date labels 
-			var X_OFFSET = 999999;					// The x-index-offset for the x-out button
-			
-			var MAP_CENTER = [21.15,-100.75];		// Set all map starting parameters
-			var MAP_MIN_ZOOM = 2;
-			var MAP_MAX_ZOOM = 18;
-			var MAP_INIT_ZOOM = 10;
-			
-			var X_STRETCH = 12;						// Constants used to setup the spider
-			var Y_STRETCH = 30;						//	geometry.
-			
-			var POLY_WEIGHT = 5;					// weight of the spidered polylines
-			var POLY_OPACITY = 1;					// opacity of the spidered polylines
-			var POLY_COLOR = '#2027f9';				// color of the spidered polylines
-			
-			var STAMEN_MAP_TYPE = "terrain";		// Set which type of stamen map we want as a base layer.
-													// 	options include: "terrain", "watercolor", and "toner"	
-													
-			var X_URL = "https://dl.dropboxusercontent.com/s/df3pabfdc7tzr4r/xButton_blue.png";		// URL for x-button used to close the spider
-			var NO_DATA_URL = "https://dl.dropboxusercontent.com/s/ccyv61ivd67pxdb/greyPoint.png";	// URL for point to display when the data isn't available										
-			var BASE_URLS = [NO_DATA_URL,				// Store array of all images to use as marker icons. 
-				'https://dl.dropboxusercontent.com/s/upslir85r88fc3p/greenPoint.png',	// 	[0]: no data, [1]: green, [2]: orange, [3]: red, [4] black
-				'https://dl.dropboxusercontent.com/s/3g1i5c3qixa3qhy/yellowPoint.png',
-				'https://dl.dropboxusercontent.com/s/zmwchxhnj1nz78i/redPoint.png',
-				'https://dl.dropboxusercontent.com/s/nnb56bylptpz9pk/blackPoint.png'		
-			];
-			var SPIDER_URLS = [NO_DATA_URL,			// URLs for points to be spidered
-				'https://dl.dropboxusercontent.com/s/axih95stjnic2wm/greenSpider.png',
-				"https://dl.dropboxusercontent.com/s/a9gnay7tdrx05b4/yellowSpider.png",
-				"https://dl.dropboxusercontent.com/s/68ed3b3k9u55scv/redSpider.png",
-				"https://dl.dropboxusercontent.com/s/vng9d6gccmy18tr/blackSpider.png"
-			];
-			
-			var SMALL_ICON_SIZE = [16,16]; 			// The pixel x and y that the final marker icon image is scaled to. 
-			var LARGE_ICON_SIZE = [24,24];			// A larger marker for the base of the spider 
-			var BASE_ICONS = [0,0,0,0];				// Initialize an array to hold all the icons, so the images 
-			var SPIDER_ICONS = [0,0,0,0];			//	only need to be grabbed once. 
-			var BASE_SPIDER_ICONS = [0,0,0,0];
-			
 			for (k=0; k<BASE_URLS.length; k++) {  	// Grab all the icons with correct size. 
 				BASE_ICONS[k] = L.icon({ 			// 	to be used when displaying the base markers
 					iconUrl: BASE_URLS[k],
@@ -350,21 +142,35 @@
 					iconSize: LARGE_ICON_SIZE
 				});
 			};
-	
+			
 			var X_ICON = L.icon({ 					// define an icon that can be clicked to close the spider
 				iconUrl: X_URL,
 				iconSize: SMALL_ICON_SIZE
 			});
 			
-			var CARTO_ATTRIBUTION = 'Data hosting, legends by <a href="http://www.carto.com" target="_blank">CartoDB</a>';
-			
-			var NO_DATA_MSG = "No data";
-			
 			for (var i=0; i<document.getElementsByName("no_data").length; i++) {
 				document.getElementsByName("no_data")[i].innerHTML = "<b>"+NO_DATA_MSG+"</b>";
 			}
 			
-			var PAST_DATA_TEXT = "<em>\xa0\xa0\xa0\xa0\xa0\xa0\xa0HISTORICAL DATA</em><br>"			
+			for (var i=0; i<document.getElementsByName("f").length; i++) {
+				document.getElementsByName("f")[i].innerHTML = "<b>"+F_LABELS[i]+"</b>";
+			}
+			
+			for (var i=0; i<document.getElementsByName("as").length; i++) {
+				document.getElementsByName("as")[i].innerHTML = "<b>"+AS_LABELS[i]+"</b>";
+			}
+			
+			for (var i=0; i<document.getElementsByName("risk").length; i++) {
+				document.getElementsByName("risk")[i].innerHTML = RISK_LABELS[i];
+			}
+			
+			for (var i=0; i<document.getElementsByName("contam_button").length; i++) {
+				document.getElementsByName("contam_button")[i].innerHTML = CONTAMINANTS[i];
+			}
+			
+			document.getElementById("f_title").innerHTML = F_TITLE;
+			document.getElementById("as_title").innerHTML = AS_TITLE;
+			document.getElementById("risk_title").innerHTML = RISK_TITLE;
 			
 			////////////////////////////////////////////////////////////////////////////////
 			////					 INITIALIZATION FUNCTION 						  	////
@@ -414,9 +220,7 @@
 			
 			
 			function applyBaseMap() {
-				map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {
-					attribution: 'hahahaa'
-				});
+				map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {});
 			}
 			
 			////////////////////////////////////////////////////////////////////////////////
@@ -611,7 +415,7 @@
 				if (typeof(bins[0]) == "number"){  	// This section deals with the case where there's
 													// 	a single relevant contaminant
 					for (var j=0; j<bins.length; j++) { // Loop through the bins array. If the value is
-						if (values[0] >= bins[j]) {	//	greater than the threshold, set the bin!
+						if (values[0] > bins[j]) {	//	greater than the threshold, set the bin!
 							realBin = j+2;
 						};							// If the bin number hasn't been set, it means
 					};								//	that the marker belongs in bin 0, the default value of realBin.
@@ -625,7 +429,7 @@
 													// 	but only those above the risk level of the 
 													// 	previous contaminants.
 								if (values[j-1]) { 	// Quick check to make sure the value actually exists...
-									if (values[j-1] >= BINS[bins[j]][m]) {
+									if (values[j-1] > BINS[bins[j]][m]) {
 													// If the value exceeds the threshold, set the bin. 
 										realBin = m+2;
 									};
@@ -754,7 +558,7 @@
 			function adjustDDText(contam) {
 				var pointDown = '\xa0\xa0\xa0\u25BC'; 	// The value of a downwards pointing arrow
 														// 	preceeded by 3 spaces. 
-				document.getElementById('DDHeader').textContent = CONTAMINANTS[contam	]+pointDown;
+				document.getElementById('DDHeader').textContent = CONTAMINANTS[contam]+pointDown;
 			}
 			
 			////////////////////////////////////////////////////////////////////////////////
@@ -781,23 +585,19 @@
 				var docPath = AllData.rows[i][DATA_NAMES.docs];
 				var docLink;
 				if(docPath) {
-					docLink = '<a href='+ docPath +' target="_blank">Complete test results</a>';
+					docLink = "<a href="+ docPath +">"+SEE_MORE+"</a>";
 				} else {
 					docLink = ""
 				}
-				var as = AllData.rows[i][DATA_NAMES.as] 			// Get the arsenic value
-				if (!as) {											// If it's null, return the no data message
-					as = NO_DATA_MSG;
-				}
 				var pop = "<dl><h2>" + AllData.rows[i][DATA_NAMES.name] + "</h2>"	// This text will be displayed
-					+ "<b>Date</b>"												//	in the popup for this point.
+					+ "<b>"+DATE+"</b>"												//	in the popup for this point.
 					+ "<dt>" + day + "-" + month + "-" + year + "</dd>"
 					+ "<br><br>"
-					+ "<b>Fluoride (mg/L)</b>"
+					+ "<b>"+CONTAMINANTS[0]+" (mg/L)</b>"
 					+ "<dt>" + AllData.rows[i][DATA_NAMES.f] + "</dd>"
 					+ "<br><br>"
-					+ "<b>Arsenic (ug/L)</b>"
-					+ "<dt>" + as + "</dd>"
+					+ "<b>"+CONTAMINANTS[1]+" (ug/L)</b>"
+					+ "<dt>" + AllData.rows[i][DATA_NAMES.as] + "</dd>"
 					+ "<br><br>"
 					+ docLink
 				return pop;
@@ -857,7 +657,7 @@
 				} else if (type == "community") {
 					return "\xa0"+String(AllData.rows[i][DATA_NAMES.name]);
 				} else if (type == 'hist') {
-					return PAST_DATA_TEXT;
+					return "<em>\xa0\xa0\xa0\xa0\xa0\xa0\xa0HISTORICAL DATA</em><br>";
 				};
 			}
 			
