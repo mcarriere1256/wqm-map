@@ -258,41 +258,42 @@
 					adjustDDText(contaminantToShow); 		// Adjust the text in the drop down menu to display the current contaminant
 					showLegend(contaminantToShow);			// And display the appropriate legend
 					
-					sql = new cartodb.SQL({user: USER }); 	// Define a new SQL querry to a carto.com public dataset
-					sql.execute("SELECT * FROM "+DATASHEET_NAME+" ORDER BY "+DATA_NAMES.date+" DESC") 
-															// Grab all the data, organized in descending order
-															// 	by date, so the newest data comes first. 
-														
-					.done(function(data) { 					// Once the data has arrived:
-						AllData = data;						// store it in the global variable
+					$.getJSON(DATA_URL) 		// This grabs the JSON data file. MAKE SURE THE FILE IS SORTED BY 
+												//	DATE IN DECREASING ORDER!!!! <--- Super important for spidering to work correctly...
+					.done(function(data) {
 						// Uncomment the next line to see the full dataset in the console, super useful for debugging!
-						//console.log("Data acquired! "+JSON.stringify(data)); // log the data in the console for debugging
-						for (i=0; i<data.total_rows; i++) { // Loop through all the rows of the data
-							if (data.rows[i][DATA_NAMES.date] == null |	// if there's no date or latLng info, 
-							data.rows[i][DATA_NAMES.lat] == null |	//	ignore the point!
-							data.rows[i][DATA_NAMES.lng] == null ) {	
+						//console.log("Data acquired! "+JSON.stringify(data)); 	// log the data in the console for debugging
+
+	
+						AllData = data;						// store it in the global variable
+						
+						
+						for (i=0; i<data.length; i++) { // Loop through all the rows of the data
+							if (data[i][DATA_NAMES.date] == null | data[i][DATA_NAMES.date] == "" |	// if there's no date or latLng info, 
+							data[i][DATA_NAMES.lat] == null | data[i][DATA_NAMES.lat] == "" |	//	ignore the point!
+							data[i][DATA_NAMES.lng] == null | data[i][DATA_NAMES.lng] == "" ) {	
 							} else { 						// Otherwise, check for duplicate latLngs, then plot the base markers
 								if (!presentIn2dArray(dup_indices, i)[0]) {
 									var matches = 0;		// If the current marker is known to be a duplicate, skip it. 
 									var j = i;				// 	otherwise, check to see if it has any duplicates. This works
 															//	because we loaded the data in chronological order, so the 1st
 															//	element in each row of the duplicate array will be the most recent.  	
-									while (matches == 0 & j<data.total_rows-1) {
+									while (matches == 0 & j<data.length-1) {
 										j++;				// Increment (j) to check out the next data point. 							// while there are no matches, and we're still in the data array 
 															// Check to see if the current element (i) has the same latLngs
 															//	as each susequent datapoint (j).
-										if (Math.abs(data.rows[i][DATA_NAMES.lat]-data.rows[j][DATA_NAMES.lat])<EPS 
-										& Math.abs(data.rows[i][DATA_NAMES.lng]-data.rows[j][DATA_NAMES.lng])<EPS ){
+										if (Math.abs(data[i][DATA_NAMES.lat]-data[j][DATA_NAMES.lat])<EPS 
+										& Math.abs(data[i][DATA_NAMES.lng]-data[j][DATA_NAMES.lng])<EPS ){
 											matches++; 		// If so, increment matches to break out of the while-loop
 											dup_indices.push([i,j]); 
 										};					// And save the current index (i) and the 1st duplicate, (j). 			
 									};
 									if (matches == 1) { // If there's at least one duplicate, there may be more! 
-										for (var k=j+1; k<data.total_rows; k++) {
+										for (var k=j+1; k<data.length; k++) {
 														// Loop through the rest of the data points, if there's a match,
 														// 	at index (k), save it after (i) and (j) as [i,j,k1,k2,k3,...]
-											if (Math.abs(data.rows[i][DATA_NAMES.lat]-data.rows[k][DATA_NAMES.lat])<EPS 
-											& Math.abs(data.rows[i][DATA_NAMES.lng]-data.rows[k][DATA_NAMES.lng])<EPS ){
+											if (Math.abs(data[i][DATA_NAMES.lat]-data[k][DATA_NAMES.lat])<EPS 
+											& Math.abs(data[i][DATA_NAMES.lng]-data[k][DATA_NAMES.lng])<EPS ){
 												dup_indices[dup_indices.length-1].push(k);
 											};
 										};
@@ -327,8 +328,8 @@
 			
 			function plotMarker(type, data, contam, data_index) {
 				if (type == "base" | type == "preSpider") {					// If the point to plot is a base point with no historical data:
-					base.Bins.push(getBin(data.rows[i], BINS[contam])); 	// Grab the bin of the point
-					var latLng = L.latLng([data.rows[i][DATA_NAMES.lat], data.rows[i][DATA_NAMES.lng]]); // Grab the latLng of the point
+					base.Bins.push(getBin(data[i], BINS[contam])); 	// Grab the bin of the point
+					var latLng = L.latLng([data[i][DATA_NAMES.lat], data[i][DATA_NAMES.lng]]); // Grab the latLng of the point
 					base.Markers.push( 										// Save the appropriate marker
 						L.marker(latLng, {
 						icon: BASE_ICONS[base.Bins[base.Bins.length-1]],
@@ -463,9 +464,9 @@
 				for (var j=0; j<dup_indices[row].length; j++) {			// loop through that row of dup_indices. I.e., loop 
 																		//	through all the data-indices of points to spider
 					z = dup_indices[row][j]; 							// set z to each index in turn
-					var spiderBin = getBin(data.rows[z], BINS[contam]); // set the latLng, then modify it 
-					var shiftedLatLng = adjustLatLng(data.rows[z][DATA_NAMES.lat], data.rows[z][DATA_NAMES.lng], dup_indices[row].length, j);
-					var prevShiftedLatLng = adjustLatLng(data.rows[z][DATA_NAMES.lat], data.rows[z][DATA_NAMES.lng], dup_indices[row].length, j-1);
+					var spiderBin = getBin(data[z], BINS[contam]); // set the latLng, then modify it 
+					var shiftedLatLng = adjustLatLng(data[z][DATA_NAMES.lat], data[z][DATA_NAMES.lng], dup_indices[row].length, j);
+					var prevShiftedLatLng = adjustLatLng(data[z][DATA_NAMES.lat], data[z][DATA_NAMES.lng], dup_indices[row].length, j-1);
 																		// get the shifted latlng value of the marker
 																		// then define the popup format. 
 					var popupText = getBasePopup(z);					// grab the text for the popup		
@@ -507,8 +508,8 @@
 					};
 				}
 				
-				var shiftedLatLng = adjustLatLng(data.rows[z][DATA_NAMES.lat], data.rows[z][DATA_NAMES.lng], dup_indices[row].length, j);
-				var prevShiftedLatLng = adjustLatLng(data.rows[z][DATA_NAMES.lat], data.rows[z][DATA_NAMES.lng], dup_indices[row].length, j-1);
+				var shiftedLatLng = adjustLatLng(data[z][DATA_NAMES.lat], data[z][DATA_NAMES.lng], dup_indices[row].length, j);
+				var prevShiftedLatLng = adjustLatLng(data[z][DATA_NAMES.lat], data[z][DATA_NAMES.lng], dup_indices[row].length, j-1);
 				features.push(L.marker(shiftedLatLng, {	// get the newest shifted point values
 					icon: X_ICON,						// 	to plot the x-out icon at the top
 					zIndexOffset: X_OFFSET				// 	of the spider stack. 
@@ -576,28 +577,28 @@
 			////////////////////////////////////////////////////////////////////////////////
 			
 			function getBasePopup(i) {
-				var date = String(AllData.rows[i][DATA_NAMES.date].split("T", 1)).split("-", 3);
+				var date = String(AllData[i][DATA_NAMES.date].split("T", 1)).split("-", 3);
 				//var date = date.split("-", 3);
 				var day = String(date[2]);
 				var month = MONTHS[Number(date[1])];
 				var year = String(date[0]);
 
-				var docPath = AllData.rows[i][DATA_NAMES.docs];
+				var docPath = AllData[i][DATA_NAMES.docs];
 				var docLink;
 				if(docPath) {
 					docLink = "<a href="+ docPath +">"+SEE_MORE+"</a>";
 				} else {
 					docLink = ""
 				}
-				var pop = "<dl><h2>" + AllData.rows[i][DATA_NAMES.name] + "</h2>"	// This text will be displayed
+				var pop = "<dl><h2>" + AllData[i][DATA_NAMES.name] + "</h2>"	// This text will be displayed
 					+ "<b>"+DATE+"</b>"												//	in the popup for this point.
 					+ "<dt>" + day + "-" + month + "-" + year + "</dd>"
 					+ "<br><br>"
 					+ "<b>"+CONTAMINANTS[0]+" (mg/L)</b>"
-					+ "<dt>" + AllData.rows[i][DATA_NAMES.f] + "</dd>"
+					+ "<dt>" + AllData[i][DATA_NAMES.f] + "</dd>"
 					+ "<br><br>"
 					+ "<b>"+CONTAMINANTS[1]+" (ug/L)</b>"
-					+ "<dt>" + AllData.rows[i][DATA_NAMES.as] + "</dd>"
+					+ "<dt>" + AllData[i][DATA_NAMES.as] + "</dd>"
 					+ "<br><br>"
 					+ docLink
 				return pop;
@@ -653,9 +654,9 @@
 	
 			function getLabel(type, i) {
 				if (type == "year") {
-					return "\xa0"+String(AllData.rows[i][DATA_NAMES.date].split('-',1));		
+					return "\xa0"+String(AllData[i][DATA_NAMES.date].split('-',1));		
 				} else if (type == "community") {
-					return "\xa0"+String(AllData.rows[i][DATA_NAMES.name]);
+					return "\xa0"+String(AllData[i][DATA_NAMES.name]);
 				} else if (type == 'hist') {
 					return OLD_DATA_MSG;
 				};
