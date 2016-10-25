@@ -592,7 +592,7 @@
 			
 			function getBasePopup(i) {
 				var date = String(AllData[i][DATA_NAMES.date].split("T", 1)).split("-", 3);
-				//var date = date.split("-", 3);
+				//var date = date.split("/", 3);
 				var day = String(date[2]);
 				var month = MONTHS[Number(date[1])];
 				var year = String(date[0]);
