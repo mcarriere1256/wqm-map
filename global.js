@@ -68,7 +68,7 @@ var BASE_URLS = ["https://dl.dropboxusercontent.com/s/ounmvszaagumg65/greyPoint.
 	'https://dl.dropboxusercontent.com/s/zdj5lqembrelib3/greenPoint.png',	// 	[0]: no data, [1]: green, [2]: orange, [3]: red, [4] black
 	'https://dl.dropboxusercontent.com/s/rlciodo0jzy2z46/yellowPoint.png',
 	'https://dl.dropboxusercontent.com/s/2mu2wd66szkuh8s/redPoint.png',
-	'https://dl.dropboxusercontent.com/s/76dlhsy0uz1mtwl/blackPoint.png'
+	'https://dl.dropboxusercontent.com/s/2khvqz8eez00ph2/blackPoint.png'
 ];
 var SPIDER_URLS = ["https://dl.dropboxusercontent.com/s/4nsnq8ktxkffpqw/greySpider.png",			// URLs for points to be spidered
 	'https://dl.dropboxusercontent.com/s/ohkqgokvezpz5ss/greenSpider.png',
