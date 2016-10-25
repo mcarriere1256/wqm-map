@@ -226,13 +226,13 @@
 			function applyBaseMap() {
 				// Uncomment this line (and comment out the rest of the function) 
 				//	to switch back from mapzen's cinabar to a stamen map. 
-				//map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {});
+				map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {});
 				
-				var layer = Tangram.leafletLayer({
-					scene: 'https://raw.githubusercontent.com/tangrams/cinnabar-style-more-labels/gh-pages/cinnabar-style-more-labels.yaml',
-					attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | <a href="http://www.openstreetmap.org/about" target="_blank">&copy; OSM contributors | <a href="https://mapzen.com/" target="_blank">Mapzen</a>',
-				});
-				layer.addTo(map);
+				//var layer = Tangram.leafletLayer({
+				//	scene: 'https://raw.githubusercontent.com/tangrams/cinnabar-style-more-labels/gh-pages/cinnabar-style-more-labels.yaml',
+				//	attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | <a href="http://www.openstreetmap.org/about" target="_blank">&copy; OSM contributors | <a href="https://mapzen.com/" target="_blank">Mapzen</a>',
+				//});
+				//layer.addTo(map);
 			}
 			
 			////////////////////////////////////////////////////////////////////////////////
