@@ -59,7 +59,7 @@ var POLY_COLOR = '#2027f9';				// color of the spidered polylines
 
 var MAX_LABEL_LINE_CHARS = 20;			// the max number of characters on a line in the floating labels
 
-var STAMEN_MAP_TYPE = "toner";		// Set which type of stamen map we want as a base layer.
+var STAMEN_MAP_TYPE = "terrain";		// Set which type of stamen map we want as a base layer.
 										// 	options include: "terrain", "watercolor", and "toner"	
 										
 var X_URL = "https://dl.dropboxusercontent.com/s/eui6pgacje74jn0/xButton_blue.png";		// URL for x-button used to close the spider
