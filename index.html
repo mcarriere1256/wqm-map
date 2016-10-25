@@ -19,6 +19,9 @@
 		<script src="https://mapzen.com/tangram/tangram.min.js"></script>
 		<script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js"></script><!--Include Stamen JavaScript to get basemap tiles-->
 		
+		<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+		<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+		
 	</head>
 	
 	<body onload="init();"> 	<!-- what to do when the page loads -->
@@ -198,7 +201,8 @@
 					zoom: MAP_INIT_ZOOM,
 					minZoom: MAP_MIN_ZOOM,
 					maxZoom: MAP_MAX_ZOOM,
-					attributionControl: true
+					attributionControl: true,
+					fullscreenControl:true
 				});	
 				map.attributionControl.setPrefix(CARTO_ATTRIBUTION);
 				map.on('zoomstart', function() { 	// When the map zooms,
