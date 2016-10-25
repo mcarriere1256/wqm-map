@@ -266,7 +266,6 @@
 						AllData = data;						// store it in the global variable
 						
 						for (i=0; i<data.length; i++) { // Loop through all the rows of the data
-						alert(i+", "+data[i])
 							if (data[i][DATA_NAMES.date] == null | data[i][DATA_NAMES.date] == "" |	// if there's no date or latLng info, 
 							data[i][DATA_NAMES.lat] == null | data[i][DATA_NAMES.lat] == "" |	//	ignore the point!
 							data[i][DATA_NAMES.lng] == null | data[i][DATA_NAMES.lng] == "" ) {	
@@ -675,7 +674,6 @@
 				} else {
 					dup_row = dup_indices[presentIn2dArray(dup_indices, i)[1][0]];
 					for (var j=dup_row.length-1; j>=0; j--){
-						//console.log(dup_row)
 						bin = getBin(data[dup_row[j]], BINS[activeContaminant])
 						if (bin != 0) {
 							nextBin = bin;
