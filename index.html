@@ -262,13 +262,11 @@
 												//	DATE IN DECREASING ORDER!!!! <--- Super important for spidering to work correctly...
 					.done(function(data) {
 						// Uncomment the next line to see the full dataset in the console, super useful for debugging!
-						//console.log("Data acquired! "+JSON.stringify(data)); 	// log the data in the console for debugging
-
-	
+						//console.log("Data acquired! "+JSON.stringify(data)); 	// log the data in the console for debugging...
 						AllData = data;						// store it in the global variable
 						
-						
 						for (i=0; i<data.length; i++) { // Loop through all the rows of the data
+						alert(i+", "+data[i])
 							if (data[i][DATA_NAMES.date] == null | data[i][DATA_NAMES.date] == "" |	// if there's no date or latLng info, 
 							data[i][DATA_NAMES.lat] == null | data[i][DATA_NAMES.lat] == "" |	//	ignore the point!
 							data[i][DATA_NAMES.lng] == null | data[i][DATA_NAMES.lng] == "" ) {	
@@ -277,7 +275,8 @@
 									var matches = 0;		// If the current marker is known to be a duplicate, skip it. 
 									var j = i;				// 	otherwise, check to see if it has any duplicates. This works
 															//	because we loaded the data in chronological order, so the 1st
-															//	element in each row of the duplicate array will be the most recent.  	
+															//	element in each row of the duplicate array will be the most recent.
+															// 	And the spider will extend upwards in reverse chronological order. 
 									while (matches == 0 & j<data.length-1) {
 										j++;				// Increment (j) to check out the next data point. 							// while there are no matches, and we're still in the data array 
 															// Check to see if the current element (i) has the same latLngs
@@ -328,7 +327,7 @@
 			
 			function plotMarker(type, data, contam, data_index) {
 				if (type == "base" | type == "preSpider") {					// If the point to plot is a base point with no historical data:
-					base.Bins.push(getBin(data[i], BINS[contam])); 	// Grab the bin of the point
+					base.Bins.push(getNextMeasuredBin(data, i)); 	// Grab the bin of the point
 					var latLng = L.latLng([data[i][DATA_NAMES.lat], data[i][DATA_NAMES.lng]]); // Grab the latLng of the point
 					base.Markers.push( 										// Save the appropriate marker
 						L.marker(latLng, {
@@ -590,15 +589,28 @@
 				} else {
 					docLink = ""
 				}
+				
+				if (!AllData[i][DATA_NAMES.f] | AllData[i][DATA_NAMES.f] == "") {
+					f_numb = NO_DATA_MSG;
+				} else {
+					f_numb = AllData[i][DATA_NAMES.f];
+				};
+				
+				if (!AllData[i][DATA_NAMES.as] | AllData[i][DATA_NAMES.as] == "") {
+					as_numb = NO_DATA_MSG;
+				} else {
+					as_numb = AllData[i][DATA_NAMES.as];
+				};
+				
 				var pop = "<dl><h2>" + AllData[i][DATA_NAMES.name] + "</h2>"	// This text will be displayed
 					+ "<b>"+DATE+"</b>"												//	in the popup for this point.
 					+ "<dt>" + day + "-" + month + "-" + year + "</dd>"
 					+ "<br><br>"
 					+ "<b>"+CONTAMINANTS[0]+" (mg/L)</b>"
-					+ "<dt>" + AllData[i][DATA_NAMES.f] + "</dd>"
+					+ "<dt>" + f_numb + "</dd>"
 					+ "<br><br>"
 					+ "<b>"+CONTAMINANTS[1]+" (ug/L)</b>"
-					+ "<dt>" + AllData[i][DATA_NAMES.as] + "</dd>"
+					+ "<dt>" + as_numb + "</dd>"
 					+ "<br><br>"
 					+ docLink
 				return pop;
@@ -643,6 +655,38 @@
 					};
 				};
 				return [exists, index]; 			
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////						getNextMeasuredBin FUNCTION	 					////
+			////																		////
+			////	Takes in the full dataset and index. If the point isn't a spider,	////
+			////	returns 0. Otherwise, it returns the bin of the next most recent, 	////
+			////	non-zero data point at the same location. If there isn't one, 
+			//// 	returns 0 as well. 
+			////////////////////////////////////////////////////////////////////////////////
+			
+			
+			function getNextMeasuredBin(data, i) {
+				var nextBin = 0;
+				var bin;
+				if (!presentIn2dArray(dup_indices, i)[0]) {
+					nextBin = getBin(data[i], BINS[activeContaminant]);
+				} else {
+					dup_row = dup_indices[presentIn2dArray(dup_indices, i)[1][0]];
+					for (var j=dup_row.length-1; j>=0; j--){
+						//console.log(dup_row)
+						bin = getBin(data[dup_row[j]], BINS[activeContaminant])
+						if (bin != 0) {
+							nextBin = bin;
+						}					
+					}
+				};
+				return nextBin;
+				
+			
+			
+			
 			}
 			
 			////////////////////////////////////////////////////////////////////////////////
