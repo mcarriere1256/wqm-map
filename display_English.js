@@ -16,7 +16,7 @@ var CONTAMINANTS = ["Fluoride", "Arsenic", "Total Risk"]; 	// Array with list of
 var DATE = "Date";
 var SEE_MORE = "Complete test results";						// This message gets displayed as a link to show 
 															//	more info about the given datapoint
-var CARTO_ATTRIBUTION = 'Data hosting on <a href="http://www.dropbox.com">Dropbox</a> legends by <a href="http://www.carto.com">CartoDB</a>';
+var CARTO_ATTRIBUTION = 'Data hosting on <a href="http://www.dropbox.com">Dropbox</a> legends by <a href="http://www.carto.com">Carto</a>';
 
 var NO_DATA_MSG = "No data";
 

@@ -7,14 +7,35 @@ html, body {width:100%; height:100%; padding: 0; margin: 0;}
 	position: absolute;
 	display: inline-block;
 	font-size: 13px;
-	font-color: #666666;
-	background-color: #FCFCFC;
+	background-color: rgba(255,255,255,0.85);
 	padding-left: 2px;
 	padding-right: 2px;
 	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);
 	border: 0px solid;
 	border-radius: 3px;
 	text-indent: -4px;
+}
+.max-lines {
+  display: block; /* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.8em;
+}
+
+.yearLabel {
+	position: absolute;
+	display: block;
+	font-size: 13px;
+	background-color: rgba(255,255,255,0.85);
+	padding-left: 2px;
+	padding-right: 2px;
+	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);
+	border: 0px solid;
+	border-radius: 3px;
+	text-indent: -4px;
+	opacity: 0.9;
 }
 
 /* CSS formatting for the popup box that appears when markers are clicked */
