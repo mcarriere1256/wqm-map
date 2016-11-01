@@ -47,17 +47,17 @@
 			<!-- The legend for fluoride -->
 			<div class='cartodb-legend density' id='fluoride_legend' style='display: none'>  
 				<ul>
-					<li class="min" id="f_title"></li>
+					<li class="min" style="text-transform:none" id="f_title"></li>
 					<li class="graph leg" style="border-radius: 0; border:none">
 						<div class="colors">
-							<div class="quartile" style="background-color:#909090"></div>
+							<div class="quartile" style="background-color:#909090; width: 10px;" ></div>
 							<div class="quartile" style="background-color:#229A00"></div>
 							<div class="quartile" style="background-color:#FF9900"></div>
 							<div class="quartile" style="background-color:#F11810"></div>
 							<div class="quartile" style="background-color:#000000"></div>
 						</div>
 						<div class="colors" style="font-weight:normal; text-align: center">
-							<div class="quartile" style="padding-top: 5px" name="no_data"></div>
+							<div class="quartile" style="padding-top: 5px; text-transform: none; width: 10px;" name="no_data"></div>
 							<div class="quartile" style="padding-top: 5px" name="f"></div>
 							<div class="quartile" style="padding-top: 5px" name="f"></div>
 							<div class="quartile" style="padding-top: 5px" name="f"></div>
@@ -70,17 +70,16 @@
 			<!-- The legend for arsenic -->
 			<div class='cartodb-legend density' id='arsenic_legend' style='display: none'>  
 				<ul>
-					<li class="min" id="as_title">
-					</li>
+					<li class="min" id="as_title" style="text-transform:none" ></li>
 					<li class="graph leg" style="border-radius: 0; border:none">
 						<div class="colors">
-							<div class="quartile" style="background-color:#909090"></div>
+							<div class="quartile" style="background-color:#909090" name="greybar"></div>
 							<div class="quartile" style="background-color:#229A00"></div>
 							<div class="quartile" style="background-color:#FF9900"></div>
 							<div class="quartile" style="background-color:#F11810"></div>
 						</div>
 						<div class="colors" style="font-weight:normal; text-align: center">
-							<div class="quartile" style="padding-top: 5px" name="no_data"><b></b></div>
+							<div class="quartile" style="padding-top: 5px; text-transform: none" name="no_data"><b></b></div>
 							<div class="quartile" style="padding-top: 5px" name="as"></div>
 							<div class="quartile" style="padding-top: 5px" name="as"></div>
 							<div class="quartile" style="padding-top: 5px" name="as"></div>
@@ -91,19 +90,19 @@
 			
 			<!-- The legend for the Total Risk map -->
 			<div class='cartodb-legend custom' id='risk_legend' style="display: none">	
-				<div class="legend-title", id="risk_title"></div>
+				<div class="legend-title", id="risk_title" style="text-transform:none"></div>
 				<ul>
 					<li>
-						<div class="bullet" style="background:#229A00" name="risk"></div> 
+						<div class="bullet" style="background:#229A00; text-transform:none" name="risk"></div> 
 					</li>
 					<li>
-						<div class="bullet" style="background:#FFA300" name="risk"></div>
+						<div class="bullet" style="background:#FFA300; text-transform:none" name="risk"></div>
 					</li>
 					<li>
-						<div class="bullet" style="background:#F11810" name="risk"></div>
+						<div class="bullet" style="background:#F11810; text-transform:none" name="risk"></div>
 					</li>
 					<li>
-						<div class="bullet" style="background:#000000" name="risk"></div>
+						<div class="bullet" style="background:#000000; text-transform:none" name="risk"></div>
 					</li>
 				</ul>
 			</div>
@@ -178,6 +177,8 @@
 			document.getElementById("f_title").innerHTML = F_TITLE;
 			document.getElementById("as_title").innerHTML = AS_TITLE;
 			document.getElementById("risk_title").innerHTML = RISK_TITLE;
+			
+			
 			
 			////////////////////////////////////////////////////////////////////////////////
 			////					 INITIALIZATION FUNCTION 						  	////
@@ -617,7 +618,7 @@
 					+ "<b>"+CONTAMINANTS[0]+" (mg/L)</b>"
 					+ "<dt>" + f_numb + "</dd>"
 					+ "<br><br>"
-					+ "<b>"+CONTAMINANTS[1]+" (ug/L)</b>"
+					+ "<b>"+CONTAMINANTS[1]+" (&mu;g/L)</b>"
 					+ "<dt>" + as_numb + "</dd>"
 					+ "<br><br>"
 					+ docLink

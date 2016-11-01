@@ -27,8 +27,8 @@ var RISK_LABELS = ["\xa0\xa0\xa0Meets\xa0all\xa0standards",
 "\xa0\xa0\xa0Dangerous\xa0if\xa0consumed\xa0regularly",
 "\xa0\xa0\xa0Potentially\xa0acutely\xa0toxic!"];
 
-var F_TITLE = "Fluoride (ppm): Mexican Limit = 1.5; WHO Limit = 1.5";
-var AS_TITLE = "Arsenic (ppb): Mexican Limit = 25; WHO Limit = 10";
+var F_TITLE = "Fluoride (mg/L): WHO Limit = 1.5; Mexican Limit = 1.5";
+var AS_TITLE = "Arsenic (&mu;g/L): WHO Limit = 10; Mexican Limit = 25";
 var RISK_TITLE = "Water Risk Level";
 
 var OLD_DATA_MSG = "<em>\xa0\xa0\xa0\xa0\xa0\xa0\xa0HISTORICAL DATA</em><br>";
