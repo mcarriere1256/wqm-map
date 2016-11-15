@@ -29,6 +29,6 @@ var RISK_LABELS = ["\xa0\xa0\xa0Meets\xa0all\xa0standards",
 
 var F_TITLE = "Fluoride (mg/L): WHO Limit = 1.5; Mexican Limit = 1.5";
 var AS_TITLE = "Arsenic (&mu;g/L): WHO Limit = 10; Mexican Limit = 25";
-var RISK_TITLE = "Water Risk Level";
+var RISK_TITLE = "<big>Water Risk Level</big> <br>WHO Limits: Fluoride = 1.5 mg/L; Arsenic = 10 &mu;g/L";
 
 var OLD_DATA_MSG = "<em>\xa0\xa0\xa0\xa0\xa0\xa0\xa0HISTORICAL DATA</em><br>";
