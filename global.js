@@ -2,16 +2,17 @@
 
 var map;								// initialize the variable to hold the map
 
-var DATA_URL = "https://dl.dropboxusercontent.com/s/eb80ajfv59csvo3/ask_test_dataset.JSON";
-											// ^--- The URL where the data lives in JSON form.
+//var DATA_URL = "https://dl.dropboxusercontent.com/s/eb80ajfv59csvo3/ask_test_dataset.JSON";
+var DATA_URL = "https://dl.dropboxusercontent.com/s/rfp4uyhldt6dd0g/project_map_dataset2.json"											// ^--- The URL where the data lives in JSON form.
+
 var DATA_NAMES = {							// And store the titles of the columns 
-	date: "date",							//	(get from carto.com once you import the dataset.)
-	name: "community_name",	
-	f: "fluoride",
-	as: "arsenic",
-	lat: "latitude",
-	lng: "longitude",
-	docs: "documents"
+	date: "Date Taken",							//	(get from carto.com once you import the dataset.)
+	name: "Description",	
+	f: "Fluoride (mg-L)",
+	as: "Arsenic (ug-L)",
+	lat: "Latitude",
+	lng: "Longitude",
+	docs: "Documents"
 };
 
 var FLUORIDE = 0; 						// Initialize constants for each contaminant to use as 
