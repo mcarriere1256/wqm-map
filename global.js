@@ -1,5 +1,4 @@
 
-
 var map;								// initialize the variable to hold the map
 
 //var DATA_URL = "https://dl.dropboxusercontent.com/s/eb80ajfv59csvo3/ask_test_dataset.JSON";
