@@ -1,10 +1,7 @@
 
 var map;								// initialize the variable to hold the map
-
-//var DATA_URL = "https://dl.dropboxusercontent.com/s/eb80ajfv59csvo3/ask_test_dataset.JSON";
-//var DATA_URL = "https://api.myjson.com/bins/nxlrh";
-//var DATA_URL = "https://dl.dropboxusercontent.com/s/rfp4uyhldt6dd0g/project_map_dataset2.json"											// ^--- The URL where the data lives in JSON form.
-var DATA_URL= "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/ask_test_dataset.json";
+										// ^--- The URL where the data lives in JSON form.
+var DATA_URL= "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/water_quality_monitoring_dataset.JSON";
 
 
 var DATA_NAMES = {							// And store the titles of the columns 
