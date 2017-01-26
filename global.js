@@ -62,20 +62,19 @@ var MAX_LABEL_LINE_CHARS = 20;			// the max number of characters on a line in th
 var STAMEN_MAP_TYPE = "terrain";		// Set which type of stamen map we want as a base layer.
 										// 	options include: "terrain", "watercolor", and "toner"	
 										
-var X_URL = "https://lh6.googleusercontent.com/snYh5v8PoPVeofqkLeJ_BR3t-QM9_0sWpkiGFvNnBXMUvANfjqQvHA";		// URL for x-button used to close the spider
+var X_URL = "img/xButton_blue.png";		// URL for x-button used to close the spider
 									
-var BASE_URLS = ["https://lh6.googleusercontent.com/QoR7q1FcVDrCx7YqWdua0t_RMlFQwFV7keeFqDCzmn83FL5Z76IimA",				// Store array of all images to use as marker icons. 
-	'https://lh5.googleusercontent.com/lPJSg7g2Cxl0IIefnJ0sTUYXdy8GHulJezwyEgWxMUI8J2Qi2anRYA',	// 	[0]: no data, [1]: green, [2]: orange, [3]: red, [4] black
-	'https://lh4.googleusercontent.com/5mWkPc7QApKjsu05OP2WTMXVj7KIddiFf4Un7-YPgbY8iEMYuc2DgA',
-	'https://lh6.googleusercontent.com/aAPwww0aAomK1ZGyIXttoiAkSF5dRR4v4B3ESBs9M98pW821TdviBw',
-	'https://lh6.googleusercontent.com/s7sYp37hGt6ksNaY-byLmXrQfTgHNglOuBdTTK_MHrqbRAi9qkVT7w'
-];
-var SPIDER_URLS = ["https://lh5.googleusercontent.com/8qvBcY2oXRVFjvb1tnLcIjC5Bhu19Ej_e6diUPxGz6Cjl-sfC34ODg",			// URLs for points to be spidered
-	'https://lh3.googleusercontent.com/UG9OAy8G7Xu6c6SjXCVFZrTZlc_XHDssqQEE0xAazlbDS9dhVx99yg',
-	"https://lh3.googleusercontent.com/1-ncm_mVPX0Dq2WkVqZiq4yBdGr9x_PMf-Yk0fixccbazvCQg_YDAw",
-	"https://lh5.googleusercontent.com/9NSto5BgeJjRHbiiuCZtn5R4H0BbF1BRqRsLd_dy4NPG44j8_tmWTw",
-	"https://lh3.googleusercontent.com/IA7i76u4LEwlPzvCJHvrjlG6PESI8xH_GHHpoCVkRknesNwznXK64g"
-];
+var BASE_URLS = ["img/greyPoint.png",
+				"img/greenPoint.png",
+				"img/yellowPoint.png",
+				"img/redPoint.png",
+				"img/blackPoint.png"];
+
+var SPIDER_URLS = ["img/greySpider.png",
+				"img/greenSpider.png",
+				"img/yellowSpider.png",
+				"img/redSpider.png",
+				"img/blackSpider.png"];
 
 var SMALL_ICON_SIZE = [16,16]; 			// The pixel x and y that the final marker icon image is scaled to. 
 var LARGE_ICON_SIZE = [24,24];			// A larger marker for the base of the spider 
@@ -83,4 +82,12 @@ var BASE_ICONS = [0,0,0,0];				// Initialize an array to hold all the icons, so 
 var SPIDER_ICONS = [0,0,0,0];			//	only need to be grabbed once. 
 var BASE_SPIDER_ICONS = [0,0,0,0];
 
+///////https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/xButton_blue.png
+//
+//img/greyPoint.png
+//img/greenPoint.png
+//img/yellowPoint.png
+//img/redPoint.png
+//img/blackPoint.png
+//img
 
