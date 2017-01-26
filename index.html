@@ -271,6 +271,7 @@
 					$.getJSON(DATA_URL) 		// This grabs the JSON data file. MAKE SURE THE FILE IS SORTED BY 
 												//	DATE IN DECREASING ORDER!!!! <--- Super important for spidering to work correctly...
 					.done(function(data) {
+						alert()
 						// Uncomment the next line to see the full dataset in the console, super useful for debugging!
 						//console.log("Data acquired! "+JSON.stringify(data)); 	// log the data in the console for debugging...
 						AllData = data;						// store it in the global variable
