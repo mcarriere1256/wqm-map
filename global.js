@@ -64,17 +64,17 @@ var STAMEN_MAP_TYPE = "terrain";		// Set which type of stamen map we want as a b
 										
 var X_URL = "img/xButton_blue.png";		// URL for x-button used to close the spider
 									
-var BASE_URLS = ["img/greyPoint.png",
-				"img/greenPoint.png",
-				"img/yellowPoint.png",
-				"img/redPoint.png",
-				"img/blackPoint.png"];
+var BASE_URLS = ["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greyPoint.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greenPoint.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellowPoint.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/redPoint.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/blackPoint.png"];
 
-var SPIDER_URLS = ["img/greySpider.png",
-				"img/greenSpider.png",
-				"img/yellowSpider.png",
-				"img/redSpider.png",
-				"img/blackSpider.png"];
+var SPIDER_URLS = ["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greySpider.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greenSpider.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellowSpider.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/redSpider.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/blackSpider.png"];
 
 var SMALL_ICON_SIZE = [16,16]; 			// The pixel x and y that the final marker icon image is scaled to. 
 var LARGE_ICON_SIZE = [24,24];			// A larger marker for the base of the spider 
