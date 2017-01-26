@@ -2,16 +2,19 @@
 var map;								// initialize the variable to hold the map
 
 //var DATA_URL = "https://dl.dropboxusercontent.com/s/eb80ajfv59csvo3/ask_test_dataset.JSON";
-var DATA_URL = "https://dl.dropboxusercontent.com/s/rfp4uyhldt6dd0g/project_map_dataset2.json"											// ^--- The URL where the data lives in JSON form.
+//var DATA_URL = "https://api.myjson.com/bins/nxlrh";
+//var DATA_URL = "https://dl.dropboxusercontent.com/s/rfp4uyhldt6dd0g/project_map_dataset2.json"											// ^--- The URL where the data lives in JSON form.
+var DATA_URL= "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/ask_test_dataset.json";
+
 
 var DATA_NAMES = {							// And store the titles of the columns 
-	date: "Date Taken",							//	(get from carto.com once you import the dataset.)
-	name: "Description",	
-	f: "Fluoride (mg-L)",
-	as: "Arsenic (ug-L)",
-	lat: "Latitude",
-	lng: "Longitude",
-	docs: "Documents"
+	date: "date",							//	(get from carto.com once you import the dataset.)
+	name: "community_name",	
+	f: "fluoride",
+	as: "arsenic",
+	lat: "latitude",
+	lng: "longitude",
+	docs: "documents"
 };
 
 var FLUORIDE = 0; 						// Initialize constants for each contaminant to use as 
@@ -62,19 +65,19 @@ var MAX_LABEL_LINE_CHARS = 20;			// the max number of characters on a line in th
 var STAMEN_MAP_TYPE = "terrain";		// Set which type of stamen map we want as a base layer.
 										// 	options include: "terrain", "watercolor", and "toner"	
 										
-var X_URL = "https://dl.dropboxusercontent.com/s/n3wh4pazt501ckn/xButton_blue.png";		// URL for x-button used to close the spider
+var X_URL = "https://lh6.googleusercontent.com/snYh5v8PoPVeofqkLeJ_BR3t-QM9_0sWpkiGFvNnBXMUvANfjqQvHA";		// URL for x-button used to close the spider
 									
-var BASE_URLS = ["https://dl.dropboxusercontent.com/s/4a9kueof9sgf0hq/greyPoint.png",				// Store array of all images to use as marker icons. 
-	'https://dl.dropboxusercontent.com/s/tfpxfn55cl8q83j/greenPoint.png',	// 	[0]: no data, [1]: green, [2]: orange, [3]: red, [4] black
-	'https://dl.dropboxusercontent.com/s/g1ujd6fvgv67ae4/yellowPoint.png',
-	'https://dl.dropboxusercontent.com/s/ijl44tp7uuwzis6/redPoint.png',
-	'https://dl.dropboxusercontent.com/s/2khvqz8eez00ph2/blackPoint.png'
+var BASE_URLS = ["https://lh6.googleusercontent.com/QoR7q1FcVDrCx7YqWdua0t_RMlFQwFV7keeFqDCzmn83FL5Z76IimA",				// Store array of all images to use as marker icons. 
+	'https://lh5.googleusercontent.com/lPJSg7g2Cxl0IIefnJ0sTUYXdy8GHulJezwyEgWxMUI8J2Qi2anRYA',	// 	[0]: no data, [1]: green, [2]: orange, [3]: red, [4] black
+	'https://lh4.googleusercontent.com/5mWkPc7QApKjsu05OP2WTMXVj7KIddiFf4Un7-YPgbY8iEMYuc2DgA',
+	'https://lh6.googleusercontent.com/aAPwww0aAomK1ZGyIXttoiAkSF5dRR4v4B3ESBs9M98pW821TdviBw',
+	'https://lh6.googleusercontent.com/s7sYp37hGt6ksNaY-byLmXrQfTgHNglOuBdTTK_MHrqbRAi9qkVT7w'
 ];
-var SPIDER_URLS = ["https://dl.dropboxusercontent.com/s/ckhdv1fv116xcbe/greySpider.png",			// URLs for points to be spidered
-	'https://dl.dropboxusercontent.com/s/uuaqbad4bce8m24/greenSpider.png',
-	"https://dl.dropboxusercontent.com/s/vovd77flyqt93fb/yellowSpider.png",
-	"https://dl.dropboxusercontent.com/s/lrpnedopnejjpxo/redSpider.png",
-	"https://dl.dropboxusercontent.com/s/bj4u49t6xfu2df4/blackSpider.png"
+var SPIDER_URLS = ["https://lh5.googleusercontent.com/8qvBcY2oXRVFjvb1tnLcIjC5Bhu19Ej_e6diUPxGz6Cjl-sfC34ODg",			// URLs for points to be spidered
+	'https://lh3.googleusercontent.com/UG9OAy8G7Xu6c6SjXCVFZrTZlc_XHDssqQEE0xAazlbDS9dhVx99yg',
+	"https://lh3.googleusercontent.com/1-ncm_mVPX0Dq2WkVqZiq4yBdGr9x_PMf-Yk0fixccbazvCQg_YDAw",
+	"https://lh5.googleusercontent.com/9NSto5BgeJjRHbiiuCZtn5R4H0BbF1BRqRsLd_dy4NPG44j8_tmWTw",
+	"https://lh3.googleusercontent.com/IA7i76u4LEwlPzvCJHvrjlG6PESI8xH_GHHpoCVkRknesNwznXK64g"
 ];
 
 var SMALL_ICON_SIZE = [16,16]; 			// The pixel x and y that the final marker icon image is scaled to. 
