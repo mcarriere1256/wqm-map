@@ -1,7 +1,7 @@
 
 var map;								// initialize the variable to hold the map
 										// ^--- The URL where the data lives in JSON form.
-var DATA_URL= "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/water_quality_monitoring_dataset.JSON";
+var DATA_URL= "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/data/water_quality_monitoring_dataset.JSON";
 
 
 var DATA_NAMES = {							// And store the titles of the columns 
