@@ -21,7 +21,7 @@
 		<!-- Include stuff required for easy full-screen option --> 
 		<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 		<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
-		
+
 	</head>
 	
 	<body onload="init();"> 	<!-- what to do when the page loads -->
@@ -268,62 +268,61 @@
 					adjustDDText(contaminantToShow); 		// Adjust the text in the drop down menu to display the current contaminant
 					showLegend(contaminantToShow);			// And display the appropriate legend
 					
-					$.getJSON(DATA_URL) 		// This grabs the JSON data file. MAKE SURE THE FILE IS SORTED BY 
-												//	DATE IN DECREASING ORDER!!!! <--- Super important for spidering to work correctly...
-					.done(function(data) {
-						// Uncomment the next line to see the full dataset in the console, super useful for debugging!
-						//console.log("Data acquired! "+JSON.stringify(data)); 	// log the data in the console for debugging...
-						AllData = data;						// store it in the global variable
 						
-						for (i=0; i<data.length; i++) { // Loop through all the rows of the data
-							if (data[i][DATA_NAMES.date] == null | data[i][DATA_NAMES.date] == "" |	// if there's no date or latLng info, 
-							data[i][DATA_NAMES.lat] == null | data[i][DATA_NAMES.lat] == "" |	//	ignore the point!
-							data[i][DATA_NAMES.lng] == null | data[i][DATA_NAMES.lng] == "" ) {	
-							} else { 						// Otherwise, check for duplicate latLngs, then plot the base markers
-								if (!presentIn2dArray(dup_indices, i)[0]) {
-									var matches = 0;		// If the current marker is known to be a duplicate, skip it. 
-									var j = i;				// 	otherwise, check to see if it has any duplicates. This works
-															//	because we loaded the data in chronological order, so the 1st
-															//	element in each row of the duplicate array will be the most recent.
-															// 	And the spider will extend upwards in reverse chronological order. 
-									while (matches == 0 & j<data.length-1) {
-										j++;				// Increment (j) to check out the next data point. 							// while there are no matches, and we're still in the data array 
-															// Check to see if the current element (i) has the same latLngs
-															//	as each susequent datapoint (j).
-										if (Math.abs(data[i][DATA_NAMES.lat]-data[j][DATA_NAMES.lat])<EPS 
-										& Math.abs(data[i][DATA_NAMES.lng]-data[j][DATA_NAMES.lng])<EPS ){
-											matches++; 		// If so, increment matches to break out of the while-loop
-											dup_indices.push([i,j]); 
-										};					// And save the current index (i) and the 1st duplicate, (j). 			
-									};
-									if (matches == 1) { // If there's at least one duplicate, there may be more! 
-										for (var k=j+1; k<data.length; k++) {
-														// Loop through the rest of the data points, if there's a match,
-														// 	at index (k), save it after (i) and (j) as [i,j,k1,k2,k3,...]
-											if (Math.abs(data[i][DATA_NAMES.lat]-data[k][DATA_NAMES.lat])<EPS 
-											& Math.abs(data[i][DATA_NAMES.lng]-data[k][DATA_NAMES.lng])<EPS ){
-												dup_indices[dup_indices.length-1].push(k);
-											};
+					var data = WQM_MAP_DATA;			// grab the data // This grabs the JSON data file. MAKE SURE THE FILE IS SORTED BY 
+														//	DATE IN DECREASING ORDER!!!! <--- Super important for spidering to work correctly...
+					AllData = data;						// store it in the global variable
+					
+					// Uncomment the next line to see the full dataset in the console, super useful for debugging!
+					//console.log("Data acquired! "+JSON.stringify(data)); 	// log the data in the console for debugging...
+					
+					for (i=0; i<data.length; i++) { // Loop through all the rows of the data
+						if (data[i][DATA_NAMES.date] == null | data[i][DATA_NAMES.date] == "" |	// if there's no date or latLng info, 
+						data[i][DATA_NAMES.lat] == null | data[i][DATA_NAMES.lat] == "" |	//	ignore the point!
+						data[i][DATA_NAMES.lng] == null | data[i][DATA_NAMES.lng] == "" ) {	
+						} else { 						// Otherwise, check for duplicate latLngs, then plot the base markers
+							if (!presentIn2dArray(dup_indices, i)[0]) {
+								var matches = 0;		// If the current marker is known to be a duplicate, skip it. 
+								var j = i;				// 	otherwise, check to see if it has any duplicates. This works
+														//	because we loaded the data in chronological order, so the 1st
+														//	element in each row of the duplicate array will be the most recent.
+														// 	And the spider will extend upwards in reverse chronological order. 
+								while (matches == 0 & j<data.length-1) {
+									j++;				// Increment (j) to check out the next data point. 							// while there are no matches, and we're still in the data array 
+														// Check to see if the current element (i) has the same latLngs
+														//	as each susequent datapoint (j).
+									if (Math.abs(data[i][DATA_NAMES.lat]-data[j][DATA_NAMES.lat])<EPS 
+									& Math.abs(data[i][DATA_NAMES.lng]-data[j][DATA_NAMES.lng])<EPS ){
+										matches++; 		// If so, increment matches to break out of the while-loop
+										dup_indices.push([i,j]); 
+									};					// And save the current index (i) and the 1st duplicate, (j). 			
+								};
+								if (matches == 1) { // If there's at least one duplicate, there may be more! 
+									for (var k=j+1; k<data.length; k++) {
+													// Loop through the rest of the data points, if there's a match,
+													// 	at index (k), save it after (i) and (j) as [i,j,k1,k2,k3,...]
+										if (Math.abs(data[i][DATA_NAMES.lat]-data[k][DATA_NAMES.lat])<EPS 
+										& Math.abs(data[i][DATA_NAMES.lng]-data[k][DATA_NAMES.lng])<EPS ){
+											dup_indices[dup_indices.length-1].push(k);
 										};
 									};
 								};
-								
-								if (!presentIn2dArray(dup_indices, i)[0]) {					// plot the base data with no history
-									plotMarker("base", data, contaminantToShow, i);
-								} else if (presentIn2dArray(dup_indices, i)[1][1] == 0) {	// plot the base data with historical data
-									plotMarker("preSpider", data, contaminantToShow, i);
-								} else {
-									// Do stuff to the historic points, if you'd like, here. 
-								};
-							
 							};
+							
+							if (!presentIn2dArray(dup_indices, i)[0]) {					// plot the base data with no history
+								plotMarker("base", data, contaminantToShow, i);
+							} else if (presentIn2dArray(dup_indices, i)[1][1] == 0) {	// plot the base data with historical data
+								plotMarker("preSpider", data, contaminantToShow, i);
+							} else {
+								// Do stuff to the historic points, if you'd like, here. 
+							};
+						
 						};
-						if (spiderOpen) { 											// If the spider was open already and closed,
-							openSpider(AllData, spiderOpenIndex, contaminantToShow);// 	reopen it here, now colored by the new contaminant
-						};
-					});				
+					};
+					if (spiderOpen) { 											// If the spider was open already and closed,
+						openSpider(AllData, spiderOpenIndex, contaminantToShow);// 	reopen it here, now colored by the new contaminant
+					};			
 				};
-				
 			};
 			////////////////////////////////////////////////////////////////////////////////
 			////					 	plotMarker FUNCTION 						  	////
