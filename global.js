@@ -1,8 +1,6 @@
 
 var map;								// initialize the variable to hold the map
 										// ^--- The URL where the data lives in JSON form.
-var DATA_URL= "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/data/water_quality_monitoring_dataset.JSON";
-
 
 var DATA_NAMES = {							// And store the titles of the columns 
 	date: "date",							//	(get from carto.com once you import the dataset.)
@@ -62,7 +60,7 @@ var MAX_LABEL_LINE_CHARS = 20;			// the max number of characters on a line in th
 var STAMEN_MAP_TYPE = "terrain";		// Set which type of stamen map we want as a base layer.
 										// 	options include: "terrain", "watercolor", and "toner"	
 										
-var X_URL = "img/xButton_blue.png";		// URL for x-button used to close the spider
+var X_URL = "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton_blue.png";		// URL for x-button used to close the spider
 									
 var BASE_URLS = ["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greyPoint.png",
 				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greenPoint.png",
