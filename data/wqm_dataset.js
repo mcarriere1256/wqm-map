@@ -57,7 +57,7 @@ var WQM_MAP_DATA =
     "fluoride": 2.25,
     "no3_ppm": "",
     "ph": "",
-    "latitude": -20.92517,
+    "latitude": 20.92517,
     "longitude": -100.756121
   },
   {
