@@ -113,7 +113,7 @@ var WQM_MAP_DATA =
     "names_of_other_communities": "",
     "type": "",
     "orginazation_testing": "",
-    "community_name": "Los Lopez",
+    "community_name": "Test Los Lopez",
     "fluoride": 2.44,
     "no3_ppm": "",
     "ph": "",
