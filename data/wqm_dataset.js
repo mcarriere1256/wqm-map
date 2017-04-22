@@ -1,7 +1,7 @@
 var WQM_MAP_DATA = 
 [
   {
-    "date": "5/15/13",
+    "date": "15/05/2013",
     "Date Tested": "5/15/13",
     "community_name": "Adjuntas del Rio",
     "Type": "Community Well",
@@ -42,7 +42,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/14/13",
+    "date": "14/02/2013",
     "Date Tested": "2/14/13",
     "community_name": "Adjuntas del Rio",
     "Type": "Community Well",
@@ -83,7 +83,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/16/17",
+    "date": "16/02/2017",
     "Date Tested": "",
     "community_name": "Adolfo Lopez Mateos",
     "Type": "Community Well",
@@ -124,7 +124,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Agua Bell (Colonia Guadeloupe)",
     "Type": "Bottled Water",
@@ -165,7 +165,7 @@ var WQM_MAP_DATA =
     "Notes": "From Sam's house. Date given is testing date not sample date."
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Agua Refill Station Insurgentes",
     "Type": "Refill Station",
@@ -206,7 +206,7 @@ var WQM_MAP_DATA =
     "Notes": "Date given is testing date not sample date."
   },
   {
-    "date": "2/4/16",
+    "date": "04/02/2016",
     "Date Tested": "2/4/16",
     "community_name": "Agustín González",
     "Type": "Community Well",
@@ -247,7 +247,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Alcocer",
     "Type": "Community Well",
@@ -288,7 +288,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "10/25/14",
+    "date": "25/10/2014",
     "Date Tested": "10/25/14",
     "community_name": "Alonso Yáñez",
     "Type": "Community Well",
@@ -329,7 +329,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/18/14",
+    "date": "18/09/2014",
     "Date Tested": "9/18/14",
     "community_name": "Artisano de Banda",
     "Type": "Community Well",
@@ -370,7 +370,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/16/15",
+    "date": "16/08/2015",
     "Date Tested": "8/16/15",
     "community_name": "Atotonilco",
     "Type": "Artesian Well",
@@ -411,7 +411,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/16/15",
+    "date": "16/08/2015",
     "Date Tested": "8/16/15",
     "community_name": "Atotonilco",
     "Type": "Artesian Well",
@@ -452,7 +452,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/16/15",
+    "date": "16/08/2015",
     "Date Tested": "8/16/15",
     "community_name": "Atotonilco",
     "Type": "Artesian Well",
@@ -493,7 +493,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Audoban (Unlabelled Coke Bottle)",
     "Type": "Bottled Water",
@@ -534,7 +534,7 @@ var WQM_MAP_DATA =
     "Notes": "Bottle smelled like Coke when opened. Note saying the bottle was washed with tap water just before sample was poured in. Date given is testing date not sample date."
   },
   {
-    "date": "2/25/15",
+    "date": "25/02/2015",
     "Date Tested": "2/25/15",
     "community_name": "Barrancas",
     "Type": "Community Well",
@@ -575,7 +575,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "4/2/13",
+    "date": "02/04/2013",
     "Date Tested": "4/2/13",
     "community_name": "Barrancas",
     "Type": "Community Well",
@@ -616,7 +616,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/12/16",
+    "date": "12/05/2016",
     "Date Tested": "5/12/16",
     "community_name": "Bonafont",
     "Type": "Bottled Water",
@@ -698,7 +698,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/24/15",
+    "date": "24/02/2015",
     "Date Tested": "2/24/15",
     "community_name": "Caminos de Agua Well",
     "Type": "Community Well",
@@ -739,7 +739,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/23/12",
+    "date": "23/08/2012",
     "Date Tested": "8/23/12",
     "community_name": "Caminos de Agua Well",
     "Type": "Community Well",
@@ -780,7 +780,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/13/14",
+    "date": "13/03/2014",
     "Date Tested": "3/13/14",
     "community_name": "Caminos de Agua Well",
     "Type": "Community Well",
@@ -821,7 +821,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/25/15",
+    "date": "25/02/2015",
     "Date Tested": "2/25/15",
     "community_name": "Capulin",
     "Type": "Community Well",
@@ -862,7 +862,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/14/13",
+    "date": "14/02/2013",
     "Date Tested": "2/14/13",
     "community_name": "Cerrito",
     "Type": "Community Well",
@@ -903,7 +903,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Chichimeca Pozo",
     "Type": "Community Well",
@@ -944,7 +944,7 @@ var WQM_MAP_DATA =
     "Notes": "Date given is testing date not sample date."
   },
   {
-    "date": "9/17/15",
+    "date": "17/09/2015",
     "Date Tested": "9/17/15",
     "community_name": "Cieneguita",
     "Type": "Community Well",
@@ -985,7 +985,7 @@ var WQM_MAP_DATA =
     "Notes": "Sample taken from resident's home, but representative of community well."
   },
   {
-    "date": "4/2/13",
+    "date": "02/04/2013",
     "Date Tested": "4/2/13",
     "community_name": "Claveles",
     "Type": "Community Well",
@@ -1026,7 +1026,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/23/15",
+    "date": "23/02/2015",
     "Date Tested": "2/23/15",
     "community_name": "Clavelinas",
     "Type": "Community Well",
@@ -1067,7 +1067,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/13/13",
+    "date": "13/05/2013",
     "Date Tested": "5/13/13",
     "community_name": "Cofradia",
     "Type": "Community Well",
@@ -1108,7 +1108,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Allende",
     "Type": "Private - Tap",
@@ -1149,7 +1149,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Allende",
     "Type": "Private - Tap",
@@ -1190,7 +1190,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Allende",
     "Type": "Private - Tap",
@@ -1231,7 +1231,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Allende",
     "Type": "Private - Tap",
@@ -1272,7 +1272,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Allende",
     "Type": "Private - Tap",
@@ -1313,7 +1313,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1354,7 +1354,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1395,7 +1395,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/24/16",
+    "date": "24/08/2016",
     "Date Tested": "8/24/16",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1436,7 +1436,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1477,7 +1477,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1518,7 +1518,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1559,7 +1559,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1600,7 +1600,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/24/16",
+    "date": "24/08/2016",
     "Date Tested": "8/24/16",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1641,7 +1641,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/27/16",
+    "date": "27/09/2016",
     "Date Tested": "9/27/16",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1682,7 +1682,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "11/21/13",
+    "date": "21/11/2013",
     "Date Tested": "11/21/13",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1723,7 +1723,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "7/20/15",
+    "date": "20/07/2015",
     "Date Tested": "7/20/15",
     "community_name": "Colonia Centro",
     "Type": "Private - Tap",
@@ -1764,7 +1764,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Centro (filtro)",
     "Type": "Private - Filter",
@@ -1805,7 +1805,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Centro (filtro)",
     "Type": "Private - Filter",
@@ -1846,7 +1846,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia El Batan",
     "Type": "Private - Tap",
@@ -1887,7 +1887,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Guadalupe",
     "Type": "Private - Tap",
@@ -1928,7 +1928,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Guadalupe",
     "Type": "Private - Tap",
@@ -1969,7 +1969,7 @@ var WQM_MAP_DATA =
     "Notes": "Different reading taken before - suggests well-mixing is taking place."
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Guadalupe",
     "Type": "Private - Tap",
@@ -2010,7 +2010,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Guadalupe",
     "Type": "Private - Tap",
@@ -2051,7 +2051,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Guadalupe",
     "Type": "Private - Tap",
@@ -2092,7 +2092,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/24/16",
+    "date": "24/09/2016",
     "Date Tested": "9/26/16",
     "community_name": "Colonia Guadalupe",
     "Type": "Private - Tap",
@@ -2133,7 +2133,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "10/20/16",
+    "date": "20/10/2016",
     "Date Tested": "10/20/16",
     "community_name": "Colonia Guadalupe",
     "Type": "Private - Tap",
@@ -2174,7 +2174,7 @@ var WQM_MAP_DATA =
     "Notes": "From the Via Organica 1st level public bathroom sink (the sink inside the bathroom)."
   },
   {
-    "date": "11/9/16",
+    "date": "09/11/2016",
     "Date Tested": "11/9/16",
     "community_name": "Colonia Guadalupe",
     "Type": "Private - Tap",
@@ -2215,7 +2215,7 @@ var WQM_MAP_DATA =
     "Notes": "From kitchen sink that faces street, closest tap to street."
   },
   {
-    "date": "11/21/13",
+    "date": "21/11/2013",
     "Date Tested": "11/21/13",
     "community_name": "Colonia Guadalupe",
     "Type": "Private - Tap",
@@ -2256,7 +2256,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Guadiana",
     "Type": "Private - Tap",
@@ -2297,7 +2297,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Guadiana",
     "Type": "Private - Tap",
@@ -2338,7 +2338,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Guadiana",
     "Type": "Private - Tap",
@@ -2379,7 +2379,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Insurgentes",
     "Type": "Private - Tap",
@@ -2420,7 +2420,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/11/16",
+    "date": "11/08/2016",
     "Date Tested": "8/11/16",
     "community_name": "Colonia Insurgentes",
     "Type": "Private - Tap",
@@ -2461,7 +2461,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/11/16",
+    "date": "11/08/2016",
     "Date Tested": "8/11/16",
     "community_name": "Colonia Insurgentes",
     "Type": "Private - Tap",
@@ -2502,7 +2502,7 @@ var WQM_MAP_DATA =
     "Notes": "Altitude 1935m. Fluoride sample taken on 16/08/16 at 16:20."
   },
   {
-    "date": "8/11/16",
+    "date": "11/08/2016",
     "Date Tested": "8/11/16",
     "community_name": "Colonia Insurgentes  (filtro)",
     "Type": "Private - Filter",
@@ -2543,7 +2543,7 @@ var WQM_MAP_DATA =
     "Notes": "Fluoride sample taken on 16/08/16 at 16:20."
   },
   {
-    "date": "8/11/16",
+    "date": "11/08/2016",
     "Date Tested": "8/11/16",
     "community_name": "Colonia Insurgentes (filtro)",
     "Type": "Private - Filter",
@@ -2584,7 +2584,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia La Aldea",
     "Type": "Private - Tap",
@@ -2625,7 +2625,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia La Lejona",
     "Type": "Private - Tap",
@@ -2666,7 +2666,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia La Lejona",
     "Type": "Private - Tap",
@@ -2707,7 +2707,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia La Lejona",
     "Type": "Private - Tap",
@@ -2748,7 +2748,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia La Lejona",
     "Type": "Private - Tap",
@@ -2789,7 +2789,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/27/17",
+    "date": "27/03/2017",
     "Date Tested": "",
     "community_name": "Colonia La Palmita",
     "Type": "Private - Tap",
@@ -2830,7 +2830,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia La Parroquia",
     "Type": "Private - Tap",
@@ -2871,7 +2871,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia La Parroquia",
     "Type": "Private - Tap",
@@ -2912,7 +2912,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia La Parroquia",
     "Type": "Private - Tap",
@@ -2953,7 +2953,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Linda Vista",
     "Type": "Private - Tap",
@@ -2994,7 +2994,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Linda Vista",
     "Type": "Private - Tap",
@@ -3035,7 +3035,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Linda Vista (filtro)",
     "Type": "Private - Filter",
@@ -3076,7 +3076,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Linda Vista (filtro)",
     "Type": "Private - Filter",
@@ -3117,7 +3117,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Los Balcones",
     "Type": "Private - Tap",
@@ -3158,7 +3158,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Los Frailes",
     "Type": "Private - Tap",
@@ -3199,7 +3199,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/27/15",
+    "date": "27/03/2015",
     "Date Tested": "3/27/15",
     "community_name": "Colonia Los Frailes",
     "Type": "Private - Tap",
@@ -3240,7 +3240,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "4/17/14",
+    "date": "17/04/2014",
     "Date Tested": "4/17/14",
     "community_name": "Colonia Mexiquito",
     "Type": "Private - Tap",
@@ -3281,7 +3281,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/21/16",
+    "date": "21/09/2016",
     "Date Tested": "9/21/16",
     "community_name": "Colonia Mexiquito",
     "Type": "Private - Tap",
@@ -3322,7 +3322,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "10/13/15",
+    "date": "13/10/2015",
     "Date Tested": "10/13/15",
     "community_name": "Colonia Obraje",
     "Type": "Private - Tap",
@@ -3363,7 +3363,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Olimpo",
     "Type": "Private - Tap",
@@ -3404,7 +3404,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/10/16",
+    "date": "10/08/2016",
     "Date Tested": "8/10/16",
     "community_name": "Colonia Olimpo",
     "Type": "Private - Tap",
@@ -3445,7 +3445,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/10/16",
+    "date": "10/08/2016",
     "Date Tested": "8/10/16",
     "community_name": "Colonia Olimpo",
     "Type": "Private - Tap",
@@ -3486,7 +3486,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Colonia Olimpo",
     "Type": "Private - Tap",
@@ -3527,7 +3527,7 @@ var WQM_MAP_DATA =
     "Notes": "Date given is testing date not sample date."
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Paseo Real",
     "Type": "Private - Tap",
@@ -3568,7 +3568,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Paseo Real",
     "Type": "Private - Tap",
@@ -3609,7 +3609,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Paseo Real",
     "Type": "Private - Tap",
@@ -3650,7 +3650,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Paseo Real (filtro)",
     "Type": "Private - Filter",
@@ -3691,7 +3691,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia Paseo Real (filtro)",
     "Type": "Private - Filter",
@@ -3732,7 +3732,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/10/16",
+    "date": "10/08/2016",
     "Date Tested": "8/10/16",
     "community_name": "Colonia Provedencia",
     "Type": "Private - Tap",
@@ -3773,7 +3773,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Provedencia",
     "Type": "Private - Tap",
@@ -3814,7 +3814,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/10/16",
+    "date": "10/08/2016",
     "Date Tested": "8/10/16",
     "community_name": "Colonia Provedencia",
     "Type": "Private - Tap",
@@ -3855,7 +3855,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/10/16",
+    "date": "10/08/2016",
     "Date Tested": "8/10/16",
     "community_name": "Colonia Provedencia",
     "Type": "Private - Tap",
@@ -3896,7 +3896,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Colonia Providencia",
     "Type": "",
@@ -3937,7 +3937,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -3978,7 +3978,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -4019,7 +4019,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -4060,7 +4060,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/12/16",
+    "date": "12/09/2016",
     "Date Tested": "9/12/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -4101,7 +4101,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -4142,7 +4142,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -4183,7 +4183,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -4224,7 +4224,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -4265,7 +4265,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -4306,7 +4306,7 @@ var WQM_MAP_DATA =
     "Notes": "NOTES ON UWQMC AUGUST 2016: This graphical comparison between the field kit and the lab looks quite good. But if one calculates the Confidence Interval for a given field measurement of F, for example 1.2 mg/L, there is a 95% chance the \"true\" concentration falls between 0.6 and 1.8 mg/L. I find 95% confidence intervals to give very pessimistic estimates of how accurate something can be known. But this is one of the very accepted ways of reporting uncertainty. This assumes the IC measured values for F are \"true\". One way we can test this is with replicate testing of standards in the lab. A standard was measured twice. The first time 2.216 mg/L was measured. The second time 2.136 mg/L was measured. The difference is 0.08 mg/L. This is not a robust internal estimate of error, but shows that 0.1 mg/L is the approximate level of precision we can expect from the IC. - PK.\n\nStandard Error (+/- mg/L) = 0.3\nConfidence Limits (+/- mg/L) = 0.6\nTwo Tailed T-value = 2.1\n\npH read using TAM probe (potentially inaccurate)."
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -4347,7 +4347,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "11/2/16",
+    "date": "02/11/2016",
     "Date Tested": "11/2/16",
     "community_name": "Colonia San Antonio",
     "Type": "Private - Tap",
@@ -4388,7 +4388,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia San Antonio (filtro)",
     "Type": "Private - Filter",
@@ -4429,7 +4429,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/8/16",
+    "date": "08/08/2016",
     "Date Tested": "8/8/16",
     "community_name": "Colonia San Antonio (filtro)",
     "Type": "Private - Filter",
@@ -4470,7 +4470,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia San Luis Rey",
     "Type": "Private - Tap",
@@ -4511,7 +4511,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia San Rafael",
     "Type": "Private - Tap",
@@ -4552,7 +4552,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia San Rafael",
     "Type": "Private - Tap",
@@ -4593,7 +4593,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia San Rafael",
     "Type": "Private - Tap",
@@ -4634,7 +4634,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia San Rafael",
     "Type": "Private - Tap",
@@ -4675,7 +4675,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia San Rafael",
     "Type": "Private - Tap",
@@ -4716,7 +4716,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia San Rafael",
     "Type": "Private - Tap",
@@ -4757,7 +4757,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia San Rafael",
     "Type": "Private - Tap",
@@ -4798,7 +4798,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia San Rafael",
     "Type": "Private - Tap",
@@ -4839,7 +4839,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/6/16",
+    "date": "06/02/2016",
     "Date Tested": "2/6/16",
     "community_name": "Colonia San Rafael",
     "Type": "Private - Tap",
@@ -4880,7 +4880,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/14/15",
+    "date": "14/05/2015",
     "Date Tested": "5/14/15",
     "community_name": "Colonia San Rafael",
     "Type": "Private - Tap",
@@ -4921,7 +4921,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Colonia Valle de Maíz",
     "Type": "Private - Tap",
@@ -4962,7 +4962,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Valle de Maíz",
     "Type": "Private - Tap",
@@ -5003,7 +5003,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Colonia Valle de Maíz",
     "Type": "Private - Tap",
@@ -5044,7 +5044,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Comunidad Clavellinas",
     "Type": "Community Well",
@@ -5085,7 +5085,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/24/12",
+    "date": "24/08/2012",
     "Date Tested": "8/24/12",
     "community_name": "Correlejos",
     "Type": "Community Well",
@@ -5126,7 +5126,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/13/13",
+    "date": "13/05/2013",
     "Date Tested": "5/13/13",
     "community_name": "Covadonga",
     "Type": "Community Well",
@@ -5167,7 +5167,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/11/14",
+    "date": "11/03/2014",
     "Date Tested": "3/11/14",
     "community_name": "Delgadillo",
     "Type": "Community Well",
@@ -5208,7 +5208,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Don Diego",
     "Type": "Community Well",
@@ -5249,7 +5249,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/18/14",
+    "date": "18/09/2014",
     "Date Tested": "9/18/14",
     "community_name": "Don Francisco",
     "Type": "Community Well",
@@ -5290,7 +5290,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/24/12",
+    "date": "24/08/2012",
     "Date Tested": "8/24/12",
     "community_name": "Don Francisco",
     "Type": "Community Well",
@@ -5331,7 +5331,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "Ejido de Tirado Well",
     "Type": "Urban Well",
@@ -5372,7 +5372,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "3/20/13",
+    "date": "20/03/2013",
     "Date Tested": "3/20/13",
     "community_name": "Ejido Jofre",
     "Type": "Community Well",
@@ -5413,7 +5413,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "El Nigromante",
     "Type": "Urban Well",
@@ -5454,7 +5454,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "El Otomi Well",
     "Type": "Urban Well",
@@ -5495,7 +5495,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "9/4/14",
+    "date": "04/09/2014",
     "Date Tested": "9/4/14",
     "community_name": "Estacion FFCC 1",
     "Type": "Private - Tap",
@@ -5536,7 +5536,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/2/17",
+    "date": "02/09/2017",
     "Date Tested": "",
     "community_name": "Estancia de San Antonio",
     "Type": "Community Well",
@@ -5577,7 +5577,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/20/16",
+    "date": "20/09/2016",
     "Date Tested": "9/20/16",
     "community_name": "Exhacienda de Jesus",
     "Type": "Community Well",
@@ -5618,7 +5618,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/20/13",
+    "date": "20/03/2013",
     "Date Tested": "3/20/13",
     "community_name": "Exhacienda de Jesus",
     "Type": "Community Well",
@@ -5659,7 +5659,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/6/14",
+    "date": "06/02/2014",
     "Date Tested": "2/6/14",
     "community_name": "Exhacienda de Jesus",
     "Type": "Community Well",
@@ -5700,7 +5700,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/19/14",
+    "date": "19/05/2014",
     "Date Tested": "5/19/14",
     "community_name": "Exhacienda de Jesus",
     "Type": "Community Well",
@@ -5741,7 +5741,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Fajardo de Bocas",
     "Type": "Community Well",
@@ -5782,7 +5782,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/23/16",
+    "date": "23/08/2016",
     "Date Tested": "8/23/16",
     "community_name": "Fracc. Guadiana",
     "Type": "Private - Tap",
@@ -5823,7 +5823,7 @@ var WQM_MAP_DATA =
     "Notes": "Bottle rinsed 3 times before collection. Tap run for 3 minutes before collection. Sample taken after filtration system installed. Taken from kitchen tap."
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Fracc. Las Brisas",
     "Type": "Private - Tap",
@@ -5864,7 +5864,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/9/16",
+    "date": "09/08/2016",
     "Date Tested": "8/9/16",
     "community_name": "Fracc. Las Brisas",
     "Type": "Private - Tap",
@@ -5905,7 +5905,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/22/14",
+    "date": "22/05/2014",
     "Date Tested": "5/22/14",
     "community_name": "Gravatio",
     "Type": "Community Well",
@@ -5946,7 +5946,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/22/14",
+    "date": "22/05/2014",
     "Date Tested": "5/22/14",
     "community_name": "Gravatio",
     "Type": "Community Well",
@@ -5987,7 +5987,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "Guadalupe Well",
     "Type": "Urban Well",
@@ -6028,7 +6028,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "5/11/13",
+    "date": "11/05/2013",
     "Date Tested": "5/11/13",
     "community_name": "Guerero",
     "Type": "Artesian Well",
@@ -6069,7 +6069,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/16/16",
+    "date": "16/08/2016",
     "Date Tested": "8/16/16",
     "community_name": "Ifonavit Allende",
     "Type": "Private - Tap",
@@ -6110,7 +6110,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "Insurgentes II Well",
     "Type": "Urban Well",
@@ -6151,7 +6151,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Jalpa",
     "Type": "Community Well",
@@ -6192,7 +6192,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/11/13",
+    "date": "11/05/2013",
     "Date Tested": "5/11/13",
     "community_name": "Juan Gonzalez",
     "Type": "Artesian Well",
@@ -6274,7 +6274,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/14/13",
+    "date": "14/05/2013",
     "Date Tested": "5/14/13",
     "community_name": "La Cabana del Rey",
     "Type": "Community Well",
@@ -6315,7 +6315,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "4/3/13",
+    "date": "03/04/2013",
     "Date Tested": "4/3/13",
     "community_name": "La California",
     "Type": "Community Well",
@@ -6356,7 +6356,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "La Campana",
     "Type": "Community Well",
@@ -6397,7 +6397,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/11/13",
+    "date": "11/05/2013",
     "Date Tested": "5/11/13",
     "community_name": "La Cienega 1 (Artesian)",
     "Type": "Artesian Well",
@@ -6438,7 +6438,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "11/10/13",
+    "date": "10/11/2013",
     "Date Tested": "11/10/13",
     "community_name": "La Cienega 1 (Artesian)",
     "Type": "Artesian Well",
@@ -6479,7 +6479,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/11/13",
+    "date": "11/05/2013",
     "Date Tested": "5/11/13",
     "community_name": "La Cienega 2 (Well)",
     "Type": "Community Well",
@@ -6520,7 +6520,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/24/15",
+    "date": "24/02/2015",
     "Date Tested": "2/24/15",
     "community_name": "La Colorada",
     "Type": "Community Well",
@@ -6561,7 +6561,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "4/2/13",
+    "date": "02/04/2013",
     "Date Tested": "4/2/13",
     "community_name": "La Colorada",
     "Type": "Community Well",
@@ -6602,7 +6602,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/24/15",
+    "date": "24/02/2015",
     "Date Tested": "2/24/15",
     "community_name": "La Colorada (Irrigation well for Lavander Project)",
     "Type": "Irrigation Well",
@@ -6643,7 +6643,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "7/2/17",
+    "date": "02/07/2017",
     "Date Tested": "",
     "community_name": "La Cuadrilla",
     "Type": "Community Well",
@@ -6684,7 +6684,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/15/13",
+    "date": "15/05/2013",
     "Date Tested": "5/15/13",
     "community_name": "La Grulla",
     "Type": "Community Well",
@@ -6725,7 +6725,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "La Luciernage Well",
     "Type": "Urban Well",
@@ -6766,7 +6766,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "La Mesa Well",
     "Type": "Urban Well",
@@ -6807,7 +6807,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "3/20/13",
+    "date": "20/03/2013",
     "Date Tested": "3/20/13",
     "community_name": "La Norita del Refujio",
     "Type": "Community Well",
@@ -6889,7 +6889,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/20/13",
+    "date": "20/03/2013",
     "Date Tested": "3/20/13",
     "community_name": "La Onza 1 (Deep Community Well)",
     "Type": "Community Well",
@@ -6930,7 +6930,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/20/14",
+    "date": "20/05/2014",
     "Date Tested": "5/20/14",
     "community_name": "La Onza 1 (Deep Community Well)",
     "Type": "Community Well",
@@ -6971,7 +6971,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/20/13",
+    "date": "20/03/2013",
     "Date Tested": "3/20/13",
     "community_name": "La Onza 2 (Noria)",
     "Type": "Artesian Well",
@@ -7012,7 +7012,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/20/14",
+    "date": "20/05/2014",
     "Date Tested": "5/20/14",
     "community_name": "La Onza 2 (Noria)",
     "Type": "Artesian Well",
@@ -7053,7 +7053,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/25/12",
+    "date": "25/08/2012",
     "Date Tested": "8/25/12",
     "community_name": "La Palma",
     "Type": "Community Well",
@@ -7094,7 +7094,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/2/17",
+    "date": "02/09/2017",
     "Date Tested": "",
     "community_name": "La Palmilla",
     "Type": "Community Well",
@@ -7135,7 +7135,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/24/12",
+    "date": "24/08/2012",
     "Date Tested": "8/24/12",
     "community_name": "La Tinaja/San Lucas",
     "Type": "Community Well",
@@ -7176,7 +7176,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "La Vista Well",
     "Type": "Urban Well",
@@ -7217,7 +7217,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "3/11/16",
+    "date": "11/03/2016",
     "Date Tested": "3/11/16",
     "community_name": "Las Adjuntas del Monte",
     "Type": "Community Well",
@@ -7258,7 +7258,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/22/14",
+    "date": "22/05/2014",
     "Date Tested": "5/22/14",
     "community_name": "Las Adjuntas del Monte",
     "Type": "Community Well",
@@ -7299,7 +7299,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "11/3/14",
+    "date": "03/11/2014",
     "Date Tested": "11/3/14",
     "community_name": "Las Adjuntas del Monte",
     "Type": "Community Well",
@@ -7340,7 +7340,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/11/14",
+    "date": "11/03/2014",
     "Date Tested": "3/11/14",
     "community_name": "Las Adjuntas del Monte",
     "Type": "Community Well",
@@ -7381,7 +7381,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/2/17",
+    "date": "02/09/2017",
     "Date Tested": "",
     "community_name": "Las Cañas",
     "Type": "Community Well",
@@ -7422,7 +7422,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/13/13",
+    "date": "13/05/2013",
     "Date Tested": "5/13/13",
     "community_name": "Las Yerbas",
     "Type": "Community Well",
@@ -7463,7 +7463,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "Lejona I Well",
     "Type": "Urban Well",
@@ -7504,7 +7504,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "Lejona II Well",
     "Type": "Urban Well",
@@ -7545,7 +7545,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "10/10/14",
+    "date": "10/10/2014",
     "Date Tested": "10/10/14",
     "community_name": "Lindero",
     "Type": "Community Well",
@@ -7586,7 +7586,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "7/2/17",
+    "date": "02/07/2017",
     "Date Tested": "",
     "community_name": "Loma de Concinas",
     "Type": "Community Well",
@@ -7627,7 +7627,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/20/13",
+    "date": "20/02/2013",
     "Date Tested": "2/20/13",
     "community_name": "Loma de Concinas",
     "Type": "Community Well",
@@ -7668,7 +7668,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "Lomas Well",
     "Type": "Urban Well",
@@ -7709,7 +7709,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "Los Frailes Well",
     "Type": "Urban Well",
@@ -7750,7 +7750,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Los Galvanes",
     "Type": "Community Well",
@@ -7791,7 +7791,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/4/16",
+    "date": "04/02/2016",
     "Date Tested": "2/4/16",
     "community_name": "Los Lopez",
     "Type": "Community Well",
@@ -7832,7 +7832,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/2/17",
+    "date": "02/09/2017",
     "Date Tested": "",
     "community_name": "Los Ricos de Abajo",
     "Type": "Community Well",
@@ -7873,7 +7873,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/23/12",
+    "date": "23/08/2012",
     "Date Tested": "8/23/12",
     "community_name": "Los Ricos de Abajo",
     "Type": "Community Well",
@@ -7914,7 +7914,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "6/18/16",
+    "date": "18/06/2016",
     "Date Tested": "6/18/16",
     "community_name": "Los Rodriguez (G)",
     "Type": "Community Well",
@@ -7955,7 +7955,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/11/13",
+    "date": "11/05/2013",
     "Date Tested": "5/11/13",
     "community_name": "Los Torres 1 (Deep Well)",
     "Type": "Community Well",
@@ -7996,7 +7996,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/11/13",
+    "date": "11/05/2013",
     "Date Tested": "5/11/13",
     "community_name": "Los Torres 2 (Artesian Well - Concha's house)",
     "Type": "Artesian Well",
@@ -8037,7 +8037,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Maijela La Malcontenta",
     "Type": "Community Well",
@@ -8078,7 +8078,7 @@ var WQM_MAP_DATA =
     "Notes": "Arsenic test done twice. Sample paper both times came out almost white but with zinc spatters. Date given is testing date not sample date."
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Marnier",
     "Type": "Bottled Water",
@@ -8119,7 +8119,7 @@ var WQM_MAP_DATA =
     "Notes": "Date given is testing date not sample date."
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Marnier Especial",
     "Type": "Bottled Water",
@@ -8160,7 +8160,7 @@ var WQM_MAP_DATA =
     "Notes": "Date given is testing date not sample date."
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Marroquín de Abajo",
     "Type": "Community Well",
@@ -8201,7 +8201,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "Mexiquito II Well",
     "Type": "Urban Well",
@@ -8242,7 +8242,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "Mexiquito III Well",
     "Type": "Urban Well",
@@ -8283,7 +8283,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "8/25/16",
+    "date": "25/08/2016",
     "Date Tested": "8/25/16",
     "community_name": "Mexiquito Well",
     "Type": "Community Well",
@@ -8324,7 +8324,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "6/10/15",
+    "date": "10/06/2015",
     "Date Tested": "6/10/15",
     "community_name": "Mision/Cieneguita",
     "Type": "Community Well",
@@ -8365,7 +8365,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/25/12",
+    "date": "25/08/2012",
     "Date Tested": "8/25/12",
     "community_name": "Montecillo de la Milpa",
     "Type": "Community Well",
@@ -8406,7 +8406,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Montecillo de Nieto",
     "Type": "Community Well",
@@ -8447,7 +8447,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/18/14",
+    "date": "18/09/2014",
     "Date Tested": "9/18/14",
     "community_name": "Montecillo de Nieto",
     "Type": "Community Well",
@@ -8488,7 +8488,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/14/13",
+    "date": "14/05/2013",
     "Date Tested": "5/14/13",
     "community_name": "Mulatos",
     "Type": "Community Well",
@@ -8570,7 +8570,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "11/2/16",
+    "date": "02/11/2016",
     "Date Tested": "11/2/16",
     "community_name": "Ojo de Agua (Dolores Hidalgo)",
     "Type": "Community Well",
@@ -8611,7 +8611,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/16/13",
+    "date": "16/05/2013",
     "Date Tested": "5/16/13",
     "community_name": "Ovejas",
     "Type": "Community Well",
@@ -8652,7 +8652,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/14/13",
+    "date": "14/02/2013",
     "Date Tested": "2/14/13",
     "community_name": "Pajaro Bobo",
     "Type": "Community Well",
@@ -8693,7 +8693,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Palo Colorado",
     "Type": "Community Well",
@@ -8734,7 +8734,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Pantoja",
     "Type": "Community Well",
@@ -8775,7 +8775,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "Peñon de los Baños",
     "Type": "Community Well",
@@ -8857,7 +8857,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/22/14",
+    "date": "22/05/2014",
     "Date Tested": "5/22/14",
     "community_name": "Pozo Ademado",
     "Type": "Community Well",
@@ -8898,7 +8898,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/22/14",
+    "date": "22/05/2014",
     "Date Tested": "5/22/14",
     "community_name": "Pozo Ademado",
     "Type": "Community Well",
@@ -8939,7 +8939,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "6/10/16",
+    "date": "10/06/2016",
     "Date Tested": "6/10/16",
     "community_name": "Pozo CAS / Escuela Waldorf Charcos",
     "Type": "Community Well",
@@ -8980,7 +8980,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "7/2/17",
+    "date": "02/07/2017",
     "Date Tested": "",
     "community_name": "Pozo de Balderas",
     "Type": "Community Well",
@@ -9021,7 +9021,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/13/13",
+    "date": "13/05/2013",
     "Date Tested": "5/13/13",
     "community_name": "Pozo Hondo",
     "Type": "Community Well",
@@ -9062,7 +9062,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/16/13",
+    "date": "16/05/2013",
     "Date Tested": "5/16/13",
     "community_name": "Pozo Nuevo",
     "Type": "Community Well",
@@ -9103,7 +9103,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/12/14",
+    "date": "12/03/2014",
     "Date Tested": "3/12/14",
     "community_name": "Praga",
     "Type": "Pipa",
@@ -9144,7 +9144,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/28/15",
+    "date": "28/03/2015",
     "Date Tested": "3/28/15",
     "community_name": "Presa Allende",
     "Type": "Community Well",
@@ -9185,7 +9185,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/13/14",
+    "date": "13/03/2014",
     "Date Tested": "3/13/14",
     "community_name": "Rancho Sanctuario",
     "Type": "Community Well",
@@ -9226,7 +9226,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/14/13",
+    "date": "14/05/2013",
     "Date Tested": "5/14/13",
     "community_name": "Refugio de Montolongo",
     "Type": "Community Well",
@@ -9267,7 +9267,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/13/13",
+    "date": "13/05/2013",
     "Date Tested": "5/13/13",
     "community_name": "Rosalito",
     "Type": "Community Well",
@@ -9308,7 +9308,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/25/15",
+    "date": "25/02/2015",
     "Date Tested": "2/25/15",
     "community_name": "San Antonio (Dolores Hidalgo)",
     "Type": "Community Well",
@@ -9349,7 +9349,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/4/13",
+    "date": "04/02/2013",
     "Date Tested": "2/4/13",
     "community_name": "San Antonio (Dolores Hidalgo)",
     "Type": "Community Well",
@@ -9390,7 +9390,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/20/13",
+    "date": "20/03/2013",
     "Date Tested": "3/20/13",
     "community_name": "San Antonio de las Viejas",
     "Type": "Community Well",
@@ -9431,7 +9431,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/13/13",
+    "date": "13/03/2013",
     "Date Tested": "3/13/13",
     "community_name": "San Antonio de Lourdes (Mariolas)",
     "Type": "Community Well",
@@ -9472,7 +9472,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/13/13",
+    "date": "13/05/2013",
     "Date Tested": "5/13/13",
     "community_name": "San Antonio de Lourdes (San José de la Montaña)",
     "Type": "Community Well",
@@ -9513,7 +9513,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/13/13",
+    "date": "13/03/2013",
     "Date Tested": "3/13/13",
     "community_name": "San Antonio de Lourdes (San José de la Montaña)",
     "Type": "Community Well",
@@ -9554,7 +9554,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/22/14",
+    "date": "22/03/2014",
     "Date Tested": "3/22/14",
     "community_name": "San Antonio de Lourdes (San José de la Montaña)",
     "Type": "Community Well",
@@ -9595,7 +9595,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "San Antonio I Well",
     "Type": "Urban Well",
@@ -9636,7 +9636,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "7/2/17",
+    "date": "02/07/2017",
     "Date Tested": "",
     "community_name": "San Cristobal",
     "Type": "Community Well",
@@ -9677,7 +9677,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "San Francisco",
     "Type": "Community Well",
@@ -9718,7 +9718,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/20/13",
+    "date": "20/02/2013",
     "Date Tested": "2/20/13",
     "community_name": "San Isidro de la Estacada",
     "Type": "Community Well",
@@ -9759,7 +9759,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/2/16",
+    "date": "02/02/2016",
     "Date Tested": "2/2/16",
     "community_name": "San José de Gracia",
     "Type": "Community Well",
@@ -9800,7 +9800,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "San Jose de La Amistad Well",
     "Type": "Urban Well",
@@ -9841,7 +9841,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "San Julian Well",
     "Type": "Urban Well",
@@ -9882,7 +9882,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "1/1/13",
+    "date": "01/01/2013",
     "Date Tested": "1/1/13",
     "community_name": "San Luis Rey II Well",
     "Type": "Urban Well",
@@ -9923,7 +9923,7 @@ var WQM_MAP_DATA =
     "Notes": "This data was collected by SAPASMA and Caminos de Agua can't guarantee it's accuracy. The location of this well is estimated and not exact."
   },
   {
-    "date": "8/2/17",
+    "date": "02/08/2017",
     "Date Tested": "",
     "community_name": "San Martin",
     "Type": "Community Well",
@@ -9964,7 +9964,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/2/17",
+    "date": "02/09/2017",
     "Date Tested": "",
     "community_name": "San Miguel Viejo",
     "Type": "Community Well",
@@ -10005,7 +10005,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/2/16",
+    "date": "02/09/2016",
     "Date Tested": "9/2/16",
     "community_name": "San Miguel Viejo",
     "Type": "Community Well",
@@ -10046,7 +10046,7 @@ var WQM_MAP_DATA =
     "Notes": "200m deep, screened at 150m, pump at 50 meters, 18 years old, 150 tomas"
   },
   {
-    "date": "2/22/15",
+    "date": "22/02/2015",
     "Date Tested": "2/22/15",
     "community_name": "Siete Reales",
     "Type": "Community Well",
@@ -10087,7 +10087,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/15/13",
+    "date": "15/05/2013",
     "Date Tested": "5/15/13",
     "community_name": "Soledad Nueva",
     "Type": "Community Well",
@@ -10128,7 +10128,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "7/2/17",
+    "date": "02/07/2017",
     "Date Tested": "",
     "community_name": "Sosnabar",
     "Type": "Community Well",
@@ -10169,7 +10169,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/3/15",
+    "date": "03/03/2015",
     "Date Tested": "3/3/15",
     "community_name": "Sosnabar",
     "Type": "Community Well",
@@ -10210,7 +10210,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/25/15",
+    "date": "25/02/2015",
     "Date Tested": "2/25/15",
     "community_name": "Tanque Nuevo",
     "Type": "Community Well",
@@ -10251,7 +10251,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "4/2/13",
+    "date": "02/04/2013",
     "Date Tested": "4/2/13",
     "community_name": "Tanque Nuevo",
     "Type": "Community Well",
@@ -10292,7 +10292,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "4/2/13",
+    "date": "02/04/2013",
     "Date Tested": "4/2/13",
     "community_name": "Tepazones",
     "Type": "Community Well",
@@ -10333,7 +10333,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/13/13",
+    "date": "13/03/2013",
     "Date Tested": "3/13/13",
     "community_name": "Terreros de la Concepcion",
     "Type": "Community Well",
@@ -10374,7 +10374,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/20/14",
+    "date": "20/05/2014",
     "Date Tested": "5/20/14",
     "community_name": "Terreros de la Concepcion",
     "Type": "Community Well",
@@ -10415,7 +10415,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "7/2/17",
+    "date": "02/07/2017",
     "Date Tested": "",
     "community_name": "Tres Palmas",
     "Type": "Community Well",
@@ -10456,7 +10456,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "2/23/15",
+    "date": "23/02/2015",
     "Date Tested": "2/23/15",
     "community_name": "Unknown Community Name",
     "Type": "Community Well",
@@ -10538,7 +10538,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/4/16",
+    "date": "04/05/2016",
     "Date Tested": "5/4/16",
     "community_name": "Vergel de Guadalupe",
     "Type": "Community Well",
@@ -10579,7 +10579,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/20/13",
+    "date": "20/03/2013",
     "Date Tested": "3/20/13",
     "community_name": "Vergel de Guadalupe",
     "Type": "Community Well",
@@ -10620,7 +10620,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "5/20/14",
+    "date": "20/05/2014",
     "Date Tested": "5/20/14",
     "community_name": "Vergel de Guadalupe",
     "Type": "Community Well",
@@ -10661,7 +10661,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/26/14",
+    "date": "26/08/2014",
     "Date Tested": "8/26/14",
     "community_name": "Via Organica Ranch",
     "Type": "Community Well",
@@ -10702,7 +10702,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/18/14",
+    "date": "18/09/2014",
     "Date Tested": "9/18/14",
     "community_name": "Vivienda de Abajo",
     "Type": "Community Well",
@@ -10743,7 +10743,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/25/12",
+    "date": "25/08/2012",
     "Date Tested": "8/25/12",
     "community_name": "Vivienda Urbana",
     "Type": "Community Well",
@@ -10784,7 +10784,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "11/18/16",
+    "date": "18/11/2016",
     "Date Tested": "11/18/16",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -10825,7 +10825,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "10/4/16",
+    "date": "04/10/2016",
     "Date Tested": "10/4/16",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -10866,7 +10866,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "11/2/16",
+    "date": "02/11/2016",
     "Date Tested": "11/2/16",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -10907,7 +10907,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -10948,7 +10948,7 @@ var WQM_MAP_DATA =
     "Notes": "Date given is testing date not sample date."
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -10989,7 +10989,7 @@ var WQM_MAP_DATA =
     "Notes": "Date given is testing date not sample date."
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -11030,7 +11030,7 @@ var WQM_MAP_DATA =
     "Notes": "Date given is testing date not sample date."
   },
   {
-    "date": "5/2/16",
+    "date": "02/05/2016",
     "Date Tested": "5/2/16",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -11071,7 +11071,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/1/16",
+    "date": "01/03/2016",
     "Date Tested": "3/1/16",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -11112,7 +11112,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/13/17",
+    "date": "13/03/2017",
     "Date Tested": "",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -11153,7 +11153,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "9/20/16",
+    "date": "20/09/2016",
     "Date Tested": "9/20/16",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -11194,7 +11194,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "3/28/17",
+    "date": "28/03/2017",
     "Date Tested": "",
     "community_name": "Volunteer Home",
     "Type": "Private - Tap",
@@ -11235,7 +11235,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/10/16",
+    "date": "10/08/2016",
     "Date Tested": "8/10/16",
     "community_name": "Xido",
     "Type": "Community Well",
@@ -11276,7 +11276,7 @@ var WQM_MAP_DATA =
     "Notes": ""
   },
   {
-    "date": "8/10/16",
+    "date": "10/08/2016",
     "Date Tested": "8/10/16",
     "community_name": "Xido",
     "Type": "Community Well",
@@ -11317,7 +11317,7 @@ var WQM_MAP_DATA =
     "Notes": "90 metres deep, altitude 1879m."
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Zona Sur Valle Chalco SM Xico IV Secc",
     "Type": "Urban Well",
@@ -11358,7 +11358,7 @@ var WQM_MAP_DATA =
     "Notes": "Date given is testing date not sample date."
   },
   {
-    "date": "8/5/16",
+    "date": "05/08/2016",
     "Date Tested": "8/5/16",
     "community_name": "Zone Norte Colonia El Triunfo Valle de Chalco",
     "Type": "Urban Well",
