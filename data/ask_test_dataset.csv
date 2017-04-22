@@ -3,7 +3,7 @@ cartodb_id,total_estimated_population,families_using_well,documents,notes,mercur
 ,,,,,,9,4/5/16,,,Deep Well,,Vergel de Guadalupe,0.66,,,21.445436,-100.655936
 147,,,https://drive.google.com/open?id=0B-obqEaNF55zNXY1VEdQTGxkS0E,Yvette Neeld Private Residence,,40,8/1/16,,,,,Providencia (SM-24),2.25,,,20.92517,-100.756121
 24,,,,,,35,6/1/16,,,,,San Rafael_P1,2.2,,,20.91901,-100.754884
-35,,,,,,20,4/1/16,,,,,AgustÍn González,6.4,,,20.86225,-100.85175
+35,,,,,,20,4/1/16,,,,,Agustên Gonz‡lez,6.4,,,20.86225,-100.85175
 132,,,,,,25,4/1/16,,,,,Los Lopez,2.44,,,20.938372,-100.790718
 124,,,,,,7,3/1/16,,,,,Allende,0.37,,,20.9001944,-100.7458611
 151,,,,,,,3/1/16,,,,,Allende-2,0.39,,,20.904283,-100.747888
@@ -29,7 +29,7 @@ cartodb_id,total_estimated_population,families_using_well,documents,notes,mercur
 115,,,,,,48,3/1/16,,,,,San Rafael,2.78,,,20.919308,-100.75007
 108,,,,,,47,3/1/16,,,,,San Rafael/Santa Julia,2.72,,,20.918873,-100.755331
 107,,,,,,20,3/1/16,,,,,Valle de Maiz,0.37,,,20.90326,-100.743488
-129,,,,,,12,2/1/16,,,,,San JosÕ_ de Gracia,0.51,,,20.9587208,-100.688298
+129,,,,,,12,2/1/16,,,,,San JosÍ_ de Gracia,0.51,,,20.9587208,-100.688298
 105,,,,,,20,13/10/2015,,,Private Residence,CATIS,Colonia Obraje (Private Residence),1.5,,8,20.923208,-100.737422
 103,,,,,,,24/09/2015,,,,,Private Residence,0.9,,,20.914442,-100.747862
 3,,,,,,25,17/09/2015,,,Private Residence,,Cieneguita,1.9,,8.2,20.948273,-100.78727
@@ -65,8 +65,8 @@ cartodb_id,total_estimated_population,families_using_well,documents,notes,mercur
 33,,,,,,6,9/8/14,,,Deep Well,,Artisano de Banda,1.84,,,20.973333,-100.8163
 138,800,160,http://www.catis-mexico.org/garavatio-report/,,,,22/05/2014,192,"Concepcion, El Refujio",Deep Well,"CATIS, SECOPA, CEDESA",Gravatio,2.6,4.91,8.29,21.309401,-100.742439
 131,1750,350,http://www.catis-mexico.org/adjuntas-del-monte-report,,,,22/05/2014,,"Nucleo Uno, Tampico",Deep Well,"CATIS, SECOPA, CEDESA",Las Adjuntas del Monte,4.42,4.96,7.92,21.307558,-100.798929
-63,1500,300,http://www.catis-mexico.org/pozo-ademado-report/,,,,22/05/2014,305,"La Librero (small ranch), Copolo, NuevaÇ??‘?",Deep Well,"CATIS, SECOPA, CEDESA",Pozo Ademado,6.62,2.97,7.77,21.332392,-100.802841
-66,1125,225,,,,,20/05/2014,,"Las Palamas, E. de Herraduria, Las Negritas, Santa Rosa, Puerta Montancillas, Corcado, Arbolito de Jalisco, El Monted delÇ??‘?.",Deep Well,"CATIS, CEDESA",La Onza,3.12,7.19,8.01,21.437464,-100.637039
+63,1500,300,http://www.catis-mexico.org/pozo-ademado-report/,,,,22/05/2014,305,"La Librero (small ranch), Copolo, Nueva‚??Ô?",Deep Well,"CATIS, SECOPA, CEDESA",Pozo Ademado,6.62,2.97,7.77,21.332392,-100.802841
+66,1125,225,,,,,20/05/2014,,"Las Palamas, E. de Herraduria, Las Negritas, Santa Rosa, Puerta Montancillas, Corcado, Arbolito de Jalisco, El Monted del‚??Ô?.",Deep Well,"CATIS, CEDESA",La Onza,3.12,7.19,8.01,21.437464,-100.637039
 67,,,,,,,20/05/2014,,,Artesian Well,"CATIS, CEDESA",La Onza-2 Community Site,1.69,3.02,8.71,21.450211,-100.630015
 64,1500,300,http://www.catis-mexico.org/terreros-de-la-concepcion-report/,,,,20/05/2014,,"Loma de San Juan, Estancia de las Flores, Praga, La Esperanza",Deep Well,"CATIS, CEDESA",Terreros de la Concepcion,10.2,3.28,8.59,21.353352,-100.682259
 91,,,,,,,20/05/2014,300,,Deep Well,,Vergel de Guadalupe,0.853,8.43,8.03,21.445436,-100.655936
@@ -89,8 +89,8 @@ cartodb_id,total_estimated_population,families_using_well,documents,notes,mercur
 18,1500,300,http://www.catis-mexico.org/adjuntes-del-rio-report/,,,10.779,15/05/2013,,,Deep Well,"CATIS, CEDESA",Adjuntes del Rio,0.24,2.14,7.09,21.14678,-100.901437
 59,,,http://www.catis-mexico.org/la-grulla-report/,,,9.724,15/05/2013,,,Deep Well,"NIU, CATIS, CEDESA",La Grulla,0.6,0.71,7.71,21.10196,-100.722232
 52,1825,365,http://www.catis-mexico.org/soledad-nuevo-report/,,,8.699,15/05/2013,300,,Deep Well,"NIU, CATIS, CEDESA",Soledad Nuevo,3.04,2.03,7.7,21.28,-100.909
-51,1355,271,http://www.catis-mexico.org/la-cabana-del-rey-report/,,,24.976,14/05/2013,300,"Caravino, PalencÇ??‘?a, Tres Esquinas",Deep Well,"NIU, CATIS, CEDESA",La Cabana del Rey,4.83,2.65,,21.421856,-100.710114
-50,1475,295,http://www.catis-mexico.org/mulatos-report/,,,19.773,14/05/2013,,"La Flechada, San Ramon, El Refugio, Sacora, MonteÇ??‘?",Deep Well,"NIU, CATIS, CEDESA",Mulatos,1.8,3.82,,21.394535,-100.713135
+51,1355,271,http://www.catis-mexico.org/la-cabana-del-rey-report/,,,24.976,14/05/2013,300,"Caravino, Palenc‚??Ô?a, Tres Esquinas",Deep Well,"NIU, CATIS, CEDESA",La Cabana del Rey,4.83,2.65,,21.421856,-100.710114
+50,1475,295,http://www.catis-mexico.org/mulatos-report/,,,19.773,14/05/2013,,"La Flechada, San Ramon, El Refugio, Sacora, Monte‚??Ô?",Deep Well,"NIU, CATIS, CEDESA",Mulatos,1.8,3.82,,21.394535,-100.713135
 85,400,80,http://www.catis-mexico.org/refugio-de-montolongo/,,,,14/05/2013,,,Deep Well,"NIU, CATIS, CEDESA",Refugio de Montolongo,0.81,3.04,,21.254728,-100.821945
 49,,,http://www.catis-mexico.org/cobadonga-report/,,,15.238,13/05/2013,,,Deep Well,"NIU, CATIS, CEDESA",Cobadonga,1.33,4.05,8.12,21.266911,-100.69345
 38,,,http://www.catis-mexico.org/cofradia-report/,,,3.797,13/05/2013,90,"Mesa del Pueblo, Mes de Escalante, Mora",Deep Well,"NIU, CATIS, CEDESA",Cofradia,0.49,9.45,7.89,21.323931,-100.475677
@@ -101,7 +101,7 @@ cartodb_id,total_estimated_population,families_using_well,documents,notes,mercur
 140,800,160,http://www.catis-mexico.org/garavatio-report/,,,10.034,3/4/13,192,"Concepcion, El Refujio",Deep Well,"CATIS, SECOPA, CEDESA",Gravatio,0.92,,8.12,21.309401,-100.742439
 127,1350,270,,,,7.338,3/4/13,200,Ejido San Pedro (40 families),Deep Well,"CATIS, SECOPA, CEDESA",La California,1.18,,7.93,21.283029,-100.820273
 137,1750,350,http://www.catis-mexico.org/adjuntas-del-monte-report,,,8.859,3/4/13,,"Nucleo Uno, Tampico",Deep Well,"CATIS, SECOPA, CEDESA",Las Adjuntas del Monte,2.39,,7.89,21.307558,-100.798929
-128,1500,300,http://www.catis-mexico.org/pozo-ademado-report/,,,7.813,3/4/13,305,"La Librero (small ranch), Copolo, NuevaÇ??‘?",Deep Well,"CATIS, SECOPA, CEDESA",Pozo Ademado,3.85,,7.72,21.332392,-100.802841
+128,1500,300,http://www.catis-mexico.org/pozo-ademado-report/,,,7.813,3/4/13,305,"La Librero (small ranch), Copolo, Nueva‚??Ô?",Deep Well,"CATIS, SECOPA, CEDESA",Pozo Ademado,3.85,,7.72,21.332392,-100.802841
 28,1765,353,,,,8.972,2/4/13,,"Nueva Luz, La Tinaja, La Boquilla, Segunda Fraccion, El Charco, El Rancho de Jesus, La Laguna",Deep Well,"CATIS, CEDESA",Barrancas,2.86,,,21.33432,-100.85936
 14,1400,280,,,,7.829,2/4/13,,"Negritas, El Prieto, El Charcito, Palo Amarillo, St. del Choro",Deep Well,"CATIS, CEDESA",Claveles,1.63,,7.56,21.31281,-100.89402
 12,900,180,,,,7.008,2/4/13,,,Deep Well,"CATIS, CEDESA",La Colorada,1.67,,,21.29603,-100.85721
@@ -111,7 +111,7 @@ cartodb_id,total_estimated_population,families_using_well,documents,notes,mercur
 58,,,,,,11.607,20/03/2013,,,Deep Well,"CATIS, CEDESA",Ejido Jofre,2.38,,,21.51222,-100.50945
 43,1150,230,,,,46.932,20/03/2013,275,"Arenal Arriba, Arenal Abajo, Fruitara",Deep Well,"CATIS, CEDESA",Exhaciendo de Jesus (E. de Jesus),15.96,,8.61,21.381496,-100.668381
 23,,,,,,4.641,20/03/2013,,,Deep Well,"CATIS, CEDESA",La Norita del Refujio,0.67,,,21.4373,-100.62145
-57,1125,225,,,,4.069,20/03/2013,,"Las Palamas, E. de Herraduria, Las Negritas, Santa Rosa, Puerta Montancillas, Corcado, Arbolito de Jalisco, El Monted delÇ??‘?.",Deep Well,"CATIS, CEDESA",La Onza,2.76,,8.02,21.437464,-100.637039
+57,1125,225,,,,4.069,20/03/2013,,"Las Palamas, E. de Herraduria, Las Negritas, Santa Rosa, Puerta Montancillas, Corcado, Arbolito de Jalisco, El Monted del‚??Ô?.",Deep Well,"CATIS, CEDESA",La Onza,2.76,,8.02,21.437464,-100.637039
 45,,,,,,9.288,20/03/2013,,,Artesian Well,"CATIS, CEDESA",La Onza-2 Community Site,1.56,,,21.450211,-100.630015
 44,320,64,,,,5.656,20/03/2013,,La Puridy,Deep Well,"CATIS, CEDESA",San Antonio de las Viejas,0.78,,7.65,21.400496,-100.673393
 1,,,,,,8.747,20/03/2013,300,,Deep Well,,Vergel de Guadalupe,0.57,,7.95,21.445436,-100.655936
