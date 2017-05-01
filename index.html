@@ -288,6 +288,7 @@
 						data[i][DATA_NAMES.lat] == null | data[i][DATA_NAMES.lat] == "" |	//	ignore the point!
 						data[i][DATA_NAMES.lng] == null | data[i][DATA_NAMES.lng] == "" ) {	
 						} else { 						// Otherwise, check for duplicate latLngs, then plot the base markers
+							var worstBin
 							if (!presentIn2dArray(dup_indices, i)[0]) {
 								var matches = 0;		// If the current marker is known to be a duplicate, skip it. 
 								var j = i;				// 	otherwise, check to see if it has any duplicates. This works
@@ -341,8 +342,8 @@
 			////////////////////////////////////////////////////////////////////////////////
 			
 			function plotMarker(type, data, contam, data_index) {
-				if (type == "base" | type == "preSpider") {					// If the point to plot is a base point with no historical data:
-					base.Bins.push(getNextMeasuredBin(data, i)); 	// Grab the bin of the point
+				if (type == "base" | type == "preSpider") {					// If the point to plot is a base point (with or without spidering data)
+					base.Bins.push(getNextMeasuredBin(data, i)); 			// Grab the bin of the point
 					var latLng = L.latLng([data[i][DATA_NAMES.lat], data[i][DATA_NAMES.lng]]); // Grab the latLng of the point
 					base.Markers.push( 										// Save the appropriate marker
 						L.marker(latLng, {
