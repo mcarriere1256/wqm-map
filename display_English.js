@@ -20,10 +20,10 @@ var CARTO_ATTRIBUTION = 'Data hosting on <a href="http://www.dropbox.com">Dropbo
 
 var NO_DATA_MSG = "No data";
 
-var F_LABELS = ["0-1.5", "1.5-4", "4-10", "10+"];
+var F_LABELS = ["0-1.5", "1.5-3", "3-10", "10+"];
 var AS_LABELS = ["0-10","10-25","25+"];
 var RISK_LABELS = ["\xa0\xa0\xa0Meets\xa0all\xa0standards",
-"\xa0\xa0\xa0Exceeds\xa0at\xa0least\xa0one\xa0standard\xa0-\xa0not\xa0safe\xa0for\xa0children",
+"\xa0\xa0\xa0Not\xa0safe\xa0for\xa0children\xa0under\xa0the\xa0age\xa0of\xa0seven",
 "\xa0\xa0\xa0Dangerous\xa0if\xa0consumed\xa0regularly",
 "\xa0\xa0\xa0Potentially\xa0acutely\xa0toxic!"];
 

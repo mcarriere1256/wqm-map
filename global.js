@@ -16,7 +16,7 @@ var FLUORIDE = 0; 						// Initialize constants for each contaminant to use as
 var ARSENIC = 1;						// 	an index to call contaminant-specific information, like
 var TOTAL_RISK = 2; 					//  how to bin markers and draw legends and labels. 
 
-var F_BINS = [1.49, 3.99, 9.99];		// Store the contamination bins. For fluoride, for example, the
+var F_BINS = [1.49, 2.99, 9.99];		// Store the contamination bins. For fluoride, for example, the
 var AS_BINS = [9.99,24.99]				//	bins are 0-1.5 mg/L, 1.5-4 mg/L, 4-10 mg/L, and >10 mg/L. 
 var TOTAL_RISK_BINS = ["combined", FLUORIDE, ARSENIC]; 
 										// If we're combining contaminants, use the 
