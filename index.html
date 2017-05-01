@@ -9,7 +9,7 @@
 		<script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js"></script><!--Include Stamen JavaScript to get basemap tiles-->
 		
 		<!-- Include the include files: -->
-		<!--global vars-->	<script src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/global.js" type="text/javascript" /></script>
+		<!--global vars-->	<script src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/global.js" type="text/javascript" /></script>   <!--https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/-->
 		<!--dataset!!! -->	<script src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/data/wqm_dataset.js" type="text/javascript"></script>
 		
 		
@@ -82,8 +82,8 @@
 						<div class="colors">
 							<div class="quartile" style="background-color:#909090" name="greybar"></div>
 							<div class="quartile" style="background-color:#229A00"></div>
-							<div class="quartile" style="background-color:#FF9900"></div>
 							<div class="quartile" style="background-color:#F11810"></div>
+							<div class="quartile" style="background-color:#000000"></div>
 						</div>
 						<div class="colors" style="font-weight:normal; text-align: center">
 							<div class="quartile" style="padding-top: 5px; text-transform: none" name="no_data"><b></b></div>
@@ -346,7 +346,7 @@
 					var latLng = L.latLng([data[i][DATA_NAMES.lat], data[i][DATA_NAMES.lng]]); // Grab the latLng of the point
 					base.Markers.push( 										// Save the appropriate marker
 						L.marker(latLng, {
-						icon: BASE_ICONS[base.Bins[base.Bins.length-1]],
+						icon: BASE_ICONS[COLORS[activeContaminant][base.Bins[base.Bins.length-1]]],
 						riseOnHover: true,
 						zIndexOffset: BASE_Z_OFFSET
 						})
@@ -403,6 +403,11 @@
 			////////////////////////////////////////////////////////////////////////////////
 			
 			function getBin(data, bins) {
+				var pureBins = Array.from(bins);				// store a copy of bins into pureBins
+				
+				if (bins[0]=="combined") {						// if the bins are combined
+					pureBins.splice(0,1);						// get rid of the word 'combined' in pureBins	
+				}
 
 				var values = []; 								// initialize the local array, values
 				if (activeContaminant == FLUORIDE) {			// 	and push the relevant values into it,
@@ -425,33 +430,27 @@
 				}
 					
 				
-				var realBin = 1;					// Initialize the bin holder to 0. If we don't find
-													// a bin >0, the bin must be 0 anyways. 
+				var realBin = 1;					// Initialize the bin holder to 1. If we don't find
+													// a bin >1, the bin must be 1. 
 				if (typeof(bins[0]) == "number"){  	// This section deals with the case where there's
 													// 	a single relevant contaminant
 					for (var j=0; j<bins.length; j++) { // Loop through the bins array. If the value is
-						if (values[0] > bins[j]) {	//	greater than the threshold, set the bin!
+						if (values[0] > pureBins[j]) {	//	greater than the threshold, set the bin!
 							realBin = j+2;
 						};							// If the bin number hasn't been set, it means
 					};								//	that the marker belongs in bin 0, the default value of realBin.
 				} else if (bins[0] == "combined") { // This section deals with the case where we're 
 													// 	aggregating multiple contaminants into a "risk scale."
-					for(var j=1; j<bins.length; j++) {	// Loop through all the relevant contaminants (setting the bin
-													//	if the value exceeds the threshold each time).
-						if (realBin-1 < BINS[bins[j]].length) { // If the current bin value is less than the number of bins
-							for (m=realBin-1; m<BINS[bins[j]].length; m++) { 
-													// Loop through all bins in each contaminant, 
-													// 	but only those above the risk level of the 
-													// 	previous contaminants.
-								if (values[j-1]) { 	// Quick check to make sure the value actually exists...
-									if (values[j-1] > BINS[bins[j]][m]) {
-													// If the value exceeds the threshold, set the bin. 
-										realBin = m+2;
-									};
-								};
-							};
-						};							
-					};
+					
+					for (var contam = 0; contam<values.length; contam++) {						// loop through the contaminants
+						for (var level = 0; level<COLORS[contam].length; level++) {				// within each contaminant, loop through the bin cutoffs
+							if (values[contam] > BINS[pureBins[contam]][level]) {				// if the value exceeds the cutoff level:
+								if (values[contam] && realBin<COLORS[contam][level+2]) {		// (quick check to make sure there is actually a value and that we're not overwriting a higher bin value from an earlier contaminant)
+									realBin = COLORS[contam][level+2];							// set the bin. Otherwise, do nothing.
+								}
+							}
+						}
+					}					
 				} else {
 					// if you have any other types of layers you'd like to include,
 					//	they should go in the "else" here or in an "else if" where
@@ -486,12 +485,12 @@
 					var popupText = getBasePopup(z);					// grab the text for the popup		
 					if (j==0) {											// if we're dealing with the base point of the spider
 						features.push(L.marker(shiftedLatLng, {			// push the marker onto the features array
-							icon: BASE_SPIDER_ICONS[spiderBin],
+							icon: BASE_SPIDER_ICONS[COLORS[activeContaminant][spiderBin]],
 							zIndexOffset: SPIDER_Z_OFFSET
 						}));	
 					} else {
 						features.push(L.marker(shiftedLatLng, {			// if we're not dealing with the base
-							icon: SPIDER_ICONS[spiderBin],				// also push the marker onto the features array.
+							icon: SPIDER_ICONS[COLORS[activeContaminant][spiderBin]],				// also push the marker onto the features array.
 							zIndexOffset: SPIDER_Z_OFFSET
 						}));		
 						var popupText = getLabel("hist", 0)+popupText;	// adjust the popup text to note "historical data"
@@ -778,6 +777,17 @@
 			function removePoint(i) {
 				map.removeLayer(base.Markers[i]); 
 			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	onKeypress FUNCTION 						  	////
+			//// 			Closes the spider if the user presses "esc".				////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			$(document).bind('keypress', function (event) {
+				if(String(event.originalEvent.key) == "Escape") {
+					closeSpider();	
+				}
+			})
 	
 			
 		</script>
