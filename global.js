@@ -73,21 +73,39 @@ var STAMEN_MAP_TYPE = "terrain";		// Set which type of stamen map we want as a b
 										
 var X_URL = "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton_blue.png";		// URL for x-button used to close the spider
 									
-var BASE_URLS = ["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greyPoint.png",
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greenPoint.png",
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellowPoint.png",
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/redPoint.png",
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/blackPoint.png"];
+var BASE_URLS = ["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-grey.png",		// URLs for points with white borders
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/green-green.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellow-yellow.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/red-red.png",
+				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/black-black.png"];
 
-var SPIDER_URLS = ["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greySpider.png",
+var SPIDER_URLS = ["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greySpider.png",	// URLs for point with blue borders
 				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greenSpider.png",
 				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellowSpider.png",
 				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/redSpider.png",
 				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/blackSpider.png"];
+				
+var HISTORICAL_BASE_URLS = [["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-white.png",		// URLs for points with specific borders
+							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-green.png",
+							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-yellow.png",
+							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-red.png",
+							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-black.png"],
+							[0,"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/green-white.png",
+							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/green-yellow.png",
+							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/green-red.png",
+							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/green-black.png"],
+							[0,0,"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellow-white.png",
+							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellow-red.png",
+							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellow-black.png"],
+							[0,0,0,"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/red-white.png",
+							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/red-black.png"],
+							[0,0,0,0,"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/black-white.png"]];
 
 var SMALL_ICON_SIZE = [16,16]; 			// The pixel x and y that the final marker icon image is scaled to. 
-var LARGE_ICON_SIZE = [24,24];			// A larger marker for the base of the spider 
-var BASE_ICONS = [0,0,0,0];				// Initialize an array to hold all the icons, so the images 
-var SPIDER_ICONS = [0,0,0,0];			//	only need to be grabbed once. 
-var BASE_SPIDER_ICONS = [0,0,0,0];
+var LARGE_ICON_SIZE = [24,24];			// A larger marker for the base of the spider
+var EXTRA_SMALL_ICON_SIZE = [12,12]		// extra small icon size for base point without historical data	 
+var BASE_ICONS = [0,0,0,0,0];				// Initialize an array to hold all the icons, so the images 
+var SPIDER_ICONS = [0,0,0,0,0];			//	only need to be grabbed once. 
+var BASE_SPIDER_ICONS = [0,0,0,0,0];
+var HISTORICAL_BASE_ICONS = [[0,0,0,0,0],[0,0,0,0],[0,0,0],[0,0],[0]];
 
