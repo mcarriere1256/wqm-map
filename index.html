@@ -318,9 +318,21 @@
 							};
 							
 							if (!presentIn2dArray(dup_indices, i)[0]) {					// plot the base data with no history
-								plotMarker("base", data, contaminantToShow, i);
+								var border = [false, 0, 0]; 							// use the normal white border on the base points w/o history
+								plotMarker("base", data, contaminantToShow, i, border);
 							} else if (presentIn2dArray(dup_indices, i)[1][1] == 0) {	// plot the base data with historical data
-								plotMarker("preSpider", data, contaminantToShow, i);
+								var row = presentIn2dArray(dup_indices, i)[1][0];		// get row of dup_indices that has all the duplicate indices for the current point
+								var baseBin = getBin(data[i], BINS[contaminantToShow]);	// define the base bin as the bin of the base point
+								var maxBin = 0;											// init maxBin to hold the maximum bin of the spider
+								var newBin;												// init a placeholder called newBin
+								for (var spideringPts = 0; spideringPts<dup_indices[row].length; spideringPts++) {	// loop through all the duplicate points`
+									newBin = getBin(data[dup_indices[row][spideringPts]], BINS[contaminantToShow]);	// set newBin to the bin of the historical points
+									if (newBin > maxBin) {								// if a historical point is higher than the previously registered max bin,
+										maxBin = newBin;								//	set the maxBin to the bin of that new point, this way, maxBin ends up
+									}													//	holding the maximum bin of all the historical data, including the base point. 
+								}
+								var border = [true, baseBin, maxBin];					// when plotting the point show the border based on the max bin of the historical data
+								plotMarker("preSpider", data, contaminantToShow, i, border);
 							} else {
 								// Do stuff to the historic points, if you'd like, here. 
 							};
@@ -334,20 +346,32 @@
 			};
 			////////////////////////////////////////////////////////////////////////////////
 			////					 	plotMarker FUNCTION 						  	////
-			//// 	Takes in a four arguments, "type", "data", "contam" and "data_index"////
-			////	and plots  															////
+			//// 	Takes in a five arguments, "type" (str), "data" (full dataset), 	////
+			////	"contam" (int) and "data_index" (int) and "border" (1x3 array: [str,////
+			////	int, int] and plots:												////
 			//// 	the appropriate point to the map. It also stores the marker info 	////
 			//// 	(latLng, labels, popups, etc.) in a global array that can be closed ////
-			//// 	by another function later. 
+			//// 	by another function later. 											////
 			////////////////////////////////////////////////////////////////////////////////
 			
-			function plotMarker(type, data, contam, data_index) {
+			function plotMarker(type, data, contam, data_index, border) {
 				if (type == "base" | type == "preSpider") {					// If the point to plot is a base point (with or without spidering data)
 					base.Bins.push(getNextMeasuredBin(data, i)); 			// Grab the bin of the point
+					var iconToUse;
+					if (border[0] == false) {								// if there's no border
+						iconToUse = BASE_ICONS[COLORS[activeContaminant][base.Bins[base.Bins.length-1]]];	// grab the normal icon
+					} else {												// if there should be a border
+						iconToUse = BASE_ICONS[COLORS[activeContaminant][base.Bins[base.Bins.length-1]]];	// grab the bordered icon
+					
+					}
+					
+					
+					
+					
 					var latLng = L.latLng([data[i][DATA_NAMES.lat], data[i][DATA_NAMES.lng]]); // Grab the latLng of the point
 					base.Markers.push( 										// Save the appropriate marker
 						L.marker(latLng, {
-						icon: BASE_ICONS[COLORS[activeContaminant][base.Bins[base.Bins.length-1]]],
+						icon: iconToUse,
 						riseOnHover: true,
 						zIndexOffset: BASE_Z_OFFSET
 						})
