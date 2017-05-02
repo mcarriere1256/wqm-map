@@ -114,9 +114,9 @@
 				</ul>
 			</div>
 			
-			<img id="help_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMark.png"></img>
-			<img id="how_to_read"></img>
-			<img id="x_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton2.png"></img>
+			<img id="help_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMark.png" onmouseenter="changeHelpSrc('hover')" onmouseleave="changeHelpSrc('leave')"></img>
+			<img id="how_to_read" style="display: none;"></img>
+			<img id="x_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton2.png" style="display: none;"></img>
 			
 			
 		</div>
@@ -828,6 +828,14 @@
 					closeSpider();	
 				}
 			})
+			
+			function changeHelpSrc(type) {
+				if (type == "hover") {
+					document.getElementById("help_button").src = HELP_URL_HOVER;
+				} else {
+					document.getElementById("help_button").src = HELP_URL;
+				}
+			}
 	
 			
 		</script>

@@ -109,3 +109,6 @@ var SPIDER_ICONS = [0,0,0,0,0];			//	only need to be grabbed once.
 var BASE_SPIDER_ICONS = [0,0,0,0,0];
 var HISTORICAL_BASE_ICONS = [[0,0,0,0,0],[0,0,0,0],[0,0,0],[0,0],[0]];
 
+var HELP_URL = "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMark.png";
+var HELP_URL_HOVER = "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMarkHover.png"
+
