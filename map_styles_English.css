@@ -126,3 +126,24 @@ img.caminos_logo {
 div.cartodb-legend {
 	width: 285px;		
 }
+
+#how_to_read {
+	display: inline-block;
+	z-index: 3;
+	position: absolute;
+	right: 15px;
+	top:15px;
+	width: 420px;
+	height: 360px;	
+	
+}
+
+.toggle_button {
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	z-index: 4;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
