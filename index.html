@@ -114,7 +114,7 @@
 				</ul>
 			</div>
 			
-			<img id="help_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMark.png" onmouseenter="changeHelpSrc('hover')" onmouseleave="changeHelpSrc('leave')" onclick="openHelp()"></img>
+			<img id="help_button" class="toggle_button" onmouseenter="changeHelpSrc('hover')" onmouseleave="changeHelpSrc('leave')" onclick="openHelp()"></img>
 			<img id="how_to_read" style="display: none;"></img>
 			<img id="x_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton2.png" style="display: none;" onclick="closeHelp()"></img>
 			
@@ -199,6 +199,7 @@
 			document.getElementById("as_title").innerHTML = AS_TITLE;
 			document.getElementById("risk_title").innerHTML = RISK_TITLE;
 			document.getElementById("how_to_read").src = LEGEND_URL;
+			document.getElementById("help_button").src = HELP_URL;
 			
 			
 			
