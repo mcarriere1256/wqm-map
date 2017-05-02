@@ -114,9 +114,9 @@
 				</ul>
 			</div>
 			
-			<img id="help_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMark.png" onmouseenter="changeHelpSrc('hover')" onmouseleave="changeHelpSrc('leave')"></img>
+			<img id="help_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMark.png" onmouseenter="changeHelpSrc('hover')" onmouseleave="changeHelpSrc('leave')" onclick="openHelp()"></img>
 			<img id="how_to_read" style="display: none;"></img>
-			<img id="x_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton2.png" style="display: none;"></img>
+			<img id="x_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton2.png" style="display: none;" onclick="closeHelp()"></img>
 			
 			
 		</div>
@@ -835,6 +835,19 @@
 				} else {
 					document.getElementById("help_button").src = HELP_URL;
 				}
+			}
+			
+			function openHelp() {
+				document.getElementById("help_button").style.display = "none";
+				document.getElementById("how_to_read").style.display = "inline-block";
+				document.getElementById("x_button").style.display = "inline-block";
+			}
+			
+			function closeHelp () {
+				document.getElementById("help_button").style.display = "inline-block";
+				document.getElementById("how_to_read").style.display = "none";
+				document.getElementById("x_button").style.display = "none";
+			
 			}
 	
 			

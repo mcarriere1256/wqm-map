@@ -148,6 +148,6 @@ div.cartodb-legend {
 	top: 30px;
 }
 
-#help_button:hover {
+.toggle_button:hover {
 	cursor: pointer;
 }
