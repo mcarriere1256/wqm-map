@@ -634,7 +634,7 @@
 				var date = String(AllData[i][DATA_NAMES.date]).split("/", 3);
 			
 				var day = String(date[0]);
-				var month = MONTHS[Number(date[1])];
+				var month = MONTHS[Number(date[1])-1];
 				var year = String(date[2]);
 
 				var docPath = AllData[i][DATA_NAMES.docs];
