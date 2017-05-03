@@ -547,7 +547,7 @@
 						var marker_index = 2*j-1;	// 	their polylines are the following evens
 						var polyline_index = 2*j;
 					};	
-					features[marker_index].bindLabel(getLabel("year", z), {
+					features[marker_index].bindLabel(getLabel("month", z)+",\xa0"+getLabel("year", z), {
 						noHide: true,				// bind labels displaying the date
 						className: "yearLabel",		// 	permanently next to each spidered point
 						offset: SPIDER_LABEL_OFFSET						
@@ -752,7 +752,11 @@
 	
 			function getLabel(type, i) {
 				if (type == "year") {
-					return "\xa0"+String(AllData[i][DATA_NAMES.date].split('/',3)[2]);		
+					return String(AllData[i][DATA_NAMES.date].split('/',3)[2]);		
+				} else if (type == "month") {
+					var monthNumb = Number(AllData[i][DATA_NAMES.date].split('/',3)[1]);
+					console.log(monthNumb+", "+MONTHS[Number(monthNumb)])
+					return MONTHS[monthNumb-1];
 				} else if (type == "community") {
 					str = String(AllData[i][DATA_NAMES.name]);
 					str = str.split(" ")

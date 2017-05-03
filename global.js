@@ -51,7 +51,7 @@ var spiderOpenIndex = -1; 				// stores the data index of the currently open (or
 var POPUP_OFFSET = [88, 6]; 			// offset of the popup from the point
 var SPIDER_Z_OFFSET = 100; 				// define the z-axes for the various layers, spidered points			
 var BASE_Z_OFFSET = 10; 				//	and base points. 
-var SPIDER_LABEL_OFFSET = [-50, -8];	// offset for spider date labels 
+var SPIDER_LABEL_OFFSET = [-80, -8];	// offset for spider date labels 
 var X_OFFSET = 999999;					// The x-index-offset for the x-out button
 
 var MAP_CENTER = [21.05,-100.65];		// Set all map starting parameters
