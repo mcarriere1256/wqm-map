@@ -27,7 +27,7 @@
 		<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 		
 		<!--incl. JSZip-->	<script type="text/javascript" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/jszip.js"></script>
-
+		<!--file Saver -->	<script type="text/javascript" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/fileSaver.js"></script>
 		<script>
 		document.title = TITLE;
 		</script>
@@ -849,6 +849,13 @@
 				}
 			})
 			
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	changeHelpSrc FUNCTION 						  	////
+			//// 	Changes the color of the help icon depending on if there's a mouse	////
+			////	hovering over it.													////
+			////////////////////////////////////////////////////////////////////////////////
+			
 			function changeHelpSrc(type) {
 				if (type == "hover") {
 					document.getElementById("help_button").src = HELP_URL_HOVER;
@@ -857,16 +864,45 @@
 				}
 			}
 			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	openHelp/closeHelp FUNCTION 				  	////
+			//// 			Opens/closes the help dialog box.							////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			
 			function openHelp() {
 				document.getElementById("help_button").style.display = "none";
 				document.getElementById("how_to_read").style.display = "inline-block";
 				document.getElementById("x_button").style.display = "inline-block";
 			}
 			
+
 			function closeHelp () {
 				document.getElementById("help_button").style.display = "inline-block";
 				document.getElementById("how_to_read").style.display = "none";
 				document.getElementById("x_button").style.display = "none";
+			
+			}
+			
+			////////////////////////////////////////////////////////////////////////////////
+			////					 	zipAndDownloadMap FUNCTION 					  	////
+			//// 	Creates a zip file of all relevant files for the map and downloads	////
+			////	it to the user's machine. 											////
+			////////////////////////////////////////////////////////////////////////////////
+			
+			function zipAndDownloadMap() {
+				var zip = new JSZip();
+				zip.file("map_styles_English.css");
+				
+				
+				zip.generateAsync({type:"blob"}).then(function (blob) {
+					saveAs(blob, "hello.zip");
+				}, function (err) {
+						blobLink.innerHTML += " " + err;
+				});
+						
+			
+			
 			
 			}
 	
