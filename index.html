@@ -639,6 +639,10 @@
 
 				var docPath = AllData[i][DATA_NAMES.docs];
 				var docLink;
+				var f_numb;
+				var as_numb;
+				var test_org;
+				
 				if(docPath) {
 					docLink = "<a href="+ docPath +" target='_blank'>"+SEE_MORE+"</a>";
 				} else {
@@ -657,9 +661,18 @@
 					as_numb = AllData[i][DATA_NAMES.as];
 				};
 				
+				if (!AllData[i][DATA_NAMES.test_org] | AllData[i][DATA_NAMES.test_org] == "") {
+					test_org = NO_DATA_MSG;
+				} else {
+					test_org = String(AllData[i][DATA_NAMES.test_org]);
+				}
+				
 				var pop = "<dl><h2>" + AllData[i][DATA_NAMES.name] + "</h2>"	// This text will be displayed
 					+ "<b>"+DATE+"</b>"												//	in the popup for this point.
 					+ "<dt>" + day + "-" + month + "-" + year + "</dd>"
+					+ "<br><br>"
+					+ "<b>"+TEST_ORG+"</b>"
+					+ "<dt>" + test_org + "</dd>"
 					+ "<br><br>"
 					+ "<b>"+CONTAMINANTS[0]+" (mg/L)</b>"
 					+ "<dt>" + f_numb + "</dd>"

@@ -9,7 +9,8 @@ var DATA_NAMES = {							// And store the titles of the columns
 	as: "arsenic",
 	lat: "latitude",
 	lng: "longitude",
-	docs: "documents"
+	docs: "documents",
+	test_org: "Testing Organisation"
 };
 
 var FLUORIDE = 0; 						// Initialize constants for each contaminant to use as 
