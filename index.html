@@ -119,9 +119,9 @@
 				</ul>
 			</div>
 			
-			<img id="help_button" class="toggle_button" onmouseenter="changeHelpSrc('hover')" onmouseleave="changeHelpSrc('leave')" onclick="openHelp()"></img>
-			<img id="how_to_read" style="display: none;"></img>
-			<img id="x_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton2.png" style="display: none;" onclick="closeHelp()"></img>
+			<img id="help_button" style="display: none;" class="toggle_button" onmouseenter="changeHelpSrc('hover')" onmouseleave="changeHelpSrc('leave')" onclick="openHelp()"></img>
+			<img id="how_to_read" onmouseenter="disableMapControls();" onmouseleave="enableMapControls();"></img>
+			<img id="x_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton2.png" onclick="closeHelp()"></img>
 			
 			
 		</div>
@@ -467,7 +467,6 @@
 					var row = presentIn2dArray(dup_indices, index)[1][0];	// get row of dup_indices that has all the duplicate indices for the current point
 					var location = presentIn2dArray(dup_indices, index)[1][1]
 					if (row >= 0) {
-						console.log(AllData[index][DATA_NAMES.name]+": "+dup_indices[row].length);
 						for (i=location; i<dup_indices[row].length; i++) {
 							if (fluoride == -1 && (AllData[dup_indices[row][i]][DATA_NAMES.f] != "" && AllData[dup_indices[row][i]][DATA_NAMES.f] != null)) {
 								fluoride = AllData[dup_indices[row][i]][DATA_NAMES.f];
@@ -940,6 +939,36 @@
 				
 			
 			
+			}
+			
+			///////////////////////////////////////////////////////////////////
+			////			function enable/disableMapControls 				////
+			//// 															////
+			////	Disables and enables panning, zooming, and all keyboard	////
+			////	map controls when the cursor is and isn't over the map.	////
+			////////////////////////////////////////////////////////////////////
+			
+			
+			function disableMapControls() {
+				map.dragging.disable();
+				map.touchZoom.disable();
+				map.doubleClickZoom.disable();
+				map.scrollWheelZoom.disable();
+				map.boxZoom.disable();
+				map.keyboard.disable();
+				if (map.tap) map.tap.disable();
+				document.getElementById('WaterMap').style.cursor='default';
+			}
+			
+			function enableMapControls() {
+				map.dragging.enable();
+				map.touchZoom.enable();
+				map.doubleClickZoom.enable();
+				map.scrollWheelZoom.enable();
+				map.boxZoom.enable();
+				map.keyboard.enable();
+				if (map.tap) map.tap.enable();
+				document.getElementById('WaterMap').style.cursor='grab';
 			}
 	
 			
