@@ -121,6 +121,7 @@
 			
 			<img id="help_button" style="display: none;" class="toggle_button" onmouseenter="changeHelpSrc('hover')" onmouseleave="changeHelpSrc('leave')" onclick="openHelp()"></img>
 			<img id="how_to_read" onmouseenter="disableMapControls();" onmouseleave="enableMapControls();"></img>
+			<img id="close_arrow"></img>
 			<img id="x_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton2.png" onclick="closeHelp()"></img>
 			
 			
@@ -205,6 +206,7 @@
 			document.getElementById("risk_title").innerHTML = RISK_TITLE;
 			document.getElementById("how_to_read").src = LEGEND_URL;
 			document.getElementById("help_button").src = HELP_URL;
+			document.getElementById("close_arrow").src = ARROW_URL;
 			
 			
 			
@@ -910,6 +912,7 @@
 				document.getElementById("help_button").style.display = "none";
 				document.getElementById("how_to_read").style.display = "inline-block";
 				document.getElementById("x_button").style.display = "inline-block";
+				document.getElementById("close_arrow").style.display = "inline-block";
 			}
 			
 
@@ -917,6 +920,7 @@
 				document.getElementById("help_button").style.display = "inline-block";
 				document.getElementById("how_to_read").style.display = "none";
 				document.getElementById("x_button").style.display = "none";
+				document.getElementById("close_arrow").style.display = "none";
 			
 			}
 			
