@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css"></link>
@@ -14,7 +15,7 @@
 		
 		
 		<!-- Change with new language!!!! -->
-		<!-- CSS styling-->	<link rel="stylesheet" type="text/css" href="map_styles_English.css"></link>
+		<!-- CSS styling-->	<link id="map_css" rel="stylesheet" type="text/css" href="map_styles_English.css"></link>
 		<!--display text-->	<script src="display_English.js" type="text/javascript"></script>
 		<!------------------------------------>
 		
@@ -28,6 +29,8 @@
 		
 		<!--incl. JSZip-->	<script type="text/javascript" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/jsZip/jszip.js"></script>
 		<!--file Saver -->	<script type="text/javascript" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/jsZip/fileSaver.js"></script>
+		
+		<!-- jquery -->		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
 		<script>
 		document.title = TITLE;
 		</script>
@@ -337,20 +340,20 @@
 							
 							if (!presentIn2dArray(dup_indices, i)[0]) {					// plot the base data with no history
 								var border = [false, 0, 0]; 							// use the normal white border on the base points w/o history
-								plotMarker("base", data, contaminantToShow, i, border);
+								plotMarker("base", data, contaminantToShow, i, border, dup_indices);
 							} else if (presentIn2dArray(dup_indices, i)[1][1] == 0) {	// plot the base data with historical data
 								var row = presentIn2dArray(dup_indices, i)[1][0];		// get row of dup_indices that has all the duplicate indices for the current point
-								var baseBin = getBin(data[i], BINS[contaminantToShow]);	// define the base bin as the bin of the base point
+								var baseBin = getBin(i, BINS[contaminantToShow]);	// define the base bin as the bin of the base point
 								var maxBin = 0;											// init maxBin to hold the maximum bin of the spider
 								var newBin;												// init a placeholder called newBin
 								for (var spideringPts = 0; spideringPts<dup_indices[row].length; spideringPts++) {	// loop through all the duplicate points`
-									newBin = getBin(data[dup_indices[row][spideringPts]], BINS[contaminantToShow]);	// set newBin to the bin of the historical points
+									newBin = getBin(dup_indices[row][spideringPts], BINS[contaminantToShow]);	// set newBin to the bin of the historical points
 									if (newBin > maxBin) {								// if a historical point is higher than the previously registered max bin,
 										maxBin = newBin;								//	set the maxBin to the bin of that new point, this way, maxBin ends up
 									}													//	holding the maximum bin of all the historical data, including the base point. 
 								}
 								var border = [true, baseBin, maxBin];					// when plotting the point show the border based on the max bin of the historical data
-								plotMarker("preSpider", data, contaminantToShow, i, border);
+								plotMarker("preSpider", data, contaminantToShow, i, border, dup_indices);
 							} else {
 								// Do stuff to the historic points, if you'd like, here. 
 							};
@@ -364,7 +367,7 @@
 			};
 			////////////////////////////////////////////////////////////////////////////////
 			////					 	plotMarker FUNCTION 						  	////
-			//// 	Takes in a five arguments, "type" (str), "data" (full dataset), 	////
+			//// 	Takes in a six arguments, "type" (str), "data" (full dataset), 		////
 			////	"contam" (int) and "data_index" (int) and "border" (1x3 array: [str,////
 			////	int, int] and plots:												////
 			//// 	the appropriate point to the map. It also stores the marker info 	////
@@ -379,7 +382,7 @@
 					if (border[0] == false) {																// if there's no border
 						iconToUse = BASE_ICONS[COLORS[activeContaminant][base.Bins[base.Bins.length-1]]];	// grab the normal icon
 					} else {																				// if there should be a border
-						iconToUse = HISTORICAL_BASE_ICONS[COLORS[activeContaminant][border[1]]][COLORS[activeContaminant][border[2]]];								// grab the bordered icon
+						iconToUse = HISTORICAL_BASE_ICONS[COLORS[activeContaminant][border[1]]][COLORS[activeContaminant][border[2]]];	// grab the bordered icon
 					
 					}
 					
@@ -438,14 +441,15 @@
 			
 			////////////////////////////////////////////////////////////////////////////////
 			////					 	getBin FUNCTION 							  	////
-			//// 	Takes in a single line of a data dictionary and an array called 	////
+			//// 	Takes in an index to get the data from the global var AllData and 	////
+			////	an array called 													////
 			////	"bins". If bins begins with a 										////
 			//// 	number, we'll figure out in which bin the value falls. If bins 		////
 			//// 	begins with a non-number, we need to do something more complex. 	////
 			//// 	Either way, getBin() returns the correct bin in which value falls.  ////
 			////////////////////////////////////////////////////////////////////////////////
 			
-			function getBin(data, bins) {
+			function getBin(index, bins) {
 				var pureBins = Array.from(bins);				// store a copy of bins into pureBins
 				
 				if (bins[0]=="combined") {						// if the bins are combined
@@ -453,14 +457,48 @@
 				}
 
 				var values = []; 								// initialize the local array, values
+				var fluoride = -1;
+				var arsenic = -1;
 				if (activeContaminant == FLUORIDE) {			// 	and push the relevant values into it,
-					values.push(data[DATA_NAMES.f]);			//	depending on the contaminant to deal 
+					values.push(AllData[index][DATA_NAMES.f]);	//	depending on the contaminant to deal 
 				} else if (activeContaminant == ARSENIC) { 		// 	with, which is accessed from the global,
-					values.push(data[DATA_NAMES.as]);				//	"activeContaminant".
-				} else if (activeContaminant == TOTAL_RISK) {
-					values.push(data[DATA_NAMES.f]);
-					values.push(data[DATA_NAMES.as]);
-				}
+					values.push(AllData[index][DATA_NAMES.as]);	//	"activeContaminant".
+				} else if (activeContaminant == TOTAL_RISK) {	// For the TOTAL_RISK case:
+					var row = presentIn2dArray(dup_indices, index)[1][0];	// get row of dup_indices that has all the duplicate indices for the current point
+					var location = presentIn2dArray(dup_indices, index)[1][1]
+					if (row >= 0) {
+						console.log(AllData[index][DATA_NAMES.name]+": "+dup_indices[row].length);
+						for (i=location; i<dup_indices[row].length; i++) {
+							if (fluoride == -1 && (AllData[dup_indices[row][i]][DATA_NAMES.f] != "" && AllData[dup_indices[row][i]][DATA_NAMES.f] != null)) {
+								fluoride = AllData[dup_indices[row][i]][DATA_NAMES.f];
+							}
+							if (arsenic == -1 && (AllData[dup_indices[row][i]][DATA_NAMES.as] != "" && AllData[dup_indices[row][i]][DATA_NAMES.as] != null)) {
+								arsenic = AllData[dup_indices[row][i]][DATA_NAMES.as];
+							}
+							
+							
+						
+							
+							
+							
+							
+						}
+							
+						
+						
+						
+						
+						
+						
+						
+					} else {
+						fluoride = AllData[index][DATA_NAMES.f];
+						arsenic = AllData[index][DATA_NAMES.as];
+					}
+					
+					values.push(fluoride);
+					values.push(arsenic);
+				}		
 
 				var nullCounter = 0;					// initialize a counter
 				for (var i=0; i<values.length; i++) {	// count the number of nulls in the values array
@@ -520,7 +558,7 @@
 				for (var j=0; j<dup_indices[row].length; j++) {			// loop through that row of dup_indices. I.e., loop 
 																		//	through all the data-indices of points to spider
 					z = dup_indices[row][j]; 							// set z to each index in turn
-					var spiderBin = getBin(data[z], BINS[contam]); // set the latLng, then modify it 
+					var spiderBin = getBin(z, BINS[contam]); // set the latLng, then modify it 
 					var shiftedLatLng = adjustLatLng(data[z][DATA_NAMES.lat], data[z][DATA_NAMES.lng], dup_indices[row].length, j);
 					var prevShiftedLatLng = adjustLatLng(data[z][DATA_NAMES.lat], data[z][DATA_NAMES.lng], dup_indices[row].length, j-1);
 																		// get the shifted latlng value of the marker
@@ -732,8 +770,8 @@
 			////																		////
 			////	Takes in the full dataset and index. If the point isn't a spider,	////
 			////	returns 0. Otherwise, it returns the bin of the next most recent, 	////
-			////	non-zero data point at the same location. If there isn't one, 
-			//// 	returns 0 as well. 
+			////	non-zero data point at the same location. If there isn't one, 		////
+			//// 	returns 0 as well. 													////
 			////////////////////////////////////////////////////////////////////////////////
 			
 			
@@ -741,12 +779,12 @@
 				var nextBin = 0;
 				var bin;
 				if (!presentIn2dArray(dup_indices, i)[0]) {
-					nextBin = getBin(data[i], BINS[activeContaminant]);
+					nextBin = getBin(i, BINS[activeContaminant]);
 				} else {
 					dup_row = dup_indices[presentIn2dArray(dup_indices, i)[1][0]];
-					for (var j=dup_row.length-1; j>=0; j--){
-						bin = getBin(data[dup_row[j]], BINS[activeContaminant])
-						if (bin != 0) {
+					for (var j=dup_row.length-1; j>=0; j--){						// loop through all the duplicates (going from oldest to newest)
+						bin = getBin(dup_row[j], BINS[activeContaminant])		// get the bin of each duplicate
+						if (bin != 0) {												
 							nextBin = bin;
 						}					
 					}
@@ -770,7 +808,6 @@
 					return String(AllData[i][DATA_NAMES.date].split('/',3)[2]);		
 				} else if (type == "month") {
 					var monthNumb = Number(AllData[i][DATA_NAMES.date].split('/',3)[1]);
-					console.log(monthNumb+", "+MONTHS[Number(monthNumb)])
 					return MONTHS[monthNumb-1];
 				} else if (type == "community") {
 					str = String(AllData[i][DATA_NAMES.name]);
@@ -887,21 +924,20 @@
 			////////////////////////////////////////////////////////////////////////////////
 			////					 	zipAndDownloadMap FUNCTION 					  	////
 			//// 	Creates a zip file of all relevant files for the map and downloads	////
-			////	it to the user's machine. 											////
+			////	it to the user's machine. 		
+			////	PSEUDOCODE:
+			////		Read in all relevant files as strings							////
+			////		Modify index.html to look only at local files. Change name to 	////
+			////		"WQM_MAP.html"													////
+			////			HOW TO DEAL WITH TILES?!?!?!
+			////		Store them in the appropriate folders and zip it!				////
+			////		Download the zip file to the user's computer					////
 			////////////////////////////////////////////////////////////////////////////////
 			
 			function zipAndDownloadMap() {
-				var zip = new JSZip();
-				zip.file("map_styles_English.css");
 				
 				
-				zip.generateAsync({type:"blob"}).then(function (blob) {
-					saveAs(blob, "hello.zip");
-				}, function (err) {
-						blobLink.innerHTML += " " + err;
-				});
-						
-			
+				
 			
 			
 			}
