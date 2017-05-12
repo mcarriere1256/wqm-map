@@ -55,10 +55,10 @@ var BASE_Z_OFFSET = 10; 				//	and base points.
 var SPIDER_LABEL_OFFSET = [-80, -8];	// offset for spider date labels 
 var X_OFFSET = 999999;					// The x-index-offset for the x-out button
 
-var MAP_CENTER = [21.32,-100.79];		// Set all map starting parameters
+var MAP_CENTER = [21.05,-100.65];		// Set all map starting parameters
 var MAP_MIN_ZOOM = 2;
 var MAP_MAX_ZOOM = 18;
-var MAP_INIT_ZOOM = 11;
+var MAP_INIT_ZOOM = 10;
 
 var X_STRETCH = 12;						// Constants used to setup the spider
 var Y_STRETCH = 30;						//	geometry.
