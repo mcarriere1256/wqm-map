@@ -169,7 +169,7 @@ div.cartodb-legend {
 	display: inline-block;
 	z-index: 30001;
 	position: absolute;
-	right: 30px;
+	right: 38px;
 	top: 1%;
-	width: 8%;
+	height: 10%;
 }
