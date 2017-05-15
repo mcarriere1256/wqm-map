@@ -197,7 +197,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "",
+    "documents": "https://drive.google.com/open?id=0B-obqEaNF55zZl8td0xYdk9ic1E",
     "Notes": ""
   },
   {
@@ -4677,7 +4677,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "",
+    "documents": "https://drive.google.com/open?id=0B-obqEaNF55zZl8td0xYdk9ic1E",
     "Notes": ""
   },
   {
@@ -6197,7 +6197,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/mision-cieneguita-report",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -6357,7 +6357,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/sosnabar-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -6557,7 +6557,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/catis-well-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -6797,7 +6797,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/adjuntas-del-monte-report",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -6837,7 +6837,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/alonso-yanez-y-lindero-manantial-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -6877,7 +6877,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/alonso-yanez-y-lindero-manantial-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -6957,7 +6957,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/don-fransisco-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7157,7 +7157,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/garavatio-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7197,7 +7197,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/adjuntas-del-monte-report",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7237,7 +7237,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/pozo-ademado-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7357,7 +7357,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/terreros-de-la-concepcion-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7397,7 +7397,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "",
+    "documents": "https://drive.google.com/open?id=0B-obqEaNF55zZl8td0xYdk9ic1E",
     "Notes": ""
   },
   {
@@ -7557,7 +7557,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/catis-well-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7677,7 +7677,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/delgadillo-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7717,7 +7717,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/adjuntas-del-monte-report",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7877,7 +7877,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/la-cienega-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7917,7 +7917,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/ovejas-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7957,7 +7957,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/pozo-nuevo-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -7997,7 +7997,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/adjuntes-del-rio-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8037,7 +8037,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/la-grulla-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8077,7 +8077,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/soledad-nuevo-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8117,7 +8117,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/la-cabana-del-rey-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8157,7 +8157,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/mulatos-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8197,7 +8197,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/refugio-de-montolongo/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8237,7 +8237,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/cofradia-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8277,7 +8277,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/cobadonga-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8317,7 +8317,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/las-yerbas-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8357,7 +8357,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/pozo-hondo-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8397,7 +8397,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/rosalita-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8437,7 +8437,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/san-jose-de-la-montana-report/",
+    "documents": "https://drive.google.com/open?id=0B-obqEaNF55zbGpseFlaODNIc1k",
     "Notes": ""
   },
   {
@@ -8477,7 +8477,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/guererro-report/",
+    "documents": "https://drive.google.com/open?id=0B-obqEaNF55zLXpXYTdBQjN2ZWc",
     "Notes": ""
   },
   {
@@ -8517,7 +8517,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/juan-gonzalez-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8557,7 +8557,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/la-cienega-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8597,7 +8597,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/la-cienega-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8637,7 +8637,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/los-torres-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -8677,7 +8677,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/los-torres-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -9317,7 +9317,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/san-jose-de-la-montana-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -9357,7 +9357,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/terreros-de-la-concepcion-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -9397,7 +9397,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/garavatio-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -9437,7 +9437,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/pozo-ademado-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -9477,7 +9477,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/adjuntas-del-monte-report",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -9597,7 +9597,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/adjuntes-del-rio-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -10477,7 +10477,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/la-palma-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -10517,7 +10517,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/montecillo-de-la-milpa/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -10557,7 +10557,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/vivienda-urbana-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -10597,7 +10597,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/correlejo-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -10677,7 +10677,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/la-tinaja/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -10717,7 +10717,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/catis-well-report/",
+    "documents": "",
     "Notes": ""
   },
   {
@@ -10757,7 +10757,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "http://www.catis-mexico.org/los-ricos-de-abajo-report/",
+    "documents": "",
     "Notes": ""
   }
 ]
