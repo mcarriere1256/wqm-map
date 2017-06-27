@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js"></script><!--Include Stamen JavaScript to get basemap tiles-->
 		
 		<!-- Include the include files: -->
-		<!--global vars-->	<script src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/global.js" type="text/javascript" /></script>   <!--https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/-->
+		<!--global vars-->	<script src="global.js" type="text/javascript" /></script>   <!--https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/-->
 		<!--dataset!!! -->	<script src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/data/wqm_dataset.js" type="text/javascript"></script>
 		
 		
@@ -80,7 +80,7 @@
 			</div>
 			
 			<!-- The legend for arsenic -->
-			<div class='cartodb-legend density' id='arsenic_legend' style='display: none'>  
+			<div class='cartodb-legend density' id='arsenic_legend' style='display: none;'>  
 				<ul>
 					<li class="min" id="as_title" style="text-transform:none" ></li>
 					<li class="graph leg" style="border-radius: 0; border:none">
@@ -105,7 +105,7 @@
 				<div class="legend-title", id="risk_title" style="text-transform:none"></div>
 				<ul>
 					<li>
-						<div class="bullet" style="background:#229A00; text-transform:none" name="risk"></div> 
+						<div class="bullet" style="background:#229A00; text-transform:none" name="risk" onclick="easterEggGo();"></div> 
 					</li>
 					<li>
 						<div class="bullet" style="background:#FFA300; text-transform:none" name="risk"></div>
@@ -975,7 +975,32 @@
 				document.getElementById('WaterMap').style.cursor='grab';
 			}
 	
+			///////////////////////////////////////////////////////////////////
+			////			function easterEggGo()			 				////
+			//// 															////
+			////	Prints a bunch of information to the console. This is 	////
+			////	primarily designed for staff to use to get useful		////
+			////	statistics for reports, publications, quotes for media	////
+			////	inquiries, etc.											////
+			////////////////////////////////////////////////////////////////////
 			
+			
+			function easterEggGo() {
+				//////// 	get total points	/////////
+				
+				////////	get total sites		/////////
+				//var totalSites = 
+				////////	number of partners	/////////
+				////////	names of partners	/////////
+				
+				////////	contam-specific data	/////////
+				
+				for(var i=0; i<MAP_TYPES.length; i++) {
+					console.log(i);
+				
+				
+				}
+			}
 		</script>
 		
 	</body>

@@ -16,6 +16,7 @@ var DATA_NAMES = {							// And store the titles of the columns
 var FLUORIDE = 0; 						// Initialize constants for each contaminant to use as 
 var ARSENIC = 1;						// 	an index to call contaminant-specific information, like
 var TOTAL_RISK = 2; 					//  how to bin markers and draw legends and labels. 
+var MAP_TYPES = [FLUORIDE, ARSENIC, TOTAL_RISK];
 
 var GREY = 0;							// Color codes used to determine which color point to plot. 
 var GREEN = 1;
