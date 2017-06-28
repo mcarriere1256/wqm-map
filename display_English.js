@@ -28,6 +28,8 @@ var RISK_LABELS = ["\xa0\xa0\xa0Meets\xa0all\xa0standards",
 "\xa0\xa0\xa0Dangerous\xa0if\xa0consumed\xa0regularly",
 "\xa0\xa0\xa0Potentially\xa0acutely\xa0toxic!"];
 
+var LABELS = [F_LABELS, AS_LABELS];
+
 var F_TITLE = "Fluoride (mg/L): WHO Limit = 1.5; Mexican Limit = 1.5";
 var AS_TITLE = "Arsenic (&mu;g/L): WHO Limit = 10; Mexican Limit = 25";
 var RISK_TITLE = "<big>Water Risk Level</big> <br>WHO Limits: Fluoride = 1.5 mg/L; Arsenic = 10 &mu;g/L";
@@ -41,5 +43,8 @@ var PRINTING_SUMMARY_MSG = "\n-----***-----***-----***-----***-----***-----***--
 var TOTAL_SITES_MSG = "Distinct sites (wells, taps, pipa, etc.) sampled at least once:";
 var TOTAL_WELLS_MSG = "Distinct wells sampled at least once:";
 var TOTAL_POINTS_MSG = "Total number of datapoints collected (includes duplicates for single site):";
-var TOTAL_ORGS_MSG = "Total number of testing organizations:";
+var TOTAL_ORGS_MSG = "Number of testing organizations:";
 var ORG_NAMES_MSG = "All testing organizations:";
+var CONTAMINANT_HEADER_MSG = "----------------";	
+var CONTAM_LIMIT_MSG = "Number of locations whose most recently sampled point is";	
+var TOTAL_ABOVE_MSG = "All sites above the WHO limit:";
