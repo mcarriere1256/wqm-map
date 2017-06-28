@@ -1024,12 +1024,10 @@
 				var storedActiveContaminant;
 				for (var pt=0; pt<base.Index.length; pt++) {					// loop through all the points
 					bothBins[pt] = Array.apply(null, Array(CONTAMINANTS.length-1)).map(Number.prototype.valueOf,0);
-					console.log("f: "+AllData[base.Index[pt]][DATA_NAMES.f]+",   as: "+AllData[base.Index[pt]][DATA_NAMES.as]);
 					for (var contam=0; contam<CONTAMINANTS.length-1; contam++) {	// loop through all the contaminant categories, excluding the last one (assumed to be total risk);
 						storedActiveContaminant = activeContaminant;				// store the active contaminant b/c getBins reads it
 						activeContaminant = contam;									// set the active contaminant to whatever contaminant you're getting the bins for (sorry this is a terrible work-around =/  )
 						bothBins[pt][contam]=getBin(base.Index[pt], BINS[contam])	// store the value of the bin into bothBins array
-						console.log(base.Index[pt]+", "+CONTAMINANTS[contam]+": "+bothBins[pt][contam])
 						if (bothBins[pt][contam] > 1) {								// if 
 							binCounters[contam] = binCounters[contam] + 1;
 						}
