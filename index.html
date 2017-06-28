@@ -1021,11 +1021,10 @@
 				////////	number of sites currently above F-As-Both		/////////
 				var bothBins = Array.apply(null, Array(base.Index.length)).map(Number.prototype.valueOf,0);
 				var binCounters = Array.apply(null, Array(CONTAMINANTS.length-1)).map(Number.prototype.valueOf, 0);
-				var storedActiveContaminant;
+				var storedActiveContaminant = activeContaminant;				// store the active contaminant b/c getBins reads it
 				for (var pt=0; pt<base.Index.length; pt++) {					// loop through all the points
 					bothBins[pt] = Array.apply(null, Array(CONTAMINANTS.length-1)).map(Number.prototype.valueOf,0);
 					for (var contam=0; contam<CONTAMINANTS.length-1; contam++) {	// loop through all the contaminant categories, excluding the last one (assumed to be total risk);
-						storedActiveContaminant = activeContaminant;				// store the active contaminant b/c getBins reads it
 						activeContaminant = contam;									// set the active contaminant to whatever contaminant you're getting the bins for (sorry this is a terrible work-around =/  )
 						bothBins[pt][contam]=getBin(base.Index[pt], BINS[contam])	// store the value of the bin into bothBins array
 						if (bothBins[pt][contam] > 1) {								// if 
@@ -1048,12 +1047,19 @@
 						
 						
 						}
-						console.log(CONTAM_LIMIT_MSG+"\xa0"+LABELS[i][j+1]+": "+binstances);
-					
-					
+						console.log(CONTAM_LIMIT_MSG+"\xa0"+LABELS[i][j+1]+": "+binstances);		// print each bin value for each contam
 					}
-					console.log(TOTAL_ABOVE_MSG+"\xa0"+binCounters[i]);
+					console.log(TOTAL_ABOVE_MSG+"\xa0"+binCounters[i]);								// print total # > WHO limit for each contam
 				}
+				var bothAboveCounter = 0;
+				for (var i=0; i<bothBins.length; i++) {
+					if (bothBins[i][0]>1 && bothBins[i][1]>1) {
+						bothAboveCounter++;
+					}
+				}
+				console.log("\n"+CONTAMINANT_HEADER_MSG+"\xa0"+BOTH_MSG+"\xa0"+CONTAMINANT_HEADER_MSG);
+				console.log(TOTAL_ABOVE_BOTH_MSG+"\xa0"+bothAboveCounter)
+				
 				
 			}
 		</script>
