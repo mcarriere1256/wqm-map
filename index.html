@@ -275,7 +275,8 @@
 				base = { 							// reinitialize the global variable base.
 					Markers: [],
 					Popups: [],
-					Bins: []
+					Bins: [],
+					Wells: []
 				};
 				if (spiderOpen) {					// if there's a spider open, 
 					closeSpider(); 					//	close the spider,
@@ -385,12 +386,7 @@
 						iconToUse = BASE_ICONS[COLORS[activeContaminant][base.Bins[base.Bins.length-1]]];	// grab the normal icon
 					} else {																				// if there should be a border
 						iconToUse = HISTORICAL_BASE_ICONS[COLORS[activeContaminant][border[1]]][COLORS[activeContaminant][border[2]]];	// grab the bordered icon
-					
 					}
-					
-					
-					
-					
 					var latLng = L.latLng([data[i][DATA_NAMES.lat], data[i][DATA_NAMES.lng]]); // Grab the latLng of the point
 					base.Markers.push( 										// Save the appropriate marker
 						L.marker(latLng, {
@@ -427,6 +423,23 @@
 						noHide: false,										// attach labels to all the base points 
 						className: "ourLabel"								//	that activate during mouseover
 					});
+
+					if(data[data_index][DATA_NAMES.site_type].includes("Well")) {	// if the site is a well
+						base.Wells.push(true);										// 	indicate it with a true,
+					} else {														//	in base.Wells, otherwise,
+						base.Wells.push(false);										//	indicate it with a false.
+					}
+					
+					////////////////
+					//console.log(data[data_index][DATA_NAMES.test_org].split("; "));
+					var orgsArray = data[data_index][DATA_NAMES.test_org].split("; ");	// THIS REQUIRES THAT TESTING ORGANIZATIONS ARE
+					for (var k=0; k<orgsArray.length; k++) {							//	SEPARATED IN THE DATABASE BY A SEMI-COLON AND A SPACE
+						if(ORGS.indexOf(orgsArray[k]) == NOT_PRESENT) {					// 	FOR EXAMPLE: "Caminos de Agua; Texas A&M University"
+							ORGS.push(orgsArray[k])
+						}
+					}
+					
+					////////////////
 					var popupText = getBasePopup(i);// Grab the text for the popup at data index i
 					base.Popups.push(L.popup({		// Define the popup for each marker
 						offset: POPUP_OFFSET})
@@ -986,20 +999,37 @@
 			
 			
 			function easterEggGo() {
-				//////// 	get total points	/////////
+				console.log(PRINTING_SUMMARY_MSG)
+				//////// 	total sites sampled					/////////
 				
-				////////	get total sites		/////////
-				//var totalSites = 
-				////////	number of partners	/////////
-				////////	names of partners	/////////
+				console.log(TOTAL_SITES_MSG+"\xa0"+base.Markers.length)		// length of base.Markers = number of base points
 				
-				////////	contam-specific data	/////////
+				////////	total wells	sampled					/////////
 				
-				for(var i=0; i<MAP_TYPES.length; i++) {
-					console.log(i);
-				
-				
+				wellCounter = 0;											// base.Wells is all the base points and reads 1
+				for(var i=0; i<base.Wells.length; i++) {					//	for a well, and 0 for anything else. So adding
+					wellCounter = wellCounter+base.Wells[i];				// 	them up = # of distinct wells sampled
 				}
+				console.log(TOTAL_WELLS_MSG+"\xa0"+wellCounter);
+				
+				////////	total number datapoints taken		/////////
+				
+				var dups = 0;												// get the total number of duplicates (indluding base points)
+				for(var i=0; i<dup_indices.length; i++) {					
+					dups = dups + dup_indices[i].length;
+				}															// subtract dup_indices.length, the number of base points with duplicates to avoid double counting
+				var totalPoints = dups - dup_indices.length + base.Markers.length	// 	then add all the base points to get total number of samples incorporated in map. 
+				console.log(TOTAL_POINTS_MSG+"\xa0"+totalPoints)
+			
+				////////	number of sites above F-As-Both		/////////
+				////////	number of well-site above F-As-Both	/////////
+				
+				////////	number of partners	/////////
+				console.log(TOTAL_ORGS_MSG+"\xa0"+ORGS.length);
+				
+				////////	names of partners	///////// 	
+				console.log(ORG_NAMES_MSG+"\xa0"+ORGS)
+				
 			}
 		</script>
 		

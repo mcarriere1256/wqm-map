@@ -10,8 +10,11 @@ var DATA_NAMES = {							// And store the titles of the columns
 	lat: "latitude",
 	lng: "longitude",
 	docs: "documents",
-	test_org: "Testing Organisation"
+	test_org: "Testing Organisation",
+	site_type: "Type"
 };
+
+var ORGS = []; 							// To hold a list of all the organizations who perform sampling/testing
 
 var FLUORIDE = 0; 						// Initialize constants for each contaminant to use as 
 var ARSENIC = 1;						// 	an index to call contaminant-specific information, like
