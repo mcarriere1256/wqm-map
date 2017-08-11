@@ -2,8 +2,10 @@
 var map;								// initialize the variable to hold the map
 										// ^--- The URL where the data lives in JSON form.
 
-var DATA_NAMES = {							// And store the titles of the columns 
-	date: "date",							//	(get from carto.com once you import the dataset.)
+var DATA_NAMES = {							// And store the titles of the columns 							
+	day: "day",
+	month: "month",
+	year: "year",
 	name: "community_name",	
 	f: "fluoride",
 	as: "arsenic",
