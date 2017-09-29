@@ -6275,7 +6275,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "",
+    "documents": "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/media/reports/agustin-gonzalez-2016.pdf",
     "Notes": ""
   },
   {
