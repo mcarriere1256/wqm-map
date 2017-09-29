@@ -7823,7 +7823,7 @@ var WQM_MAP_DATA =
     "Iron": "",
     "Silica": "",
     "Filter?": "",
-    "documents": "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/media/reports/0035_AG.pdf",
+    "documents": "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/media/reports/0035-AG.pdf",
     "Notes": ""
   },
   {
