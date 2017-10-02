@@ -15,7 +15,7 @@ var CONTAMINANTS = ["Fluoride", "Arsenic", "Total Risk"]; 	// Array with list of
 															//	(since FLUORIDE == 0 above...)
 var DATE = "Date";
 var TEST_ORG = "Testing organization";					
-var SEE_MORE = "Complete test results";						// This message gets displayed as a link to show 
+var SEE_MORE = "Official report(s)";						// This message gets displayed as a link to show 
 															//	more info about the given datapoint
 var CARTO_ATTRIBUTION = 'Data hosting on <a href="http://www.dropbox.com">Dropbox</a> legends by <a href="http://www.carto.com">Carto</a>';
 
