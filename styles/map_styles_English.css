@@ -79,7 +79,7 @@ allows the user to select the relevant contaminant. */
 	position: relative;
 	display: inline-block;
 	top: 14px;
-	left: 50px;
+	left: 56px;
 	z-index: 99;
 }
 
@@ -171,4 +171,12 @@ div.cartodb-legend {
 	right: 38px;
 	top: 1%;
 	height: 10%;
+}
+
+#search{
+	display: inline-block;
+	position: fixed;
+	left: 176px;
+	top: 14px;
+	z-index: 101;
 }
