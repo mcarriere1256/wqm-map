@@ -48,7 +48,7 @@ function setGlobals() {
 		}
 	}
 	
-	var X_ICON = L.icon({ 					// define an icon that can be clicked to close the spider
+	X_ICON = L.icon({ 					// define an icon that can be clicked to close the spider
 		iconUrl: X_URL,
 		iconSize: SMALL_ICON_SIZE
 	});
