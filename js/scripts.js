@@ -134,7 +134,6 @@ function initMap() {
 function applyBaseMap() {
 	L.mapbox.accessToken = MAPBOX_ID;									// These two lines are to use Mapbox basemaps
 	map.addLayer(new L.mapbox.tileLayer(MAPBOX_MAP_TYPE), {});			// These two lines are to use Mapbox basemaps	
-	
 	// comment all of the above and uncomment the next line to get stamen basemap tiles:
 	//map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {});
 }
@@ -149,11 +148,11 @@ function applyBaseMap() {
 
 function loadAndPlotData(contaminantToShow) {
 	base = { 							// reinitialize the global variable base.
-		Markers: [],
-		Popups: [],
-		Bins: [],
-		Wells: [],
-		Index: []
+		Markers: [],					// to hold the leaflet marker objects
+		Popups: [],						// to hold the popup object
+		Bins: [],						// to hold the bin value, used for coloring the points
+		Wells: [],			
+		Index: []						
 	};
 	if (spiderOpen) {					// if there's a spider open, 
 		closeSpider(); 					//	close the spider,
