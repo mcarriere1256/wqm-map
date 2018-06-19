@@ -104,6 +104,7 @@ allows the user to select the relevant contaminant. */
 
 .dropdown a:hover {
 	background-color: #EEEEEE;
+	color: #35abbd;
 }
 
 .show {
