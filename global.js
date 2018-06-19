@@ -119,3 +119,7 @@ var HISTORICAL_BASE_ICONS = [[0,0,0,0,0],[0,0,0,0],[0,0,0],[0,0],[0]];
 var HELP_URL = "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMark2.png";
 var HELP_URL_HOVER = "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMark2Hover.png"
 
+var MAPBOX_ID = "pk.eyJ1IjoiY2FtaW5vc2RlYWd1YSIsImEiOiJjaXRsb3V1MDUwMGR2Mm9tdThncnYydTU4In0.DcxDn8J5RJ--WQ3gckONIw";
+var MAPBOX_MAP_TYPE = "caminosdeagua.935ff2fb";	// Which mapbox tile set to display. options: "mapbox.streets" (this one is the classic), "caminosdeagua.935ff2fb" (this displays small towns one zoom level earlier)		
+	
+

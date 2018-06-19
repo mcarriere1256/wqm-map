@@ -132,11 +132,11 @@ function initMap() {
 
 
 function applyBaseMap() {
-	var MAPBOX_ID = "pk.eyJ1IjoiY2FtaW5vc2RlYWd1YSIsImEiOiJjaXRsb3V1MDUwMGR2Mm9tdThncnYydTU4In0.DcxDn8J5RJ--WQ3gckONIw";
-	var MAPBOX_MAP_TYPE = "caminosdeagua.935ff2fb";	// Which mapbox tile set to display. options: "mapbox.streets" (this one is the classic), "caminosdeagua.935ff2fb" (this displays small towns one zoom level earlier)		
-	//map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {});
 	L.mapbox.accessToken = MAPBOX_ID;									// These two lines are to use Mapbox basemaps
 	map.addLayer(new L.mapbox.tileLayer(MAPBOX_MAP_TYPE), {});			// These two lines are to use Mapbox basemaps	
+	
+	// comment all of the above and uncomment the next line to get stamen basemap tiles:
+	//map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {});
 }
 
 ////////////////////////////////////////////////////////////////////////////////
