@@ -23,62 +23,63 @@ by another function, or by a user event like a click or zoom. */
 ////																		////
 ////////////////////////////////////////////////////////////////////////////////
 
-for (var k=0; k<BASE_URLS.length; k++) {  	// Grab all the icons with correct size. 
-	BASE_ICONS[k] = L.icon({ 			// 	to be used when displaying the base markers
-		iconUrl: BASE_URLS[k],
-		iconSize: EXTRA_SMALL_ICON_SIZE
-	});
-	SPIDER_ICONS[k] = L.icon({ 			//	and the spidered markers
-		iconUrl: SPIDER_URLS[k],
-		iconSize: SMALL_ICON_SIZE
-	});
-	BASE_SPIDER_ICONS[k] = L.icon({		// 	and the markers at the base of the spider. 
-		iconUrl: SPIDER_URLS[k],
-		iconSize: LARGE_ICON_SIZE
-	});
-};
-
-for (var i=0; i<HISTORICAL_BASE_URLS.length; i++) {
-	for (var j=i; j<HISTORICAL_BASE_URLS[i].length; j++) {
-		HISTORICAL_BASE_ICONS[i][j] = L.icon({
-			iconUrl: HISTORICAL_BASE_URLS[i][j],	
+function setGlobals() {
+	for (var k=0; k<BASE_URLS.length; k++) {  	// Grab all the icons with correct size. 
+		BASE_ICONS[k] = L.icon({ 			// 	to be used when displaying the base markers
+			iconUrl: BASE_URLS[k],
+			iconSize: EXTRA_SMALL_ICON_SIZE
+		});
+		SPIDER_ICONS[k] = L.icon({ 			//	and the spidered markers
+			iconUrl: SPIDER_URLS[k],
 			iconSize: SMALL_ICON_SIZE
 		});
+		BASE_SPIDER_ICONS[k] = L.icon({		// 	and the markers at the base of the spider. 
+			iconUrl: SPIDER_URLS[k],
+			iconSize: LARGE_ICON_SIZE
+		});
+	};
+	
+	for (var i=0; i<HISTORICAL_BASE_URLS.length; i++) {
+		for (var j=i; j<HISTORICAL_BASE_URLS[i].length; j++) {
+			HISTORICAL_BASE_ICONS[i][j] = L.icon({
+				iconUrl: HISTORICAL_BASE_URLS[i][j],	
+				iconSize: SMALL_ICON_SIZE
+			});
+		}
 	}
+	
+	var X_ICON = L.icon({ 					// define an icon that can be clicked to close the spider
+		iconUrl: X_URL,
+		iconSize: SMALL_ICON_SIZE
+	});
+	
+	for (var i=0; i<document.getElementsByName("no_data").length; i++) {
+		document.getElementsByName("no_data")[i].innerHTML = "<b>"+NO_DATA_MSG+"</b>";
+	}
+	
+	for (var i=0; i<document.getElementsByName("f").length; i++) {
+		document.getElementsByName("f")[i].innerHTML = "<b>"+F_LABELS[i]+"</b>";
+	}
+	
+	for (var i=0; i<document.getElementsByName("as").length; i++) {
+		document.getElementsByName("as")[i].innerHTML = "<b>"+AS_LABELS[i]+"</b>";
+	}
+	
+	for (var i=0; i<document.getElementsByName("risk").length; i++) {
+		document.getElementsByName("risk")[i].innerHTML = RISK_LABELS[i];
+	}
+	
+	for (var i=0; i<document.getElementsByName("contam_button").length; i++) {
+		document.getElementsByName("contam_button")[i].innerHTML = CONTAMINANTS[i];
+	}
+	
+	document.getElementById("f_title").innerHTML = F_TITLE;
+	document.getElementById("as_title").innerHTML = AS_TITLE;
+	document.getElementById("risk_title").innerHTML = RISK_TITLE;
+	document.getElementById("how_to_read").src = LEGEND_URL;
+	document.getElementById("help_button").src = HELP_URL;
+	document.getElementById("close_arrow").src = ARROW_URL;
 }
-
-var X_ICON = L.icon({ 					// define an icon that can be clicked to close the spider
-	iconUrl: X_URL,
-	iconSize: SMALL_ICON_SIZE
-});
-
-for (var i=0; i<document.getElementsByName("no_data").length; i++) {
-	document.getElementsByName("no_data")[i].innerHTML = "<b>"+NO_DATA_MSG+"</b>";
-}
-
-for (var i=0; i<document.getElementsByName("f").length; i++) {
-	document.getElementsByName("f")[i].innerHTML = "<b>"+F_LABELS[i]+"</b>";
-}
-
-for (var i=0; i<document.getElementsByName("as").length; i++) {
-	document.getElementsByName("as")[i].innerHTML = "<b>"+AS_LABELS[i]+"</b>";
-}
-
-for (var i=0; i<document.getElementsByName("risk").length; i++) {
-	document.getElementsByName("risk")[i].innerHTML = RISK_LABELS[i];
-}
-
-for (var i=0; i<document.getElementsByName("contam_button").length; i++) {
-	document.getElementsByName("contam_button")[i].innerHTML = CONTAMINANTS[i];
-}
-
-document.getElementById("f_title").innerHTML = F_TITLE;
-document.getElementById("as_title").innerHTML = AS_TITLE;
-document.getElementById("risk_title").innerHTML = RISK_TITLE;
-document.getElementById("how_to_read").src = LEGEND_URL;
-document.getElementById("help_button").src = HELP_URL;
-document.getElementById("close_arrow").src = ARROW_URL;
-
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -87,6 +88,7 @@ document.getElementById("close_arrow").src = ARROW_URL;
 
 function init() {
 	
+	setGlobals();
 	initMap(); 					// Initialize and display the map object
 	applyBaseMap(); 			// Apply the base tiles to the map
 	loadAndPlotData(TOTAL_RISK); 	// Load the data for Fluoride (the default contaminant) 
