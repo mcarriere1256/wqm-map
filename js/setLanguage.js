@@ -14,8 +14,8 @@ if (post_hash == "es") {
 	js.src = "text/display_Spanish.js";
 	$('head').append('<link rel="stylesheet" type="text/css" href="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/styles/map_styles_Spanish.css">');
 } else {
-	js.src = "text/display_English.js";
-	$('head').append('<link rel="stylesheet" type="text/css" href="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/styles/map_styles_English.css">');	
+	js.src = "display_English.js";
+	$('head').append('<link rel="stylesheet" type="text/css" href="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/map_styles_English.css">');	
 }
 
 head.appendChild(js);
