@@ -179,7 +179,7 @@ function loadAndPlotData(contaminantToShow) {
 		var data = WQM_MAP_DATA;			// grab the data // This grabs the JSON data file. MAKE SURE THE FILE IS SORTED BY 
 											//	DATE IN DECREASING ORDER!!!! <--- Super important for spidering to work correctly...
 		AllData = data;						// store it in the global variable
-		setupSearch(data);
+		
 		
 		// Uncomment the next line to see the full dataset in the console, super useful for debugging!
 		//console.log("Data acquired! "+JSON.stringify(data)); 	// log the data in the console for debugging...
@@ -972,5 +972,18 @@ function makeDate(d, m, y) {
 
 }
 
+function setupSearch(data) {
+	SEARCH_INDEX = elasticlunr(function () {
+		this.addField('community_name');
+		this.addField('arsenic');
+		this.setRef('community_name');
+	});
+	for(var i=0; i<data.length; i++) {
+		SEARCH_INDEX.addDoc(data[i]);
+	}	
+}
 
+function searchStr(str) {
+	console.log(SEARCH_INDEX.search(str));
+}
 
