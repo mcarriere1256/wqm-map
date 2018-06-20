@@ -972,18 +972,5 @@ function makeDate(d, m, y) {
 
 }
 
-function setupSearch(data) {
-	SEARCH_INDEX = elasticlunr(function () {
-		this.addField('community_name');
-		this.addField('arsenic');
-		this.setRef('community_name');
-	});
-	for(var i=0; i<data.length; i++) {
-		SEARCH_INDEX.addDoc(data[i]);
-	}	
-}
 
-function search(str) {
-	alert(str);
-}
 
