@@ -50,3 +50,6 @@ var CONTAM_LIMIT_MSG = "Number of locations whose most recently sampled point is
 var TOTAL_ABOVE_MSG = "All sites above the WHO limit:";
 var TOTAL_ABOVE_BOTH_MSG = "All sites above the WHO limit for both As & F:";
 var BOTH_MSG = "Arsenic & Fluoride";
+
+var SEARCH_HELPER_TEXT = "Busca...";
+var NO_RESULTS_MSG = "...Ya no hay nada...";

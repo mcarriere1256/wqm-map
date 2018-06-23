@@ -172,3 +172,53 @@ div.cartodb-legend {
 	top: 1%;
 	height: 10%;
 }
+#search{
+	width: 180px;
+	display: inline-block;
+	position: fixed;
+	left: 230px;
+	top: 14px;
+	z-index: 101;
+	color: #bbb;
+	border: 0px solid;
+	border-radius: 6px;
+	padding: 12px;
+	font-size: 14px;
+	background-image: url('https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/magnifyingGlass.png');
+	background-repeat: no-repeat;
+	background-size: auto 60%;
+	background-position: 2% 50%;
+	padding-left: 35px;
+	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);
+}
+
+#search:focus{
+	color: #000;
+}
+
+.search-result{
+	display: inline-block;
+	position: relative;
+	height: 20px;
+	width: calc(100% - 12px);
+	padding: 5px 0px 5px 12px;	
+}
+
+.search-result:hover {
+	background-color: #EEEEEE;
+}
+
+#search-dropdown {
+	background-color: white;
+	display: inline-block;
+	z-index: 100;
+	top: 46px;
+	position: fixed;
+	left: 230px;
+	padding-top: 20px;
+	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);
+}
+
+#searchBar {
+	margin: 0;
+}

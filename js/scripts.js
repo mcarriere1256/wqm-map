@@ -79,6 +79,8 @@ function setGlobals() {
 	document.getElementById("how_to_read").src = LEGEND_URL;
 	document.getElementById("help_button").src = HELP_URL;
 	document.getElementById("close_arrow").src = ARROW_URL;
+	
+	document.getElementById("search").innerHTML = SEARCH_HELPER_TEXT;
 }
 
 
@@ -179,7 +181,7 @@ function loadAndPlotData(contaminantToShow) {
 		var data = WQM_MAP_DATA;			// grab the data // This grabs the JSON data file. MAKE SURE THE FILE IS SORTED BY 
 											//	DATE IN DECREASING ORDER!!!! <--- Super important for spidering to work correctly...
 		AllData = data;						// store it in the global variable
-		
+		setupSearch(data);
 		
 		// Uncomment the next line to see the full dataset in the console, super useful for debugging!
 		//console.log("Data acquired! "+JSON.stringify(data)); 	// log the data in the console for debugging...
@@ -546,6 +548,7 @@ function adjustDDText(contam) {
 
 function toggleDD(){
 	document.getElementById("mapSelector").classList.toggle("show");
+	document.getElementById("search-dropdown").style.display = "none";
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -975,15 +978,74 @@ function makeDate(d, m, y) {
 function setupSearch(data) {
 	SEARCH_INDEX = elasticlunr(function () {
 		this.addField('community_name');
-		this.addField('arsenic');
 		this.setRef('community_name');
 	});
 	for(var i=0; i<data.length; i++) {
 		SEARCH_INDEX.addDoc(data[i]);
 	}	
+	$('#search').bind('keyup',function(event) {
+		var key = String.fromCharCode(event.keyCode);
+		if (/[a-zA-Z0-9-_ ]/.test(key) || event.keyCode == "8") { //if letter, or number or symbol or delete
+			loadNewSearchResults(this.value)
+		}
+	})
+	
+	$("#searchBar").submit(function() {			
+		loadNewSearchResults(this.children[0].value);
+		return false
+	})
+	document.getElementById('search').value = SEARCH_HELPER_TEXT;
 }
 
-function searchStr(str) {
-	console.log(SEARCH_INDEX.search(str));
+function focused(el) {
+	if(el.value == SEARCH_HELPER_TEXT) {
+		el.value = "";
+	} 
+}
+
+function blurred(el) {
+	
+	if(el.value == "") {
+		el.value = SEARCH_HELPER_TEXT;
+	}
+}
+
+
+function loadNewSearchResults(key) {
+	var dd = document.getElementById("search-dropdown");
+	if (key == "") {					// if there is no text entered
+		document.getElementById('search-dropdown').style.display = "none";
+	} else {							// if there is text entered
+		var res = SEARCH_INDEX.search(key);	// get all search results		
+		if(res.length>MAX_SEARCH_LENGTH) {res.length = MAX_SEARCH_LENGTH};	// caps length of results
+		dd.innerHTML = "";
+		var padLeft = getComputedStyle(document.getElementById('search')).paddingLeft;
+		var padRight = getComputedStyle(document.getElementById('search')).paddingRight;
+		var width = getComputedStyle(document.getElementById('search')).width;
+		padLeft = Number(padLeft.substring(0, padLeft.length-2));
+		padRight = Number(padRight.substring(0, padRight.length-2));
+		width = Number(width.substring(0, width.length-2));
+		width = String(width + padLeft + padRight)+"px";
+		document.getElementById('search-dropdown').style.width = width;
+		if (res.length != 0) { 				// if some results have been found...
+			
+			for(var i=0; i<res.length; i++) {
+				console.log(res[i]);
+				var lat = res[i].doc.latitude;
+				var lng = res[i].doc.longitude;
+				if (lat && lng) {
+					dd.innerHTML = dd.innerHTML + "<div class='search-result' onclick='zoomTo("+lat+","+lng+");'><b>"+res[i].ref+"</b></div>";
+				}
+			}
+		} else {							// if no results have been found...
+			dd.innerHTML = "<div class='search-result'><b>"+NO_RESULTS_MSG+"</b></div>";
+		}
+	document.getElementById('search-dropdown').style.display = "inline-block";
+	}
+}
+
+function zoomTo(lat, lng) {
+	document.getElementById('search-dropdown').style.display = "none";
+	map.setView([lat, lng], 17);
 }
 
