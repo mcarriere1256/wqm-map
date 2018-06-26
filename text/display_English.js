@@ -52,4 +52,4 @@ var TOTAL_ABOVE_BOTH_MSG = "All sites above the WHO limit for both As & F:";
 var BOTH_MSG = "Arsenic & Fluoride";
 
 var SEARCH_HELPER_TEXT = "Search...";
-var NO_RESULTS_MSG = "...Nothin so far...";
+var NO_RESULTS_MSG = "Nothing so far.";
