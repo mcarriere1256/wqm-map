@@ -18,7 +18,7 @@
 		<!-- stamenTiles--> 		<script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js"></script><!--Include Stamen JavaScript to get basemap tiles-->
 				
 		<!--global vars-->			<script src="global.js" type="text/javascript" /></script>   <!--https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/-->
-		<!--dataset!!! -->			<script src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/data/wqm_dataset.js" type="text/javascript"></script><!--https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/--> 
+		<!--dataset!!! -->			<script src="https://caminosdeagua.github.io/wqm-map/data/wqm_dataset.js" type="text/javascript"></script><!--https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/--> 
 				
 		<!-- Language-->			<script src="js/setLanguage.js" type="text/javascript"></script>
 		<!-- scripts-->				<script src="js/scripts.js" type="text/javascript"></script>
@@ -36,7 +36,7 @@
 	<body onload="init();"> 	<!-- what to do when the page loads -->
 		<div id='WaterMap'> 	<!-- creates the div element that holds the map -->
 			<a href="http://www.caminosdeagua.org" target='_blank'> <!-- Link the caminos logo to the caminos website -->
-				<img class="caminos_logo" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/caminos_logo_circle.png" ></img> <!-- creates the caminos de agua logo -->
+				<img class="caminos_logo" src="https://caminosdeagua.github.io/wqm-map/img/caminos_logo_circle.png" ></img> <!-- creates the caminos de agua logo -->
 			</a>
 			<div class="dropdown"> <!-- this next block of code creates the dropdown menu --> 
 				<button id="DDHeader" onclick="toggleDD();" class="dropbtn", id="loading_indicator"></button> <!-- what to do when dropdown button is pressed -->
@@ -126,7 +126,7 @@
 			<img id="help_button" style="display: none;" class="toggle_button" onmouseenter="changeHelpSrc('hover')" onmouseleave="changeHelpSrc('leave')" onclick="openHelp()"></img>
 			<img id="how_to_read" onmouseenter="disableMapControls();" onmouseleave="enableMapControls();"></img>
 			<img id="close_arrow"></img>
-			<img id="x_button" class="toggle_button" src="https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton2.png" onclick="closeHelp()"></img>
+			<img id="x_button" class="toggle_button" src="https://caminosdeagua.github.io/wqm-map/img/xButton2.png" onclick="closeHelp()"></img>
 			
 			
 		</div>	
