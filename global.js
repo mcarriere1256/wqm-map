@@ -78,35 +78,35 @@ var MAX_LABEL_LINE_CHARS = 20;			// the max number of characters on a line in th
 var STAMEN_MAP_TYPE = "terrain";		// Set which type of stamen map we want as a base layer.
 										// 	options include: "terrain", "watercolor", and "toner"	
 										
-var X_URL = "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/xButton_blue.png";		// URL for x-button used to close the spider
+var X_URL = "https://caminosdeagua.github.io/wqm-map/img/xButton_blue.png";		// URL for x-button used to close the spider
 									
-var BASE_URLS = ["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-grey.png",		// URLs for points with white borders
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/green-green.png",
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellow-yellow.png",
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/red-red.png",
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/black-black.png"];
+var BASE_URLS = ["https://caminosdeagua.github.io/wqm-map/img/grey-grey.png",		// URLs for points with white borders
+				"https://caminosdeagua.github.io/wqm-map/img/green-green.png",
+				"https://caminosdeagua.github.io/wqm-map/img/yellow-yellow.png",
+				"https://caminosdeagua.github.io/wqm-map/img/red-red.png",
+				"https://caminosdeagua.github.io/wqm-map/img/black-black.png"];
 
-var SPIDER_URLS = ["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greySpider.png",	// URLs for point with blue borders
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/greenSpider.png",
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellowSpider.png",
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/redSpider.png",
-				"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/blackSpider.png"];
+var SPIDER_URLS = ["https://caminosdeagua.github.io/wqm-map/img/greySpider.png",	// URLs for point with blue borders
+				"https://caminosdeagua.github.io/wqm-map/img/greenSpider.png",
+				"https://caminosdeagua.github.io/wqm-map/img/yellowSpider.png",
+				"https://caminosdeagua.github.io/wqm-map/img/redSpider.png",
+				"https://caminosdeagua.github.io/wqm-map/img/blackSpider.png"];
 				
-var HISTORICAL_BASE_URLS = [["https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-white.png",		// URLs for points with specific borders
-							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-green.png",
-							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-yellow.png",
-							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-red.png",
-							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/grey-black.png"],
-							[0,"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/green-white.png",
-							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/green-yellow.png",
-							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/green-red.png",
-							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/green-black.png"],
-							[0,0,"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellow-white.png",
-							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellow-red.png",
-							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/yellow-black.png"],
-							[0,0,0,"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/red-white.png",
-							"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/red-black.png"],
-							[0,0,0,0,"https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/black-white.png"]];
+var HISTORICAL_BASE_URLS = [["https://caminosdeagua.github.io/wqm-map/img/grey-white.png",		// URLs for points with specific borders
+							"https://caminosdeagua.github.io/wqm-map/img/grey-green.png",
+							"https://caminosdeagua.github.io/wqm-map/img/grey-yellow.png",
+							"https://caminosdeagua.github.io/wqm-map/img/grey-red.png",
+							"https://caminosdeagua.github.io/wqm-map/img/grey-black.png"],
+							[0,"https://caminosdeagua.github.io/wqm-map/img/green-white.png",
+							"https://caminosdeagua.github.io/wqm-map/img/green-yellow.png",
+							"https://caminosdeagua.github.io/wqm-map/img/green-red.png",
+							"https://caminosdeagua.github.io/wqm-map/img/green-black.png"],
+							[0,0,"https://caminosdeagua.github.io/wqm-map/img/yellow-white.png",
+							"https://caminosdeagua.github.io/wqm-map/img/yellow-red.png",
+							"https://caminosdeagua.github.io/wqm-map/img/yellow-black.png"],
+							[0,0,0,"https://caminosdeagua.github.io/wqm-map/img/red-white.png",
+							"https://caminosdeagua.github.io/wqm-map/img/red-black.png"],
+							[0,0,0,0,"https://caminosdeagua.github.io/wqm-map/img/black-white.png"]];
 
 var SMALL_ICON_SIZE = [16,16]; 			// The pixel x and y that the final marker icon image is scaled to. 
 var LARGE_ICON_SIZE = [24,24];			// A larger marker for the base of the spider
@@ -116,8 +116,8 @@ var SPIDER_ICONS = [0,0,0,0,0];			//	only need to be grabbed once.
 var BASE_SPIDER_ICONS = [0,0,0,0,0];
 var HISTORICAL_BASE_ICONS = [[0,0,0,0,0],[0,0,0,0],[0,0,0],[0,0],[0]];
 
-var HELP_URL = "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMark2.png";
-var HELP_URL_HOVER = "https://caminosdeagua.github.io/Independence-Watershed-Point-Map-English/img/questionMark2Hover.png"
+var HELP_URL = "https://caminosdeagua.github.io/wqm-map/img/questionMark2.png";
+var HELP_URL_HOVER = "https://caminosdeagua.github.io/wqm-map/img/questionMark2Hover.png"
 
 var MAPBOX_ID = "pk.eyJ1IjoiY2FtaW5vc2RlYWd1YSIsImEiOiJjaXRsb3V1MDUwMGR2Mm9tdThncnYydTU4In0.DcxDn8J5RJ--WQ3gckONIw";
 var MAPBOX_MAP_TYPE = "caminosdeagua.935ff2fb";	// Which mapbox tile set to display. options: "mapbox.streets" (this one is the classic), "caminosdeagua.935ff2fb" (this displays small towns one zoom level earlier)		
