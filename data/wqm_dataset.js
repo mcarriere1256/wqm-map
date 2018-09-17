@@ -4291,21 +4291,6 @@ var WQM_MAP_DATA =
     "ORIGINAL NAMES": "Las Adjuntas del Monte"
   },
   {
-    "day": 22,
-    "month": 5,
-    "year": 2014,
-    "community_name": "Pozo Ademado",
-    "latitude": 21.33238,
-    "longitude": -100.80289,
-    "Testing Organisation": "Northern Illinois University",
-    "arsenic": "",
-    "fluoride": 6.62,
-    "documents": "https://caminosdeagua.github.io/wqm-map/media/reports/pozo-ademado-2013-2014.pdf",
-    "Type": "",
-    "SAMPLE DATE": "22-May-2014",
-    "ORIGINAL NAMES": "Pozo Ademado"
-  },
-  {
     "day": 20,
     "month": 5,
     "year": 2014,
