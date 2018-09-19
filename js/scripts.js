@@ -92,7 +92,7 @@ function init() {
 	
 	setGlobals();
 	initMap(); 					// Initialize and display the map object
-	applyBaseMap(); 			// Apply the base tiles to the map
+	applyBaseMap(MAPBOX_IDS["default"]); 			// Apply the base tiles to the map
 	loadAndPlotData(TOTAL_RISK); 	// Load the data for Fluoride (the default contaminant) 
 }								// 	then plot the base markers on the map.	
 
@@ -133,11 +133,9 @@ function initMap() {
 ////////////////////////////////////////////////////////////////////////////////
 
 
-function applyBaseMap() {
-	L.mapbox.accessToken = MAPBOX_ID;									// These two lines are to use Mapbox basemaps
-	map.addLayer(new L.mapbox.tileLayer(MAPBOX_MAP_TYPE), {});			// These two lines are to use Mapbox basemaps	
-	// comment all of the above and uncomment the next line to get stamen basemap tiles:
-	//map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {});
+function applyBaseMap(id) {
+	L.mapbox.accessToken = MAPBOX_ACCESS_TOKEN;					// These two lines are to use Mapbox basemaps
+	map.addLayer(new L.mapbox.tileLayer(id), {});	// These two lines are to use Mapbox basemaps	
 }
 
 ////////////////////////////////////////////////////////////////////////////////
