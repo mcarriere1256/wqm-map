@@ -120,9 +120,15 @@ var HELP_URL = "https://caminosdeagua.github.io/wqm-map/img/questionMark2.png";
 var HELP_URL_HOVER = "https://caminosdeagua.github.io/wqm-map/img/questionMark2Hover.png"
 
 var MAPBOX_ACCESS_TOKEN = "pk.eyJ1IjoiY2FtaW5vc2RlYWd1YSIsImEiOiJjam05ZmNybGQ1MjJhM3FwNGl5enp4ZWd3In0.lZHL87iSngKxPJscOv3RXQ";
-var MAPBOX_IDS = {"satellite": "mapbox.streets-satellite",
-					"default": "caminosdeagua.935ff2fb",
-					"basic": "mapbox.streets"}
-	
+var MAPBOX_IDS = {"default": "mapbox.streets",
+					"basic": "mapbox.streets",
+					"satellite": "mapbox.streets-satellite"}
+var CURRENT_TILE_DISPLAY;
+var TILE_LAYER = false;
+
+var SATELLITE_TILE_THUMBNAIL_URL = "https://caminosdeagua.github.io/wqm-map/img/satellite-thumbnail.PNG";
+var BASIC_TILE_THUMBNAIL_URL = "https://caminosdeagua.github.io/wqm-map/img/streets-thumbnail.PNG";
 	
 var MAX_SEARCH_LENGTH = 6; 
+
+var DATA_URL = "https://docs.google.com/spreadsheets/d/1pUrg48cqrHdYrcsGww0g0pAcCe65lU9ff0EKWHYlJnc/edit?usp=sharing";

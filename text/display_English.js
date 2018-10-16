@@ -13,11 +13,39 @@ var MONTHS = ["Jan", "Feb", "Mar", 		// Array of names of months for displaying
 var CONTAMINANTS = ["Fluoride", "Arsenic", "Total Risk"]; 	// Array with list of contaminants in same order
 															// 	such that CONTAMINANTS[FLUORIDE] = "Fluoride"
 															//	(since FLUORIDE == 0 above...)
+
+var DATA_NAMES = {							// And store the titles of the columns 							
+	date: "date",
+	name: "name",
+	site_type: "site_type",
+	lat: "latitude",
+	lng: "longitude",
+	f: "fluoride",
+	forg: "fluoride_testing_org",
+	fmethod: "fluoride_analytic_method",
+	as: "arsenic",
+	asorg: "arsenic_testing_org",
+	asmethod: "arsenic_analytic_method",
+	docs: "document_link"
+	
+	//day: "day",
+	//month: "month",
+	//year: "year",
+	//name: "community_name",	
+	//f: "fluoride",
+	//as: "arsenic",
+	//lat: "latitude",
+	//lng: "longitude",
+	//docs: "documents",
+	//test_org: "Testing Organisation",
+	//site_type: "Type"
+};												
+															
 var DATE = "Date";
 var TEST_ORG = "Testing organization";					
 var SEE_MORE = "Official report(s)";						// This message gets displayed as a link to show 
 															//	more info about the given datapoint
-var CARTO_ATTRIBUTION = 'Data hosting on <a href="http://www.dropbox.com">Dropbox</a> legends by <a href="http://www.carto.com">Carto</a>';
+var CARTO_ATTRIBUTION = 'Tiles from <a href="http://www.mapbox.com">Mapbox</a> with data from <a href="https://www.openstreetmap.org">OSM</a> | Data hosting on <a href="http://drive.google.com">Google Sheets</a> | Legends by <a href="http://www.carto.com">Carto</a> | <a href="https://caminosdeagua.org/en/donate">Donate</a>';
 
 var NO_DATA_MSG = "No data";
 
@@ -53,3 +81,6 @@ var BOTH_MSG = "Arsenic & Fluoride";
 
 var SEARCH_HELPER_TEXT = "Search...";
 var NO_RESULTS_MSG = "Nothing so far";
+
+var SATELLITE_MAP_VIEW = "Satellite";
+var BASIC_MAP_VIEW = "Map";

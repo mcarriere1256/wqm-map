@@ -81,6 +81,10 @@ function setGlobals() {
 	document.getElementById("close_arrow").src = ARROW_URL;
 	
 	document.getElementById("search").innerHTML = SEARCH_HELPER_TEXT;
+	
+	document.getElementById("img-button-text").innerHTML = SATELLITE_MAP_VIEW;
+	document.getElementById("map-tile-selector").src = SATELLITE_TILE_THUMBNAIL_URL;
+	
 }
 
 
@@ -93,7 +97,7 @@ function init() {
 	setGlobals();
 	initMap(); 					// Initialize and display the map object
 	applyBaseMap(MAPBOX_IDS["default"]); 			// Apply the base tiles to the map
-	loadAndPlotData(TOTAL_RISK); 	// Load the data for Fluoride (the default contaminant) 
+	loadData(TOTAL_RISK); 	// Load the data for Fluoride (the default contaminant)  // loadAndPlotData(...)
 }								// 	then plot the base markers on the map.	
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -134,19 +138,59 @@ function initMap() {
 
 
 function applyBaseMap(id) {
-	L.mapbox.accessToken = MAPBOX_ACCESS_TOKEN;					// These two lines are to use Mapbox basemaps
-	map.addLayer(new L.mapbox.tileLayer(id), {});	// These two lines are to use Mapbox basemaps	
+	if (TILE_LAYER) {							// If there is a tile layer
+		var old_layer = TILE_LAYER;
+	}
+	L.mapbox.accessToken = MAPBOX_ACCESS_TOKEN; // These lines are to use Mapbox basemaps
+	TILE_LAYER = new L.mapbox.tileLayer(id);	// create the new layer
+	map.addLayer(TILE_LAYER, {});				// add the new layer
+	CURRENT_TILE_ID = id;						// store the id of the current (new) layer
+	if (old_layer) {							// if there was an old layer...
+		map.removeLayer(old_layer);				// 	remove the old layer from underneath
+	}
 }
 
-////////////////////////////////////////////////////////////////////////////////
-////					 	loadAndPlotData FUNCTION 					  	////
-//// 	This function grabs data from carto.com and stores it in a local 	////
-//// 	variable array. It also stores a copy of the data in the global 	////
-////	array AllData for other functions to access. After storing the 		////
-////	data, it calls functions to plot them. 								////
-////////////////////////////////////////////////////////////////////////////////
 
-function loadAndPlotData(contaminantToShow) {
+function loadData(contaminantToShow) {
+	var url = DATA_URL;
+	var options = {sendMethod: 'auto'};
+	var query = new google.visualization.Query(url, options);
+	query.setQuery('select * ORDER BY A,B');				// Relies on A being community name and B being start-date
+	query.send(onQueryResponse);						
+}
+
+function onQueryResponse(response) {
+	if(response.isError()) {
+		throw new Error("data could not be retieved from Google sheets")
+	} else {
+		AllData = googleDataTable2JSON(response.getDataTable());	// convert data to json, store as global
+		setupSearch();
+		plotData(TOTAL_RISK);												// feed into plotting function											
+	}
+}
+
+function googleDataTable2JSON(dataTable) {
+numCols = dataTable.getNumberOfColumns();
+	numRows = dataTable.getNumberOfRows();
+
+	var data = [];										// initialze data array to hold json
+	
+	for(var i=0; i<numRows; i++) {						// loop through rows
+		data.push({});									// on each row creating a new dictionary
+		for(var j=0; j<numCols; j++) {					// and loop through each column of that row
+			
+			var lbl = dataTable.getColumnLabel(j);		// get the name of the column
+			var value = dataTable.getValue(i,j);		// get cell's value
+			if (!value) {								// if a value exists in the cell
+				value = "";
+			} 
+			data[i][lbl] = value;						// store the "key: value" pair
+		}
+	}
+	return data											// after all looping is done, return the finalized json
+}
+
+function plotData(contaminantToShow) {
 	base = { 							// reinitialize the global variable base.
 		Markers: [],					// to hold the leaflet marker objects
 		Popups: [],						// to hold the popup object
@@ -174,46 +218,37 @@ function loadAndPlotData(contaminantToShow) {
 		activeContaminant = contaminantToShow;  // Store the contaminant as a global
 		adjustDDText(contaminantToShow); 		// Adjust the text in the drop down menu to display the current contaminant
 		showLegend(contaminantToShow);			// And display the appropriate legend
-		
-			
-		var data = WQM_MAP_DATA;			// grab the data // This grabs the JSON data file. MAKE SURE THE FILE IS SORTED BY 
-											//	DATE IN DECREASING ORDER!!!! <--- Super important for spidering to work correctly...
-		AllData = data;						// store it in the global variable
-		setupSearch(data);
-		
-		// Uncomment the next line to see the full dataset in the console, super useful for debugging!
-		//console.log("Data acquired! "+JSON.stringify(data)); 	// log the data in the console for debugging...
-		
-		for (i=0; i<data.length; i++) { // Loop through all the rows of the data
-			if (data[i][DATA_NAMES.lat] == null | data[i][DATA_NAMES.lat] == "" |	//	ignore the point!
-			data[i][DATA_NAMES.lng] == null | data[i][DATA_NAMES.lng] == "" |
-			makeDate(data[i][DATA_NAMES.day], data[i][DATA_NAMES.month], data[i][DATA_NAMES.year]) == NOT_PRESENT) {
+	
+		for (i=0; i<AllData.length; i++) { // Loop through all the rows of the AllData
+			if (AllData[i][DATA_NAMES.lat] == null | AllData[i][DATA_NAMES.lat] == "" |	//	ignore the point!
+			AllData[i][DATA_NAMES.lng] == null | AllData[i][DATA_NAMES.lng] == "" |
+			AllData[i][DATA_NAMES.date] == NOT_PRESENT) {
 			} else { 						// Otherwise, check for duplicate latLngs, then plot the base markers
 				var worstBin
 				if (!presentIn2dArray(dup_indices, i)[0]) {
 					var matches = 0;		// If the current marker is known to be a duplicate, skip it. 
 					var j = i;				// 	otherwise, check to see if it has any duplicates. This works
-											//	because we loaded the data in chronological order, so the 1st
+											//	because we loaded the AllData in chronological order, so the 1st
 											//	element in each row of the duplicate array will be the most recent.
 											// 	And the spider will extend upwards in reverse chronological order. 
-					while (matches == 0 & j<data.length-1) {
-						j++;				// Increment (j) to check out the next data point. 							// while there are no matches, and we're still in the data array 
+					while (matches == 0 & j<AllData.length-1) {
+						j++;				// Increment (j) to check out the next AllData point. 							// while there are no matches, and we're still in the AllData array 
 											// Check to see if the current element (i) has the same latLngs
 											//	as each subsequent datapoint (j).
-						if (Math.abs(data[i][DATA_NAMES.lat]-data[j][DATA_NAMES.lat])<EPS 
-						& Math.abs(data[i][DATA_NAMES.lng]-data[j][DATA_NAMES.lng])<EPS &
-						makeDate(data[j][DATA_NAMES.day], data[j][DATA_NAMES.month], data[j][DATA_NAMES.year]) != NOT_PRESENT ){
+						if (Math.abs(AllData[i][DATA_NAMES.lat]-AllData[j][DATA_NAMES.lat])<EPS 
+						& Math.abs(AllData[i][DATA_NAMES.lng]-AllData[j][DATA_NAMES.lng])<EPS &
+						AllData[i][DATA_NAMES.date] != NOT_PRESENT ){
 							matches++; 		// If so, increment matches to break out of the while-loop
 							dup_indices.push([i,j]); 
 						};					// And save the current index (i) and the 1st duplicate, (j). 			
 					};
 					if (matches == 1) { // If there's at least one duplicate, there may be more! 
-						for (var k=j+1; k<data.length; k++) {
-										// Loop through the rest of the data points, if there's a match,
+						for (var k=j+1; k<AllData.length; k++) {
+										// Loop through the rest of the AllData points, if there's a match,
 										// 	at index (k), save it after (i) and (j) as [i,j,k1,k2,k3,...]
-							if (Math.abs(data[i][DATA_NAMES.lat]-data[k][DATA_NAMES.lat])<EPS 
-							& Math.abs(data[i][DATA_NAMES.lng]-data[k][DATA_NAMES.lng])<EPS &
-							makeDate(data[k][DATA_NAMES.day], data[k][DATA_NAMES.month], data[k][DATA_NAMES.year]) != NOT_PRESENT ){
+							if (Math.abs(AllData[i][DATA_NAMES.lat]-AllData[k][DATA_NAMES.lat])<EPS 
+							& Math.abs(AllData[i][DATA_NAMES.lng]-AllData[k][DATA_NAMES.lng])<EPS &
+							AllData[k][DATA_NAMES.date] != NOT_PRESENT ){
 								dup_indices[dup_indices.length-1].push(k);
 							};
 						};
@@ -222,7 +257,7 @@ function loadAndPlotData(contaminantToShow) {
 				
 				if (!presentIn2dArray(dup_indices, i)[0]) {					// plot the base data with no history
 					var border = [false, 0, 0]; 							// use the normal white border on the base points w/o history
-					plotMarker("base", data, contaminantToShow, i, border, dup_indices);
+					plotMarker("base", contaminantToShow, i, border, dup_indices);
 				} else if (presentIn2dArray(dup_indices, i)[1][1] == 0) {	// plot the base data with historical data
 					var row = presentIn2dArray(dup_indices, i)[1][0];		// get row of dup_indices that has all the duplicate indices for the current point
 					var baseBin = getBin(i, BINS[contaminantToShow]);		// define the base bin as the bin of the base point
@@ -235,18 +270,20 @@ function loadAndPlotData(contaminantToShow) {
 						}													//	holding the maximum bin of all the historical data, including the base point. 
 					}
 					var border = [true, baseBin, maxBin];					// when plotting the point show the border based on the max bin of the historical data
-					plotMarker("preSpider", data, contaminantToShow, i, border, dup_indices);
+					plotMarker("preSpider", contaminantToShow, i, border, dup_indices);
 				} else {
 					// Do stuff to the historic points, if you'd like, here. 
 				};
 			
 			};
-		};
-		if (spiderOpen) { 											// If the spider was open already and closed,
-			openSpider(AllData, spiderOpenIndex, contaminantToShow);// 	reopen it here, now colored by the new contaminant
-		};			
+		}
+	}
+	if (spiderOpen) { 											// If the spider was open already and closed,
+		openSpider(AllData, spiderOpenIndex, contaminantToShow);// 	reopen it here, now colored by the new contaminant
 	};
-};
+}
+//// TESTING GOOGLE SHEETS DATA IMPORT!!!! /////////
+
 ////////////////////////////////////////////////////////////////////////////////
 ////					 	plotMarker FUNCTION 						  	////
 //// 	Takes in a six arguments, "type" (str), "data" (full dataset), 		////
@@ -257,16 +294,16 @@ function loadAndPlotData(contaminantToShow) {
 //// 	by another function later. 											////
 ////////////////////////////////////////////////////////////////////////////////
 
-function plotMarker(type, data, contam, data_index, border) {
+function plotMarker(type, contam, data_index, border) {
 	if (type == "base" | type == "preSpider") {					// If the point to plot is a base point (with or without spidering data)
-		base.Bins.push(getNextMeasuredBin(data, i)); 			// Grab the bin of the point
+		base.Bins.push(getNextMeasuredBin(AllData, i)); 			// Grab the bin of the point
 		var iconToUse;
 		if (border[0] == false) {																// if there's no border
 			iconToUse = BASE_ICONS[COLORS[activeContaminant][base.Bins[base.Bins.length-1]]];	// grab the normal icon
 		} else {																				// if there should be a border
 			iconToUse = HISTORICAL_BASE_ICONS[COLORS[activeContaminant][border[1]]][COLORS[activeContaminant][border[2]]];	// grab the bordered icon
 		}
-		var latLng = L.latLng([data[i][DATA_NAMES.lat], data[i][DATA_NAMES.lng]]); // Grab the latLng of the point
+		var latLng = L.latLng([AllData[i][DATA_NAMES.lat], AllData[i][DATA_NAMES.lng]]); // Grab the latLng of the point
 		base.Markers.push( 										// Save the appropriate marker
 			L.marker(latLng, {
 			icon: iconToUse,
@@ -286,13 +323,13 @@ function plotMarker(type, data, contam, data_index, border) {
 					};
 					map.openPopup(base.Popups[j]); 	// then open the popup for the clicked point.
 				} else if (type == "preSpider" & !spiderOpen) { // if the point has spidered points, and there's no spider open
-					openSpider(data, data_index, contam);		// 	open the spider for the clicked point!
+					openSpider(AllData, data_index, contam);		// 	open the spider for the clicked point!
 				} else if (type == "preSpider") {				// if the point has spidered points, but there IS a spider open
 					if (spiderOpenIndex == data_index) { 		// if the open spider is the clicekd point,
 						map.openPopup(base.Popups[j]); 			//	show that point's popup
 					} else {									// if not,
 						closeSpider();							//	close the current spider
-						openSpider(data, data_index, contam); 	// 	and open the clicked point's spider!
+						openSpider(AllData, data_index, contam); 	// 	and open the clicked point's spider!
 					}
 				}
 				
@@ -303,7 +340,7 @@ function plotMarker(type, data, contam, data_index, border) {
 			className: "ourLabel"								//	that activate during mouseover
 		});
 
-		if(data[data_index][DATA_NAMES.site_type].includes("Well")) {	// if the site is a well
+		if(AllData[data_index][DATA_NAMES.site_type].includes("Well")) {	// if the site is a well
 			base.Wells.push(true);										// 	indicate it with a true,
 		} else {														//	in base.Wells, otherwise,
 			base.Wells.push(false);										//	indicate it with a false.
@@ -311,12 +348,12 @@ function plotMarker(type, data, contam, data_index, border) {
 		
 		
 		
-		var orgsArray = data[data_index][DATA_NAMES.test_org].split("; ");	// THIS REQUIRES THAT TESTING ORGANIZATIONS ARE
-		for (var k=0; k<orgsArray.length; k++) {							//	SEPARATED IN THE DATABASE BY A SEMI-COLON AND A SPACE
-			if(ORGS.indexOf(orgsArray[k]) == NOT_PRESENT) {					// 	FOR EXAMPLE: "Caminos de Agua; Texas A&M University"
-				ORGS.push(orgsArray[k])
-			}
-		}
+		//var orgsArray = AllData[data_index][DATA_NAMES.test_org].split("; ");	// THIS REQUIRES THAT TESTING ORGANIZATIONS ARE
+		//for (var k=0; k<orgsArray.length; k++) {							//	SEPARATED IN THE DATABASE BY A SEMI-COLON AND A SPACE
+		//	if(ORGS.indexOf(orgsArray[k]) == NOT_PRESENT) {					// 	FOR EXAMPLE: "Caminos de Agua; Texas A&M University"
+		//		ORGS.push(orgsArray[k])
+		//	}
+		//}
 		
 		base.Index.push(data_index);										// store the index in AllData for later access
 		
@@ -348,7 +385,6 @@ function plotMarker(type, data, contam, data_index, border) {
 ////////////////////////////////////////////////////////////////////////////////
 
 function getBin(index, bins) {
-	
 	var pureBins = Array.from(bins);				// store a copy of bins into pureBins
 	
 	if (bins[0]=="combined") {						// if the bins are combined
@@ -555,10 +591,10 @@ function toggleDD(){
 ////////////////////////////////////////////////////////////////////////////////
 
 function getBasePopup(i) {
-	
-	var day = String(AllData[i][DATA_NAMES.day]);
-	var month = MONTHS[Number(AllData[i][DATA_NAMES.month])-1];
-	var year = String(AllData[i][DATA_NAMES.year]);
+	var date = AllData[i][DATA_NAMES.date];
+	var day = String(date.getDate());
+	var month = MONTHS[date.getMonth()];
+	var year = String(date.getFullYear());
 
 	var docPath = AllData[i][DATA_NAMES.docs];
 	var docLink;
@@ -687,12 +723,11 @@ function getNextMeasuredBin(data, i) {
 ////////////////////////////////////////////////////////////////////////////////
 
 function getLabel(type, i) {
-	date = makeDate(AllData[i][DATA_NAMES.day], AllData[i][DATA_NAMES.month], AllData[i][DATA_NAMES.year])
+	date = AllData[i][DATA_NAMES.date]
 	if (type == "year") {
-		return date.split('/',3)[2];		
+		return date.getFullYear();		
 	} else if (type == "month") {
-		var monthNumb = Number(date.split('/',3)[1]);
-		return MONTHS[monthNumb-1];
+		return MONTHS[date.getMonth()];
 	} else if (type == "community") {
 		str = String(AllData[i][DATA_NAMES.name]);
 		str = str.split(" ")
@@ -837,25 +872,29 @@ function zipAndDownloadMap() {
 
 
 function disableMapControls() {
-	map.dragging.disable();
-	map.touchZoom.disable();
-	map.doubleClickZoom.disable();
-	map.scrollWheelZoom.disable();
-	map.boxZoom.disable();
-	map.keyboard.disable();
-	if (map.tap) map.tap.disable();
-	document.getElementById('WaterMap').style.cursor='default';
+	if (map) {
+		map.dragging.disable();
+		map.touchZoom.disable();
+		map.doubleClickZoom.disable();
+		map.scrollWheelZoom.disable();
+		map.boxZoom.disable();
+		map.keyboard.disable();
+		if (map.tap) map.tap.disable();
+		document.getElementById('WaterMap').style.cursor='default';
+	}
 }
 
 function enableMapControls() {
-	map.dragging.enable();
-	map.touchZoom.enable();
-	map.doubleClickZoom.enable();
-	map.scrollWheelZoom.enable();
-	map.boxZoom.enable();
-	map.keyboard.enable();
-	if (map.tap) map.tap.enable();
-	document.getElementById('WaterMap').style.cursor='grab';
+	if (map) {
+		map.dragging.enable();
+		map.touchZoom.enable();
+		map.doubleClickZoom.enable();
+		map.scrollWheelZoom.enable();
+		map.boxZoom.enable();
+		map.keyboard.enable();
+		if (map.tap) map.tap.enable();
+		document.getElementById('WaterMap').style.cursor='grab';
+	}
 }
 
 ///////////////////////////////////////////////////////////////////
@@ -942,44 +981,13 @@ function easterEggGo() {
 	
 }
 
-///////////////////////////////////////////////////////////////////
-////			function makeDate(d, m, y)		 				////
-//// 															////
-////	Concatenates the date, month, and year into a string	////
-////	separated by slashes (/) with 0's added to pad the 		////
-////	string into dd/mm/yyyy format. 							////
-////////////////////////////////////////////////////////////////////
-
-function makeDate(d, m, y) {
-	if (d>31 | m>12 | d=="" | d==null | m=="" | m==null | y=="" | y==null) {
-		return NOT_PRESENT;
-	}
-	
-	var day;
-	if (d<10) {
-		day = "0"+String(d);
-	} else {
-		day = String(d);
-	}
-	var month;
-	if (m<10) {
-		month = "0"+String(m);
-	} else {
-		month = String(m);
-	}
-	var year = String(y);
-	
-	return day+"/"+month+"/"+year;
-
-}
-
-function setupSearch(data) {
+function setupSearch() {
 	SEARCH_INDEX = elasticlunr(function () {
 		this.addField('community_name');
 		this.setRef('community_name');
 	});
-	for(var i=0; i<data.length; i++) {
-		SEARCH_INDEX.addDoc(data[i]);
+	for(var i=0; i<AllData.length; i++) {
+		SEARCH_INDEX.addDoc(AllData[i]);
 	}	
 	$('#search').bind('keyup',function(event) {
 		var key = String.fromCharCode(event.keyCode);
@@ -1047,3 +1055,14 @@ function zoomTo(lat, lng) {
 	map.setView([lat, lng], 17);
 }
 
+function toggleTileView() {
+	if (CURRENT_TILE_ID == MAPBOX_IDS["basic"]) {
+		applyBaseMap(MAPBOX_IDS["satellite"]);
+		document.getElementById("img-button-text").innerHTML = BASIC_MAP_VIEW;
+		document.getElementById("map-tile-selector").src = BASIC_TILE_THUMBNAIL_URL;
+	} else {
+		applyBaseMap(MAPBOX_IDS["basic"]);
+		document.getElementById("img-button-text").innerHTML = SATELLITE_MAP_VIEW;
+		document.getElementById("map-tile-selector").src = SATELLITE_TILE_THUMBNAIL_URL;
+	}
+}

@@ -14,6 +14,33 @@ var CONTAMINANTS = ["Fluoruro", "Arsénico", "Nivel de peligro total"];
 											// Array with list of contaminants in same order
 											// 	such that CONTAMINANTS[FLUORIDE] = "Fluoride"
 											//	(since FLUORIDE == 0 above...)
+var DATA_NAMES = {							// And store the titles of the columns 							
+	date: "date",
+	name: "name",
+	site_type: "tipo_del_sitio",
+	lat: "latitude",
+	lng: "longitude",
+	f: "fluoride",
+	forg: "fluoride_testing_org",
+	fmethod: "fluoride_analytic_method",
+	as: "arsenic",
+	asorg: "arsenic_testing_org",
+	asmethod: "arsenic_analytic_method",
+	docs: "document_link"
+	
+	//day: "day",
+	//month: "month",
+	//year: "year",
+	//name: "community_name",	
+	//f: "fluoride",
+	//as: "arsenic",
+	//lat: "latitude",
+	//lng: "longitude",
+	//docs: "documents",
+	//test_org: "Testing Organisation",
+	//site_type: "Type"
+};		
+
 var DATE = "Fecha";
 var TEST_ORG = "Institución";
 var SEE_MORE = "Reporte(s) Oficial(es)";	// This message gets displayed as a link to show 
