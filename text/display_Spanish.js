@@ -26,19 +26,8 @@ var DATA_NAMES = {							// And store the titles of the columns
 	as: "arsenic",
 	asorg: "arsenic_testing_org",
 	asmethod: "arsenic_analytic_method",
-	docs: "document_link"
-	
-	//day: "day",
-	//month: "month",
-	//year: "year",
-	//name: "community_name",	
-	//f: "fluoride",
-	//as: "arsenic",
-	//lat: "latitude",
-	//lng: "longitude",
-	//docs: "documents",
-	//test_org: "Testing Organisation",
-	//site_type: "Type"
+	docs: "document_link",
+	test_org: "GENERAL_TESTING_ORG"
 };		
 
 var DATE = "Fecha";
