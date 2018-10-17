@@ -80,3 +80,6 @@ var BOTH_MSG = "Arsenic & Fluoride";
 
 var SEARCH_HELPER_TEXT = "Busca...";
 var NO_RESULTS_MSG = "Ya no hay nada";
+
+var SATELLITE_MAP_VIEW = "Satélite";
+var BASIC_MAP_VIEW = "Mapa";
