@@ -160,7 +160,7 @@ function loadData(contaminantToShow) {
 	var url = DATA_URL;
 	var options = {sendMethod: 'auto'};
 	var query = new google.visualization.Query(url, options);
-	query.setQuery('select * ORDER BY A,B');				// Relies on A being community name and B being start-date
+	query.setQuery('select * ORDER BY A DESC, B');				// Relies on A being date and B being name
 	query.send(onQueryResponse);						
 }
 
@@ -596,55 +596,61 @@ function toggleDD(){
 ////////////////////////////////////////////////////////////////////////////////
 
 function getBasePopup(i) {
-	var date = AllData[i][DATA_NAMES.date];
-	var day = String(date.getDate());
-	var month = MONTHS[date.getMonth()];
-	var year = String(date.getFullYear());
 
-	var docPath = AllData[i][DATA_NAMES.docs];
-	var docLink;
-	var f_numb;
-	var as_numb;
-	var test_org;
+	var date = AllData[i][DATA_NAMES.date];	// get the date string
+	var day = String(date.getDate());		// get day number
+	var month = MONTHS[date.getMonth()];	// get three letter code in appropriate language for month
+	var year = String(date.getFullYear());	// get 4digit year
+	date = day + "-" + month + "-" + year;	// concatenate day, month, year into string
+
+	var docPath = AllData[i][DATA_NAMES.docs];				// grab document path from dataset
+	var docLink, f_numb, f_txt, as_numb, as_txt, test_org;	// initialize variables		
 	
-	if(docPath) {
-		docLink = "<a href="+ docPath +" target='_blank'>"+SEE_MORE+"</a>";
-	} else {
+	console.log(AllData[i][DATA_NAMES.fmethod]) 
+	
+
+	if (!AllData[i][DATA_NAMES.f] | AllData[i][DATA_NAMES.f] == "") {		// if there is no fluoride data
+		f_txt = NO_DATA_MSG;												// load the no data message
+	} else {																// otherwise, load the fluoride value
+		f_txt = "<h3>"+CONTAMINANTS[0]+"</h3>" + "<h4>" + String(AllData[i][DATA_NAMES.f]) + " " + F_UNITS + "</h4>";
+		if (AllData[i][DATA_NAMES.forg] && AllData[i][DATA_NAMES.fmethod]) {
+			f_txt = f_txt + "<h5>" + AllData[i][DATA_NAMES.forg] + ", " + AllData[i][DATA_NAMES.fmethod] + "</h5>";	
+		} else if (AllData[i][DATA_NAMES.forg]) {
+			f_txt = f_txt + "<h5>" + AllData[i][DATA_NAMES.forg] + "</h5>";
+		} else if (AllData[i][DATA_NAMES.fmethod]) {
+			f_txt = f_txt + "<h5>" + AllData[i][DATA_NAMES.fmethod] + "</h5>";
+		}
+	};
+	
+	if (!AllData[i][DATA_NAMES.as] | AllData[i][DATA_NAMES.as] == "") {		// if there is no arsenic data
+		as_txt = NO_DATA_MSG;												// load the no data message
+	} else {																// otherwise, load the arsenic value
+		as_txt = "<h3>"+CONTAMINANTS[1]+"</h3>" + "<h4>" + String(AllData[i][DATA_NAMES.as]) + " " + AS_UNITS + "</h4>";
+		if (AllData[i][DATA_NAMES.asorg] && AllData[i][DATA_NAMES.asmethod]) {
+			as_txt = as_txt + "<h5>" + AllData[i][DATA_NAMES.asorg] + ", " + AllData[i][DATA_NAMES.asmethod] + "</h5>";	
+		} else if (AllData[i][DATA_NAMES.asorg]) {
+			as_txt = as_txt + "<h5>" + AllData[i][DATA_NAMES.asorg] + "</h5>";
+		} else if (AllData[i][DATA_NAMES.asmethod]) {
+			as_txt = as_txt + "<h5>" + AllData[i][DATA_NAMES.method] + "</h5>";
+		}
+	};
+	
+	if(docPath) {															// if there is a document
+		docLink = "<h3><a href="+ docPath +" target='_blank'>"+SEE_MORE+"</a></h3>";	// setup a link 
+	} else {																// otherwise don't.
 		docLink = ""
 	}
 	
-	if (!AllData[i][DATA_NAMES.f] | AllData[i][DATA_NAMES.f] == "") {
-		f_numb = NO_DATA_MSG;
-	} else {
-		f_numb = AllData[i][DATA_NAMES.f];
-	};
+	// based on the above gets, fill in the popup:
 	
-	if (!AllData[i][DATA_NAMES.as] | AllData[i][DATA_NAMES.as] == "") {
-		as_numb = NO_DATA_MSG;
-	} else {
-		as_numb = AllData[i][DATA_NAMES.as];
-	};
-	
-	if (!AllData[i][DATA_NAMES.test_org] | AllData[i][DATA_NAMES.test_org] == "") {
-		test_org = NO_DATA_MSG;
-	} else {
-		test_org = String(AllData[i][DATA_NAMES.test_org]);
-	}
-	
-	var pop = "<dl><h2>" + AllData[i][DATA_NAMES.name] + "</h2>"	// This text will be displayed
-		+ "<b>"+DATE+"</b>"												//	in the popup for this point.
-		+ "<dt>" + day + "-" + month + "-" + year + "</dd>"
-		+ "<br><br>"
-		+ "<b>"+TEST_ORG+"</b>"
-		+ "<dt>" + test_org + "</dd>"
-		+ "<br><br>"
-		+ "<b>"+CONTAMINANTS[0]+" (mg/L)</b>"
-		+ "<dt>" + f_numb + "</dd>"
-		+ "<br><br>"
-		+ "<b>"+CONTAMINANTS[1]+" (&mu;g/L)</b>"
-		+ "<dt>" + as_numb + "</dd>"
-		+ "<br><br>"
+	var pop = "<h1>" + AllData[i][DATA_NAMES.name] + "</h1>"	// This text will be displayed	
+		+ "<h2>" + AllData[i][DATA_NAMES.site_type] + "</h2>"	//	in the popup for this point.
+		+ "<hr>"
+		+ "<h4>" + date + "</h4>"
+		+ f_txt
+		+ as_txt
 		+ docLink
+		
 	return pop;
 }
 

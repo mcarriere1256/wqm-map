@@ -22,10 +22,10 @@ var DATA_NAMES = {							// And store the titles of the columns
 	lng: "longitude",
 	f: "fluoride",
 	forg: "fluoride_testing_org",
-	fmethod: "fluoride_analytic_method",
+	fmethod: "fluoride_testing_method",
 	as: "arsenic",
 	asorg: "arsenic_testing_org",
-	asmethod: "arsenic_analytic_method",
+	asmethod: "arsenic_testing_method",
 	docs: "document_link",
 	test_org: "GENERAL_TESTING_ORG"
 };												
@@ -36,7 +36,7 @@ var SEE_MORE = "Official report(s)";						// This message gets displayed as a li
 															//	more info about the given datapoint
 var CARTO_ATTRIBUTION = 'Tiles from <a href="http://www.mapbox.com">Mapbox</a> with data from <a href="https://www.openstreetmap.org">OSM</a> | Data hosting on <a href="http://drive.google.com">Google Sheets</a> | Legends by <a href="http://www.carto.com">Carto</a> | <a href="https://caminosdeagua.org/en/donate">Donate</a>';
 
-var NO_DATA_MSG = "No data";
+var NO_DATA_MSG = "";
 
 var F_LABELS = ["0-1.5", "1.5-3", "3-10", "10+"];
 var AS_LABELS = ["0-10","10-25","25+"];
@@ -76,3 +76,6 @@ var BASIC_MAP_VIEW = "Map";
 
 var DISPLAY_TITLE = "<b>Water Quality Map</b>";
 var DISPLAY_MSG = "Click to explore";
+
+var F_UNITS = "mg/L";
+var AS_UNITS = "&mu;g/L";

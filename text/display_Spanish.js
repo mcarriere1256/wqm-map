@@ -22,10 +22,10 @@ var DATA_NAMES = {							// And store the titles of the columns
 	lng: "longitude",
 	f: "fluoride",
 	forg: "fluoride_testing_org",
-	fmethod: "fluoride_analytic_method",
+	fmethod: "fluoride_testing_method",
 	as: "arsenic",
 	asorg: "arsenic_testing_org",
-	asmethod: "arsenic_analytic_method",
+	asmethod: "arsenic_testing_method",
 	docs: "document_link",
 	test_org: "GENERAL_TESTING_ORG"
 };		
@@ -36,7 +36,7 @@ var SEE_MORE = "Reporte(s) Oficial(es)";	// This message gets displayed as a lin
 											//	more info about the given datapoint
 var CARTO_ATTRIBUTION = 'Data hosting: <a href="http://www.dropbox.com">Dropbox</a> legends by <a href="http://www.carto.com">CartoDB</a>';
 
-var NO_DATA_MSG = "No hay datos";
+var NO_DATA_MSG = "";
 
 var F_LABELS = ["0-1.5", "1.5-3", "3-10", "10+"];
 var AS_LABELS = ["0-10","10-25","25+"];
@@ -75,3 +75,6 @@ var BASIC_MAP_VIEW = "Mapa";
 
 var DISPLAY_TITLE = "<b>Mapa de Calidad de Agua</b>";
 var DISPLAY_MSG = "Haz clic para explorar";
+
+var F_UNITS = "mg/L";
+var AS_UNITS = "&mu;g/L";
