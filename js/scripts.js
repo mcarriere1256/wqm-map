@@ -237,7 +237,8 @@ function plotData(contaminantToShow) {
 											//	element in each row of the duplicate array will be the most recent.
 											// 	And the spider will extend upwards in reverse chronological order. 
 					while (matches == 0 & j<AllData.length-1) {
-						j++;				// Increment (j) to check out the next AllData point. 							// while there are no matches, and we're still in the AllData array 
+						j++;				// Increment (j) to check out the next AllData point. 							
+											// while there are no matches, and we're still in the AllData array 
 											// Check to see if the current element (i) has the same latLngs
 											//	as each subsequent datapoint (j).
 						if (Math.abs(AllData[i][DATA_NAMES.lat]-AllData[j][DATA_NAMES.lat])<EPS 
