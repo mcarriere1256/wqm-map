@@ -72,6 +72,39 @@
          x="-28.125"
          y="1286.7372" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1417-6">
+      <g
+         id="g1423-7"
+         transform="matrix(0.99526367,0,0,1.0002538,1.9301148,-1.4954668)">
+        <rect
+           style="opacity:1;fill:#0094d1;fill-opacity:0.58291458;stroke:none;stroke-width:52.61273956;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect1419-6"
+           width="384.45834"
+           height="140.625"
+           x="-34.985615"
+           y="911.73718" />
+        <rect
+           style="opacity:1;fill:#0094d1;fill-opacity:0.58291458;stroke:none;stroke-width:36.81301117;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect1421-3"
+           width="140.625"
+           height="223.46703"
+           x="-4.4408921e-016"
+           y="732.32709" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1381-8">
+      <rect
+         style="opacity:1;fill:#710017;fill-opacity:0.65829145;stroke:none;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect1383-86"
+         width="140.625"
+         height="140.625"
+         x="-28.125"
+         y="1286.7372" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -80,9 +113,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.91108872"
-     inkscape:cx="39.60101"
-     inkscape:cy="344.43138"
+     inkscape:zoom="0.32211851"
+     inkscape:cx="-290.32157"
+     inkscape:cy="96.075576"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2667,14 +2700,14 @@
        r="140.625"
        clip-path="url(#clipPath1381)" />
     <ellipse
-       style="opacity:1;fill:#ff9400;fill-opacity:1;stroke:none;stroke-width:28.50940323;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#787878;fill-opacity:1;stroke:none;stroke-width:28.50940323;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4136-4-0-1-2"
        cx="141.88907"
        cy="910.47314"
        inkscape:export-xdpi="74.910812"
        inkscape:export-ydpi="74.910812"
        clip-path="url(#clipPath1417)"
-       transform="matrix(1.0047589,0,0,0.99974626,-1.9393,1.4950873)"
+       transform="matrix(1.264694,0,0,1.2583846,0.34814749,-273.15755)"
        rx="139.95895"
        ry="140.66069" />
     <circle
@@ -2684,26 +2717,53 @@
        cy="1286.7372"
        cx="112.5"
        id="circle1385"
-       style="opacity:1;fill:#eb0017;fill-opacity:1;stroke:none;stroke-width:36.00294876;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       transform="rotate(-180,126.5625,1099.2372)"
+       style="opacity:1;fill:#ff9400;fill-opacity:1;stroke:none;stroke-width:36.00294876;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       transform="matrix(-1.1579704,0,0,-1.1962906,295.9004,2420.6562)"
        r="140.625" />
     <circle
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#eb0017;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:37.76111984;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4136-4-0-1-2-6"
-       cx="141.09375"
-       cy="911.26843"
+       cx="180.38441"
+       cy="871.97778"
        inkscape:export-xdpi="74.910812"
        inkscape:export-ydpi="74.910812"
        clip-path="none"
-       r="126.5625" />
+       r="159.30472" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:19.94623566;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 172.8925,719.59491 0,161.74974 h 155.57582"
+       id="path1496"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <ellipse
+       ry="140.66069"
+       rx="139.95895"
+       transform="matrix(1.264694,0,0,1.2583846,-328.2106,-646.36907)"
+       clip-path="url(#clipPath1417-6)"
+       inkscape:export-ydpi="74.910812"
+       inkscape:export-xdpi="74.910812"
+       cy="910.47314"
+       cx="141.88907"
+       id="ellipse1498"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:28.50940323;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <circle
+       r="140.625"
+       transform="matrix(-1.1579704,0,0,-1.1962906,-32.658351,2047.4448)"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:36.00294876;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle1500"
+       cx="112.5"
+       cy="1286.7372"
+       inkscape:export-xdpi="74.910812"
+       inkscape:export-ydpi="74.910812"
+       clip-path="url(#clipPath1381-8)" />
+    <circle
+       r="159.30472"
        clip-path="none"
        inkscape:export-ydpi="74.910812"
        inkscape:export-xdpi="74.910812"
-       cy="911.26843"
-       cx="141.09375"
-       id="circle1494"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:15;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       r="135" />
+       cy="498.7663"
+       cx="-148.17438"
+       id="circle1502"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#003aff;stroke-width:37.76112747;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>
