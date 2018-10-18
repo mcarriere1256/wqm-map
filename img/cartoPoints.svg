@@ -15,9 +15,9 @@
    viewBox="0 0 744.09448819 1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="cartoPoints.svg"
-   inkscape:export-filename="C:\Users\aaronkrupp\Documents\GitHub\wqm-map\img\yellow-red.png"
+   inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Project Mapping\fullScreen.png"
    inkscape:export-xdpi="74.910812"
    inkscape:export-ydpi="74.910812">
   <defs
@@ -28,83 +28,6 @@
        id="path5116-8"
        d="m 2638.7804,-2008.6231 c 72.7016,-166.853 178.4317,-270.6515 431.5182,-93.1334"
        style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1381">
-      <rect
-         style="opacity:1;fill:#710017;fill-opacity:0.65829145;stroke:none;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect1383"
-         width="140.625"
-         height="140.625"
-         x="-28.125"
-         y="1286.7372" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1417">
-      <g
-         id="g1423"
-         transform="matrix(0.99526367,0,0,1.0002538,1.9301148,-1.4954668)">
-        <rect
-           style="opacity:1;fill:#0094d1;fill-opacity:0.58291458;stroke:none;stroke-width:52.61273956;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect1419"
-           width="384.45834"
-           height="140.625"
-           x="-34.985615"
-           y="911.73718" />
-        <rect
-           style="opacity:1;fill:#0094d1;fill-opacity:0.58291458;stroke:none;stroke-width:36.81301117;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect1421"
-           width="140.625"
-           height="223.46703"
-           x="-4.4408921e-016"
-           y="732.32709" />
-      </g>
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1381-2">
-      <rect
-         style="opacity:1;fill:#710017;fill-opacity:0.65829145;stroke:none;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect1383-8"
-         width="140.625"
-         height="140.625"
-         x="-28.125"
-         y="1286.7372" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1417-6">
-      <g
-         id="g1423-7"
-         transform="matrix(0.99526367,0,0,1.0002538,1.9301148,-1.4954668)">
-        <rect
-           style="opacity:1;fill:#0094d1;fill-opacity:0.58291458;stroke:none;stroke-width:52.61273956;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect1419-6"
-           width="384.45834"
-           height="140.625"
-           x="-34.985615"
-           y="911.73718" />
-        <rect
-           style="opacity:1;fill:#0094d1;fill-opacity:0.58291458;stroke:none;stroke-width:36.81301117;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect1421-3"
-           width="140.625"
-           height="223.46703"
-           x="-4.4408921e-016"
-           y="732.32709" />
-      </g>
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1381-8">
-      <rect
-         style="opacity:1;fill:#710017;fill-opacity:0.65829145;stroke:none;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect1383-86"
-         width="140.625"
-         height="140.625"
-         x="-28.125"
-         y="1286.7372" />
-    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -113,9 +36,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.32211851"
-     inkscape:cx="-290.32157"
-     inkscape:cy="96.075576"
+     inkscape:zoom="0.11388609"
+     inkscape:cx="4301.9142"
+     inkscape:cy="-2211.8724"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -287,45 +210,47 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="6007.4663"
        y="-1219.1946"
        id="text4311-4"
-       transform="rotate(-1.2719172)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99975361,-0.02219732,0.02219732,0.99975361,0,0)"><tspan
          sodipodi:role="line"
          x="6021.48"
          y="-1219.1946"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4317-7">a point with a<tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:80px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print Bold'"
    id="tspan4535-7"> border</tspan> suggests that </tspan><tspan
          sodipodi:role="line"
          x="6021.48"
-         y="-1131.6946"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-1128.0293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4548-0">the map has more than one data point </tspan><tspan
          sodipodi:role="line"
          x="6021.48"
-         y="-1044.1946"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-1040.5293"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4550-5">for that particular test site. </tspan><tspan
          sodipodi:role="line"
-         x="6021.48"
-         y="-956.69458"
+         x="6007.4663"
+         y="-953.0293"
          id="tspan4315-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"> </tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="5351.1577"
        y="-1085.0598"
        id="text4327-1"
-       transform="rotate(-8.2619669)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.9896214,-0.14369932,0.14369932,0.9896214,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4329-2"
          x="5351.1577"
          y="-1085.0598"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print'">How to read this map</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print'">How to read this map</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 4139.2484,-1631.4264 1857.4718,-286.9815"
@@ -349,32 +274,33 @@
        inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\green-black.png" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="6291.8848"
        y="-699.27673"
        id="text4311-1-2"
-       transform="rotate(-9.9206976)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.98504715,-0.17228495,0.17228495,0.98504715,0,0)"><tspan
          sodipodi:role="line"
          x="6305.8984"
          y="-699.27673"
          id="tspan4315-8-6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle">a point with <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle">a point with <tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:80px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print Bold'"
    id="tspan4611-7">no border</tspan> means </tspan><tspan
          sodipodi:role="line"
          x="6291.8848"
-         y="-611.77673"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-608.11145"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4366-2">that we only have a single</tspan><tspan
          sodipodi:role="line"
          x="6291.8848"
-         y="-524.27673"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-520.61139"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4374-9"> datapoint from that</tspan><tspan
          sodipodi:role="line"
          x="6291.8848"
-         y="-436.77673"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-433.11139"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4368-8">test site</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -394,86 +320,88 @@
        sodipodi:nodetypes="csc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="6289.6211"
        y="-1138.0808"
        id="text4311-1-7-5"
-       transform="rotate(1.1347993)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99980387,0.01980469,-0.01980469,0.99980387,0,0)"><tspan
          sodipodi:role="line"
          x="6303.6348"
          y="-1138.0808"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4368-0-4">a <tspan
    style="font-weight:bold;font-size:80px"
    id="tspan4454-7">white border</tspan> indicates that </tspan><tspan
          sodipodi:role="line"
          x="6303.6348"
-         y="-1050.5808"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-1046.9155"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4446-3">the visible, most recent point </tspan><tspan
          sodipodi:role="line"
          x="6289.6211"
-         y="-963.08081"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-959.41553"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4448-0">(in this case, green) is the worst</tspan><tspan
          sodipodi:role="line"
          x="6303.6348"
-         y="-875.58081"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-871.91553"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4450-9">contamination we have ever </tspan><tspan
          sodipodi:role="line"
          x="6289.6211"
-         y="-788.08081"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-784.41553"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4452-8">recorded at this test site.</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="6053.4834"
        y="-612.34912"
        id="text4311-1-7-7-0"
-       transform="rotate(1.3002434)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99974251,0.02269158,-0.02269158,0.99974251,0,0)"><tspan
          sodipodi:role="line"
          x="6053.4834"
          y="-612.34912"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4452-4-0">a <tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:80px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print Bold'"
    id="tspan4577-8">colored border</tspan> shows the worst</tspan><tspan
          sodipodi:role="line"
          x="6053.4834"
-         y="-524.84912"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-521.18384"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4568-0">contamination level ever recorded</tspan><tspan
          sodipodi:role="line"
          x="6067.4971"
-         y="-437.34912"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-433.68384"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4515-0"> at that test site. For example, the green </tspan><tspan
          sodipodi:role="line"
          x="6067.4971"
-         y="-349.84912"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-346.18372"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4265-8">point with the red border indicates that </tspan><tspan
          sodipodi:role="line"
          x="6053.4834"
-         y="-262.34912"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-258.68372"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4267-2">the most recent testing showed a green</tspan><tspan
          sodipodi:role="line"
          x="6053.4834"
-         y="-174.84912"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-171.18373"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4269-4">contamination level, but in the past, we've</tspan><tspan
          sodipodi:role="line"
          x="6053.4834"
-         y="-87.349121"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="-83.683731"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4271-9">measured levels as dangerous as red.</tspan><tspan
          sodipodi:role="line"
          x="6053.4834"
-         y="0.15087891"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="3.8162715"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4517-8">Click the point for all the data!</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -616,15 +544,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-1"><tspan
+           id="text4428-1"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-0"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Feb, 2014</tspan></text>
+             style="font-size:120px">Feb, 2014</tspan></text>
       </g>
       <g
          transform="matrix(0.73786407,0,0,0.78125001,593.9441,481.66457)"
@@ -640,15 +569,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-6-7"><tspan
+           id="text4428-6-7"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-3-1"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Jun, 2015</tspan></text>
+             style="font-size:120px">Jun, 2015</tspan></text>
       </g>
       <g
          transform="matrix(0.73786407,0,0,0.78125001,680.86863,792.10932)"
@@ -664,15 +594,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-8-1"><tspan
+           id="text4428-8-1"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-4-3"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Mar, 2017</tspan></text>
+             style="font-size:120px">Mar, 2017</tspan></text>
       </g>
     </g>
     <g
@@ -691,94 +622,97 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="4369.0874"
        y="1835.1869"
        id="text4311-1-7-3-9"
-       transform="rotate(-18.459626)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.94854701,-0.31663633,0.31663633,0.94854701,0,0)"><tspan
          sodipodi:role="line"
          x="4369.0874"
          y="1835.1869"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4452-6-8"><tspan
    style="font-weight:bold;font-size:70px"
    id="tspan4582-3">For example</tspan>, clicking on this orange</tspan><tspan
          sodipodi:role="line"
          x="4369.0874"
          y="1922.6869"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4571-9">point with a black border will display</tspan><tspan
          sodipodi:role="line"
          x="4369.0874"
          y="2010.1869"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4575-6">all the historic data. This one has</tspan><tspan
          sodipodi:role="line"
          x="4369.0874"
-         y="2097.687"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="2097.6868"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4578-5">three samples, taken in 2014, 2015,</tspan><tspan
          sodipodi:role="line"
          x="4369.0874"
-         y="2185.187"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="2185.1868"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4580-1">and 2017, respectively. Notice how</tspan><tspan
          sodipodi:role="line"
          x="4369.0874"
-         y="2272.687"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="2272.6868"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4584-8">the worst contamination level is black,</tspan><tspan
          sodipodi:role="line"
          x="4369.0874"
-         y="2360.187"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="2360.1868"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4586-8">the same color as the border.</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="5423.3945"
        y="-3774.2681"
        id="text4311-1-7-3-4-6"
-       transform="rotate(39.785049)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.76845053,0.6399092,-0.6399092,0.76845053,0,0)"><tspan
          sodipodi:role="line"
          x="5423.3945"
          y="-3774.2681"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4586-5-5"><tspan
    style="font-weight:bold"
    id="tspan4672-0">Click</tspan> on any of these points</tspan><tspan
          sodipodi:role="line"
          x="5437.4082"
          y="-3686.7681"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4664-2">to view the date, testing </tspan><tspan
          sodipodi:role="line"
          x="5423.3945"
          y="-3599.2681"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4666-0">organization, data, and links</tspan><tspan
          sodipodi:role="line"
          x="5423.3945"
          y="-3511.7681"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4668-6">to well reports and more info</tspan><tspan
          sodipodi:role="line"
          x="5423.3945"
          y="-3424.2681"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4670-8">where available!</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="4573.0728"
        y="2773.0251"
        id="text4676-5"
-       transform="rotate(-18.30402)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.94940344,-0.31405907,0.31405907,0.94940344,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4678-8"
          x="4573.0728"
          y="2773.0251"
-         style="font-weight:bold;font-size:90px;line-height:1.25;fill:#c70000;fill-opacity:1">CLICK!</tspan></text>
+         style="font-weight:bold;font-size:90px;fill:#c70000;fill-opacity:1">CLICK!</tspan></text>
   </g>
   <g
      inkscape:label="Layer 1"
@@ -837,6 +771,14 @@
        inkscape:export-ydpi="74.910812"
        r="117.1779" />
     <circle
+       style="opacity:1;fill:#eb0017;fill-opacity:1;stroke:#646464;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4136-4-0-5-6"
+       cx="-1214.2858"
+       cy="919.50507"
+       inkscape:export-xdpi="74.910812"
+       inkscape:export-ydpi="74.910812"
+       r="117.1779" />
+    <circle
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:#646464;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4136-4-0-4-6"
        cx="-788.57141"
@@ -888,7 +830,7 @@
        r="117.1779"
        inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\grey-black.png" />
     <circle
-       style="opacity:1;fill:#787878;fill-opacity:1;stroke:#003aff;stroke-width:30.00000008;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#787878;fill-opacity:1;stroke:#003aff;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4136-4-0-9-2-9"
        cx="-2117.1428"
        cy="955.21936"
@@ -957,8 +899,8 @@
     <circle
        style="opacity:1;fill:#2eb7ff;fill-opacity:1;stroke:#646464;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4136-4-0-9-1-9"
-       cx="-247.52571"
-       cy="1070.0378"
+       cx="-148.57144"
+       cy="1040.9336"
        inkscape:export-xdpi="74.910812"
        inkscape:export-ydpi="74.910812"
        r="117.1779" />
@@ -1156,39 +1098,40 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#969696;fill-opacity:1;stroke:#3c3c3c;stroke-width:1.44030905px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:72.01545715px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#969696;fill-opacity:1;stroke:#3c3c3c;stroke-width:1.44030905px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="-4302.8784"
        y="13.14941"
        id="text4581"
+       sodipodi:linespacing="125%"
        transform="scale(1.0795406,0.92631997)"><tspan
          sodipodi:role="line"
          id="tspan4583"
          x="-4302.8784"
          y="13.14941"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1080.23181152px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:#969696;fill-opacity:1;stroke:#3c3c3c;stroke-width:1.44030905px;stroke-opacity:1">?</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1080.23181152px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:#969696;fill-opacity:1;stroke:#3c3c3c;stroke-width:1.44030905px;stroke-opacity:1;">?</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4585"
-       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:50px;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;text-align:center"><flowRegion
          id="flowRegion4587"><rect
            id="rect4589"
            width="649.77209"
            height="11239.301"
            x="-4636.2114"
            y="-14287.527" /></flowRegion><flowPara
-         id="flowPara4591"
-         style="font-size:50px;line-height:1.25"> </flowPara></flowRoot>    <text
+         id="flowPara4591" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#969696;fill-opacity:1;stroke:#969696;stroke-width:1.35472488px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:67.7362442px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#969696;fill-opacity:1;stroke:#969696;stroke-width:1.35472488px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-3473.1365"
        y="-1940.0032"
        id="text4581-2"
+       sodipodi:linespacing="125%"
        transform="scale(1.1479698,0.87110305)"><tspan
          sodipodi:role="line"
          id="tspan4583-4"
          x="-3473.1365"
          y="-1940.0032"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1016.04364014px;line-height:1.25;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:#969696;fill-opacity:1;stroke:#969696;stroke-width:1.35472488px;stroke-opacity:1">?</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1016.04364014px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:#969696;fill-opacity:1;stroke:#969696;stroke-width:1.35472488px;stroke-opacity:1">?</tspan></text>
     <image
        width="90"
        height="75.9375"
@@ -1203,7 +1146,7 @@
        id="rect4252"
        width="3004.4016"
        height="3781.7927"
-       x="470.45633"
+       x="282.95633"
        y="-2074.6609"
        rx="150"
        ry="150"
@@ -1213,7 +1156,7 @@
     <circle
        style="opacity:1;fill:#009400;fill-opacity:1;stroke:#ffffff;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4136-4-0-7"
-       cx="1149.5355"
+       cx="962.03546"
        cy="-528.47662"
        inkscape:export-xdpi="74.910797"
        inkscape:export-ydpi="74.910797"
@@ -1221,7 +1164,7 @@
        inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\green-black.png" />
     <g
        id="g4287"
-       transform="translate(-66.35577,-51.15575)">
+       transform="translate(-253.85577,-51.15575)">
       <circle
          inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\green-black.png"
          r="117.1779"
@@ -1252,31 +1195,33 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="2624.1785"
-       y="-1209.2185"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2436.7249"
+       y="-1213.3811"
        id="text4311"
-       transform="rotate(-1.2719172)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99975361,-0.02219732,0.02219732,0.99975361,0,0)"><tspan
          sodipodi:role="line"
-         x="2624.1785"
-         y="-1209.2185"
+         x="2436.7249"
+         y="-1213.3811"
          id="tspan4315"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle">border = historic data available!</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle">border = historic data available!</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1813.1173"
-       y="-1487.7449"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1627.5631"
+       y="-1514.6882"
        id="text4327"
-       transform="rotate(-8.2619669)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.9896214,-0.14369932,0.14369932,0.9896214,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4329"
-         x="1813.1173"
-         y="-1487.7449"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print'">How to read this map</tspan></text>
+         x="1627.5631"
+         y="-1514.6882"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print'">How to read this map</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 580.06229,-1521.5179 2437.5341,-1808.4994"
+       d="M 392.56229,-1521.5179 2250.0341,-1808.4994"
        id="path4331"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -1284,7 +1229,7 @@
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path5116"
-       d="m 2826.2804,-2008.6231 c 72.7016,-166.853 178.4317,-270.6515 431.5182,-93.1334"
+       d="m 2638.7804,-2008.6231 c 72.7016,-166.853 178.4317,-270.6515 431.5182,-93.1334"
        style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <g
        id="g4421"
@@ -1300,9 +1245,10 @@
          sodipodi:nodetypes="ccccccccc" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:50px;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          id="text5118"
-         transform="rotate(1.942749,8188.8713,30651.217)"><textPath
+         sodipodi:linespacing="125%"
+         transform="matrix(0.9994252,0.03390087,-0.03390087,0.9994252,1043.8099,-259.99154)"><textPath
            xlink:href="#path5116"
            startOffset="50%"
            id="textPath5122"
@@ -1311,7 +1257,7 @@
     <circle
        style="opacity:1;fill:#009400;fill-opacity:1;stroke:#dcdcdc;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4136-4-0-7-0"
-       cx="1165.9723"
+       cx="978.47223"
        cy="-1369.2114"
        inkscape:export-xdpi="74.910797"
        inkscape:export-ydpi="74.910797"
@@ -1319,119 +1265,122 @@
        inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\green-black.png" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="2766.9841"
-       y="-1204.2058"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2582.2869"
+       y="-1236.5093"
        id="text4311-1"
-       transform="rotate(-9.9206976)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.98504715,-0.17228495,0.17228495,0.98504715,0,0)"><tspan
          sodipodi:role="line"
-         x="2785.0017"
-         y="-1204.2058"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2600.3044"
+         y="-1236.5093"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4368">no border = only 1 data </tspan><tspan
          sodipodi:role="line"
-         x="2766.9841"
-         y="-1091.7058"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2582.2869"
+         y="-1124.0093"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4861">point available</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1216.2961,-595.16022 138.5005,54.20634 -66.2759,-59.90534 47.9487,-76.1743 z"
+       d="m 1028.7961,-595.16022 138.5005,54.20634 -66.2759,-59.90534 47.9487,-76.1743 z"
        id="path4335-3"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1409.1376,-144.91591 137.7558,56.071789 -65.4609,-60.795029 48.9732,-75.51978 z"
+       d="m 1221.6376,-144.91591 137.7558,56.071789 -65.4609,-60.795029 48.9732,-75.51978 z"
        id="path4335-3-5"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1274.5801,-607.56772 c 2.7997,4.3688 425.275,78.16511 450.154,-132.4786 21.4739,-181.81398 324.8675,48.3057 474.338,-94.926"
+       d="m 1087.0801,-607.56772 c 2.7997,4.3688 425.275,78.16511 450.154,-132.4786 21.4739,-181.81398 324.8675,48.3057 474.338,-94.926"
        id="path4408"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="2613.3347"
-       y="-1057.7957"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2425.8713"
+       y="-1054.0823"
        id="text4311-1-7"
-       transform="rotate(1.1347993)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99980387,0.01980469,-0.01980469,0.99980387,0,0)"><tspan
          sodipodi:role="line"
-         x="2631.3523"
-         y="-1057.7957"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2443.8889"
+         y="-1054.0823"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4452">white border = most recent </tspan><tspan
          sodipodi:role="line"
-         x="2631.3523"
-         y="-945.29565"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2443.8889"
+         y="-941.58221"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4768">datapoint is the worst </tspan><tspan
          sodipodi:role="line"
-         x="2613.3347"
-         y="-832.79565"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2425.8713"
+         y="-829.08221"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4865">ever documented</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="2448.8984"
-       y="-519.96552"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2261.4473"
+       y="-515.71075"
        id="text4311-1-7-7"
-       transform="rotate(1.3002434)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99974251,0.02269158,-0.02269158,0.99974251,0,0)"><tspan
          sodipodi:role="line"
-         x="2466.916"
-         y="-519.96552"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2279.4648"
+         y="-515.71075"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4824">colored border = the site has improved: </tspan><tspan
          sodipodi:role="line"
-         x="2466.916"
-         y="-407.46552"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2279.4648"
+         y="-403.21075"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4873">the border shows the worst </tspan><tspan
          sodipodi:role="line"
-         x="2448.8984"
-         y="-294.96552"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2261.4473"
+         y="-290.71075"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4826">contamination ever documented</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1458.819,-155.49065 c 230.2555,9.66843 857.0285,263.60702 928.9896,-12.11687"
+       d="m 1271.319,-155.49065 c 230.2555,9.66843 857.0285,263.60702 928.9896,-12.11687"
        id="path4523"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1242.8723,-1354.2784 138.9457,53.0542 -66.771,-59.3529 47.3146,-76.5698 z"
+       d="m 1055.3723,-1354.2784 138.9457,53.0542 -66.771,-59.3529 47.3146,-76.5698 z"
        id="path4335"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1314.9035,-1353.0837 c 19.3651,-20.5272 182.6292,29.538 157.9688,-66.6756 -32.9455,-128.5385 298.3393,-94.2639 527.6431,-96.5641"
+       d="m 1127.4035,-1353.0837 c 19.3651,-20.5272 182.6292,29.538 157.9688,-66.6756 -32.9455,-128.5385 298.3393,-94.2639 527.6431,-96.5641"
        id="path4531"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1032.28,-723.70942 c -3.1834,0.4161 -9.1135,38.0563 -65.6238,47.8588 -179.7014,31.1718 20.0542,291.9422 -165.1343,338.2872 182.1445,40.60763 -19.4534,336.319701 152.1764,359.846461 83.0134,11.37934 102.1025,65.667639 106.85,66.338499"
+       d="m 844.78,-723.70942 c -3.1834,0.4161 -9.1135,38.0563 -65.6238,47.8588 -179.7014,31.1718 20.0542,291.9422 -165.1343,338.2872 182.1445,40.60763 -19.4534,336.319701 152.1764,359.846461 83.0134,11.37934 102.1025,65.667639 106.85,66.338499"
        id="path4533"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1830.4655,-1283.2928 c -188.6215,20.4968 -162.0772,378.50636 -624.0011,227.9816 -380.72434,-124.0647 -714.64764,482.04142 -500.90284,694.28925 l 4.3903,-3.34792"
+       d="m 1642.9655,-1283.2928 c -188.6215,20.4968 -162.0772,378.50636 -624.0011,227.9816 -380.72434,-124.0647 -714.64764,482.04142 -500.90284,694.28925 l 4.3903,-3.34792"
        id="path4622"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscc" />
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 728.46516,-347.52664 -142.5487,-42.4333 89.1022,-6.47821 9.0373,-89.55409 z"
+       d="m 540.96516,-347.52664 -142.5487,-42.4333 89.1022,-6.47821 9.0373,-89.55409 z"
        id="path4335-3-5-9"
        inkscape:connector-curvature="0" />
     <circle
        style="opacity:1;fill:#ff9400;fill-opacity:1;stroke:#000000;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4136-4-0-9-10"
-       cx="926.35858"
+       cx="738.85858"
        cy="1350.389"
        inkscape:export-xdpi="74.910797"
        inkscape:export-ydpi="74.910797"
@@ -1439,7 +1388,7 @@
        inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\yellow-black.png" />
     <g
        id="g4473"
-       transform="translate(342.72238,136.5957)">
+       transform="translate(155.22238,136.5957)">
       <g
          transform="matrix(0.72051516,0,0,0.75405585,217.87072,-766.66276)"
          id="g4413">
@@ -1535,15 +1484,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428"><tspan
+           id="text4428"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Feb, 2014</tspan></text>
+             style="font-size:120px">Feb, 2014</tspan></text>
       </g>
       <g
          transform="matrix(0.73786407,0,0,0.78125001,593.9441,481.66457)"
@@ -1559,15 +1509,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-6"><tspan
+           id="text4428-6"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-3"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Jun, 2015</tspan></text>
+             style="font-size:120px">Jun, 2015</tspan></text>
       </g>
       <g
          transform="matrix(0.73786407,0,0,0.78125001,680.86863,792.10932)"
@@ -1583,20 +1534,21 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-8"><tspan
+           id="text4428-8"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-4"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Mar, 2017</tspan></text>
+             style="font-size:120px">Mar, 2017</tspan></text>
       </g>
     </g>
     <g
        id="g4588"
-       transform="translate(-29.81133,186.26685)">
+       transform="translate(-217.31133,186.26685)">
       <path
          inkscape:connector-curvature="0"
          id="path4335-3-5-9-6"
@@ -1610,71 +1562,74 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="478.16013"
-       y="1200.1243"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="328.06003"
+       y="1087.7573"
        id="text4311-1-7-3"
-       transform="rotate(-36.818901)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.80053372,-0.59928772,0.59928772,0.80053372,0,0)"><tspan
          sodipodi:role="line"
-         x="496.1777"
-         y="1200.1243"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="346.07761"
+         y="1087.7573"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4571"><tspan
    style="font-weight:bold;font-size:90px"
    id="tspan4582">For example</tspan>, click on this </tspan><tspan
          sodipodi:role="line"
-         x="478.16013"
-         y="1312.728"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="328.06003"
+         y="1200.2573"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4832">black-bordered point to display</tspan><tspan
          sodipodi:role="line"
-         x="496.1777"
-         y="1425.228"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="346.07761"
+         y="1312.7573"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4586"> the historic data. </tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="2610.9949"
-       y="-629.25494"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2436.7053"
+       y="-560.12042"
        id="text4311-1-7-3-4"
-       transform="rotate(21.636467)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.929542,0.36871626,-0.36871626,0.929542,0,0)"><tspan
          sodipodi:role="line"
-         x="2629.0125"
-         y="-629.25494"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2454.7229"
+         y="-560.12042"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4586-5"><tspan
    style="font-weight:bold"
    id="tspan4887">Notice </tspan>how the worst contamination </tspan><tspan
          sodipodi:role="line"
-         x="2610.9949"
-         y="-516.65125"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2436.7053"
+         y="-447.62042"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4895">level is black, the border color.</tspan><tspan
          sodipodi:role="line"
-         x="2610.9949"
-         y="-404.15121"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2436.7053"
+         y="-335.12042"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4889"><tspan
    style="font-weight:bold"
    id="tspan4891">Click</tspan> on any historical point</tspan><tspan
          sodipodi:role="line"
-         x="2629.0125"
-         y="-291.54752"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         x="2454.7229"
+         y="-222.62042"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4670">to see more data! </tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="939.44098"
-       y="1712.9578"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="761.42767"
+       y="1654.0723"
        id="text4676"
-       transform="rotate(-18.30402)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.94940344,-0.31405907,0.31405907,0.94940344,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4678"
-         x="939.44098"
-         y="1712.9578"
-         style="font-weight:bold;font-size:90px;line-height:1.25;fill:#c70000;fill-opacity:1">CLICK!</tspan></text>
+         x="761.42767"
+         y="1654.0723"
+         style="font-weight:bold;font-size:90px;fill:#c70000;fill-opacity:1">CLICK!</tspan></text>
     <rect
        style="opacity:1;fill:#dcdcdc;fill-opacity:1;stroke:#3c3c3c;stroke-width:38.93726349;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4252-0"
@@ -1729,39 +1684,41 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="6087.2798"
        y="3097.5537"
        id="text4311-5"
-       transform="rotate(-1.2719172)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99975361,-0.02219732,0.02219732,0.99975361,0,0)"><tspan
          sodipodi:role="line"
          x="6087.2798"
          y="3097.5537"
          id="tspan4315-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle">un punto <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle">un punto <tspan
    style="font-weight:bold"
    id="tspan5018">con borde</tspan> sugiere que el mapa tiene</tspan><tspan
          sodipodi:role="line"
          x="6087.2798"
          y="3185.0537"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan5012">más de un punto de información</tspan><tspan
          sodipodi:role="line"
          x="6087.2798"
          y="3272.5537"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan5014">para esa ubicación particular.</tspan></text>
     <g
        id="g4613-4"
        transform="matrix(0.9994252,0.03390087,-0.03390087,0.9994252,3104.601,3725.9603)">
       <text
-         transform="rotate(-12.438518)"
+         transform="matrix(0.9765277,-0.21539187,0.21539187,0.9765277,0,0)"
+         sodipodi:linespacing="125%"
          id="text4327-3"
          y="-791.35095"
          x="2401.75"
-         style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print'"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print'"
            y="-791.35095"
            x="2401.75"
            id="tspan4329-0"
@@ -1784,27 +1741,28 @@
        inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\green-black.png" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="6500.5854"
        y="2351.342"
        id="text4311-1-8"
-       transform="rotate(2.4699489)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99907096,0.04309539,-0.04309539,0.99907096,0,0)"><tspan
          sodipodi:role="line"
          x="6514.5991"
          y="2351.342"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4368-00">un punto <tspan
    style="font-weight:bold"
    id="tspan4998">sin borde</tspan> significa que sólo </tspan><tspan
          sodipodi:role="line"
          x="6500.5854"
          y="2438.842"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4994">tenemos un punto de información</tspan><tspan
          sodipodi:role="line"
          x="6500.5854"
          y="2526.342"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4996">para esa ubicación.</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1824,66 +1782,68 @@
        sodipodi:nodetypes="csc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="6550.6362"
        y="3171.5081"
        id="text4311-1-7-71"
-       transform="rotate(1.1347993)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99980387,0.01980469,-0.01980469,0.99980387,0,0)"><tspan
          sodipodi:role="line"
          x="6550.6362"
          y="3171.5081"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4452-7"><tspan
    style="font-weight:bold"
    id="tspan5050">el borde blanco</tspan> indica que el punto</tspan><tspan
          sodipodi:role="line"
          x="6550.6362"
          y="3259.0081"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan5038">visible más reciente (en este caso</tspan><tspan
          sodipodi:role="line"
          x="6564.6499"
          y="3346.5081"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan5040">verde) es el peor grado de </tspan><tspan
          sodipodi:role="line"
          x="6550.6362"
          y="3434.0081"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan5044">contaminación que hemos encontrado</tspan><tspan
          sodipodi:role="line"
          x="6550.6362"
          y="3521.5081"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan5048">en esta ubicación.</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="6395.2222"
        y="3694.9185"
        id="text4311-1-7-7-4"
-       transform="rotate(1.3002434)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99974251,0.02269158,-0.02269158,0.99974251,0,0)"><tspan
          sodipodi:role="line"
          x="6409.2358"
          y="3694.9185"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4517-3"><tspan
    style="font-weight:bold"
    id="tspan5112">los bordes amarillo, rojo, y negro</tspan> aqui </tspan><tspan
          sodipodi:role="line"
          x="6409.2358"
-         y="3782.4185"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="3782.4187"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan5094">muestra el peor nivel de contaminación </tspan><tspan
          sodipodi:role="line"
          x="6409.2358"
-         y="3869.9185"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="3869.9187"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan5096">registrado en  esa ubicación. ¡Haz click en </tspan><tspan
          sodipodi:role="line"
          x="6395.2222"
-         y="3957.4185"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         y="3957.4187"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan5098">el punto paramás información!</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2026,15 +1986,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-2"><tspan
+           id="text4428-2"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-8"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Feb, 2014</tspan></text>
+             style="font-size:120px">Feb, 2014</tspan></text>
       </g>
       <g
          transform="matrix(0.73786407,0,0,0.78125001,593.9441,481.66457)"
@@ -2050,15 +2011,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-6-0"><tspan
+           id="text4428-6-0"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-3-5"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Jun, 2015</tspan></text>
+             style="font-size:120px">Jun, 2015</tspan></text>
       </g>
       <g
          transform="matrix(0.73786407,0,0,0.78125001,680.86863,792.10932)"
@@ -2074,15 +2036,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-8-0"><tspan
+           id="text4428-8-0"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-4-9"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Mar, 2017</tspan></text>
+             style="font-size:120px">Mar, 2017</tspan></text>
       </g>
     </g>
     <g
@@ -2101,94 +2064,97 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="3169.7241"
        y="5982.7422"
        id="text4311-1-7-3-5"
-       transform="rotate(-18.459626)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.94854701,-0.31663633,0.31663633,0.94854701,0,0)"><tspan
          sodipodi:role="line"
          x="3169.7241"
          y="5982.7422"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4452-6-0"><tspan
    style="font-weight:bold;font-size:70px"
    id="tspan4582-1">For example</tspan>, clicking on this orange</tspan><tspan
          sodipodi:role="line"
          x="3169.7241"
          y="6070.2422"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4571-2">point with a black border will display</tspan><tspan
          sodipodi:role="line"
          x="3169.7241"
          y="6157.7422"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4575-5">all the historic data. This one has</tspan><tspan
          sodipodi:role="line"
          x="3169.7241"
          y="6245.2422"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4578-8">three samples, taken in 2014, 2015,</tspan><tspan
          sodipodi:role="line"
          x="3169.7241"
          y="6332.7422"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4580-9">and 2017, respectively. Notice how</tspan><tspan
          sodipodi:role="line"
          x="3169.7241"
          y="6420.2422"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4584-4">the worst contamination level is black,</tspan><tspan
          sodipodi:role="line"
          x="3169.7241"
          y="6507.7422"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4586-9">the same color as the border.</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="8318.8584"
        y="-571.61646"
        id="text4311-1-7-3-4-0"
-       transform="rotate(39.785049)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.76845053,0.6399092,-0.6399092,0.76845053,0,0)"><tspan
          sodipodi:role="line"
          x="8318.8584"
          y="-571.61646"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4586-5-7"><tspan
    style="font-weight:bold"
    id="tspan4672-7">Click</tspan> on any of these points</tspan><tspan
          sodipodi:role="line"
          x="8332.8721"
          y="-484.11646"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4664-9">to view the date, testing </tspan><tspan
          sodipodi:role="line"
          x="8318.8584"
          y="-396.61646"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4666-2">organization, data, and links</tspan><tspan
          sodipodi:role="line"
          x="8318.8584"
          y="-309.11646"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4668-9">to well reports and more info</tspan><tspan
          sodipodi:role="line"
          x="8318.8584"
          y="-221.61646"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4670-5">where available!</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="3384.978"
        y="6923.8223"
        id="text4676-3"
-       transform="rotate(-18.30402)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.94940344,-0.31405907,0.31405907,0.94940344,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4678-5"
          x="3384.978"
          y="6923.8223"
-         style="font-weight:bold;font-size:90px;line-height:1.25;fill:#c70000;fill-opacity:1">CLICK!</tspan></text>
+         style="font-weight:bold;font-size:90px;fill:#c70000;fill-opacity:1">CLICK!</tspan></text>
     <rect
        style="opacity:1;fill:#dcdcdc;fill-opacity:1;stroke:#3c3c3c;stroke-width:38.93726349;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4252-7"
@@ -2243,35 +2209,37 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="2238.1775"
        y="2861.7029"
        id="text4311-9"
-       transform="rotate(-1.2719172)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99975361,-0.02219732,0.02219732,0.99975361,0,0)"><tspan
          sodipodi:role="line"
          x="2256.1951"
          y="2861.7029"
          id="tspan4315-3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle">Punto <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle">Punto <tspan
    style="font-weight:bold"
    id="tspan4783">con borde</tspan> = datos </tspan><tspan
          sodipodi:role="line"
          x="2238.1775"
          y="2974.2029"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4728">históricos disponibles</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="1106.9528"
        y="2601.9583"
        id="text4327-35"
-       transform="rotate(-8.2619669)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.9896214,-0.14369932,0.14369932,0.9896214,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4329-5"
          x="1106.9528"
          y="2601.9583"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print'">¿Cómo leer este mapa?</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print'">¿Cómo leer este mapa?</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 468.91435,2627.2149 2326.3862,2340.2334"
@@ -2295,22 +2263,23 @@
        inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\green-black.png" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="2358.4133"
        y="2635.5269"
        id="text4311-1-6"
-       transform="rotate(-1.8800578)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.9994617,-0.03280731,0.03280731,0.9994617,0,0)"><tspan
          sodipodi:role="line"
          x="2376.4309"
          y="2635.5269"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4861-1"><tspan
    style="font-weight:bold"
    id="tspan4785">Sin borde</tspan> = este sitio representa </tspan><tspan
          sodipodi:role="line"
          x="2358.4133"
          y="2748.0269"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4726">sólo un dato disponible</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -2330,51 +2299,53 @@
        sodipodi:nodetypes="csc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="2568.2063"
        y="3162.9043"
        id="text4311-1-7-76"
-       transform="rotate(1.1347993)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99980387,0.01980469,-0.01980469,0.99980387,0,0)"><tspan
          sodipodi:role="line"
          x="2586.2239"
          y="3162.9043"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4865-2">Borde <tspan
    style="font-weight:bold"
    id="tspan4781">blanco</tspan> = sitio con datos </tspan><tspan
          sodipodi:role="line"
          x="2586.2239"
          y="3275.4043"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4735">más recientes; tiene el peor </tspan><tspan
          sodipodi:role="line"
          x="2568.2063"
          y="3387.9043"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4741">nivel de contaminación registrado</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="2431.9211"
        y="3630.2212"
        id="text4311-1-7-7-3"
-       transform="rotate(1.3002434)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.99974251,0.02269158,-0.02269158,0.99974251,0,0)"><tspan
          sodipodi:role="line"
          x="2449.9387"
          y="3630.2212"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4748">Borde de <tspan
    style="font-weight:bold"
    id="tspan4779">color</tspan> = el sitio ha mejorado: </tspan><tspan
          sodipodi:role="line"
          x="2449.9387"
          y="3742.7212"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4752">el borde muestra el peor nivel </tspan><tspan
          sodipodi:role="line"
          x="2431.9211"
          y="3855.2212"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4754">de contaminación registrado</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2517,15 +2488,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-5"><tspan
+           id="text4428-5"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-86"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Feb, 2014</tspan></text>
+             style="font-size:120px">Feb, 2014</tspan></text>
       </g>
       <g
          transform="matrix(0.73786407,0,0,0.78125001,593.9441,481.66457)"
@@ -2541,15 +2513,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-6-5"><tspan
+           id="text4428-6-5"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-3-8"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Jun, 2015</tspan></text>
+             style="font-size:120px">Jun, 2015</tspan></text>
       </g>
       <g
          transform="matrix(0.73786407,0,0,0.78125001,680.86863,792.10932)"
@@ -2565,15 +2538,16 @@
            ry="30.188679" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="1415.6281"
            y="797.79755"
-           id="text4428-8-7"><tspan
+           id="text4428-8-7"
+           sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
              id="tspan4430-4-6"
              x="1415.6281"
              y="797.79755"
-             style="font-size:120px;line-height:1.25">Mar, 2017</tspan></text>
+             style="font-size:120px">Mar, 2017</tspan></text>
       </g>
     </g>
     <g
@@ -2592,82 +2566,85 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-1953.1782"
        y="4365.0229"
        id="text4311-1-7-3-2"
-       transform="rotate(-36.818901)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.80053372,-0.59928772,0.59928772,0.80053372,0,0)"><tspan
          sodipodi:role="line"
          x="-1935.1606"
          y="4365.0229"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4767">Por <tspan
    style="font-weight:bold"
    id="tspan4777">ejemplo</tspan> , haz click en </tspan><tspan
          sodipodi:role="line"
          x="-1953.1782"
          y="4477.5229"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4771">este punto con borde negro para</tspan><tspan
          sodipodi:role="line"
          x="-1935.1606"
          y="4590.0229"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4773"> que desplieguen los datos </tspan><tspan
          sodipodi:role="line"
          x="-1953.1782"
          y="4702.5229"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4775">históricos del sitio</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="5111.1279"
        y="1511.4059"
        id="text4311-1-7-3-4-5"
-       transform="rotate(42.942245)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.73204079,0.6812608,-0.6812608,0.73204079,0,0)"><tspan
          sodipodi:role="line"
          x="5129.1455"
          y="1511.4059"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4804">Observa que el peor nivel de </tspan><tspan
          sodipodi:role="line"
          x="5129.1455"
          y="1623.9059"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4808">contaminación es negro y con borde de </tspan><tspan
          sodipodi:role="line"
          x="5129.1455"
          y="1736.4059"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4810">color. Para encontrar más información </tspan><tspan
          sodipodi:role="line"
          x="5129.1455"
          y="1848.9059"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4812">sobre ese lugar en el pasado, haz click en </tspan><tspan
          sodipodi:role="line"
          x="5129.1455"
          y="1961.4059"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4827">cualquiera de los puntos con </tspan><tspan
          sodipodi:role="line"
          x="5111.1279"
          y="2073.9058"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';text-align:center;text-anchor:middle"
          id="tspan4841">datos históricos.</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-469.03058"
        y="5616.8726"
        id="text4676-35"
-       transform="rotate(-18.30402)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0.94940344,-0.31405907,0.31405907,0.94940344,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4678-9"
          x="-469.03058"
          y="5616.8726"
-         style="font-weight:bold;font-size:90px;line-height:1.25;fill:#c70000;fill-opacity:1">CLICK!</tspan></text>
+         style="font-weight:bold;font-size:90px;fill:#c70000;fill-opacity:1">CLICK!</tspan></text>
     <g
        id="g4421-0"
        transform="translate(4670.3346,4194.2728)">
@@ -2682,88 +2659,14 @@
          sodipodi:nodetypes="ccccccccc" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:50px;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          id="text5118-4"
-         transform="rotate(1.942749,8188.8713,30651.217)"><textPath
+         sodipodi:linespacing="125%"
+         transform="matrix(0.9994252,0.03390087,-0.03390087,0.9994252,1043.8099,-259.99154)"><textPath
            xlink:href="#path5116-8"
            startOffset="50%"
            id="textPath5122-5"
            style="font-size:120px;fill:#e6e6e6;fill-opacity:1">CERRAR</textPath></text>
     </g>
-    <circle
-       style="opacity:1;fill:#eb0017;fill-opacity:1;stroke:none;stroke-width:36.00294876;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path4136-4-0-5-6"
-       cx="112.5"
-       cy="1286.7372"
-       inkscape:export-xdpi="74.910812"
-       inkscape:export-ydpi="74.910812"
-       r="140.625"
-       clip-path="url(#clipPath1381)" />
-    <ellipse
-       style="opacity:1;fill:#787878;fill-opacity:1;stroke:none;stroke-width:28.50940323;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path4136-4-0-1-2"
-       cx="141.88907"
-       cy="910.47314"
-       inkscape:export-xdpi="74.910812"
-       inkscape:export-ydpi="74.910812"
-       clip-path="url(#clipPath1417)"
-       transform="matrix(1.264694,0,0,1.2583846,0.34814749,-273.15755)"
-       rx="139.95895"
-       ry="140.66069" />
-    <circle
-       clip-path="url(#clipPath1381)"
-       inkscape:export-ydpi="74.910812"
-       inkscape:export-xdpi="74.910812"
-       cy="1286.7372"
-       cx="112.5"
-       id="circle1385"
-       style="opacity:1;fill:#ff9400;fill-opacity:1;stroke:none;stroke-width:36.00294876;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       transform="matrix(-1.1579704,0,0,-1.1962906,295.9004,2420.6562)"
-       r="140.625" />
-    <circle
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:37.76111984;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path4136-4-0-1-2-6"
-       cx="180.38441"
-       cy="871.97778"
-       inkscape:export-xdpi="74.910812"
-       inkscape:export-ydpi="74.910812"
-       clip-path="none"
-       r="159.30472" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:19.94623566;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 172.8925,719.59491 0,161.74974 h 155.57582"
-       id="path1496"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
-    <ellipse
-       ry="140.66069"
-       rx="139.95895"
-       transform="matrix(1.264694,0,0,1.2583846,-328.2106,-646.36907)"
-       clip-path="url(#clipPath1417-6)"
-       inkscape:export-ydpi="74.910812"
-       inkscape:export-xdpi="74.910812"
-       cy="910.47314"
-       cx="141.88907"
-       id="ellipse1498"
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:28.50940323;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <circle
-       r="140.625"
-       transform="matrix(-1.1579704,0,0,-1.1962906,-32.658351,2047.4448)"
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:36.00294876;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="circle1500"
-       cx="112.5"
-       cy="1286.7372"
-       inkscape:export-xdpi="74.910812"
-       inkscape:export-ydpi="74.910812"
-       clip-path="url(#clipPath1381-8)" />
-    <circle
-       r="159.30472"
-       clip-path="none"
-       inkscape:export-ydpi="74.910812"
-       inkscape:export-xdpi="74.910812"
-       cy="498.7663"
-       cx="-148.17438"
-       id="circle1502"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#003aff;stroke-width:37.76112747;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>
