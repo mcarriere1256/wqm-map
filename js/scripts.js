@@ -85,6 +85,11 @@ function setGlobals() {
 	document.getElementById("img-button-text").innerHTML = SATELLITE_MAP_VIEW;
 	document.getElementById("map-tile-selector").src = SATELLITE_TILE_THUMBNAIL_URL;
 	
+	document.getElementById("overlay_title").innerHTML = DISPLAY_TITLE;
+	document.getElementById("overlay_msg").innerHTML = DISPLAY_MSG;
+	$("#overlay").corner("keep 16px cc:#222");	// adjust inner border corners
+	$("#overlay").css("display", "inline-block");	// display overlay once stuff loads!
+	
 }
 
 
@@ -1065,4 +1070,8 @@ function toggleTileView() {
 		document.getElementById("img-button-text").innerHTML = SATELLITE_MAP_VIEW;
 		document.getElementById("map-tile-selector").src = SATELLITE_TILE_THUMBNAIL_URL;
 	}
+}
+
+function beginUserExperience() {
+	$("#overlay").fadeOut(800, function() {});	// fade out the overlay	
 }

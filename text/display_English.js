@@ -73,3 +73,6 @@ var NO_RESULTS_MSG = "Nothing so far";
 
 var SATELLITE_MAP_VIEW = "Satellite";
 var BASIC_MAP_VIEW = "Map";
+
+var DISPLAY_TITLE = "<b>Water Quality Map</b>";
+var DISPLAY_MSG = "Click to explore";

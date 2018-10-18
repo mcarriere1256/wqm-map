@@ -72,3 +72,6 @@ var NO_RESULTS_MSG = "Ya no hay nada";
 
 var SATELLITE_MAP_VIEW = "Satélite";
 var BASIC_MAP_VIEW = "Mapa";
+
+var DISPLAY_TITLE = "<b>Mapa de Calidad de Agua</b>";
+var DISPLAY_MSG = "Haz clic para explorar";
