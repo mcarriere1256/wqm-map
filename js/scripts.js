@@ -604,19 +604,16 @@ function getBasePopup(i) {
 	date = day + "-" + month + "-" + year;	// concatenate day, month, year into string
 
 	var docPath = AllData[i][DATA_NAMES.docs];				// grab document path from dataset
-	var docLink, f_numb, f_txt, as_numb, as_txt, test_org;	// initialize variables		
-	
-	console.log(AllData[i][DATA_NAMES.fmethod]) 
-	
+	var docLink, f_numb, f_txt, as_numb, as_txt, test_org;	// initialize variables			
 
 	if (!AllData[i][DATA_NAMES.f] | AllData[i][DATA_NAMES.f] == "") {		// if there is no fluoride data
 		f_txt = NO_DATA_MSG;												// load the no data message
 	} else {																// otherwise, load the fluoride value
 		f_txt = "<h3>"+CONTAMINANTS[0]+"</h3>" + "<h4>" + String(AllData[i][DATA_NAMES.f]) + " " + F_UNITS + "</h4>";
 		if (AllData[i][DATA_NAMES.forg] && AllData[i][DATA_NAMES.fmethod]) {
-			f_txt = f_txt + "<h5>" + AllData[i][DATA_NAMES.forg] + ", " + AllData[i][DATA_NAMES.fmethod] + "</h5>";	
+			f_txt = f_txt + "<h5>" + TESTED_BY + AllData[i][DATA_NAMES.forg] + ", " + AllData[i][DATA_NAMES.fmethod] + "</h5>";	
 		} else if (AllData[i][DATA_NAMES.forg]) {
-			f_txt = f_txt + "<h5>" + AllData[i][DATA_NAMES.forg] + "</h5>";
+			f_txt = f_txt + "<h5>" + TESTED_BY + AllData[i][DATA_NAMES.forg] + "</h5>";
 		} else if (AllData[i][DATA_NAMES.fmethod]) {
 			f_txt = f_txt + "<h5>" + AllData[i][DATA_NAMES.fmethod] + "</h5>";
 		}
@@ -627,9 +624,9 @@ function getBasePopup(i) {
 	} else {																// otherwise, load the arsenic value
 		as_txt = "<h3>"+CONTAMINANTS[1]+"</h3>" + "<h4>" + String(AllData[i][DATA_NAMES.as]) + " " + AS_UNITS + "</h4>";
 		if (AllData[i][DATA_NAMES.asorg] && AllData[i][DATA_NAMES.asmethod]) {
-			as_txt = as_txt + "<h5>" + AllData[i][DATA_NAMES.asorg] + ", " + AllData[i][DATA_NAMES.asmethod] + "</h5>";	
+			as_txt = as_txt + "<h5>" + TESTED_BY + AllData[i][DATA_NAMES.asorg] + ", " + AllData[i][DATA_NAMES.asmethod] + "</h5>";	
 		} else if (AllData[i][DATA_NAMES.asorg]) {
-			as_txt = as_txt + "<h5>" + AllData[i][DATA_NAMES.asorg] + "</h5>";
+			as_txt = as_txt + "<h5>" + TESTED_BY + AllData[i][DATA_NAMES.asorg] + "</h5>";
 		} else if (AllData[i][DATA_NAMES.asmethod]) {
 			as_txt = as_txt + "<h5>" + AllData[i][DATA_NAMES.method] + "</h5>";
 		}

@@ -78,3 +78,4 @@ var DISPLAY_MSG = "Haz clic para explorar";
 
 var F_UNITS = "mg/L";
 var AS_UNITS = "&mu;g/L";
+var TESTED_BY = "Probado por: ";
