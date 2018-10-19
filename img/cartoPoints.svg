@@ -17,7 +17,7 @@
    version="1.1"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="cartoPoints.svg"
-   inkscape:export-filename="C:\Users\aaronkrupp\Documents\GitHub\wqm-map\img\red-black.png"
+   inkscape:export-filename="C:\Users\aaronkrupp\Documents\GitHub\wqm-map\img\greenSpider.png"
    inkscape:export-xdpi="74.910812"
    inkscape:export-ydpi="74.910812">
   <defs
@@ -113,7 +113,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.644237"
+     inkscape:zoom="0.3221185"
      inkscape:cx="19.864696"
      inkscape:cy="113.58557"
      inkscape:document-units="px"
@@ -2766,7 +2766,7 @@
        id="circle1502"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#003aff;stroke-width:37.76112747;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <circle
-       style="opacity:1;fill:#ff9400;fill-opacity:1;stroke:none;stroke-width:18.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#009400;fill-opacity:1;stroke:none;stroke-width:18.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path1263"
        cx="105.46875"
        cy="946.89343"
@@ -2780,16 +2780,16 @@
        inkscape:export-xdpi="74.910812"
        inkscape:export-ydpi="74.910812" />
     <circle
+       cy="946.89343"
+       cx="105.46875"
+       id="circle1269"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:31.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       r="67.5" />
+    <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:11.71875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle1267"
        cx="105.46875"
        cy="946.89343"
        r="51.5625" />
-    <circle
-       cy="946.89343"
-       cx="105.46875"
-       id="circle1269"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#eb0017;stroke-width:31.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       r="67.5" />
   </g>
 </svg>
