@@ -113,9 +113,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.16105925"
-     inkscape:cx="1901.3833"
-     inkscape:cy="1337.8546"
+     inkscape:zoom="0.32211851"
+     inkscape:cx="-290.32157"
+     inkscape:cy="96.075576"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2700,7 +2700,7 @@
        r="140.625"
        clip-path="url(#clipPath1381)" />
     <ellipse
-       style="opacity:1;fill:#009400;fill-opacity:1;stroke:none;stroke-width:28.50940323;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#787878;fill-opacity:1;stroke:none;stroke-width:28.50940323;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4136-4-0-1-2"
        cx="141.88907"
        cy="910.47314"
@@ -2717,7 +2717,7 @@
        cy="1286.7372"
        cx="112.5"
        id="circle1385"
-       style="opacity:1;fill:#eb0017;fill-opacity:1;stroke:none;stroke-width:36.00294876;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#ff9400;fill-opacity:1;stroke:none;stroke-width:36.00294876;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        transform="matrix(-1.1579704,0,0,-1.1962906,295.9004,2420.6562)"
        r="140.625" />
     <circle
