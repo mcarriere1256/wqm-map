@@ -110,7 +110,7 @@ var HISTORICAL_BASE_URLS = [["https://caminosdeagua.github.io/wqm-map/img/grey-w
 
 var SMALL_ICON_SIZE = [16,16]; 			// The pixel x and y that the final marker icon image is scaled to. 
 var LARGE_ICON_SIZE = [24,24];			// A larger marker for the base of the spider
-var EXTRA_SMALL_ICON_SIZE = [12,12]		// extra small icon size for base point without historical data	 
+var EXTRA_SMALL_ICON_SIZE = [16,16]		// extra small icon size for base point without historical data	 
 var BASE_ICONS = [0,0,0,0,0];				// Initialize an array to hold all the icons, so the images 
 var SPIDER_ICONS = [0,0,0,0,0];			//	only need to be grabbed once. 
 var BASE_SPIDER_ICONS = [0,0,0,0,0];
