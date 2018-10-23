@@ -1062,7 +1062,6 @@ function detectMobile() {	// Thanks to Michael Zaporozhets for this function: ht
 };
 
 function adjustDisplayForMobile() {
+	alert();
 	closeHelp();
-	
-	
 }
