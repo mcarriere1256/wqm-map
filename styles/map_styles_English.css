@@ -330,14 +330,13 @@ div#map-tile-selector-div:hover .img-button-middle {
 #overlay_title {
 	font-size: 96px;
 	color: white;
-	vertical-align: middle;
 	position: relative;
-	padding: 20px;
+	padding: 0.25em;
 }
 
 #overlay_msg {
-	margin-top: 20px;
 	font-size: 36px;
+	margin-top: 0.75em;
 	color: white;
 	position: relative;
 	width: 100%;
