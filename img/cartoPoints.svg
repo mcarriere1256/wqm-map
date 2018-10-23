@@ -22,6 +22,62 @@
    inkscape:export-ydpi="74.910812">
   <defs
      id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1566"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1560"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1542"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1539"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -105,6 +161,16 @@
          x="-28.125"
          y="1286.7372" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2643">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -5555.5639,2944.6598 -38.9041,-2.2597 -42.2704,-46.7614 13.125,-35.625 -14.0625,-50.625 15.9375,-22.0312 14.0625,-2.8125 15.4687,2.8125 20.625,33.75 90.9375,-10.3125 33.75,69.8437 -9.8437,47.8125 -89.5313,50.625 z"
+         id="path2645"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccccccc" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -113,9 +179,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.3221185"
-     inkscape:cx="19.864696"
-     inkscape:cy="113.58557"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="-2201.0049"
+     inkscape:cy="-2429.7732"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2783,7 +2849,7 @@
        cy="946.89343"
        cx="105.46875"
        id="circle1269"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:31.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#009400;stroke-width:31.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        r="67.5" />
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:11.71875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -2791,5 +2857,481 @@
        cx="105.46875"
        cy="946.89343"
        r="51.5625" />
+    <rect
+       style="opacity:1;fill:#f4f4f4;fill-opacity:1;stroke:none;stroke-width:19.26123238;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4252-7-9"
+       width="2055.1108"
+       height="1352.8809"
+       x="-4687.5"
+       y="2541.2046"
+       rx="93.75"
+       ry="92.302696"
+       inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\howToRead_ESP.png"
+       inkscape:export-xdpi="74.910812"
+       inkscape:export-ydpi="74.910812" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:171.12533569px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.42250657px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-4604.9775"
+       y="2798.6685"
+       id="text1305"><tspan
+         sodipodi:role="line"
+         id="tspan1303"
+         x="-4604.9775"
+         y="2798.6685"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:Cabin;stroke-width:3.42250657px">How to use this map</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:9.375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -4593.75,2825.8141 h 1464.3306"
+       id="path1307"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g2673"
+       transform="translate(-129.7858,382.73693)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2669"
+         d="m -5531.2621,2944.4499 59.6146,-31.1616 -7.4954,-42.3149 -4.338,-19.9389 -17.4928,-25.7247 h -11.3189 l -13.3768,7.7174 -9.7754,-1.029 -19.461,8.1953 -0.3576,-4.8355 -16.9168,6.0028 -24.5567,-40.0183 -13.0969,-0.3638 -9.8226,8.9132 1.8189,13.2787 33.288,55.1161 -21.6463,-0.3638 -10.5503,11.2779 7.2761,15.0978 9.4589,4.5475 55.6617,24.5567 11.4598,17.6444 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         clip-path="url(#clipPath2643)"
+         inkscape:connector-curvature="0"
+         id="path2671"
+         d="m -5536.8139,2954.0348 c -1.443,-1.4539 -4.3832,-5.8417 -6.5339,-9.7506 l -3.9103,-7.1072 -31.1937,-13.8291 c -21.4189,-9.4957 -32.1734,-14.7598 -34.3203,-16.7991 -10.7426,-10.2041 -10.4617,-22.7745 0.6882,-30.802 4.0423,-2.9102 4.7702,-3.099 11.5791,-3.0033 3.9961,0.056 7.2656,-0.011 7.2656,-0.1498 0,-0.1385 -6.8555,-11.997 -15.2344,-26.3521 l -15.2343,-26.1002 v -6.6355 c 0,-5.7782 0.3297,-7.0679 2.5526,-9.9822 4.6907,-6.1499 14.3468,-9.3816 21.7979,-7.2954 6.6013,1.8482 10.0395,5.8307 20.2401,23.4443 5.2257,9.0234 9.5766,16.4881 9.6686,16.5882 0.092,0.1001 3.054,-1.271 6.5824,-3.0469 7.0765,-3.5615 7.9812,-3.7193 12.3232,-2.1493 2.6812,0.9696 3.5116,0.7785 8.1494,-1.875 5.4085,-3.0944 10.6123,-3.8164 13.6833,-1.8985 1.3728,0.8573 2.8963,0.4163 8.0973,-2.3438 7.0386,-3.7352 13.2404,-4.4325 20.3846,-2.2921 5.1514,1.5434 7.9691,5.2332 20.3654,26.6683 l 10.7198,18.5363 2.3058,24.261 c 2.2623,23.8029 2.2723,24.2934 0.5302,25.9793 -2.0057,1.941 -62.8735,36.9882 -65.9158,37.9538 -1.4345,0.4553 -2.6776,-0.091 -4.5908,-2.0191 z m 36.3872,-27.4756 c 13.6641,-7.8396 24.9371,-14.3419 25.0512,-14.4495 0.114,-0.1076 -0.687,-9.4073 -1.78,-20.666 l -1.9874,-20.4703 -10.6784,-18.3848 c -5.8731,-10.1116 -11.3753,-18.9121 -12.2273,-19.5566 -3.1416,-2.3768 -9.4525,-1.4001 -16.6593,2.5781 -7.3806,4.0741 -9.4611,4.4775 -12.2427,2.3736 -2.621,-1.9825 -3.2675,-1.8382 -10.3729,2.3139 -7.3059,4.2693 -8.9515,4.5267 -11.6552,1.823 l -1.9271,-1.9271 -7.4043,4.2708 c -8.084,4.6629 -10.2156,5.1158 -12.3789,2.6302 -0.7854,-0.9024 -6.328,-10.1126 -12.3168,-20.4673 -11.2788,-19.5006 -12.6059,-21.0171 -18.3931,-21.0171 -4.0158,0 -8.4653,4.1315 -8.4653,7.8603 0,2.2005 4.8012,11.2848 17.9172,33.901 9.8545,16.9922 18.2921,31.8718 18.7502,33.0657 1.0053,2.62 -0.284,5.4309 -2.8669,6.2507 -1.0046,0.3189 -5.7512,-0.496 -10.5479,-1.8108 -4.7967,-1.3148 -9.8491,-2.3909 -11.2275,-2.3912 -2.8046,-8e-4 -7.8698,3.8079 -8.7492,6.5787 -0.6659,2.0981 1.6781,7.5228 4.2604,9.8597 0.9782,0.8852 16.2413,8.0491 33.918,15.9198 l 32.1395,14.3102 3.1611,5.4936 c 1.7387,3.0215 3.7656,6.463 4.5042,7.6478 l 1.343,2.1543 2.9958,-1.8184 c 1.6477,-1.0002 14.1755,-8.2327 27.8396,-16.0723 z m -168.2776,-67.5079 -3.6982,-3.7872 14.9599,-14.9819 14.9599,-14.9818 3.7537,3.7537 3.7537,3.7537 -15.0154,15.0154 -15.0154,15.0154 z m -19.2224,-58.5974 v -5.1563 h 20.625 20.625 v 5.1563 5.1562 h -20.625 -20.625 z m 114.375,0 v -5.1563 h 20.625 20.625 v 5.1563 5.1562 h -20.625 -20.625 z m -12.6597,-23.9098 -3.6982,-3.7874 14.7364,-14.7364 14.7364,-14.7364 3.7537,3.7536 3.7536,3.7536 -14.7918,14.7702 -14.7918,14.7701 z m -67.9632,-13.5881 -14.5064,-14.5291 3.5081,-3.5081 3.5081,-3.5081 14.7322,14.7322 14.7322,14.7322 -3.2033,3.305 c -1.7618,1.8178 -3.4421,3.305 -3.7339,3.305 -0.2918,0 -7.0584,-6.5381 -15.037,-14.5291 z m 39.3729,-20.1584 v -20.625 h 4.6875 4.6875 v 20.625 20.625 h -4.6875 -4.6875 z"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.9375" />
+    </g>
+    <g
+       id="g2942"
+       transform="translate(-1055.3569,-185.61553)">
+      <g
+         id="g1486"
+         transform="translate(-6069.4914,3541.4331)">
+        <g
+           transform="matrix(0.72051516,0,0,0.75405585,217.87072,-766.66276)"
+           id="g1460">
+          <ellipse
+             style="opacity:1;fill:#009400;fill-opacity:1;stroke:#003aff;stroke-width:38.58436203;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="ellipse1438"
+             cx="2676.6025"
+             cy="2846.1641"
+             inkscape:export-xdpi="74.910797"
+             inkscape:export-ydpi="74.910797"
+             inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\yellow-black.png"
+             rx="150.70781"
+             ry="150.70782" />
+          <circle
+             style="opacity:1;fill:#009400;fill-opacity:1;stroke:#003aff;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="circle1440"
+             cx="2539.438"
+             cy="2405.9014"
+             inkscape:export-xdpi="74.910812"
+             inkscape:export-ydpi="74.910812"
+             r="117.1779"
+             inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\red-black.png" />
+          <circle
+             style="opacity:1;fill:#ff9400;fill-opacity:1;stroke:#003aff;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="circle1442"
+             cx="2322.1267"
+             cy="1989.9054"
+             inkscape:export-xdpi="74.910812"
+             inkscape:export-ydpi="74.910812"
+             r="117.1779"
+             inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\black-black.png" />
+          <g
+             transform="translate(3629.2642,877.92186)"
+             id="g1452">
+            <circle
+               r="117.1779"
+               inkscape:export-ydpi="74.910812"
+               inkscape:export-xdpi="74.910812"
+               cy="758.07648"
+               cx="-1630"
+               id="circle1444"
+               style="opacity:1;fill:#003aff;fill-opacity:1;stroke:#003aff;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+            <g
+               transform="matrix(0.92090662,0,0,0.93867138,-128.18698,44.935085)"
+               id="g1450">
+              <rect
+                 style="opacity:1;fill:#f0f0f0;fill-opacity:1;stroke:#003aff;stroke-width:0;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                 id="rect1446"
+                 width="45.982807"
+                 height="198.26353"
+                 x="1668.9507"
+                 y="524.33966"
+                 ry="13.254449"
+                 transform="matrix(-0.70418168,0.71001983,-0.70418185,-0.71001966,0,0)" />
+              <rect
+                 style="opacity:1;fill:#f0f0f0;fill-opacity:1;stroke:#003aff;stroke-width:0;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                 id="rect1448"
+                 width="45.982807"
+                 height="198.26353"
+                 x="599.88275"
+                 y="-1789.5809"
+                 ry="13.250318"
+                 transform="matrix(-0.70418185,-0.71001966,0.70418168,-0.71001983,0,0)" />
+            </g>
+          </g>
+          <path
+             style="fill:none;fill-rule:evenodd;stroke:#003aff;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 2073.7709,1716.714 167.6402,180.0579"
+             id="path1454"
+             inkscape:connector-curvature="0" />
+          <path
+             style="fill:none;fill-rule:evenodd;stroke:#003aff;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 2380.5971,2072.9236 112.2508,218.9151"
+             id="path1456"
+             inkscape:connector-curvature="0" />
+          <path
+             style="fill:none;fill-rule:evenodd;stroke:#003aff;stroke-width:27.65723038;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 2570.9078,2499.1044 68.7007,210.9631"
+             id="path1458"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           transform="matrix(0.73786407,0,0,0.78125001,451.13953,168.11525)"
+           id="g1468">
+          <rect
+             style="opacity:0.4;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="rect1462"
+             width="639.51617"
+             height="198.68465"
+             x="1105.1833"
+             y="654.9928"
+             rx="25.879395"
+             ry="30.188679" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="1415.6281"
+             y="797.79755"
+             id="text1466"><tspan
+               sodipodi:role="line"
+               id="tspan1464"
+               x="1415.6281"
+               y="797.79755"
+               style="font-size:120px;line-height:1.25">Feb, 2014</tspan></text>
+        </g>
+        <g
+           transform="matrix(0.73786407,0,0,0.78125001,593.9441,481.66457)"
+           id="g1476">
+          <rect
+             style="opacity:0.4;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="rect1470"
+             width="639.51617"
+             height="198.68465"
+             x="1105.1833"
+             y="654.9928"
+             rx="25.879395"
+             ry="30.188679" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="1415.6281"
+             y="797.79755"
+             id="text1474"><tspan
+               sodipodi:role="line"
+               id="tspan1472"
+               x="1415.6281"
+               y="797.79755"
+               style="font-size:120px;line-height:1.25">Jun, 2015</tspan></text>
+        </g>
+        <g
+           transform="matrix(0.73786407,0,0,0.78125001,680.86863,792.10932)"
+           id="g1484">
+          <rect
+             style="opacity:0.4;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="rect1478"
+             width="639.51617"
+             height="198.68465"
+             x="1105.1833"
+             y="654.9928"
+             rx="25.879395"
+             ry="30.188679" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="1415.6281"
+             y="797.79755"
+             id="text1482"><tspan
+               sodipodi:role="line"
+               id="tspan1480"
+               x="1415.6281"
+               y="797.79755"
+               style="font-size:120px;line-height:1.25">Mar, 2017</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g2695"
+         transform="translate(1585.3069,1780.9479)">
+        <path
+           inkscape:connector-curvature="0"
+           id="path2691"
+           d="m -5531.2621,2944.4499 59.6146,-31.1616 -7.4954,-42.3149 -4.338,-19.9389 -17.4928,-25.7247 h -11.3189 l -13.3768,7.7174 -9.7754,-1.029 -19.461,8.1953 -0.3576,-4.8355 -16.9168,6.0028 -24.5567,-40.0183 -13.0969,-0.3638 -9.8226,8.9132 1.8189,13.2787 33.288,55.1161 -21.6463,-0.3638 -10.5503,11.2779 7.2761,15.0978 9.4589,4.5475 55.6617,24.5567 11.4598,17.6444 z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <path
+           clip-path="url(#clipPath2643)"
+           inkscape:connector-curvature="0"
+           id="path2693"
+           d="m -5536.8139,2954.0348 c -1.443,-1.4539 -4.3832,-5.8417 -6.5339,-9.7506 l -3.9103,-7.1072 -31.1937,-13.8291 c -21.4189,-9.4957 -32.1734,-14.7598 -34.3203,-16.7991 -10.7426,-10.2041 -10.4617,-22.7745 0.6882,-30.802 4.0423,-2.9102 4.7702,-3.099 11.5791,-3.0033 3.9961,0.056 7.2656,-0.011 7.2656,-0.1498 0,-0.1385 -6.8555,-11.997 -15.2344,-26.3521 l -15.2343,-26.1002 v -6.6355 c 0,-5.7782 0.3297,-7.0679 2.5526,-9.9822 4.6907,-6.1499 14.3468,-9.3816 21.7979,-7.2954 6.6013,1.8482 10.0395,5.8307 20.2401,23.4443 5.2257,9.0234 9.5766,16.4881 9.6686,16.5882 0.092,0.1001 3.054,-1.271 6.5824,-3.0469 7.0765,-3.5615 7.9812,-3.7193 12.3232,-2.1493 2.6812,0.9696 3.5116,0.7785 8.1494,-1.875 5.4085,-3.0944 10.6123,-3.8164 13.6833,-1.8985 1.3728,0.8573 2.8963,0.4163 8.0973,-2.3438 7.0386,-3.7352 13.2404,-4.4325 20.3846,-2.2921 5.1514,1.5434 7.9691,5.2332 20.3654,26.6683 l 10.7198,18.5363 2.3058,24.261 c 2.2623,23.8029 2.2723,24.2934 0.5302,25.9793 -2.0057,1.941 -62.8735,36.9882 -65.9158,37.9538 -1.4345,0.4553 -2.6776,-0.091 -4.5908,-2.0191 z m 36.3872,-27.4756 c 13.6641,-7.8396 24.9371,-14.3419 25.0512,-14.4495 0.114,-0.1076 -0.687,-9.4073 -1.78,-20.666 l -1.9874,-20.4703 -10.6784,-18.3848 c -5.8731,-10.1116 -11.3753,-18.9121 -12.2273,-19.5566 -3.1416,-2.3768 -9.4525,-1.4001 -16.6593,2.5781 -7.3806,4.0741 -9.4611,4.4775 -12.2427,2.3736 -2.621,-1.9825 -3.2675,-1.8382 -10.3729,2.3139 -7.3059,4.2693 -8.9515,4.5267 -11.6552,1.823 l -1.9271,-1.9271 -7.4043,4.2708 c -8.084,4.6629 -10.2156,5.1158 -12.3789,2.6302 -0.7854,-0.9024 -6.328,-10.1126 -12.3168,-20.4673 -11.2788,-19.5006 -12.6059,-21.0171 -18.3931,-21.0171 -4.0158,0 -8.4653,4.1315 -8.4653,7.8603 0,2.2005 4.8012,11.2848 17.9172,33.901 9.8545,16.9922 18.2921,31.8718 18.7502,33.0657 1.0053,2.62 -0.284,5.4309 -2.8669,6.2507 -1.0046,0.3189 -5.7512,-0.496 -10.5479,-1.8108 -4.7967,-1.3148 -9.8491,-2.3909 -11.2275,-2.3912 -2.8046,-8e-4 -7.8698,3.8079 -8.7492,6.5787 -0.6659,2.0981 1.6781,7.5228 4.2604,9.8597 0.9782,0.8852 16.2413,8.0491 33.918,15.9198 l 32.1395,14.3102 3.1611,5.4936 c 1.7387,3.0215 3.7656,6.463 4.5042,7.6478 l 1.343,2.1543 2.9958,-1.8184 c 1.6477,-1.0002 14.1755,-8.2327 27.8396,-16.0723 z m -168.2776,-67.5079 -3.6982,-3.7872 14.9599,-14.9819 14.9599,-14.9818 3.7537,3.7537 3.7537,3.7537 -15.0154,15.0154 -15.0154,15.0154 z m -19.2224,-58.5974 v -5.1563 h 20.625 20.625 v 5.1563 5.1562 h -20.625 -20.625 z m 114.375,0 v -5.1563 h 20.625 20.625 v 5.1563 5.1562 h -20.625 -20.625 z m -12.6597,-23.9098 -3.6982,-3.7874 14.7364,-14.7364 14.7364,-14.7364 3.7537,3.7536 3.7536,3.7536 -14.7918,14.7702 -14.7918,14.7701 z m -67.9632,-13.5881 -14.5064,-14.5291 3.5081,-3.5081 3.5081,-3.5081 14.7322,14.7322 14.7322,14.7322 -3.2033,3.305 c -1.7618,1.8178 -3.4421,3.305 -3.7339,3.305 -0.2918,0 -7.0584,-6.5381 -15.037,-14.5291 z m 39.3729,-20.1584 v -20.625 h 4.6875 4.6875 v 20.625 20.625 h -4.6875 -4.6875 z"
+           style="fill:#000000;fill-opacity:1;stroke-width:0.9375" />
+      </g>
+    </g>
+    <g
+       id="g3331"
+       transform="translate(4.8992927e-8,18.75)">
+      <g
+         id="g3310">
+        <circle
+           inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\green-black.png"
+           r="117.1779"
+           inkscape:export-ydpi="74.910797"
+           inkscape:export-xdpi="74.910797"
+           cy="3071.052"
+           cx="-4461.5723"
+           id="circle1309"
+           style="opacity:1;fill:#787878;fill-opacity:1;stroke:#ffffff;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text3140"
+           y="3106.3066"
+           x="-4287.0371"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:138.79782104px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.77595639px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:Cabin;stroke-width:2.77595639px"
+             y="3106.3066"
+             x="-4287.0371"
+             id="tspan3138"
+             sodipodi:role="line">water sample site</tspan></text>
+      </g>
+      <g
+         transform="translate(0,-37.5)"
+         id="g3305">
+        <g
+           id="g1378"
+           transform="translate(246.64644,-84.677739)">
+          <ellipse
+             ry="127.87144"
+             rx="130.64577"
+             style="opacity:1;fill:#787878;fill-opacity:1;stroke:none;stroke-width:23.50021172;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="circle1366"
+             cx="-4706.9399"
+             cy="3506.2307" />
+          <ellipse
+             ry="116.24677"
+             rx="118.76888"
+             cy="3506.2307"
+             cx="-4706.9399"
+             id="circle1368"
+             style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:29.37526321;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             inkscape:export-xdpi="74.910812"
+             inkscape:export-ydpi="74.910812" />
+          <ellipse
+             ry="83.69767"
+             rx="85.513588"
+             cy="3506.2307"
+             cx="-4706.9399"
+             id="circle1370"
+             style="opacity:1;fill:none;fill-opacity:1;stroke:#787878;stroke-width:39.95035934;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <ellipse
+             ry="63.935722"
+             rx="65.322884"
+             style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:14.68763161;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="circle1372"
+             cx="-4706.9399"
+             cy="3506.2307" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:138.79782104px;line-height:100%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.77595639px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-4287.0371"
+           y="3402.2266"
+           id="text3144"><tspan
+             sodipodi:role="line"
+             id="tspan3142"
+             x="-4287.0371"
+             y="3402.2266"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:Cabin;stroke-width:2.77595639px">water sample site</tspan><tspan
+             sodipodi:role="line"
+             x="-4287.0371"
+             y="3543.5898"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:Cabin;stroke-width:2.77595639px"
+             id="tspan3146">with historic data</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3316"
+       transform="translate(0,-18.75)">
+      <rect
+         ry="14.0625"
+         rx="14.0625"
+         y="3752.7803"
+         x="-4556.25"
+         height="28.125"
+         width="140.625"
+         id="rect3240"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:18.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:18.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect3244"
+         width="140.625"
+         height="28.125"
+         x="-2904.2642"
+         y="3752.7803"
+         rx="14.0625"
+         ry="14.0625" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:138.79782104px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.77595639px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="-4288.4224"
+         y="3803.1062"
+         id="text3253"><tspan
+           sodipodi:role="line"
+           id="tspan3251"
+           x="-4288.4224"
+           y="3803.1062"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:Cabin;stroke-width:2.77595639px">click points to see data</tspan></text>
+    </g>
+    <rect
+       inkscape:export-ydpi="74.910812"
+       inkscape:export-xdpi="74.910812"
+       inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\howToRead_ESP.png"
+       ry="93.75"
+       rx="93.75"
+       y="2519.9915"
+       x="-2497.2368"
+       height="1374.094"
+       width="2055.1108"
+       id="rect3383"
+       style="opacity:1;fill:#f4f4f4;fill-opacity:1;stroke:none;stroke-width:19.41165352;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text3387"
+       y="2777.4553"
+       x="-2414.7144"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:171.12533569px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.42250657px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:Cabin;stroke-width:3.42250657px"
+         y="2777.4553"
+         x="-2414.7144"
+         id="tspan3385"
+         sodipodi:role="line">¿Cómo usar este mapa?</tspan></text>
+    <g
+       transform="translate(2190.2633,-2.463203)"
+       id="g3417">
+      <g
+         id="g3397">
+        <circle
+           style="opacity:1;fill:#787878;fill-opacity:1;stroke:#ffffff;stroke-width:30;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle3391"
+           cx="-4461.5723"
+           cy="3071.052"
+           inkscape:export-xdpi="74.910797"
+           inkscape:export-ydpi="74.910797"
+           r="117.1779"
+           inkscape:export-filename="C:\Users\aaronkrupp\Dropbox\Mapping and Data Set\2. Online Images\Water Quality Mapping\green-black.png" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:138.79782104px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.77595639px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-4287.0371"
+           y="3106.3066"
+           id="text3395"><tspan
+             sodipodi:role="line"
+             id="tspan3393"
+             x="-4287.0371"
+             y="3106.3066"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:Cabin;stroke-width:2.77595639px">sitio de muestra de agua</tspan></text>
+      </g>
+      <g
+         id="g3415"
+         transform="translate(0,-37.5)">
+        <g
+           transform="translate(246.64644,-84.677739)"
+           id="g3407">
+          <ellipse
+             cy="3506.2307"
+             cx="-4706.9399"
+             id="ellipse3399"
+             style="opacity:1;fill:#787878;fill-opacity:1;stroke:none;stroke-width:23.50021172;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             rx="130.64577"
+             ry="127.87144" />
+          <ellipse
+             inkscape:export-ydpi="74.910812"
+             inkscape:export-xdpi="74.910812"
+             style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:29.37526321;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="ellipse3401"
+             cx="-4706.9399"
+             cy="3506.2307"
+             rx="118.76888"
+             ry="116.24677" />
+          <ellipse
+             style="opacity:1;fill:none;fill-opacity:1;stroke:#787878;stroke-width:39.95035934;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="ellipse3403"
+             cx="-4706.9399"
+             cy="3506.2307"
+             rx="85.513588"
+             ry="83.69767" />
+          <ellipse
+             cy="3506.2307"
+             cx="-4706.9399"
+             id="ellipse3405"
+             style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:14.68763161;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             rx="65.322884"
+             ry="63.935722" />
+        </g>
+        <text
+           id="text3413"
+           y="3402.2266"
+           x="-4287.0371"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:138.79782104px;line-height:100%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.77595639px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:Cabin;stroke-width:2.77595639px"
+             y="3402.2266"
+             x="-4287.0371"
+             id="tspan3409"
+             sodipodi:role="line">sitio de muestras de agua</tspan><tspan
+             id="tspan3411"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:Cabin;stroke-width:2.77595639px"
+             y="3543.5898"
+             x="-4287.0371"
+             sodipodi:role="line">con datos anteriores</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:9.375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M -2332.2367,2804.6009 H -721.65614"
+       id="path3419"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g3439">
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:18.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect3421"
+         width="140.625"
+         height="28.125"
+         x="-2365.9868"
+         y="3731.5671"
+         rx="14.0625"
+         ry="14.0625" />
+      <rect
+         ry="14.0625"
+         rx="14.0625"
+         y="3731.5671"
+         x="-714.00085"
+         height="28.125"
+         width="140.625"
+         id="rect3423"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:18.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text3427"
+         y="3781.8931"
+         x="-2094.4766"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:138.79782104px;line-height:125%;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.77595639px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:Cabin;stroke-width:2.77595639px"
+           y="3781.8931"
+           x="-2094.4766"
+           id="tspan3425"
+           sodipodi:role="line">haz clic para ver datos</tspan></text>
+    </g>
   </g>
 </svg>

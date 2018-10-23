@@ -34,7 +34,7 @@ var DATE = "Date";
 var TEST_ORG = "Testing organization";					
 var SEE_MORE = "Official report(s)";						// This message gets displayed as a link to show 
 															//	more info about the given datapoint
-var CARTO_ATTRIBUTION = 'Tiles from <a href="http://www.mapbox.com">Mapbox</a> with data from <a href="https://www.openstreetmap.org">OSM</a> | Data hosting on <a href="http://drive.google.com">Google Sheets</a> | Legends by <a href="http://www.carto.com">Carto</a> | <a href="https://caminosdeagua.org/en/donate">Donate</a>';
+var ATTRIBUTION = 'Tiles from <a href="http://www.mapbox.com">Mapbox</a> with data from <a href="https://www.openstreetmap.org">OSM</a> | Data hosting on <a href="http://drive.google.com">Google Sheets</a> | Legends by <a href="http://www.carto.com">Carto</a> | <a href="https://caminosdeagua.org/en/donate">Donate</a>';
 
 var NO_DATA_MSG = "";
 

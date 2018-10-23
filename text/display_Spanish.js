@@ -34,7 +34,7 @@ var DATE = "Fecha";
 var TEST_ORG = "Institución";
 var SEE_MORE = "Reporte(s) Oficial(es)";	// This message gets displayed as a link to show 
 											//	more info about the given datapoint
-var CARTO_ATTRIBUTION = 'Data hosting: <a href="http://www.dropbox.com">Dropbox</a> legends by <a href="http://www.carto.com">CartoDB</a>';
+var ATTRIBUTION = 'Mapa por <a href="http://www.mapbox.com">Mapbox</a> con datos de <a href="https://www.openstreetmap.org">OSM</a> | Almacenamiento de datos con <a href="http://drive.google.com">Google Sheets</a> | Leyendas por <a href="http://www.carto.com">Carto</a> | <a href="https://caminosdeagua.org/en/donate">Donar</a>';
 
 var NO_DATA_MSG = "";
 

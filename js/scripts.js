@@ -119,7 +119,7 @@ function initMap() {
 		attributionControl: true,
 		fullscreenControl:true
 	});	
-	map.attributionControl.setPrefix(CARTO_ATTRIBUTION);
+	map.attributionControl.setPrefix(ATTRIBUTION);
 	map.on('zoomstart', function() { 	// When the map zooms,
 		if (spiderOpen) {				//	if some points are spidered open,
 			closeSpider();				//	close them,
@@ -265,17 +265,8 @@ function plotData(contaminantToShow) {
 					var border = [false, 0, 0]; 							// use the normal white border on the base points w/o history
 					plotMarker("base", contaminantToShow, i, border, dup_indices);
 				} else if (presentIn2dArray(dup_indices, i)[1][1] == 0) {	// plot the base data with historical data
-					var row = presentIn2dArray(dup_indices, i)[1][0];		// get row of dup_indices that has all the duplicate indices for the current point
-					var baseBin = getBin(i, BINS[contaminantToShow]);		// define the base bin as the bin of the base point
-					var maxBin = 0;											// init maxBin to hold the maximum bin of the spider
-					var newBin;												// init a placeholder called newBin
-					for (var spideringPts = 0; spideringPts<dup_indices[row].length; spideringPts++) {	// loop through all the duplicate points`
-						newBin = getBin(dup_indices[row][spideringPts], BINS[contaminantToShow]);	// set newBin to the bin of the historical points
-						if (newBin > maxBin) {								// if a historical point is higher than the previously registered max bin,
-							maxBin = newBin;								//	set the maxBin to the bin of that new point, this way, maxBin ends up
-						}													//	holding the maximum bin of all the historical data, including the base point. 
-					}
-					var border = [true, baseBin, maxBin];					// when plotting the point show the border based on the max bin of the historical data
+					var bin = getBin(i, BINS[contaminantToShow]);			// define the base bin as the bin of the base point
+					var border = [true, bin, bin];							// when plotting the point show the same border as the base point
 					plotMarker("preSpider", contaminantToShow, i, border, dup_indices);
 				} else {
 					// Do stuff to the historic points, if you'd like, here. 
