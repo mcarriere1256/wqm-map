@@ -177,15 +177,6 @@ div.cartodb-legend {
 	border-radius: 100px;
 }
 
-#close_arrow {
-	display: inline-block;
-	z-index: 30001;
-	position: absolute;
-	right: 38px;
-	top: 1%;
-	height: 10%;
-}
-
 #search{
 	width: 180px;
 	display: inline-block;

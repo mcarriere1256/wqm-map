@@ -156,7 +156,7 @@ div.cartodb-legend {
 	position: absolute;
 	right: 15px;
 	top: 4%;
-	height: 90%;
+	height: 200px;
 	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);
 	border-radius: 5%
 	
@@ -188,14 +188,6 @@ div.cartodb-legend {
 	border-radius: 100px;
 }
 
-#close_arrow {
-	display: inline-block;
-	z-index: 30001;
-	position: absolute;
-	right: 38px;
-	top: 1%;
-	height: 10%;
-}
 #search{
 	width: 180px;
 	display: inline-block;
@@ -338,17 +330,17 @@ div#map-tile-selector-div:hover .img-button-middle {
 #overlay_title {
 	font-size: 96px;
 	color: white;
-	vertical-align: middle;
 	position: relative;
-	padding: 20px;
+	padding: 0.25em;
 }
 
 #overlay_msg {
-	margin-top: 20px;
 	font-size: 36px;
+	margin-top: 0.75em;
 	color: white;
 	position: relative;
 	width: 100%;
 }
+
 
 
