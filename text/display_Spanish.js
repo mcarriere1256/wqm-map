@@ -53,7 +53,6 @@ var RISK_TITLE = "<big>Nivel de peligro total</big><br>Limites de OMS: Fluoruro 
 var OLD_DATA_MSG = "<em>\xa0\xa0\xa0\xa0\xa0\xa0DATOS ANTERIORES</em><br>";
 
 var LEGEND_URL = "img/howToRead_ESP.png";	//WILL EVENTUALLY BE: "https://caminosdeagua.github.io/cuenca-de-la-independencia-punto-mapa-espanol/img/howToRead_ESP.png";
-var ARROW_URL = "img/closeArrowESP.png";
 
 var PRINTING_SUMMARY_MSG = "\n-----***-----***-----***-----***-----***-----***-----\nGreat job, you hacker you! Enjoy the summary...\n-----***-----***-----***-----***-----***-----***-----\n "
 var TOTAL_SITES_MSG = "Distinct sites (wells, taps, pipa, etc.) sampled at least once:";

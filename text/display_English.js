@@ -54,7 +54,6 @@ var RISK_TITLE = "<big>Water Risk Level</big> <br>WHO Limits: Fluoride = 1.5 mg/
 var OLD_DATA_MSG = "<em>\xa0\xa0\xa0\xa0\xa0\xa0\xa0HISTORICAL DATA</em><br>";
 
 var LEGEND_URL = "https://caminosdeagua.github.io/wqm-map/img/howToRead_ENG.png";
-var ARROW_URL = "https://caminosdeagua.github.io/wqm-map/img/closeArrowENG.png";
 
 var PRINTING_SUMMARY_MSG = "\n-----***-----***-----***-----***-----***-----***-----\nGreat job, you hacker you! Enjoy the summary...\n-----***-----***-----***-----***-----***-----***-----\n "
 var TOTAL_SITES_MSG = "Distinct sites (wells, taps, pipa, etc.) sampled at least once:";
