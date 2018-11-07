@@ -996,7 +996,6 @@ function blurred(el) {
 
 
 function loadNewSearchResults(key) {
-	console.log("hi")
 	var dd = document.getElementById("search-dropdown");
 	if (key == "") {					// if there is no text entered
 		document.getElementById('search-dropdown').style.display = "none";
@@ -1015,7 +1014,7 @@ function loadNewSearchResults(key) {
 		if (res.length != 0) { 				// if some results have been found...
 			
 			for(var i=0; i<res.length; i++) {
-				console.log(res[i]);
+				//console.log(res[i]);
 				var lat = res[i].doc.latitude;
 				var lng = res[i].doc.longitude;
 				if (lat && lng) {
