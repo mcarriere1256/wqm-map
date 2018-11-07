@@ -221,7 +221,7 @@ div.cartodb-legend {
 	background-color: white;
 	display: inline-block;
 	z-index: 100;
-	position:fixed;
+	position: fixed;
 	left: 176px;
 	padding-top: 20px;
 	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);

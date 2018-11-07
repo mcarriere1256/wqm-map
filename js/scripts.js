@@ -102,8 +102,10 @@ function init() {
 	if (detectMobile()) {adjustDisplayForMobile();}
 	initMap(); 					// Initialize and display the map object
 	applyBaseMap(MAPBOX_IDS["default"]); 			// Apply the base tiles to the map
-	loadData(TOTAL_RISK); 	// Load the data for Fluoride (the default contaminant)  // loadAndPlotData(...)
-}								// 	then plot the base markers on the map.	
+	loadData(TOTAL_RISK); 	// Load the data for Fluoride (the default contaminant)  
+	
+	
+}								
 
 ////////////////////////////////////////////////////////////////////////////////
 ////					  	initMap FUNCTION	 						  	////
@@ -549,15 +551,15 @@ function openSpider(data, i, contam) {
 ////////////////////////////////////////////////////////////////////////////////
 
 window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn')) { 				// if the user's clikced the dropdown button
+	if (!event.target.matches('.dropbtn')) { 				// if the user's clikced something other than the dropdown button
 		var dropdowns = document.getElementsByClassName("dropdown-content");
 		for (var i=0; i<dropdowns.length; i++) { 		// loop through dropdown menu
 			var openDropdown = dropdowns[i]; 				// if the dropdown menu is showing
 			if (openDropdown.classList.contains('show')) { 	// remove show (so that it hides)
 				openDropdown.classList.remove('show');
-			};
-		};
-	};
+			}
+		}
+	} 
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -959,8 +961,8 @@ function easterEggGo() {
 
 function setupSearch() {
 	SEARCH_INDEX = elasticlunr(function () {
-		this.addField('community_name');
-		this.setRef('community_name');
+		this.addField('name');
+		this.setRef(DATA_NAMES.name);
 	});
 	for(var i=0; i<AllData.length; i++) {
 		SEARCH_INDEX.addDoc(AllData[i]);
@@ -994,6 +996,7 @@ function blurred(el) {
 
 
 function loadNewSearchResults(key) {
+	console.log("hi")
 	var dd = document.getElementById("search-dropdown");
 	if (key == "") {					// if there is no text entered
 		document.getElementById('search-dropdown').style.display = "none";
