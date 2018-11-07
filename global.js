@@ -16,6 +16,14 @@ var DATA_NAMES = {							// And store the titles of the columns
 	site_type: "Type"
 };
 
+base = { 								// initialize the global variable base.
+	Markers: [],						// to hold the leaflet marker objects
+	Popups: [],							// to hold the popup object
+	Bins: [],							// to hold the bin value, used for coloring the points
+	Wells: [],			
+	Index: []						
+};
+
 var ORGS = []; 							// To hold a list of all the organizations who perform sampling/testing
 
 var FLUORIDE = 0; 						// Initialize constants for each contaminant to use as 

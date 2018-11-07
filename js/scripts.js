@@ -198,13 +198,6 @@ numCols = dataTable.getNumberOfColumns();
 }
 
 function plotData(contaminantToShow) {
-	base = { 							// reinitialize the global variable base.
-		Markers: [],					// to hold the leaflet marker objects
-		Popups: [],						// to hold the popup object
-		Bins: [],						// to hold the bin value, used for coloring the points
-		Wells: [],			
-		Index: []						
-	};
 	if (spiderOpen) {					// if there's a spider open, 
 		closeSpider(); 					//	close the spider,
 		spiderOpen = true;				//	but store that the spider is still open. 
@@ -214,23 +207,28 @@ function plotData(contaminantToShow) {
 	} else { 							// if the currently-displayed contaminant is
 										//	selected again, don't do anything! Otherwise:
 		if (activeContaminant != NOT_PRESENT) { 	// if there's already a layer being displayed
-		
-			for (l=1; l<base.Markers.length; l++) {
+			for (var l=0; l<base.Markers.length; l++) {
 				if (base.Markers[l]){ 	// if a marker exists,
 					map.removeLayer(base.Markers[l]);
 				};						// clear it, to wipe the map clean. 
 			};
-			hideLegend();				// and then hide the legend, too. 
+			hideLegend();				// and then hide the legend. 
+
 		};
 		activeContaminant = contaminantToShow;  // Store the contaminant as a global
 		adjustDDText(contaminantToShow); 		// Adjust the text in the drop down menu to display the current contaminant
 		showLegend(contaminantToShow);			// And display the appropriate legend
 	
+		base = { 								// reinitialize the global variable base.
+			Markers: [],						// to hold the leaflet marker objects
+			Popups: [],							// to hold the popup object
+			Bins: [],							// to hold the bin value, used for coloring the points
+			Wells: [],			
+			Index: []						
+		};
+		
 		for (i=0; i<AllData.length; i++) { // Loop through all the rows of the AllData
-			if (AllData[i][DATA_NAMES.lat] == null | AllData[i][DATA_NAMES.lat] == "" |	//	ignore the point!
-			AllData[i][DATA_NAMES.lng] == null | AllData[i][DATA_NAMES.lng] == "" |
-			AllData[i][DATA_NAMES.date] == NOT_PRESENT) {
-			} else { 						// Otherwise, check for duplicate latLngs, then plot the base markers
+			if ( pointIsValid(i)) {
 				var worstBin
 				if (!presentIn2dArray(dup_indices, i)[0]) {
 					var matches = 0;		// If the current marker is known to be a duplicate, skip it. 
@@ -243,9 +241,11 @@ function plotData(contaminantToShow) {
 											// while there are no matches, and we're still in the AllData array 
 											// Check to see if the current element (i) has the same latLngs
 											//	as each subsequent datapoint (j).
+						
 						if (Math.abs(AllData[i][DATA_NAMES.lat]-AllData[j][DATA_NAMES.lat])<EPS 
-						& Math.abs(AllData[i][DATA_NAMES.lng]-AllData[j][DATA_NAMES.lng])<EPS &
-						AllData[i][DATA_NAMES.date] != NOT_PRESENT ){
+						&& Math.abs(AllData[i][DATA_NAMES.lng]-AllData[j][DATA_NAMES.lng])<EPS &&
+						pointIsValid(j) ){
+							
 							matches++; 		// If so, increment matches to break out of the while-loop
 							dup_indices.push([i,j]); 
 						};					// And save the current index (i) and the 1st duplicate, (j). 			
@@ -256,7 +256,7 @@ function plotData(contaminantToShow) {
 										// 	at index (k), save it after (i) and (j) as [i,j,k1,k2,k3,...]
 							if (Math.abs(AllData[i][DATA_NAMES.lat]-AllData[k][DATA_NAMES.lat])<EPS 
 							& Math.abs(AllData[i][DATA_NAMES.lng]-AllData[k][DATA_NAMES.lng])<EPS &
-							AllData[k][DATA_NAMES.date] != NOT_PRESENT ){
+							pointIsValid(k) ){
 								dup_indices[dup_indices.length-1].push(k);
 							};
 						};
@@ -278,7 +278,9 @@ function plotData(contaminantToShow) {
 		}
 	}
 	if (spiderOpen) { 											// If the spider was open already and closed,
-		openSpider(AllData, spiderOpenIndex, contaminantToShow);// 	reopen it here, now colored by the new contaminant
+		if (presentIn2dArray(dup_indices, i)[0]) {
+			openSpider(AllData, spiderOpenIndex, contaminantToShow);// 	reopen it here, now colored by the new contaminant
+		}
 	};
 }
 //// TESTING GOOGLE SHEETS DATA IMPORT!!!! /////////
@@ -1067,4 +1069,24 @@ function adjustDisplayForMobile() {
 	closeHelp();
 	console.log(document.getElementById("overlay_title").style.fontSize = "36px");
 	console.log(document.getElementById("overlay_msg").style.fontSize = "22px");
+}
+
+function pointIsValid(i) {		//checks if that points at AllData[i] is valid. If so, returns true. Else, returns false.
+	if( AllData[i][DATA_NAMES.lat] == null | AllData[i][DATA_NAMES.lat] == "" |	//	make sure, for a given point, that the
+		AllData[i][DATA_NAMES.lng] == null | AllData[i][DATA_NAMES.lng] == "" |			//	lat, lng, and date are all present
+		AllData[i][DATA_NAMES.date] == NOT_PRESENT ) {
+		return false
+	} 
+	if( activeContaminant == FLUORIDE &&				// if we're looking at fluoride points
+		(AllData[i][DATA_NAMES.f] == null | AllData[i][DATA_NAMES.f] == "")) {	// only show points who have a fluoride value
+		return false
+	} else if ( activeContaminant == ARSENIC &&				// if we're only looking at arsenic points
+		(AllData[i][DATA_NAMES.as] == null | AllData[i][DATA_NAMES.as] == "") ) {	// only show points who have an arsenic value
+		return false
+	} else if ( activeContaminant == TOTAL_RISK && 			// if we're showing total risk, only show points
+	( 	(AllData[i][DATA_NAMES.f] == null | AllData[i][DATA_NAMES.f] == "") &&		// that have either an arsenic or fluoride value
+		(AllData[i][DATA_NAMES.as] == null | AllData[i][DATA_NAMES.as] == "") )) {
+		return false	
+	} 
+	return true	
 }
