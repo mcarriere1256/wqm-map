@@ -27,8 +27,22 @@ If you are not a member of the Caminos de Agua team and/or cannot commit to this
 The data is stored in a public, read-only Google Sheet, called "WQM Map PUBLIC" stored in Caminos de Agua's Google Drive. You can access these data at:
 https://docs.google.com/spreadsheets/d/1pUrg48cqrHdYrcsGww0g0pAcCe65lU9ff0EKWHYlJnc/edit?usp=sharing
 
-In "WQM Map PUBLIC," the first column must be the date and the second column must be the site name (household, colonia, community, well name, etc.)
+A few notes:
+1. In "WQM Map PUBLIC," the column A **must** be date column B **must** be the site name (household, colonia, community, well name, etc.). The rows do not need to be in any particular order.
 
-DO NOT change the column names, as the map reads the spreadsheet based on specific column headers. The data is read in through Google's Visualization API. 
+2. DO NOT change the column names, as the map reads the spreadsheet based on specific column headers. The data is read in through Google's Visualization API. 
 
-In the 
+3. Dates need to be in 'date' format in Google Sheets, but it doesn't matter how they are displayed. 
+
+## License
+This work is shared under a Creative Commons 4.0 attribution, non-commercial license. It is also covered under [The MIT License](https://opensource.org/licenses/MIT). 
+
+To give propper attribution, please cite:
+
+Creative Commons License
+[Water Quality Map | Caminos de Agua](https://caminosdeagua.github.io/wqm-map) by [Caminos de Agua](https://www.caminosdeagua.org) is distributed under a [4.0 International Atribution-NoCommercial Creative Commons License](https://creativecommons.org/share-your-work/licensing-types-examples/).
+
+## Contact
+With any questions please contact us on the contact page available at caminosdeagua.org.
+
+
