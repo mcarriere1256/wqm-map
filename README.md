@@ -1,6 +1,6 @@
 # wqm-map
-Last updated: 8-Nov-2018
-Written by: ask53 | caminosdeagua
+Last updated: 8-Nov-2018 
+Written by: ask53 | caminosdeagua 
 Contact: www.caminosdeagua.org/en/contact 
 
 ## What is the map?
