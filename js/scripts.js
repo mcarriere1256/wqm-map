@@ -133,8 +133,7 @@ function initMap() {
 		if (spiderOpen) {				// 	if there were previously spidered points open,
 			openSpider(AllData, spiderOpenIndex, activeContaminant);
 		};								// 	re-open the same points at the current zoom level. 
-	});
-	
+	});	
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -148,10 +147,15 @@ function applyBaseMap(id) {
 	if (TILE_LAYER) {							// If there is a tile layer
 		var old_layer = TILE_LAYER;
 	}
+	
+	
 	L.mapbox.accessToken = MAPBOX_ACCESS_TOKEN; // These lines are to use Mapbox basemaps
 	TILE_LAYER = new L.mapbox.tileLayer(id);	// create the new layer
 	map.addLayer(TILE_LAYER, {});				// add the new layer
 	CURRENT_TILE_ID = id;						// store the id of the current (new) layer
+	
+	
+	
 	if (old_layer) {							// if there was an old layer...
 		map.removeLayer(old_layer);				// 	remove the old layer from underneath
 	}
@@ -498,7 +502,7 @@ function openSpider(data, i, contam) {
 			features.push(L.polyline([shiftedLatLng, prevShiftedLatLng],{
 				color: POLY_COLOR,							// push a polyline connecting the current
 				weight: POLY_WEIGHT,									// 	point and the previous one onto the 
-				opacity: POLY_OPACITY									// 	featurs array
+				opacity: POLY_OPACITY,									// 	featurs array
 			}));
 		};
 		if (j==0) {						// if we're dealing with the base point
