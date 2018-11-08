@@ -1,6 +1,6 @@
 /* adds style the html body and map div objects */
 html, body {width:100%; height:100%; padding: 0; margin: 0; font: 12px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;}
-#WaterMap { width: 100%; height:100%; background: teal;}
+#WaterMap { width: 100%; height:100%; background: #273386;}
 
 h1, h2, h3, h4, h5, h6 {
 	--return-height: 8px;
