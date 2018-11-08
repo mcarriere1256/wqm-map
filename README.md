@@ -19,6 +19,16 @@ To embed this page on a website, simply use an iframe with the following code, a
 
 To use the map in another language, just add a hash. So ...io/wqm-map#es will display in spanish while ...io/wqm-map#en will display in English. Default (no hash) displays in English. Currently only available in English & Spanish.
 
-## Where is the data?
+## How it works | how to update
+If you are not a member of the Caminos de Agua team and/or cannot commit to this repo, ignore the rest of this page and enjoy perusing or using the map! To use, please see the license information below. 
 
-The data 
+*The data for this project was originally stored in a JSON in this repository. THAT IS NOW OUTDATED. If you have any instructions for updating the map that involve a JSON, javascript, or an excel file, please ignore them. These are the most up-to-date instructions (as of 8-Nov-2018).*
+
+The data is stored in a public, read-only Google Sheet, called "WQM Map PUBLIC" stored in Caminos de Agua's Google Drive. You can access these data at:
+https://docs.google.com/spreadsheets/d/1pUrg48cqrHdYrcsGww0g0pAcCe65lU9ff0EKWHYlJnc/edit?usp=sharing
+
+In "WQM Map PUBLIC," the first column must be the date and the second column must be the site name (household, colonia, community, well name, etc.)
+
+DO NOT change the column names, as the map reads the spreadsheet based on specific column headers. The data is read in through Google's Visualization API. 
+
+In the 
