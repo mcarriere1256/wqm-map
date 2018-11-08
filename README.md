@@ -43,6 +43,6 @@ Creative Commons License
 [Water Quality Map | Caminos de Agua](https://caminosdeagua.github.io/wqm-map) by [Caminos de Agua](https://www.caminosdeagua.org) is distributed under a [4.0 International Atribution-NoCommercial Creative Commons License](https://creativecommons.org/share-your-work/licensing-types-examples/).
 
 ## Contact
-With any questions please contact us on the contact page available at caminosdeagua.org.
+With any questions please use the contact page for [Caminos de Agua](caminosdeagua.org) or contact github users @caminosdeagua or @ask. 
 
 
