@@ -1,7 +1,7 @@
 # wqm-map
-Last updated: 8-Nov-2018 
-Written by: ask53 | caminosdeagua 
-Contact: www.caminosdeagua.org/en/contact 
+Last updated: 8-Nov-2018  
+Written by: ask53 | caminosdeagua  
+Contact: www.caminosdeagua.org/en/contact  
 
 ## What is the map?
 The map shows a point for every water sample that Caminos de Agua (and perhaps some other groups) has ever tested in the Laguna Seca and Alta del Rio Laja sub basins in the northern part of the state of Guanajuato, México. These two sub-basins, part of the larger Lerma'Chapala basin, contain the municipalities of San Miguel de Allende, Dolores Hidalgo, San Diego de la Unión, San Luis de la Paz, San José Iturbide, Doctor Mora, and San Felipe. Points are color'coded by risk level for various contaminants: arsenic, fluoride, etc. When you select a point, all of the known historical data for the site, as far back as 2012, is displayed. When you click these points, or points without historical data, more details are displayed. Some points popups have links to water quality monitoring reports written by Caminos de Agua or our partners.
