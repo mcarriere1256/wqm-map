@@ -76,6 +76,7 @@ var BASIC_MAP_VIEW = "Map";
 var DISPLAY_TITLE = "<b>Water Quality Map</b>";
 var DISPLAY_MSG = "Click to explore";
 
+var WATER_SOURCE_MESSAGE = "Water source";
 var F_UNITS = "mg/L";
 var AS_UNITS = "&mu;g/L";
 var TESTED_BY = "Tested by: ";

@@ -597,15 +597,22 @@ function toggleDD(){
 
 function getBasePopup(i) {
 
-	var date = AllData[i][DATA_NAMES.date];	// get the date string
-	var day = String(date.getDate());		// get day number
-	var month = MONTHS[date.getMonth()];	// get three letter code in appropriate language for month
-	var year = String(date.getFullYear());	// get 4digit year
-	date = day + "-" + month + "-" + year;	// concatenate day, month, year into string
+	var date = AllData[i][DATA_NAMES.date];									// get the date string
+	var day = String(date.getDate());										// get day number
+	var month = MONTHS[date.getMonth()];									// get three letter code in appropriate language for month
+	var year = String(date.getFullYear());									// get 4digit year
+	date = day + "-" + month + "-" + year;									// concatenate day, month, year into string
+				
+	var docPath = AllData[i][DATA_NAMES.docs];								// grab document path from dataset
+	var site, docLink, f_numb, f_txt, as_numb, as_txt, test_org;					// initialize variables			
 
-	var docPath = AllData[i][DATA_NAMES.docs];				// grab document path from dataset
-	var docLink, f_numb, f_txt, as_numb, as_txt, test_org;	// initialize variables			
-
+	if (!AllData[i][DATA_NAMES.site_type]) {
+		site = NO_DATA_MSG;
+	} else {
+		site = WATER_SOURCE_MESSAGE + ": " + "<strong>" + AllData[i][DATA_NAMES.site_type] + "</strong>";
+	}
+	
+	
 	if (!AllData[i][DATA_NAMES.f] | AllData[i][DATA_NAMES.f] == "") {		// if there is no fluoride data
 		f_txt = NO_DATA_MSG;												// load the no data message
 	} else {																// otherwise, load the fluoride value
@@ -640,10 +647,13 @@ function getBasePopup(i) {
 	
 	// based on the above gets, fill in the popup:
 	
-	var pop = "<h1>" + AllData[i][DATA_NAMES.name] + "</h1>"	// This text will be displayed	
-		+ "<h2>" + AllData[i][DATA_NAMES.site_type] + "</h2>"	//	in the popup for this point.
+	var pop = "<h1>" + AllData[i][DATA_NAMES.name] + "</h1>"	// This text will be displayeD in the popup for this point.
 		+ "<hr>"
-		+ "<h4>" + date + "</h4>"
+		+ "<h4>" 
+		+ date + "<br>" 
+		+ site
+		+ "</h4>"
+		+ "<hr>"
 		+ f_txt
 		+ as_txt
 		+ docLink
