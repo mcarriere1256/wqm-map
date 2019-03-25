@@ -602,14 +602,14 @@ function getBasePopup(i) {
 	var month = MONTHS[date.getMonth()];									// get three letter code in appropriate language for month
 	var year = String(date.getFullYear());									// get 4digit year
 	date = day + "-" + month + "-" + year;									// concatenate day, month, year into string
-				
+	date = "<strong>" + DATE_MESSAGE + ": </strong>" + date;				// add label			
 	var docPath = AllData[i][DATA_NAMES.docs];								// grab document path from dataset
 	var site, docLink, f_numb, f_txt, as_numb, as_txt, test_org;					// initialize variables			
 
 	if (!AllData[i][DATA_NAMES.site_type]) {
 		site = NO_DATA_MSG;
 	} else {
-		site = WATER_SOURCE_MESSAGE + ": " + "<strong>" + AllData[i][DATA_NAMES.site_type] + "</strong>";
+		site = "<strong>" +WATER_SOURCE_MESSAGE + ": </strong>" + AllData[i][DATA_NAMES.site_type];
 	}
 	
 	
