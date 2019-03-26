@@ -76,7 +76,7 @@ var DISPLAY_TITLE = "<b>Mapa de Calidad de Agua</b>";
 var DISPLAY_MSG = "Haz clic para explorar";
 
 var DATE_MESSAGE = "Fecha";
-var WATER_SOURCE_MESSAGE = "Fuente del agua";
+var WATER_SOURCE_MESSAGE = "Tipo";
 var F_UNITS = "mg/L";
 var AS_UNITS = "&mu;g/L";
 var TESTED_BY = "Probado por: ";
