@@ -101,7 +101,7 @@ function init() {
 	setGlobals();
 	if (detectMobile()) {adjustDisplayForMobile();}
 	initMap(); 					// Initialize and display the map object
-	applyBaseMap(MAPBOX_IDS["default"]); 			// Apply the base tiles to the map
+	applyBaseMap(MAPBOX_STYLES["default"]); 			// Apply the base tiles to the map
 	loadData(TOTAL_RISK); 	// Load the data for Fluoride (the default contaminant)  
 	
 	
@@ -148,12 +148,19 @@ function applyBaseMap(id) {
 		var old_layer = TILE_LAYER;
 	}
 	
+	/////////////////////////////////////////
+	//mapbox.accessToken = MAPBOX_ACCESS_TOKEN; // These lines are to use Mapbox basemaps
+	//TILE_LAYER = new L.mapbox.tileLayer(id);	// create the new layer
+		
+	TILE_LAYER = new L.StamenTileLayer("terrain");
 	
-	L.mapbox.accessToken = MAPBOX_ACCESS_TOKEN; // These lines are to use Mapbox basemaps
-	TILE_LAYER = new L.mapbox.tileLayer(id);	// create the new layer
+	
+		
+	
+	
+	////////////////////////////////////////
 	map.addLayer(TILE_LAYER, {});				// add the new layer
 	CURRENT_TILE_ID = id;						// store the id of the current (new) layer
-	
 	
 	
 	if (old_layer) {							// if there was an old layer...
