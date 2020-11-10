@@ -81,8 +81,8 @@ function setGlobals() {
 	
 	document.getElementById("search").innerHTML = SEARCH_HELPER_TEXT;
 	
-	document.getElementById("img-button-text").innerHTML = SATELLITE_MAP_VIEW;
-	document.getElementById("map-tile-selector").src = SATELLITE_TILE_THUMBNAIL_URL;
+	//document.getElementById("img-button-text").innerHTML = SATELLITE_MAP_VIEW;
+	//document.getElementById("map-tile-selector").src = SATELLITE_TILE_THUMBNAIL_URL;
 	
 	document.getElementById("overlay_title").innerHTML = DISPLAY_TITLE;
 	document.getElementById("overlay_msg").innerHTML = DISPLAY_MSG;
