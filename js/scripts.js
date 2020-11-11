@@ -214,6 +214,7 @@ function plotData(contaminantToShow) {
 		spiderOpen = true;				//	but store that the spider is still open. 
 	};									// (we'll open it back up later...)
 	dup_indices = []; 					// reinitialize global dup_indices as an array
+	points_valid = [];                                      // reinitialize global points_valid as an array
 	if (activeContaminant == contaminantToShow) {
 	} else { 							// if the currently-displayed contaminant is
 										//	selected again, don't do anything! Otherwise:
@@ -238,8 +239,11 @@ function plotData(contaminantToShow) {
 			Index: []						
 		};
 		
+		for (i=0;i<AllData.length;i++){ // check the validity of all the points at once
+			points_valid.push(pointIsValid(i));
+		}
 		for (i=0; i<AllData.length; i++) { // Loop through all the rows of the AllData
-			if ( pointIsValid(i)) {
+			if (points_valid[i]) {
 				var worstBin
 				if (!presentIn2dArray(dup_indices, i)[0]) {
 					var matches = 0;		// If the current marker is known to be a duplicate, skip it. 
@@ -255,7 +259,7 @@ function plotData(contaminantToShow) {
 						
 						if (Math.abs(AllData[i][DATA_NAMES.lat]-AllData[j][DATA_NAMES.lat])<EPS 
 						&& Math.abs(AllData[i][DATA_NAMES.lng]-AllData[j][DATA_NAMES.lng])<EPS &&
-						pointIsValid(j) ){
+						points_valid[j] ){
 							
 							matches++; 		// If so, increment matches to break out of the while-loop
 							dup_indices.push([i,j]); 
@@ -267,7 +271,7 @@ function plotData(contaminantToShow) {
 										// 	at index (k), save it after (i) and (j) as [i,j,k1,k2,k3,...]
 							if (Math.abs(AllData[i][DATA_NAMES.lat]-AllData[k][DATA_NAMES.lat])<EPS 
 							& Math.abs(AllData[i][DATA_NAMES.lng]-AllData[k][DATA_NAMES.lng])<EPS &
-							pointIsValid(k) ){
+							points_valid[k] ){
 								dup_indices[dup_indices.length-1].push(k);
 							};
 						};
