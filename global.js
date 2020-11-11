@@ -57,6 +57,7 @@ var activeContaminant = -1; 			// A value that indicates the current contaminant
 
 var base;	 							// Store all info relevant to base points		
 var dup_indices;						// An array of arrays of the data indices of duplicate points.
+var points_valid;                                                // store the results of pointIsValid() for each entry in AllData
 										// 	Each internal array holds points with the same latLng. 
 var AllData;							// Global var to hold all data.
 var spiderFeatures; 					// a global var to store all of the data that's being spidered
